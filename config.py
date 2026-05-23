@@ -95,6 +95,7 @@ BACKTEST_CDI_ANUALIZADO_FALLBACK = 0.105  # fallback se API BCB falhar
 # Fórmula V2
 # ---------------------------------------------------------------------------
 MCAP_MAX_V2 = 15_000_000_000   # R$ 15B (expandido vs R$5B da V1)
+UNIVERSO_ALVO_V2 = 300         # cap alto o suficiente para incluir todos os candidatos válidos
 
 # Janelas de tendência V2
 JANELA_MMA_V2_CURTA = 20       # MMA20 (vs MMA50 da V1)

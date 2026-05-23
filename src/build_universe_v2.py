@@ -63,7 +63,7 @@ def construir_universo_v2(csv_path: Path) -> dict:
     log.info(f"Iniciando validação de {len(candidatos)} candidatos V2 no Yahoo Finance...")
 
     for idx, row in candidatos.iterrows():
-        if len(aprovados) >= config.UNIVERSO_ALVO:
+        if len(aprovados) >= config.UNIVERSO_ALVO_V2:
             break
 
         ticker_b3 = str(row["TICKER"]).strip().upper()
@@ -135,7 +135,7 @@ def construir_universo_v2(csv_path: Path) -> dict:
             "cagr_receita_5a": cagr,
             "qualidade_dados": qualidade,
         })
-        log.info(f"  [{rank_liq}] {ticker_b3}: APROVADO (#{len(aprovados)}/{config.UNIVERSO_ALVO})")
+        log.info(f"  [{rank_liq}] {ticker_b3}: APROVADO (#{len(aprovados)}/{config.UNIVERSO_ALVO_V2})")
 
     n = len(aprovados)
     if n < config.UNIVERSO_MINIMO:
@@ -143,8 +143,8 @@ def construir_universo_v2(csv_path: Path) -> dict:
             f"Universo V2 insuficiente: apenas {n} tickers válidos "
             f"(mínimo: {config.UNIVERSO_MINIMO}). Revisão manual necessária."
         )
-    if n < config.UNIVERSO_ALVO:
-        log.warning(f"Universo V2 menor que o alvo: {n}/{config.UNIVERSO_ALVO} tickers")
+    if n < 50:
+        log.warning(f"Universo V2 com poucos tickers: apenas {n} aprovados")
 
     universo = {
         "metadata": {

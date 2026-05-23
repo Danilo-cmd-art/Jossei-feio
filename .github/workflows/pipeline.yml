@@ -11,7 +11,7 @@ on:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 20       # aborta se travar
+    timeout-minutes: 45       # aborta se travar (expandido para universo ~180 tickers)
 
     steps:
       # -----------------------------------------------------------------------
