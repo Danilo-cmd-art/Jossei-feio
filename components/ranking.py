@@ -117,9 +117,10 @@ def _render_breakdown_v2(s: dict) -> None:
             f"ret 1m: {fmt_pct(r1m, sinal=True)}  |  "
             f"ret 3m: {fmt_pct(r3m, sinal=True)}"
         )
+        mom_norm = mom.get('normalizado')
         st.write(
             f"Bruto: {fmt_pct(mom.get('bruto'), sinal=True)} → "
-            f"Norm: {mom.get('normalizado', '—'):.0f} → "
+            f"Norm: {f'{mom_norm:.0f}' if mom_norm is not None else '—'} → "
             f"Contrib: {mom.get('contribuicao_score', 0):.1f}"
         )
 
@@ -131,8 +132,9 @@ def _render_breakdown_v2(s: dict) -> None:
         bruto_roe = roe.get("bruto")
         bruto_str = f"{bruto_roe:.1f}%" if bruto_roe is not None else "n/d"
         st.write(f"Bruto: {bruto_str}{missing_str}")
+        roe_norm = roe.get('normalizado')
         st.write(
-            f"Norm: {roe.get('normalizado', '—'):.0f} → "
+            f"Norm: {f'{roe_norm:.0f}' if roe_norm is not None else '—'} → "
             f"Contrib: {roe.get('contribuicao_score', 0):.1f}"
         )
 
@@ -145,8 +147,9 @@ def _render_breakdown_v2(s: dict) -> None:
         bruto_cagr = cagr.get("bruto")
         bruto_str = f"{bruto_cagr:.1f}%" if bruto_cagr is not None else "n/d"
         st.write(f"Bruto: {bruto_str}{missing_str}{fallback_str}")
+        cagr_norm = cagr.get('normalizado')
         st.write(
-            f"Norm: {cagr.get('normalizado', '—'):.0f} → "
+            f"Norm: {f'{cagr_norm:.0f}' if cagr_norm is not None else '—'} → "
             f"Contrib: {cagr.get('contribuicao_score', 0):.1f}"
         )
 

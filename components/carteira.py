@@ -59,7 +59,7 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
         if bench_df is not None:
             dt_corte = date.fromisoformat(data_corte)
             for p in performance:
-                dt = date.fromisoformat(p["data"])
+                dt = date.fromisoformat(p["data"][:10])
                 for nome, col in [("IBOV", "ibov"), ("SMAL11", "smll"), ("CDI", "cdi")]:
                     if col in bench_df.columns:
                         janela = bench_df[
@@ -73,7 +73,7 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
     if df.empty:
         return
 
-    df["data"] = pd.to_datetime(df["data"])
+    df["data"] = pd.to_datetime(df["data"]).dt.normalize()  # trunca para data (sem hora)
 
     colors = {
         "Carteira V2": "#2563eb",
@@ -202,14 +202,21 @@ def render_aba_carteira() -> None:
         ret_ibov = ret_smll = ret_cdi = None
         if bench_df is not None and performance:
             dt_corte = date.fromisoformat(data_corte)
-            dt_fim = date.fromisoformat(performance[-1]["data"])
-            for col, var in [("ibov", "ret_ibov"), ("smll", "ret_smll"), ("cdi", "ret_cdi")]:
-                if col in bench_df.columns:
+            dt_fim = date.fromisoformat(performance[-1]["data"][:10])  # [:10] evita crash com timestamp
+            for col in [("ibov", "ibov"), ("smll", "smll"), ("cdi", "cdi")]:
+                nome_col, nome_var = col
+                if nome_col in bench_df.columns:
                     janela = bench_df[
                         (bench_df["date"].dt.date > dt_corte) &
                         (bench_df["date"].dt.date <= dt_fim)
-                    ][col].dropna()
-                    locals()[var] = float(((1 + janela).prod() - 1)) if not janela.empty else None
+                    ][nome_col].dropna()
+                    v = float(((1 + janela).prod() - 1)) if not janela.empty else None
+                    if nome_var == "ibov":
+                        ret_ibov = v
+                    elif nome_var == "smll":
+                        ret_smll = v
+                    elif nome_var == "cdi":
+                        ret_cdi = v
 
         col1, col2, col3, col4 = st.columns(4)
         col1.metric("Carteira V2", fmt_pct(ret_total))

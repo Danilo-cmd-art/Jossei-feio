@@ -205,7 +205,6 @@ def render_aba_backtest(periodo: str = "2a") -> None:
     )
 
     # --- Equity curve ---
-    st.subheader("Equity Curve")
     _render_equity_curve(equity_curve, periodo)
 
     # --- Drawdown ---
