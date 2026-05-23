@@ -73,7 +73,9 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
     if df.empty:
         return
 
-    df["data"] = pd.to_datetime(df["data"]).dt.normalize()  # trunca para data (sem hora)
+    # Trunca para data (sem hora) e mantém apenas o último valor de cada dia por série
+    df["data"] = pd.to_datetime(df["data"]).dt.normalize()
+    df = df.groupby(["data", "serie"], as_index=False).last()
 
     colors = {
         "Carteira V2": "#2563eb",
@@ -84,8 +86,15 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
     domain = list(colors.keys())
     range_c = list(colors.values())
 
-    chart = alt.Chart(df).mark_line().encode(
-        x=alt.X("data:T", title="Data"),
+    base = alt.Chart(df)
+
+    # Linhas com pontos marcados em cada dia
+    linhas = base.mark_line(point=alt.OverlayMarkDef(filled=True, size=55)).encode(
+        x=alt.X(
+            "data:T",
+            title="",
+            axis=alt.Axis(format="%a %d/%m", labelAngle=0, tickCount="day"),
+        ),
         y=alt.Y(
             "retorno:Q",
             title="Retorno acumulado",
@@ -102,17 +111,32 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
             alt.value(1.5),
         ),
         tooltip=[
-            alt.Tooltip("data:T", title="Data"),
+            alt.Tooltip("data:T", title="Data", format="%d/%m/%Y"),
             alt.Tooltip("serie:N", title=""),
-            alt.Tooltip("retorno:Q", format=".2%", title="Retorno"),
+            alt.Tooltip("retorno:Q", format="+.2%", title="Retorno acum."),
         ],
-    ).properties(height=300)
+    ).properties(height=320)
+
+    # Labels de % acumulado nos pontos da Carteira V2
+    df_label = df[df["serie"] == "Carteira V2"].copy()
+    labels = alt.Chart(df_label).mark_text(
+        align="center",
+        baseline="bottom",
+        dy=-10,
+        fontSize=11,
+        fontWeight="bold",
+        color="#2563eb",
+    ).encode(
+        x=alt.X("data:T"),
+        y=alt.Y("retorno:Q"),
+        text=alt.Text("retorno:Q", format="+.2%"),
+    )
 
     baseline = alt.Chart(pd.DataFrame({"y": [0]})).mark_rule(
         strokeDash=[4, 4], color="gray", opacity=0.5
     ).encode(y="y:Q")
 
-    st.altair_chart(chart + baseline, use_container_width=True)
+    st.altair_chart(linhas + baseline + labels, use_container_width=True)
 
 
 # ---------------------------------------------------------------------------
@@ -157,19 +181,22 @@ def render_aba_carteira() -> None:
             f"Peso por posição: {100/n:.1f}%"
         )
 
-    # Cabeçalho da carteira
+    # ---------------------------------------------------------------------------
+    # Cabeçalho da carteira + retorno em destaque
+    # ---------------------------------------------------------------------------
     st.subheader("Carteira da semana")
-    c1, c2, c3 = st.columns(3)
-    c1.markdown(
-        f"**Formada em:** {fmt_data_br(meta.get('data_formacao'))}"
-    )
+    c1, c2, c3, c4 = st.columns([2, 2, 2, 1])
+    c1.markdown(f"**Formada em:** {fmt_data_br(meta.get('data_formacao'))}")
     c2.markdown(
         f"**Vigência:** {fmt_data_br(meta.get('data_vigencia_inicio'))} → "
         f"{fmt_data_br(meta.get('data_vigencia_fim'))}"
     )
     c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
+    c4.metric("Retorno", fmt_pct(ret_total, sinal=True))
 
-    # Tabela de posições
+    # ---------------------------------------------------------------------------
+    # Tabela de posições individuais
+    # ---------------------------------------------------------------------------
     rows = []
     for t in tickers:
         ret = t.get("retorno_acumulado", 0.0)
@@ -190,21 +217,19 @@ def render_aba_carteira() -> None:
         use_container_width=True,
     )
 
-    # Gráfico de performance
+    # ---------------------------------------------------------------------------
+    # Performance da semana
+    # ---------------------------------------------------------------------------
     if performance:
-        st.subheader("Performance acumulada da semana")
+        st.subheader("Performance da semana")
         bench_df = _carregar_benchmarks()
-        _render_grafico(performance, bench_df, data_corte)
 
-        # Métricas numéricas
-        st.subheader("Performance numérica")
-        bench_df = _carregar_benchmarks()
+        # Calcula retornos dos benchmarks no período da carteira
         ret_ibov = ret_smll = ret_cdi = None
-        if bench_df is not None and performance:
+        if bench_df is not None:
             dt_corte = date.fromisoformat(data_corte)
-            dt_fim = date.fromisoformat(performance[-1]["data"][:10])  # [:10] evita crash com timestamp
-            for col in [("ibov", "ibov"), ("smll", "smll"), ("cdi", "cdi")]:
-                nome_col, nome_var = col
+            dt_fim = date.fromisoformat(performance[-1]["data"][:10])
+            for nome_col, nome_var in [("ibov", "ibov"), ("smll", "smll"), ("cdi", "cdi")]:
                 if nome_col in bench_df.columns:
                     janela = bench_df[
                         (bench_df["date"].dt.date > dt_corte) &
@@ -218,23 +243,31 @@ def render_aba_carteira() -> None:
                     elif nome_var == "cdi":
                         ret_cdi = v
 
+        # Cards: carteira vs benchmarks (cada card mostra o retorno do próprio índice)
+        # Delta = carteira − benchmark (positivo = outperformou, negativo = underperformou)
         col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Carteira V2", fmt_pct(ret_total))
+        col1.metric("📊 Carteira V2", fmt_pct(ret_total, sinal=True))
         col2.metric(
-            "vs IBOV",
-            fmt_pct(ret_total),
+            "IBOV",
+            fmt_pct(ret_ibov, sinal=True) if ret_ibov is not None else "—",
             delta=fmt_pct_delta(ret_total - ret_ibov) if ret_ibov is not None else None,
+            help="Delta = Carteira − IBOV (positivo: superou o índice)",
         )
         col3.metric(
-            "vs SMAL11",
-            fmt_pct(ret_total),
+            "SMAL11",
+            fmt_pct(ret_smll, sinal=True) if ret_smll is not None else "—",
             delta=fmt_pct_delta(ret_total - ret_smll) if ret_smll is not None else None,
+            help="Delta = Carteira − SMAL11",
         )
         col4.metric(
-            "vs CDI",
-            fmt_pct(ret_total),
+            "CDI",
+            fmt_pct(ret_cdi, sinal=True) if ret_cdi is not None else "—",
             delta=fmt_pct_delta(ret_total - ret_cdi) if ret_cdi is not None else None,
+            help="Delta = Carteira − CDI",
         )
+
+        # Gráfico acumulado por dia (com labels nos pontos da carteira)
+        _render_grafico(performance, bench_df, data_corte)
     else:
         st.info("Performance ainda não disponível (primeiro dia ou fora do pregão).")
 
