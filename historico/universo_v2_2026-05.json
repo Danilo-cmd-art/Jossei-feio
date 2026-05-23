@@ -8,8 +8,8 @@
     "mcap_max": 15000000000,
     "total_candidatos_brutos": 492,
     "total_apos_filtros": 192,
-    "total_aprovados": 50,
-    "total_excluidos": 6
+    "total_aprovados": 163,
+    "total_excluidos": 29
   },
   "tickers": [
     {
@@ -911,6 +911,2040 @@
         "q5_recente": true,
         "criterios_atendidos": 4
       }
+    },
+    {
+      "rank_liquidez": 51,
+      "ticker_b3": "BMOB3",
+      "ticker_yf": "BMOB3.SA",
+      "mcap": 2132505044.72,
+      "liquidez_diaria": 13525409.86,
+      "roic": 12.15,
+      "roe": 16.39,
+      "cagr_receita_5a": 58.14,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 52,
+      "ticker_b3": "DXCO3",
+      "ticker_yf": "DXCO3.SA",
+      "mcap": 4503267560.4,
+      "liquidez_diaria": 13057501.76,
+      "roic": 3.51,
+      "roe": 0.12,
+      "cagr_receita_5a": 7.01,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 53,
+      "ticker_b3": "LWSA3",
+      "ticker_yf": "LWSA3.SA",
+      "mcap": 2097991381.5,
+      "liquidez_diaria": 12655945.82,
+      "roic": -17.35,
+      "roe": -9.34,
+      "cagr_receita_5a": 24.98,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 54,
+      "ticker_b3": "RAPT4",
+      "ticker_yf": "RAPT4.SA",
+      "mcap": 1753657032.52,
+      "liquidez_diaria": 12474050.23,
+      "roic": 5.81,
+      "roe": -9.35,
+      "cagr_receita_5a": 19.64,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 55,
+      "ticker_b3": "LEVE3",
+      "ticker_yf": "LEVE3.SA",
+      "mcap": 4466010050.0,
+      "liquidez_diaria": 12269096.59,
+      "roic": 21.45,
+      "roe": 62.01,
+      "cagr_receita_5a": 17.61,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 56,
+      "ticker_b3": "TFCO4",
+      "ticker_yf": "TFCO4.SA",
+      "mcap": 2256901162.1,
+      "liquidez_diaria": 11397720.24,
+      "roic": 21.23,
+      "roe": 24.39,
+      "cagr_receita_5a": 31.38,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 57,
+      "ticker_b3": "UNIP6",
+      "ticker_yf": "UNIP6.SA",
+      "mcap": 6738886863.41,
+      "liquidez_diaria": 11370120.82,
+      "roic": 8.31,
+      "roe": 20.01,
+      "cagr_receita_5a": 5.86,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 58,
+      "ticker_b3": "VTRU3",
+      "ticker_yf": "VTRU3.SA",
+      "mcap": 526237331.73,
+      "liquidez_diaria": 11329795.14,
+      "roic": -29.52,
+      "roe": -29.57,
+      "cagr_receita_5a": null,
+      "qualidade_dados": {
+        "q1_historico": false,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 59,
+      "ticker_b3": "SEER3",
+      "ticker_yf": "SEER3.SA",
+      "mcap": 1540797073.2,
+      "liquidez_diaria": 10108425.86,
+      "roic": 19.39,
+      "roe": 17.4,
+      "cagr_receita_5a": 12.13,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 60,
+      "ticker_b3": "MILS3",
+      "ticker_yf": "MILS3.SA",
+      "mcap": 3109886588.96,
+      "liquidez_diaria": 10058464.59,
+      "roic": 16.42,
+      "roe": 24.19,
+      "cagr_receita_5a": 29.41,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 61,
+      "ticker_b3": "MDIA3",
+      "ticker_yf": "MDIA3.SA",
+      "mcap": 6766440000.0,
+      "liquidez_diaria": 9927090.32,
+      "roic": 6.31,
+      "roe": 8.33,
+      "cagr_receita_5a": 7.55,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 62,
+      "ticker_b3": "AMER3",
+      "ticker_yf": "AMER3.SA",
+      "mcap": 1107355104.38,
+      "liquidez_diaria": 9628978.86,
+      "roic": 4.51,
+      "roe": 12.51,
+      "cagr_receita_5a": 3.98,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 63,
+      "ticker_b3": "PRNR3",
+      "ticker_yf": "PRNR3.SA",
+      "mcap": 1078973901.2,
+      "liquidez_diaria": 9461080.0,
+      "roic": 8.02,
+      "roe": 7.98,
+      "cagr_receita_5a": 45.21,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 64,
+      "ticker_b3": "MYPK3",
+      "ticker_yf": "MYPK3.SA",
+      "mcap": 1398848369.1,
+      "liquidez_diaria": 8901010.32,
+      "roic": 8.08,
+      "roe": 2.23,
+      "cagr_receita_5a": 11.89,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 65,
+      "ticker_b3": "DESK3",
+      "ticker_yf": "DESK3.SA",
+      "mcap": 2044261304.37,
+      "liquidez_diaria": 8825444.9,
+      "roic": 10.32,
+      "roe": 4.34,
+      "cagr_receita_5a": 48.79,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 66,
+      "ticker_b3": "PNVL3",
+      "ticker_yf": "PNVL3.SA",
+      "mcap": 1812048646.05,
+      "liquidez_diaria": 8795076.86,
+      "roic": 8.54,
+      "roe": 10.18,
+      "cagr_receita_5a": 14.35,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 67,
+      "ticker_b3": "TUPY3",
+      "ticker_yf": "TUPY3.SA",
+      "mcap": 1748345478.0,
+      "liquidez_diaria": 8489697.41,
+      "roic": -7.22,
+      "roe": -31.97,
+      "cagr_receita_5a": 17.88,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 68,
+      "ticker_b3": "HBSA3",
+      "ticker_yf": "HBSA3.SA",
+      "mcap": 4407639763.32,
+      "liquidez_diaria": 8487443.86,
+      "roic": 7.09,
+      "roe": -9.88,
+      "cagr_receita_5a": 8.92,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 69,
+      "ticker_b3": "LAVV3",
+      "ticker_yf": "LAVV3.SA",
+      "mcap": 2276810200.8,
+      "liquidez_diaria": 8277872.43,
+      "roic": 13.59,
+      "roe": 29.03,
+      "cagr_receita_5a": 37.41,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 70,
+      "ticker_b3": "TGMA3",
+      "ticker_yf": "TGMA3.SA",
+      "mcap": 2117373513.2,
+      "liquidez_diaria": 7653805.71,
+      "roic": 13.14,
+      "roe": 26.13,
+      "cagr_receita_5a": 17.07,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 71,
+      "ticker_b3": "LOGG3",
+      "ticker_yf": "LOGG3.SA",
+      "mcap": 2236894060.84,
+      "liquidez_diaria": 7032426.57,
+      "roic": 9.6,
+      "roe": 10.75,
+      "cagr_receita_5a": 11.94,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 72,
+      "ticker_b3": "BMGB4",
+      "ticker_yf": "BMGB4.SA",
+      "mcap": 3403489404.0,
+      "liquidez_diaria": 6757280.36,
+      "roic": null,
+      "roe": 11.89,
+      "cagr_receita_5a": 16.75,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 73,
+      "ticker_b3": "VLID3",
+      "ticker_yf": "VLID3.SA",
+      "mcap": 1411677468.75,
+      "liquidez_diaria": 6611938.95,
+      "roic": 9.42,
+      "roe": 14.22,
+      "cagr_receita_5a": 1.24,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 74,
+      "ticker_b3": "KEPL3",
+      "ticker_yf": "KEPL3.SA",
+      "mcap": 1279607325.6,
+      "liquidez_diaria": 6441566.48,
+      "roic": 13.03,
+      "roe": 18.67,
+      "cagr_receita_5a": 17.29,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 75,
+      "ticker_b3": "QUAL3",
+      "ticker_yf": "QUAL3.SA",
+      "mcap": 528266644.5,
+      "liquidez_diaria": 6067617.38,
+      "roic": 4.11,
+      "roe": 1.17,
+      "cagr_receita_5a": -6.77,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 76,
+      "ticker_b3": "RANI3",
+      "ticker_yf": "RANI3.SA",
+      "mcap": 1855534812.95,
+      "liquidez_diaria": 6014517.27,
+      "roic": 8.97,
+      "roe": 13.78,
+      "cagr_receita_5a": 10.37,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 77,
+      "ticker_b3": "ARML3",
+      "ticker_yf": "ARML3.SA",
+      "mcap": 1157290283.98,
+      "liquidez_diaria": 5905715.91,
+      "roic": 8.42,
+      "roe": 3.96,
+      "cagr_receita_5a": 76.15,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 78,
+      "ticker_b3": "CAML3",
+      "ticker_yf": "CAML3.SA",
+      "mcap": 1991500000.0,
+      "liquidez_diaria": 5888262.36,
+      "roic": 5.36,
+      "roe": 7.72,
+      "cagr_receita_5a": 8.28,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 79,
+      "ticker_b3": "EVEN3",
+      "ticker_yf": "EVEN3.SA",
+      "mcap": 1162000000.0,
+      "liquidez_diaria": 5738764.14,
+      "roic": 4.64,
+      "roe": 11.22,
+      "cagr_receita_5a": 2.82,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 80,
+      "ticker_b3": "RAIZ4",
+      "ticker_yf": "RAIZ4.SA",
+      "mcap": 4037478698.76,
+      "liquidez_diaria": 5268372.52,
+      "roic": -19.66,
+      "roe": -1393.79,
+      "cagr_receita_5a": 20.39,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 81,
+      "ticker_b3": "FRAS3",
+      "ticker_yf": "FRAS3.SA",
+      "mcap": 6066451369.24,
+      "liquidez_diaria": 5109566.71,
+      "roic": 12.35,
+      "roe": 10.53,
+      "cagr_receita_5a": 26.87,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 82,
+      "ticker_b3": "DASA3",
+      "ticker_yf": "DASA3.SA",
+      "mcap": 3890521848.8,
+      "liquidez_diaria": 5046883.91,
+      "roic": 0.03,
+      "roe": -15.14,
+      "cagr_receita_5a": 9.67,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 83,
+      "ticker_b3": "AGRO3",
+      "ticker_yf": "AGRO3.SA",
+      "mcap": 1943797594.92,
+      "liquidez_diaria": 4957768.27,
+      "roic": -3.64,
+      "roe": -0.72,
+      "cagr_receita_5a": 10.7,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 84,
+      "ticker_b3": "SOJA3",
+      "ticker_yf": "SOJA3.SA",
+      "mcap": 908177203.2,
+      "liquidez_diaria": 4449121.68,
+      "roic": 1.65,
+      "roe": 1.84,
+      "cagr_receita_5a": 34.83,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 85,
+      "ticker_b3": "POMO3",
+      "ticker_yf": "POMO3.SA",
+      "mcap": 7454297019.8,
+      "liquidez_diaria": 4361353.76,
+      "roic": 13.41,
+      "roe": 30.72,
+      "cagr_receita_5a": 20.33,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 86,
+      "ticker_b3": "BRBI11",
+      "ticker_yf": "BRBI11.SA",
+      "mcap": 1737678901.2,
+      "liquidez_diaria": 4342013.14,
+      "roic": -0.23,
+      "roe": 21.38,
+      "cagr_receita_5a": -23.54,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 87,
+      "ticker_b3": "FESA4",
+      "ticker_yf": "FESA4.SA",
+      "mcap": 2888971500.0,
+      "liquidez_diaria": 4314146.59,
+      "roic": -0.51,
+      "roe": 4.93,
+      "cagr_receita_5a": 7.55,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 88,
+      "ticker_b3": "JSLG3",
+      "ticker_yf": "JSLG3.SA",
+      "mcap": 2006143486.51,
+      "liquidez_diaria": 4251664.41,
+      "roic": 6.97,
+      "roe": -8.15,
+      "cagr_receita_5a": 27.81,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 89,
+      "ticker_b3": "POSI3",
+      "ticker_yf": "POSI3.SA",
+      "mcap": 581380000.0,
+      "liquidez_diaria": 4126029.23,
+      "roic": 8.42,
+      "roe": 0.63,
+      "cagr_receita_5a": 8.88,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 90,
+      "ticker_b3": "WIZC3",
+      "ticker_yf": "WIZC3.SA",
+      "mcap": 1304843421.12,
+      "liquidez_diaria": 3482831.55,
+      "roic": 23.53,
+      "roe": 28.26,
+      "cagr_receita_5a": 11.49,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 91,
+      "ticker_b3": "FIQE3",
+      "ticker_yf": "FIQE3.SA",
+      "mcap": 2598054065.46,
+      "liquidez_diaria": 3362731.45,
+      "roic": 8.22,
+      "roe": 19.07,
+      "cagr_receita_5a": 32.89,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 92,
+      "ticker_b3": "OPCT3",
+      "ticker_yf": "OPCT3.SA",
+      "mcap": 2019591495.4,
+      "liquidez_diaria": 3288656.29,
+      "roic": 9.68,
+      "roe": 12.12,
+      "cagr_receita_5a": 27.13,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 93,
+      "ticker_b3": "CSED3",
+      "ticker_yf": "CSED3.SA",
+      "mcap": 1596696377.76,
+      "liquidez_diaria": 3175423.14,
+      "roic": 18.3,
+      "roe": 16.46,
+      "cagr_receita_5a": 9.51,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 94,
+      "ticker_b3": "CSUD3",
+      "ticker_yf": "CSUD3.SA",
+      "mcap": 739024000.0,
+      "liquidez_diaria": 2663627.14,
+      "roic": 14.8,
+      "roe": 21.28,
+      "cagr_receita_5a": 6.42,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 95,
+      "ticker_b3": "EUCA4",
+      "ticker_yf": "EUCA4.SA",
+      "mcap": 2469289135.4,
+      "liquidez_diaria": 2593325.14,
+      "roic": 12.97,
+      "roe": 13.91,
+      "cagr_receita_5a": 11.55,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 96,
+      "ticker_b3": "SHUL4",
+      "ticker_yf": "SHUL4.SA",
+      "mcap": 5172981263.24,
+      "liquidez_diaria": 2549594.43,
+      "roic": 8.48,
+      "roe": 17.86,
+      "cagr_receita_5a": 13.02,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 97,
+      "ticker_b3": "MLAS3",
+      "ticker_yf": "MLAS3.SA",
+      "mcap": 1353889721.25,
+      "liquidez_diaria": 2396957.1,
+      "roic": 5.07,
+      "roe": 5.85,
+      "cagr_receita_5a": 6.65,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 98,
+      "ticker_b3": "JALL3",
+      "ticker_yf": "JALL3.SA",
+      "mcap": 868129731.04,
+      "liquidez_diaria": 2109710.27,
+      "roic": -0.32,
+      "roe": 2.25,
+      "cagr_receita_5a": 21.27,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 99,
+      "ticker_b3": "TRIS3",
+      "ticker_yf": "TRIS3.SA",
+      "mcap": 1082074219.48,
+      "liquidez_diaria": 2093738.1,
+      "roic": 6.43,
+      "roe": 12.92,
+      "cagr_receita_5a": 9.42,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 100,
+      "ticker_b3": "BLAU3",
+      "ticker_yf": "BLAU3.SA",
+      "mcap": 2590986664.31,
+      "liquidez_diaria": 2090702.38,
+      "roic": 6.67,
+      "roe": 10.63,
+      "cagr_receita_5a": 7.57,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 101,
+      "ticker_b3": "ALLD3",
+      "ticker_yf": "ALLD3.SA",
+      "mcap": 566173062.4,
+      "liquidez_diaria": 1900530.1,
+      "roic": 18.12,
+      "roe": 22.27,
+      "cagr_receita_5a": 3.11,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 102,
+      "ticker_b3": "PFRM3",
+      "ticker_yf": "PFRM3.SA",
+      "mcap": 784972980.82,
+      "liquidez_diaria": 1653378.76,
+      "roic": 13.17,
+      "roe": 7.86,
+      "cagr_receita_5a": 15.87,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 103,
+      "ticker_b3": "MELK3",
+      "ticker_yf": "MELK3.SA",
+      "mcap": 674500745.07,
+      "liquidez_diaria": 1606115.43,
+      "roic": 4.59,
+      "roe": 11.47,
+      "cagr_receita_5a": 13.95,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 104,
+      "ticker_b3": "ROMI3",
+      "ticker_yf": "ROMI3.SA",
+      "mcap": 599087903.21,
+      "liquidez_diaria": 1549538.24,
+      "roic": 1.82,
+      "roe": 6.24,
+      "cagr_receita_5a": 6.39,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 105,
+      "ticker_b3": "BMEB4",
+      "ticker_yf": "BMEB4.SA",
+      "mcap": 7769039991.2,
+      "liquidez_diaria": 1538568.81,
+      "roic": null,
+      "roe": 26.89,
+      "cagr_receita_5a": 29.99,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 106,
+      "ticker_b3": "SYNE3",
+      "ticker_yf": "SYNE3.SA",
+      "mcap": 576996002.1,
+      "liquidez_diaria": 1323973.24,
+      "roic": 6.66,
+      "roe": 9.47,
+      "cagr_receita_5a": -7.59,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 107,
+      "ticker_b3": "BRST3",
+      "ticker_yf": "BRST3.SA",
+      "mcap": 1226421103.6,
+      "liquidez_diaria": 1224594.57,
+      "roic": 5.71,
+      "roe": 7.44,
+      "cagr_receita_5a": 41.71,
+      "qualidade_dados": {
+        "q1_historico": false,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 108,
+      "ticker_b3": "VITT3",
+      "ticker_yf": "VITT3.SA",
+      "mcap": 562297607.4,
+      "liquidez_diaria": 1112587.24,
+      "roic": 6.51,
+      "roe": 9.79,
+      "cagr_receita_5a": 9.09,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 109,
+      "ticker_b3": "TASA4",
+      "ticker_yf": "TASA4.SA",
+      "mcap": 624386077.02,
+      "liquidez_diaria": 1065062.32,
+      "roic": -1.45,
+      "roe": -3.16,
+      "cagr_receita_5a": -3.77,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 110,
+      "ticker_b3": "DEXP3",
+      "ticker_yf": "DEXP3.SA",
+      "mcap": 879072640.65,
+      "liquidez_diaria": 978269.76,
+      "roic": 9.93,
+      "roe": 13.54,
+      "cagr_receita_5a": 16.52,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 111,
+      "ticker_b3": "BRAP3",
+      "ticker_yf": "BRAP3.SA",
+      "mcap": 8589160140.18,
+      "liquidez_diaria": 883949.05,
+      "roic": 9.06,
+      "roe": 10.0,
+      "cagr_receita_5a": null,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 112,
+      "ticker_b3": "MATD3",
+      "ticker_yf": "MATD3.SA",
+      "mcap": 1721111937.0,
+      "liquidez_diaria": 829891.86,
+      "roic": 9.16,
+      "roe": 8.26,
+      "cagr_receita_5a": 24.82,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 113,
+      "ticker_b3": "SCAR3",
+      "ticker_yf": "SCAR3.SA",
+      "mcap": 783495418.83,
+      "liquidez_diaria": 672091.14,
+      "roic": 1.84,
+      "roe": 4.32,
+      "cagr_receita_5a": -2.45,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 114,
+      "ticker_b3": "EMAE4",
+      "ticker_yf": "EMAE4.SA",
+      "mcap": 3091466994.0,
+      "liquidez_diaria": 662950.86,
+      "roic": -88.65,
+      "roe": -22.42,
+      "cagr_receita_5a": 1.3,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 115,
+      "ticker_b3": "ALPK3",
+      "ticker_yf": "ALPK3.SA",
+      "mcap": 1008806371.8,
+      "liquidez_diaria": 562443.33,
+      "roic": 13.52,
+      "roe": 3.74,
+      "cagr_receita_5a": 23.59,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 116,
+      "ticker_b3": "BAZA3",
+      "ticker_yf": "BAZA3.SA",
+      "mcap": 3935293713.0,
+      "liquidez_diaria": 546510.62,
+      "roic": null,
+      "roe": 11.77,
+      "cagr_receita_5a": 46.47,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 117,
+      "ticker_b3": "OFSA3",
+      "ticker_yf": "OFSA3.SA",
+      "mcap": 1693998788.4,
+      "liquidez_diaria": 487017.14,
+      "roic": 18.05,
+      "roe": 29.59,
+      "cagr_receita_5a": 10.9,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 118,
+      "ticker_b3": "BRKM3",
+      "ticker_yf": "BRKM3.SA",
+      "mcap": 8020454415.74,
+      "liquidez_diaria": 480164.9,
+      "roic": -56.79,
+      "roe": -58.03,
+      "cagr_receita_5a": 3.85,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 119,
+      "ticker_b3": "LOGN3",
+      "ticker_yf": "LOGN3.SA",
+      "mcap": 3219194580.0,
+      "liquidez_diaria": 437964.33,
+      "roic": -4.33,
+      "roe": 2.77,
+      "cagr_receita_5a": 22.3,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 120,
+      "ticker_b3": "COCE5",
+      "ticker_yf": "COCE5.SA",
+      "mcap": 2201462375.53,
+      "liquidez_diaria": 435931.82,
+      "roic": 12.51,
+      "roe": 9.01,
+      "cagr_receita_5a": 9.35,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 121,
+      "ticker_b3": "BMEB3",
+      "ticker_yf": "BMEB3.SA",
+      "mcap": 7769039991.2,
+      "liquidez_diaria": 368447.76,
+      "roic": null,
+      "roe": 26.89,
+      "cagr_receita_5a": 29.99,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 122,
+      "ticker_b3": "UNIP3",
+      "ticker_yf": "UNIP3.SA",
+      "mcap": 6738886863.41,
+      "liquidez_diaria": 338080.76,
+      "roic": 8.31,
+      "roe": 20.01,
+      "cagr_receita_5a": 5.86,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 123,
+      "ticker_b3": "TECN3",
+      "ticker_yf": "TECN3.SA",
+      "mcap": 529275008.35,
+      "liquidez_diaria": 324306.1,
+      "roic": 14.07,
+      "roe": 16.78,
+      "cagr_receita_5a": 14.36,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 124,
+      "ticker_b3": "LAND3",
+      "ticker_yf": "LAND3.SA",
+      "mcap": 807344211.18,
+      "liquidez_diaria": 299904.55,
+      "roic": -7.04,
+      "roe": 0.49,
+      "cagr_receita_5a": 13.15,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 125,
+      "ticker_b3": "IGTI3",
+      "ticker_yf": "IGTI3.SA",
+      "mcap": 6990966024.1,
+      "liquidez_diaria": 278794.24,
+      "roic": 13.37,
+      "roe": 14.63,
+      "cagr_receita_5a": 17.05,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 126,
+      "ticker_b3": "CLSC4",
+      "ticker_yf": "CLSC4.SA",
+      "mcap": 5365420583.45,
+      "liquidez_diaria": 264847.0,
+      "roic": 12.9,
+      "roe": 17.57,
+      "cagr_receita_5a": 6.08,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 127,
+      "ticker_b3": "CEBR6",
+      "ticker_yf": "CEBR6.SA",
+      "mcap": 2119424422.5,
+      "liquidez_diaria": 224005.52,
+      "roic": 11.92,
+      "roe": 17.65,
+      "cagr_receita_5a": 14.87,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 128,
+      "ticker_b3": "CEBR3",
+      "ticker_yf": "CEBR3.SA",
+      "mcap": 2119424422.5,
+      "liquidez_diaria": 190076.43,
+      "roic": 11.92,
+      "roe": 17.65,
+      "cagr_receita_5a": 14.87,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 129,
+      "ticker_b3": "MTSA4",
+      "ticker_yf": "MTSA4.SA",
+      "mcap": 565081145.7,
+      "liquidez_diaria": 169705.71,
+      "roic": -0.01,
+      "roe": 8.39,
+      "cagr_receita_5a": 7.69,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 130,
+      "ticker_b3": "CGRA4",
+      "ticker_yf": "CGRA4.SA",
+      "mcap": 591673626.46,
+      "liquidez_diaria": 139105.0,
+      "roic": 6.45,
+      "roe": 9.58,
+      "cagr_receita_5a": 10.6,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 131,
+      "ticker_b3": "BSLI3",
+      "ticker_yf": "BSLI3.SA",
+      "mcap": 1661438680.69,
+      "liquidez_diaria": 117128.24,
+      "roic": null,
+      "roe": 20.28,
+      "cagr_receita_5a": 23.49,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 132,
+      "ticker_b3": "RAPT3",
+      "ticker_yf": "RAPT3.SA",
+      "mcap": 1753657032.52,
+      "liquidez_diaria": 90169.43,
+      "roic": 5.81,
+      "roe": -9.35,
+      "cagr_receita_5a": 19.64,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 133,
+      "ticker_b3": "PINE3",
+      "ticker_yf": "PINE3.SA",
+      "mcap": 3355327333.36,
+      "liquidez_diaria": 84142.04,
+      "roic": null,
+      "roe": 30.83,
+      "cagr_receita_5a": 31.37,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 134,
+      "ticker_b3": "BRSR3",
+      "ticker_yf": "BRSR3.SA",
+      "mcap": 6655608923.69,
+      "liquidez_diaria": 83975.95,
+      "roic": null,
+      "roe": 15.11,
+      "cagr_receita_5a": 24.08,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 135,
+      "ticker_b3": "ALPA3",
+      "ticker_yf": "ALPA3.SA",
+      "mcap": 7654984265.44,
+      "liquidez_diaria": 83522.19,
+      "roic": 13.55,
+      "roe": 17.9,
+      "cagr_receita_5a": 6.29,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 136,
+      "ticker_b3": "BEES3",
+      "ticker_yf": "BEES3.SA",
+      "mcap": 2995485738.52,
+      "liquidez_diaria": 80164.0,
+      "roic": null,
+      "roe": 13.26,
+      "cagr_receita_5a": 28.74,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 137,
+      "ticker_b3": "WHRL4",
+      "ticker_yf": "WHRL4.SA",
+      "mcap": 5920885866.99,
+      "liquidez_diaria": 73875.91,
+      "roic": 20.84,
+      "roe": 17.12,
+      "cagr_receita_5a": 6.29,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 138,
+      "ticker_b3": "CEBR5",
+      "ticker_yf": "CEBR5.SA",
+      "mcap": 2119424422.5,
+      "liquidez_diaria": 67223.4,
+      "roic": 11.92,
+      "roe": 17.65,
+      "cagr_receita_5a": 14.87,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 139,
+      "ticker_b3": "ENMT3",
+      "ticker_yf": "ENMT3.SA",
+      "mcap": 9252926304.0,
+      "liquidez_diaria": 44033.38,
+      "roic": 11.7,
+      "roe": 18.68,
+      "cagr_receita_5a": 12.0,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 140,
+      "ticker_b3": "TASA3",
+      "ticker_yf": "TASA3.SA",
+      "mcap": 624386077.02,
+      "liquidez_diaria": 41907.67,
+      "roic": -1.45,
+      "roe": -3.16,
+      "cagr_receita_5a": -3.77,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 141,
+      "ticker_b3": "BGIP4",
+      "ticker_yf": "BGIP4.SA",
+      "mcap": 975434332.4,
+      "liquidez_diaria": 39327.95,
+      "roic": null,
+      "roe": 16.51,
+      "cagr_receita_5a": 24.17,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 142,
+      "ticker_b3": "BEES4",
+      "ticker_yf": "BEES4.SA",
+      "mcap": 2995485738.52,
+      "liquidez_diaria": 36914.0,
+      "roic": null,
+      "roe": 13.26,
+      "cagr_receita_5a": 28.74,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 143,
+      "ticker_b3": "EUCA3",
+      "ticker_yf": "EUCA3.SA",
+      "mcap": 2469289135.4,
+      "liquidez_diaria": 32974.75,
+      "roic": 12.97,
+      "roe": 13.91,
+      "cagr_receita_5a": 11.55,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 144,
+      "ticker_b3": "CGRA3",
+      "ticker_yf": "CGRA3.SA",
+      "mcap": 591673626.46,
+      "liquidez_diaria": 29706.43,
+      "roic": 6.45,
+      "roe": 9.58,
+      "cagr_receita_5a": 10.6,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 145,
+      "ticker_b3": "DEXP4",
+      "ticker_yf": "DEXP4.SA",
+      "mcap": 879072640.65,
+      "liquidez_diaria": 28178.32,
+      "roic": 9.93,
+      "roe": 13.54,
+      "cagr_receita_5a": 16.52,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 146,
+      "ticker_b3": "ENMT4",
+      "ticker_yf": "ENMT4.SA",
+      "mcap": 9252926304.0,
+      "liquidez_diaria": 25973.58,
+      "roic": 11.7,
+      "roe": 18.68,
+      "cagr_receita_5a": 12.0,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 147,
+      "ticker_b3": "EKTR4",
+      "ticker_yf": "EKTR4.SA",
+      "mcap": 8656021957.94,
+      "liquidez_diaria": 24094.33,
+      "roic": 16.31,
+      "roe": 39.34,
+      "cagr_receita_5a": 7.86,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 148,
+      "ticker_b3": "PATI3",
+      "ticker_yf": "PATI3.SA",
+      "mcap": 809599402.0,
+      "liquidez_diaria": 23940.65,
+      "roic": 4.98,
+      "roe": 6.43,
+      "cagr_receita_5a": 6.07,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 149,
+      "ticker_b3": "BGIP3",
+      "ticker_yf": "BGIP3.SA",
+      "mcap": 975434332.4,
+      "liquidez_diaria": 23674.72,
+      "roic": null,
+      "roe": 16.51,
+      "cagr_receita_5a": 24.17,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 150,
+      "ticker_b3": "CLSC3",
+      "ticker_yf": "CLSC3.SA",
+      "mcap": 5365420583.45,
+      "liquidez_diaria": 22382.83,
+      "roic": 12.9,
+      "roe": 17.57,
+      "cagr_receita_5a": 6.08,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 151,
+      "ticker_b3": "TELB4",
+      "ticker_yf": "TELB4.SA",
+      "mcap": 1234667158.55,
+      "liquidez_diaria": 21199.36,
+      "roic": 6.96,
+      "roe": 3.72,
+      "cagr_receita_5a": 12.97,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 152,
+      "ticker_b3": "WLMM4",
+      "ticker_yf": "WLMM4.SA",
+      "mcap": 784469835.8,
+      "liquidez_diaria": 20817.5,
+      "roic": 8.01,
+      "roe": 10.0,
+      "cagr_receita_5a": 24.89,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 153,
+      "ticker_b3": "GEPA4",
+      "ticker_yf": "GEPA4.SA",
+      "mcap": 3585631755.51,
+      "liquidez_diaria": 20499.47,
+      "roic": 12.69,
+      "roe": 22.84,
+      "cagr_receita_5a": 1.08,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 154,
+      "ticker_b3": "IGTI4",
+      "ticker_yf": "IGTI4.SA",
+      "mcap": 6990966024.1,
+      "liquidez_diaria": 15052.63,
+      "roic": 13.37,
+      "roe": 14.63,
+      "cagr_receita_5a": 17.05,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 155,
+      "ticker_b3": "WHRL3",
+      "ticker_yf": "WHRL3.SA",
+      "mcap": 5920885866.99,
+      "liquidez_diaria": 14945.24,
+      "roic": 20.84,
+      "roe": 17.12,
+      "cagr_receita_5a": 6.29,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": true,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 5
+      }
+    },
+    {
+      "rank_liquidez": 156,
+      "ticker_b3": "UNIP5",
+      "ticker_yf": "UNIP5.SA",
+      "mcap": 6738886863.41,
+      "liquidez_diaria": 12642.0,
+      "roic": 8.31,
+      "roe": 20.01,
+      "cagr_receita_5a": 5.86,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 157,
+      "ticker_b3": "RPAD5",
+      "ticker_yf": "RPAD5.SA",
+      "mcap": 615781699.0,
+      "liquidez_diaria": 7861.17,
+      "roic": 6.7,
+      "roe": 8.43,
+      "cagr_receita_5a": null,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 158,
+      "ticker_b3": "PATI4",
+      "ticker_yf": "PATI4.SA",
+      "mcap": 809599402.0,
+      "liquidez_diaria": 4938.46,
+      "roic": 4.98,
+      "roe": 6.43,
+      "cagr_receita_5a": 6.07,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 159,
+      "ticker_b3": "GEPA3",
+      "ticker_yf": "GEPA3.SA",
+      "mcap": 3585631755.51,
+      "liquidez_diaria": 4918.4,
+      "roic": 12.69,
+      "roe": 22.84,
+      "cagr_receita_5a": 1.08,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 160,
+      "ticker_b3": "WLMM3",
+      "ticker_yf": "WLMM3.SA",
+      "mcap": 784469835.8,
+      "liquidez_diaria": 2339.0,
+      "roic": 8.01,
+      "roe": 10.0,
+      "cagr_receita_5a": 24.89,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 161,
+      "ticker_b3": "RPAD3",
+      "ticker_yf": "RPAD3.SA",
+      "mcap": 615781699.0,
+      "liquidez_diaria": 2079.38,
+      "roic": 6.7,
+      "roe": 8.43,
+      "cagr_receita_5a": null,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 162,
+      "ticker_b3": "RPAD6",
+      "ticker_yf": "RPAD6.SA",
+      "mcap": 615781699.0,
+      "liquidez_diaria": 1664.8,
+      "roic": 6.7,
+      "roe": 8.43,
+      "cagr_receita_5a": null,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
+    },
+    {
+      "rank_liquidez": 163,
+      "ticker_b3": "BRKM6",
+      "ticker_yf": "BRKM6.SA",
+      "mcap": 8020454415.74,
+      "liquidez_diaria": 1337.5,
+      "roic": -56.79,
+      "roe": -58.03,
+      "cagr_receita_5a": 3.85,
+      "qualidade_dados": {
+        "q1_historico": true,
+        "q2_retornos_absurdos": true,
+        "q3_volume_zerado": false,
+        "q4_close_integro": true,
+        "q5_recente": true,
+        "criterios_atendidos": 4
+      }
     }
   ],
   "excluidos": [
@@ -949,6 +2983,144 @@
       "rank_liquidez_original": 43,
       "motivo": "FAIL_NO_DATA",
       "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "AESB3",
+      "rank_liquidez_original": 57,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "BHIA3",
+      "rank_liquidez_original": 63,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F1_DRAWDOWN: -55.8%"
+    },
+    {
+      "ticker_b3": "LIGT3",
+      "rank_liquidez_original": 78,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F1_DRAWDOWN: -51.9%"
+    },
+    {
+      "ticker_b3": "PCAR3",
+      "rank_liquidez_original": 83,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 28.0% do histórico"
+    },
+    {
+      "ticker_b3": "ONCO3",
+      "rank_liquidez_original": 85,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F2_VOL_ALTA: 185.6%"
+    },
+    {
+      "ticker_b3": "PORT3",
+      "rank_liquidez_original": 119,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "ELMD3",
+      "rank_liquidez_original": 125,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "SEQL3",
+      "rank_liquidez_original": 139,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F1_DRAWDOWN: -70.3%"
+    },
+    {
+      "ticker_b3": "ZAMP3",
+      "rank_liquidez_original": 141,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "BSLI4",
+      "rank_liquidez_original": 147,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F5_GAP_PREGAO: 8 dias consecutivos"
+    },
+    {
+      "ticker_b3": "APER3",
+      "rank_liquidez_original": 155,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "PINE14",
+      "rank_liquidez_original": 160,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "PEAB3",
+      "rank_liquidez_original": 174,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 14.9% do histórico"
+    },
+    {
+      "ticker_b3": "PEAB4",
+      "rank_liquidez_original": 175,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F4_PRECO_TRAVADO: variacao=1.95%"
+    },
+    {
+      "ticker_b3": "MTSA3",
+      "rank_liquidez_original": 178,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 0.0% do histórico"
+    },
+    {
+      "ticker_b3": "SRNA3",
+      "rank_liquidez_original": 179,
+      "motivo": "FAIL_NO_DATA",
+      "detalhe": "yfinance retornou DataFrame vazio"
+    },
+    {
+      "ticker_b3": "TKNO4",
+      "rank_liquidez_original": 182,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 0.0% do histórico"
+    },
+    {
+      "ticker_b3": "TELB3",
+      "rank_liquidez_original": 183,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 22.2% do histórico"
+    },
+    {
+      "ticker_b3": "CEGR3",
+      "rank_liquidez_original": 184,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F4_PRECO_TRAVADO: variacao=0.67%"
+    },
+    {
+      "ticker_b3": "FESA3",
+      "rank_liquidez_original": 185,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 17.5% do histórico"
+    },
+    {
+      "ticker_b3": "COCE3",
+      "rank_liquidez_original": 188,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 9.1% do histórico"
+    },
+    {
+      "ticker_b3": "CBEE3",
+      "rank_liquidez_original": 191,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 21.9% do histórico"
+    },
+    {
+      "ticker_b3": "BRSR5",
+      "rank_liquidez_original": 192,
+      "motivo": "FAIL_FILTRO_AUTO",
+      "detalhe": "F3_VOL_COLAPSADO: 26.8% do histórico"
     }
   ]
 }

@@ -11,6 +11,7 @@ Reutiliza toda a lógica de validação de build_universe.py.
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import sys
 from datetime import date, timedelta
@@ -32,6 +33,45 @@ from src.build_universe import (
 from src.logger import get_logger
 
 log = get_logger()
+
+
+def _prefixo_empresa(ticker: str) -> str:
+    """
+    Extrai o prefixo da empresa removendo os dígitos finais.
+    Ex: BRSR3 → 'BRSR', BRKM5 → 'BRKM', IGTI11 → 'IGTI'
+    Usado para deduplicar múltiplas classes de ações do mesmo emissor.
+    """
+    return re.sub(r"\d+$", "", ticker.strip().upper())
+
+
+def _deduplicate_by_company(aprovados: list[dict]) -> list[dict]:
+    """
+    Remove classes de ações duplicadas do mesmo emissor.
+    Mantém apenas o ticker mais líquido por empresa (lista já ordenada por liquidez).
+    Ex: se BRSR3 e BRSR6 foram aprovados, exclui BRSR6 e mantém BRSR3.
+    """
+    seen: dict[str, str] = {}  # prefixo → ticker mantido
+    result: list[dict] = []
+    excluidos_dedup: list[str] = []
+
+    for t in aprovados:
+        prefix = _prefixo_empresa(t["ticker_b3"])
+        if prefix not in seen:
+            seen[prefix] = t["ticker_b3"]
+            result.append(t)
+        else:
+            excluidos_dedup.append(t["ticker_b3"])
+            log.info(
+                f"  Dedup empresa: {t['ticker_b3']} removido "
+                f"(duplicata de {seen[prefix]} — emissor '{prefix}')"
+            )
+
+    if excluidos_dedup:
+        log.info(
+            f"Deduplicação por empresa: {len(aprovados)} → {len(result)} tickers "
+            f"({len(excluidos_dedup)} removidos: {excluidos_dedup})"
+        )
+    return result
 
 
 def filtrar_candidatos_v2(df: pd.DataFrame) -> pd.DataFrame:
@@ -136,6 +176,13 @@ def construir_universo_v2(csv_path: Path) -> dict:
             "qualidade_dados": qualidade,
         })
         log.info(f"  [{rank_liq}] {ticker_b3}: APROVADO (#{len(aprovados)}/{config.UNIVERSO_ALVO_V2})")
+
+    # Remove múltiplas classes do mesmo emissor — mantém o mais líquido por empresa
+    aprovados = _deduplicate_by_company(aprovados)
+
+    # Reordena ranks após deduplicação
+    for i, t in enumerate(aprovados):
+        t["rank_liquidez"] = i + 1
 
     n = len(aprovados)
     if n < config.UNIVERSO_MINIMO:
