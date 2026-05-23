@@ -49,9 +49,145 @@ BIOM3,APROVADO,47,True,True,True,True,True,5.0,
 RIAA3,APROVADO,48,False,True,True,True,True,4.0,
 GRND3,APROVADO,49,True,True,True,True,True,5.0,
 CYRE4,APROVADO,50,False,True,True,True,True,4.0,
+BMOB3,APROVADO,51,True,True,True,True,True,5.0,
+DXCO3,APROVADO,52,True,True,True,True,True,5.0,
+LWSA3,APROVADO,53,True,True,True,True,True,5.0,
+RAPT4,APROVADO,54,True,True,True,True,True,5.0,
+LEVE3,APROVADO,55,True,True,True,True,True,5.0,
+TFCO4,APROVADO,56,True,True,True,True,True,5.0,
+UNIP6,APROVADO,57,True,True,True,True,True,5.0,
+VTRU3,APROVADO,58,False,True,True,True,True,4.0,
+SEER3,APROVADO,59,True,True,True,True,True,5.0,
+MILS3,APROVADO,60,True,True,True,True,True,5.0,
+MDIA3,APROVADO,61,True,True,True,True,True,5.0,
+AMER3,APROVADO,62,True,True,True,True,True,5.0,
+PRNR3,APROVADO,63,True,True,True,True,True,5.0,
+MYPK3,APROVADO,64,True,True,True,True,True,5.0,
+DESK3,APROVADO,65,True,True,True,True,True,5.0,
+PNVL3,APROVADO,66,True,True,True,True,True,5.0,
+TUPY3,APROVADO,67,True,True,True,True,True,5.0,
+HBSA3,APROVADO,68,True,True,True,True,True,5.0,
+LAVV3,APROVADO,69,True,True,True,True,True,5.0,
+TGMA3,APROVADO,70,True,True,True,True,True,5.0,
+LOGG3,APROVADO,71,True,True,True,True,True,5.0,
+BMGB4,APROVADO,72,True,True,True,True,True,5.0,
+VLID3,APROVADO,73,True,True,True,True,True,5.0,
+KEPL3,APROVADO,74,True,True,True,True,True,5.0,
+QUAL3,APROVADO,75,True,True,True,True,True,5.0,
+RANI3,APROVADO,76,True,True,True,True,True,5.0,
+ARML3,APROVADO,77,True,True,True,True,True,5.0,
+CAML3,APROVADO,78,True,True,True,True,True,5.0,
+EVEN3,APROVADO,79,True,True,True,True,True,5.0,
+RAIZ4,APROVADO,80,True,True,True,True,True,5.0,
+FRAS3,APROVADO,81,True,True,True,True,True,5.0,
+DASA3,APROVADO,82,True,True,True,True,True,5.0,
+AGRO3,APROVADO,83,True,True,True,True,True,5.0,
+SOJA3,APROVADO,84,True,True,True,True,True,5.0,
+POMO3,APROVADO,85,True,True,True,True,True,5.0,
+BRBI11,APROVADO,86,True,True,True,True,True,5.0,
+FESA4,APROVADO,87,True,True,True,True,True,5.0,
+JSLG3,APROVADO,88,True,True,True,True,True,5.0,
+POSI3,APROVADO,89,True,True,True,True,True,5.0,
+WIZC3,APROVADO,90,True,True,True,True,True,5.0,
+FIQE3,APROVADO,91,True,True,True,True,True,5.0,
+OPCT3,APROVADO,92,True,True,True,True,True,5.0,
+CSED3,APROVADO,93,True,True,True,True,True,5.0,
+CSUD3,APROVADO,94,True,True,True,True,True,5.0,
+EUCA4,APROVADO,95,True,True,True,True,True,5.0,
+SHUL4,APROVADO,96,True,True,True,True,True,5.0,
+MLAS3,APROVADO,97,True,True,True,True,True,5.0,
+JALL3,APROVADO,98,True,True,True,True,True,5.0,
+TRIS3,APROVADO,99,True,True,True,True,True,5.0,
+BLAU3,APROVADO,100,True,True,True,True,True,5.0,
+ALLD3,APROVADO,101,True,True,True,True,True,5.0,
+PFRM3,APROVADO,102,True,True,True,True,True,5.0,
+MELK3,APROVADO,103,True,True,True,True,True,5.0,
+ROMI3,APROVADO,104,True,True,True,True,True,5.0,
+BMEB4,APROVADO,105,True,True,True,True,True,5.0,
+SYNE3,APROVADO,106,True,True,True,True,True,5.0,
+BRST3,APROVADO,107,False,True,True,True,True,4.0,
+VITT3,APROVADO,108,True,True,True,True,True,5.0,
+TASA4,APROVADO,109,True,True,True,True,True,5.0,
+DEXP3,APROVADO,110,True,True,True,True,True,5.0,
+BRAP3,APROVADO,111,True,True,True,True,True,5.0,
+MATD3,APROVADO,112,True,True,True,True,True,5.0,
+SCAR3,APROVADO,113,True,True,True,True,True,5.0,
+EMAE4,APROVADO,114,True,True,True,True,True,5.0,
+ALPK3,APROVADO,115,True,True,True,True,True,5.0,
+BAZA3,APROVADO,116,True,True,True,True,True,5.0,
+OFSA3,APROVADO,117,True,True,True,True,True,5.0,
+BRKM3,APROVADO,118,True,True,True,True,True,5.0,
+LOGN3,APROVADO,119,True,True,True,True,True,5.0,
+COCE5,APROVADO,120,True,True,True,True,True,5.0,
+BMEB3,APROVADO,121,True,True,False,True,True,4.0,
+UNIP3,APROVADO,122,True,True,True,True,True,5.0,
+TECN3,APROVADO,123,True,True,True,True,True,5.0,
+LAND3,APROVADO,124,True,True,True,True,True,5.0,
+IGTI3,APROVADO,125,True,True,True,True,True,5.0,
+CLSC4,APROVADO,126,True,True,True,True,True,5.0,
+CEBR6,APROVADO,127,True,True,True,True,True,5.0,
+CEBR3,APROVADO,128,True,True,True,True,True,5.0,
+MTSA4,APROVADO,129,True,True,True,True,True,5.0,
+CGRA4,APROVADO,130,True,True,True,True,True,5.0,
+BSLI3,APROVADO,131,True,True,False,True,True,4.0,
+RAPT3,APROVADO,132,True,True,True,True,True,5.0,
+PINE3,APROVADO,133,True,True,False,True,True,4.0,
+BRSR3,APROVADO,134,True,True,True,True,True,5.0,
+ALPA3,APROVADO,135,True,True,True,True,True,5.0,
+BEES3,APROVADO,136,True,True,True,True,True,5.0,
+WHRL4,APROVADO,137,True,True,True,True,True,5.0,
+CEBR5,APROVADO,138,True,True,True,True,True,5.0,
+ENMT3,APROVADO,139,True,True,False,True,True,4.0,
+TASA3,APROVADO,140,True,True,True,True,True,5.0,
+BGIP4,APROVADO,141,True,True,True,True,True,5.0,
+BEES4,APROVADO,142,True,True,True,True,True,5.0,
+EUCA3,APROVADO,143,True,True,False,True,True,4.0,
+CGRA3,APROVADO,144,True,True,True,True,True,5.0,
+DEXP4,APROVADO,145,True,True,True,True,True,5.0,
+ENMT4,APROVADO,146,True,True,False,True,True,4.0,
+EKTR4,APROVADO,147,True,True,False,True,True,4.0,
+PATI3,APROVADO,148,True,True,False,True,True,4.0,
+BGIP3,APROVADO,149,True,True,False,True,True,4.0,
+CLSC3,APROVADO,150,True,True,False,True,True,4.0,
+TELB4,APROVADO,151,True,True,True,True,True,5.0,
+WLMM4,APROVADO,152,True,True,False,True,True,4.0,
+GEPA4,APROVADO,153,True,True,False,True,True,4.0,
+IGTI4,APROVADO,154,True,True,False,True,True,4.0,
+WHRL3,APROVADO,155,True,True,True,True,True,5.0,
+UNIP5,APROVADO,156,True,True,False,True,True,4.0,
+RPAD5,APROVADO,157,True,True,False,True,True,4.0,
+PATI4,APROVADO,158,True,True,False,True,True,4.0,
+GEPA3,APROVADO,159,True,True,False,True,True,4.0,
+WLMM3,APROVADO,160,True,True,False,True,True,4.0,
+RPAD3,APROVADO,161,True,True,False,True,True,4.0,
+RPAD6,APROVADO,162,True,True,False,True,True,4.0,
+BRKM6,APROVADO,163,True,True,False,True,True,4.0,
 SULA11,FAIL_NO_DATA,1,,,,,,,yfinance retornou DataFrame vazio
 ENAT3,FAIL_NO_DATA,2,,,,,,,yfinance retornou DataFrame vazio
 SOMA3,FAIL_NO_DATA,7,,,,,,,yfinance retornou DataFrame vazio
 CLSA3,FAIL_NO_DATA,15,,,,,,,yfinance retornou DataFrame vazio
 CBAV3,FAIL_FILTRO_AUTO,34,,,,,,,F4_PRECO_TRAVADO: variacao=1.36%
 PETZ3,FAIL_NO_DATA,43,,,,,,,yfinance retornou DataFrame vazio
+AESB3,FAIL_NO_DATA,57,,,,,,,yfinance retornou DataFrame vazio
+BHIA3,FAIL_FILTRO_AUTO,63,,,,,,,F1_DRAWDOWN: -55.8%
+LIGT3,FAIL_FILTRO_AUTO,78,,,,,,,F1_DRAWDOWN: -51.9%
+PCAR3,FAIL_FILTRO_AUTO,83,,,,,,,F3_VOL_COLAPSADO: 28.0% do histórico
+ONCO3,FAIL_FILTRO_AUTO,85,,,,,,,F2_VOL_ALTA: 185.6%
+PORT3,FAIL_NO_DATA,119,,,,,,,yfinance retornou DataFrame vazio
+ELMD3,FAIL_NO_DATA,125,,,,,,,yfinance retornou DataFrame vazio
+SEQL3,FAIL_FILTRO_AUTO,139,,,,,,,F1_DRAWDOWN: -70.3%
+ZAMP3,FAIL_NO_DATA,141,,,,,,,yfinance retornou DataFrame vazio
+BSLI4,FAIL_FILTRO_AUTO,147,,,,,,,F5_GAP_PREGAO: 8 dias consecutivos
+APER3,FAIL_NO_DATA,155,,,,,,,yfinance retornou DataFrame vazio
+PINE14,FAIL_NO_DATA,160,,,,,,,yfinance retornou DataFrame vazio
+PEAB3,FAIL_FILTRO_AUTO,174,,,,,,,F3_VOL_COLAPSADO: 14.9% do histórico
+PEAB4,FAIL_FILTRO_AUTO,175,,,,,,,F4_PRECO_TRAVADO: variacao=1.95%
+MTSA3,FAIL_FILTRO_AUTO,178,,,,,,,F3_VOL_COLAPSADO: 0.0% do histórico
+SRNA3,FAIL_NO_DATA,179,,,,,,,yfinance retornou DataFrame vazio
+TKNO4,FAIL_FILTRO_AUTO,182,,,,,,,F3_VOL_COLAPSADO: 0.0% do histórico
+TELB3,FAIL_FILTRO_AUTO,183,,,,,,,F3_VOL_COLAPSADO: 22.2% do histórico
+CEGR3,FAIL_FILTRO_AUTO,184,,,,,,,F4_PRECO_TRAVADO: variacao=0.67%
+FESA3,FAIL_FILTRO_AUTO,185,,,,,,,F3_VOL_COLAPSADO: 17.5% do histórico
+COCE3,FAIL_FILTRO_AUTO,188,,,,,,,F3_VOL_COLAPSADO: 9.1% do histórico
+CBEE3,FAIL_FILTRO_AUTO,191,,,,,,,F3_VOL_COLAPSADO: 21.9% do histórico
+BRSR5,FAIL_FILTRO_AUTO,192,,,,,,,F3_VOL_COLAPSADO: 26.8% do histórico
