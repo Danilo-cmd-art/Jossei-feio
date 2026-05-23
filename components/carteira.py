@@ -141,7 +141,7 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
             alt.Tooltip("serie:N", title=""),
             alt.Tooltip("retorno:Q", format="+.2%", title="Retorno acum."),
         ],
-    ).properties(height=320)
+    ).properties(height=300)
 
     # Labels de % acumulado nos pontos da Carteira V2
     df_label = df[df["serie"] == "Carteira V2"].copy()
@@ -201,11 +201,9 @@ def render_aba_carteira() -> None:
                 "pregões registrados. Abaixo estão os dados da semana anterior."
             )
             usando_historico = True
-            # Substitui dados de performance e tickers pelo histórico
             performance = historico["performance_diaria"]
             ret_total = historico.get("retorno_acumulado_total", 0.0)
             data_corte = historico["metadata"].get("data_corte_dados", data_corte)
-            # Mostra os tickers históricos na tabela (mais informativo)
             tickers = historico.get("tickers", tickers)
         else:
             st.info("🕐 Performance ainda não disponível — aguardando o primeiro pregão da semana.")
@@ -230,31 +228,28 @@ def render_aba_carteira() -> None:
         )
 
     # ---------------------------------------------------------------------------
-    # Cabeçalho da carteira + retorno em destaque
+    # Cabeçalho da carteira
     # ---------------------------------------------------------------------------
-    # Quando exibindo histórico, usa os metadados da semana histórica
     if usando_historico and historico:
         hist_meta = historico["metadata"]
         n_display = hist_meta.get("n_posicoes", n)
         st.subheader("Carteira da semana anterior")
-        c1, c2, c3, c4 = st.columns([2, 2, 2, 1])
+        c1, c2, c3 = st.columns(3)
         c1.markdown(f"**Formada em:** {fmt_data_br(hist_meta.get('data_formacao'))}")
         c2.markdown(
             f"**Vigência:** {fmt_data_br(hist_meta.get('data_vigencia_inicio'))} → "
             f"{fmt_data_br(hist_meta.get('data_vigencia_fim'))}"
         )
         c3.markdown(f"**Posições:** {n_display} | Peso: {100/n_display:.0f}%")
-        c4.metric("Retorno", fmt_pct(ret_total, sinal=True))
     else:
         st.subheader("Carteira da semana")
-        c1, c2, c3, c4 = st.columns([2, 2, 2, 1])
+        c1, c2, c3 = st.columns(3)
         c1.markdown(f"**Formada em:** {fmt_data_br(meta.get('data_formacao'))}")
         c2.markdown(
             f"**Vigência:** {fmt_data_br(meta.get('data_vigencia_inicio'))} → "
             f"{fmt_data_br(meta.get('data_vigencia_fim'))}"
         )
         c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
-        c4.metric("Retorno", fmt_pct(ret_total, sinal=True))
 
     # ---------------------------------------------------------------------------
     # Tabela de posições individuais
@@ -283,10 +278,14 @@ def render_aba_carteira() -> None:
     # Performance da semana
     # ---------------------------------------------------------------------------
     if performance:
-        st.subheader("Performance da semana")
         bench_df = _carregar_benchmarks()
 
-        # Calcula retornos dos benchmarks no período da carteira
+        # Gráfico primeiro
+        st.subheader("Performance acumulada da semana")
+        _render_grafico(performance, bench_df, data_corte)
+
+        # Métricas numéricas depois
+        st.subheader("Performance numérica")
         ret_ibov = ret_smll = ret_cdi = None
         if bench_df is not None:
             dt_corte = date.fromisoformat(data_corte)
@@ -305,31 +304,26 @@ def render_aba_carteira() -> None:
                     elif nome_var == "cdi":
                         ret_cdi = v
 
-        # Cards: carteira vs benchmarks (cada card mostra o retorno do próprio índice)
-        # Delta = carteira − benchmark (positivo = outperformou, negativo = underperformou)
         col1, col2, col3, col4 = st.columns(4)
-        col1.metric("📊 Carteira V2", fmt_pct(ret_total, sinal=True))
+        col1.metric("Carteira V2", fmt_pct(ret_total, sinal=True))
         col2.metric(
-            "IBOV",
+            "vs IBOV",
             fmt_pct(ret_ibov, sinal=True) if ret_ibov is not None else "—",
             delta=fmt_pct_delta(ret_total - ret_ibov) if ret_ibov is not None else None,
             help="Delta = Carteira − IBOV (positivo: superou o índice)",
         )
         col3.metric(
-            "SMAL11",
+            "vs SMAL11",
             fmt_pct(ret_smll, sinal=True) if ret_smll is not None else "—",
             delta=fmt_pct_delta(ret_total - ret_smll) if ret_smll is not None else None,
             help="Delta = Carteira − SMAL11",
         )
         col4.metric(
-            "CDI",
+            "vs CDI",
             fmt_pct(ret_cdi, sinal=True) if ret_cdi is not None else "—",
             delta=fmt_pct_delta(ret_total - ret_cdi) if ret_cdi is not None else None,
             help="Delta = Carteira − CDI",
         )
-
-        # Gráfico acumulado por dia (com labels nos pontos da carteira)
-        _render_grafico(performance, bench_df, data_corte)
 
     render_footer()
 
