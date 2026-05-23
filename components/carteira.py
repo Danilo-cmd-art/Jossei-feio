@@ -26,6 +26,32 @@ def _carregar_carteira() -> dict | None:
 
 
 @st.cache_data(ttl=300)
+def _carregar_carteira_historico_mais_recente() -> dict | None:
+    """
+    Busca no diretório historico/ o arquivo de carteira mais recente
+    que contenha performance_diaria não vazia.
+    Aceita padrões: carteira_v2_*.json e carteira_*.json
+    """
+    hist_dir = config.HISTORICO_DIR
+    if not hist_dir.exists():
+        return None
+
+    candidatos = list(hist_dir.glob("carteira_v2_*.json")) + list(hist_dir.glob("carteira_*.json"))
+    # Remove duplicatas e ordena por nome (ISO week) decrescente → mais recente primeiro
+    candidatos = sorted(set(candidatos), key=lambda p: p.name, reverse=True)
+
+    for path in candidatos:
+        try:
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            if data.get("performance_diaria"):
+                return data
+        except Exception:
+            continue
+    return None
+
+
+@st.cache_data(ttl=300)
 def _carregar_benchmarks() -> pd.DataFrame | None:
     if not config.BENCHMARKS_PARQUET_PATH.exists():
         return None
@@ -162,6 +188,28 @@ def render_aba_carteira() -> None:
     bootstrap = meta.get("bootstrap_retroativo", False)
     data_corte = meta.get("data_corte_dados", "")
 
+    # ---------------------------------------------------------------------------
+    # Bootstrap de semana anterior: quando a carteira atual não tem pregões ainda
+    # ---------------------------------------------------------------------------
+    usando_historico = False
+    historico: dict | None = None
+    if not performance:
+        historico = _carregar_carteira_historico_mais_recente()
+        if historico and historico.get("performance_diaria"):
+            st.info(
+                "🔄 **Exibindo a última semana completa** — a nova carteira ainda não tem "
+                "pregões registrados. Abaixo estão os dados da semana anterior."
+            )
+            usando_historico = True
+            # Substitui dados de performance e tickers pelo histórico
+            performance = historico["performance_diaria"]
+            ret_total = historico.get("retorno_acumulado_total", 0.0)
+            data_corte = historico["metadata"].get("data_corte_dados", data_corte)
+            # Mostra os tickers históricos na tabela (mais informativo)
+            tickers = historico.get("tickers", tickers)
+        else:
+            st.info("🕐 Performance ainda não disponível — aguardando o primeiro pregão da semana.")
+
     # Badges e alertas
     if bootstrap:
         st.info(
@@ -184,15 +232,29 @@ def render_aba_carteira() -> None:
     # ---------------------------------------------------------------------------
     # Cabeçalho da carteira + retorno em destaque
     # ---------------------------------------------------------------------------
-    st.subheader("Carteira da semana")
-    c1, c2, c3, c4 = st.columns([2, 2, 2, 1])
-    c1.markdown(f"**Formada em:** {fmt_data_br(meta.get('data_formacao'))}")
-    c2.markdown(
-        f"**Vigência:** {fmt_data_br(meta.get('data_vigencia_inicio'))} → "
-        f"{fmt_data_br(meta.get('data_vigencia_fim'))}"
-    )
-    c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
-    c4.metric("Retorno", fmt_pct(ret_total, sinal=True))
+    # Quando exibindo histórico, usa os metadados da semana histórica
+    if usando_historico and historico:
+        hist_meta = historico["metadata"]
+        n_display = hist_meta.get("n_posicoes", n)
+        st.subheader("Carteira da semana anterior")
+        c1, c2, c3, c4 = st.columns([2, 2, 2, 1])
+        c1.markdown(f"**Formada em:** {fmt_data_br(hist_meta.get('data_formacao'))}")
+        c2.markdown(
+            f"**Vigência:** {fmt_data_br(hist_meta.get('data_vigencia_inicio'))} → "
+            f"{fmt_data_br(hist_meta.get('data_vigencia_fim'))}"
+        )
+        c3.markdown(f"**Posições:** {n_display} | Peso: {100/n_display:.0f}%")
+        c4.metric("Retorno", fmt_pct(ret_total, sinal=True))
+    else:
+        st.subheader("Carteira da semana")
+        c1, c2, c3, c4 = st.columns([2, 2, 2, 1])
+        c1.markdown(f"**Formada em:** {fmt_data_br(meta.get('data_formacao'))}")
+        c2.markdown(
+            f"**Vigência:** {fmt_data_br(meta.get('data_vigencia_inicio'))} → "
+            f"{fmt_data_br(meta.get('data_vigencia_fim'))}"
+        )
+        c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
+        c4.metric("Retorno", fmt_pct(ret_total, sinal=True))
 
     # ---------------------------------------------------------------------------
     # Tabela de posições individuais
@@ -268,8 +330,6 @@ def render_aba_carteira() -> None:
 
         # Gráfico acumulado por dia (com labels nos pontos da carteira)
         _render_grafico(performance, bench_df, data_corte)
-    else:
-        st.info("Performance ainda não disponível (primeiro dia ou fora do pregão).")
 
     render_footer()
 
