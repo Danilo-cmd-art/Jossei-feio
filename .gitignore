@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Logs (não versionar — ruído)
+logs/
+*.log
+
+# CSV do Status Invest — upload manual, não versionar
+statusinvest-busca-avancada.csv
+
+# Streamlit cache
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Arquivos temporários do pipeline
+data/*.tmp
+
+# Diagnóstico (grande, não essencial para produção)
+# data/diagnostic_report.json
+# data/diagnostic_report.md

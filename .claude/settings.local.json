@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "PowerShell(gh auth status 2>&1)",
+      "PowerShell(gh --version 2>&1)",
+      "Bash(ls -la \"/mnt/c/Users/Daniela Kyrillos/Documents/Claude First Project/\" 2>/dev/null || echo \"path not found\")",
+      "Bash(python run.py --fase 4)",
+      "Bash(python -c ' *)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(Remove-Item -ErrorAction SilentlyContinue data\\\\backtest_resultado.json, data\\\\backtest_carteiras.json)",
+      "WebSearch",
+      "Bash(python src/build_universe_v2.py)",
+      "Bash(python -m pip install \"streamlit>=1.35.0\" \"altair>=5.3.0\")"
+    ]
+  }
+}

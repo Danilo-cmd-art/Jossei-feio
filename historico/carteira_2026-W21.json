@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "data_formacao": "2026-05-18",
+    "data_corte_dados": "2026-05-15",
+    "data_vigencia_inicio": "2026-05-18",
+    "data_vigencia_fim": "2026-05-22",
+    "bootstrap_retroativo": true,
+    "n_posicoes": 5,
+    "peso_por_posicao": 0.2,
+    "proxima_carteira_oficial": "2026-05-25"
+  },
+  "tickers": [
+    {
+      "ticker": "BMOB3",
+      "rank_na_formacao": 1,
+      "score_na_formacao": 89.1772,
+      "preco_entrada": 25.651813507080078,
+      "preco_atual": 24.770000457763672,
+      "retorno_acumulado": -0.034376,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "DESK3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 86.574,
+      "preco_entrada": 17.719999313354492,
+      "preco_atual": 17.299999237060547,
+      "retorno_acumulado": -0.023702,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "PINE4",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 86.2245,
+      "preco_entrada": 14.109999656677246,
+      "preco_atual": 14.470000267028809,
+      "retorno_acumulado": 0.025514,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "INTB3",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 83.3435,
+      "preco_entrada": 14.649999618530273,
+      "preco_atual": 13.949999809265137,
+      "retorno_acumulado": -0.047782,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "BMGB4",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 80.3061,
+      "preco_entrada": 5.159999847412109,
+      "preco_atual": 5.170000076293945,
+      "retorno_acumulado": 0.001938,
+      "is_stale": false,
+      "peso": 0.2
+    }
+  ],
+  "performance_diaria": [
+    {
+      "data": "2026-05-18",
+      "retorno_dia": -0.007552,
+      "retorno_acumulado": -0.007552
+    },
+    {
+      "data": "2026-05-19",
+      "retorno_dia": -0.019745,
+      "retorno_acumulado": -0.027297
+    },
+    {
+      "data": "2026-05-20",
+      "retorno_dia": 0.025918,
+      "retorno_acumulado": -0.001379
+    },
+    {
+      "data": "2026-05-21",
+      "retorno_dia": -0.001989,
+      "retorno_acumulado": -0.003368
+    },
+    {
+      "data": "2026-05-22",
+      "retorno_dia": -0.012314,
+      "retorno_acumulado": -0.015682
+    }
+  ],
+  "retorno_acumulado_total": -0.015682
+}

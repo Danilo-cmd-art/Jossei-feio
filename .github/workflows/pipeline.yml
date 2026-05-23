@@ -1,0 +1,89 @@
+name: Pipeline Diário V2
+
+on:
+  schedule:
+    # 19h00 BRT = 22h00 UTC  (BRT = UTC-3, sem horário de verão desde 2019)
+    - cron: '0 22 * * 1-5'
+    # 20h00 BRT = 23h00 UTC  (fallback — se o run das 19h falhar)
+    - cron: '0 23 * * 1-5'
+  workflow_dispatch:          # permite rodar manualmente pelo GitHub UI
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20       # aborta se travar
+
+    steps:
+      # -----------------------------------------------------------------------
+      # Setup
+      # -----------------------------------------------------------------------
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1      # shallow clone, mais rápido
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      # -----------------------------------------------------------------------
+      # Idempotência: pula se dados já estão frescos (run das 20h vs 19h)
+      # -----------------------------------------------------------------------
+      - name: Verificar idempotência
+        id: check_fresh
+        run: python src/check_freshness.py
+
+      # -----------------------------------------------------------------------
+      # Pipeline V2 (Fases 2, 3, 4)
+      # -----------------------------------------------------------------------
+      - name: Rodar pipeline V2
+        if: steps.check_fresh.outputs.skip != 'true'
+        run: python run_v2.py
+
+      # -----------------------------------------------------------------------
+      # Histórico real (sextas-feiras apenas)
+      # -----------------------------------------------------------------------
+      - name: Atualizar histórico real (sextas-feiras)
+        if: steps.check_fresh.outputs.skip != 'true'
+        run: |
+          python -c "
+          import datetime
+          hoje = datetime.date.today()
+          if hoje.weekday() == 4:  # 4 = sexta-feira
+              import subprocess
+              resultado = subprocess.run(
+                  ['python', 'src/update_historico_real.py'],
+                  check=False,
+              )
+              exit(resultado.returncode)
+          else:
+              print(f'Hoje é {hoje.strftime(\"%A\")} — histórico real não atualizado.')
+          "
+
+      # -----------------------------------------------------------------------
+      # Commit e push dos artefatos atualizados
+      # -----------------------------------------------------------------------
+      - name: Commit e push dos artefatos
+        if: steps.check_fresh.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ historico/
+          git diff --staged --quiet || git commit -m "chore: atualização automática $(date -u '+%Y-%m-%d %H:%M UTC') [V2]"
+          git push
+
+      # -----------------------------------------------------------------------
+      # Health check — abre Issue se pipeline falhar por 2+ dias úteis
+      # Roda SEMPRE, mesmo se steps anteriores falharam
+      # -----------------------------------------------------------------------
+      - name: Verificar saúde do pipeline
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python src/check_pipeline_health.py

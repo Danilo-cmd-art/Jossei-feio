@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-05-22T18:25:34.128453",
+  "status": "success",
+  "modo": "full_refresh",
+  "ultimo_pregao": "2026-05-22",
+  "tickers_baixados": 50,
+  "tickers_falharam": 0,
+  "tickers_falharam_lista": [],
+  "tickers_stale": [],
+  "tickers_suspeitos": [],
+  "duracao_segundos": 5,
+  "validacao_leve": {
+    "LV1_passou": 50,
+    "LV2_passou": 50,
+    "LV3_passou": 50,
+    "LV4_passou": 50
+  },
+  "warnings": []
+}
