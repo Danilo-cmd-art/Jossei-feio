@@ -277,6 +277,29 @@ def render_aba_carteira() -> None:
         c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
 
     # -----------------------------------------------------------------------
+    # Retorno da CARTEIRA na semana (destaque) — agregado ponderado
+    # -----------------------------------------------------------------------
+    mk1, mk2, mk3 = st.columns([1, 1, 2])
+    mk1.metric(
+        "📊 Retorno da carteira na semana",
+        fmt_pct(ret_total, sinal=True),
+        help="Retorno agregado ponderado (peso igual de 20% por posição).",
+    )
+    # Melhor e pior posição da semana
+    rets_individuais = [t.get("retorno_acumulado", 0.0) for t in tickers]
+    if rets_individuais:
+        idx_best = max(range(len(tickers)), key=lambda i: rets_individuais[i])
+        idx_worst = min(range(len(tickers)), key=lambda i: rets_individuais[i])
+        mk2.metric(
+            f"🏆 Melhor: {tickers[idx_best]['ticker']}",
+            fmt_pct(rets_individuais[idx_best], sinal=True),
+        )
+        mk3.metric(
+            f"📉 Pior: {tickers[idx_worst]['ticker']}",
+            fmt_pct(rets_individuais[idx_worst], sinal=True),
+        )
+
+    # -----------------------------------------------------------------------
     # Tabela de posições individuais
     # -----------------------------------------------------------------------
     rows = []
