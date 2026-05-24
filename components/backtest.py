@@ -43,11 +43,19 @@ def _render_retorno_acumulado(equity_curve: list[dict], periodo: str) -> None:
     df = pd.DataFrame(dados)
     df["data"] = pd.to_datetime(df["data"])
 
-    # Renormaliza para a janela escolhida em RETORNO ACUMULADO (%)
-    base_est  = df["valor_estrategia"].iloc[0]
-    base_ibov = df["valor_ibov"].iloc[0]
-    base_smll = df["valor_smll"].iloc[0]
-    base_cdi  = df["valor_cdi"].iloc[0]
+    # Base canônica do backtest = 100. Quando o usuário filtra para uma janela
+    # parcial (3m/6m/1a), renormalizamos para o primeiro ponto da janela para
+    # que o gráfico exiba o retorno DENTRO da janela escolhida.
+    # Para período "2a" (full), usamos 100 — assim o final do gráfico bate
+    # exatamente com o card 'Retorno acumulado'.
+    janela_completa = len(dados) >= len(equity_curve)
+    if janela_completa:
+        base_est = base_ibov = base_smll = base_cdi = 100.0
+    else:
+        base_est  = df["valor_estrategia"].iloc[0]
+        base_ibov = df["valor_ibov"].iloc[0]
+        base_smll = df["valor_smll"].iloc[0]
+        base_cdi  = df["valor_cdi"].iloc[0]
 
     df["Carteira V2"] = df["valor_estrategia"] / base_est  - 1
     df["IBOV"]        = df["valor_ibov"]       / base_ibov - 1
