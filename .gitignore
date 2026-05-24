@@ -20,8 +20,9 @@ logs/
 # CSV do Status Invest — upload manual, não versionar
 statusinvest-busca-avancada.csv
 
-# Streamlit cache
-.streamlit/
+# Streamlit — só ignora arquivos com segredos, libera o config.toml (tema)
+.streamlit/secrets.toml
+.streamlit/credentials.toml
 
 # IDE
 .vscode/

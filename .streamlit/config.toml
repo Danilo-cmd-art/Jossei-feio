@@ -1,0 +1,13 @@
+[theme]
+base                     = "light"
+primaryColor             = "#1B365D"   # Goldman navy
+backgroundColor          = "#FFFFFF"
+secondaryBackgroundColor = "#F4F4F2"   # bege/cinza quente (sidebar)
+textColor                = "#1A1A1A"
+font                     = "serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

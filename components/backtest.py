@@ -9,6 +9,7 @@ import streamlit as st
 
 import config
 from components.footer import render_footer
+from components.theme import CHART_PALETTE
 from utils.formatters import fmt_data_br, fmt_pct
 
 
@@ -64,12 +65,7 @@ def _render_retorno_acumulado(equity_curve: list[dict], periodo: str) -> None:
         value_name="retorno",
     )
 
-    colors = {
-        "Carteira V2": "#2563eb",
-        "IBOV":        "#6b7280",
-        "SMAL11":      "#9ca3af",
-        "CDI":         "#d1d5db",
-    }
+    colors = {k: CHART_PALETTE[k] for k in ("Carteira V2", "IBOV", "SMAL11", "CDI")}
 
     base = alt.Chart(df_long)
 

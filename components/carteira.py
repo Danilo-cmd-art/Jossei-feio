@@ -10,6 +10,7 @@ import streamlit as st
 
 import config
 from components.footer import render_footer
+from components.theme import CHART_PALETTE, COLORS
 from utils.formatters import fmt_data_br, fmt_pct, fmt_pct_delta, fmt_reais
 
 # Nomes dos dias em PT-BR (independente do locale do browser)
@@ -126,14 +127,9 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
         df[["data", "dia"]].drop_duplicates().sort_values("data")["dia"].tolist()
     )
 
-    colors = {
-        "Carteira V2": "#2563eb",
-        "IBOV":        "#6b7280",
-        "SMAL11":      "#9ca3af",
-        "CDI":         "#d1d5db",
-    }
-    domain    = list(colors.keys())
-    range_c   = list(colors.values())
+    colors  = {k: CHART_PALETTE[k] for k in ("Carteira V2", "IBOV", "SMAL11", "CDI")}
+    domain  = list(colors.keys())
+    range_c = list(colors.values())
 
     base = alt.Chart(df)
 
@@ -171,10 +167,10 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
     labels = alt.Chart(df_label).mark_text(
         align="center",
         baseline="top",     # topo do texto alinhado ao ponto → texto fica abaixo
-        dy=8,               # desloca 8px para baixo
+        dy=10,
         fontSize=11,
         fontWeight="bold",
-        color="#2563eb",
+        color=COLORS["primary"],
     ).encode(
         x=alt.X("dia:O", sort=ordem_dias),
         y=alt.Y("retorno:Q"),

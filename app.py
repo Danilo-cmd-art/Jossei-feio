@@ -17,6 +17,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# Tema visual (aplicar logo após set_page_config)
+from components.theme import aplicar_tema
+aplicar_tema()
+
 # Imports dos componentes
 from components.header import render_header
 from components.carteira import render_aba_carteira
@@ -30,6 +34,15 @@ from components.backtest import render_aba_backtest
 # Sidebar — filtro de período do backtest
 # ---------------------------------------------------------------------------
 with st.sidebar:
+    st.markdown(
+        "<div style='font-family:\"Source Serif Pro\",serif; font-size:1.3rem; "
+        "font-weight:600; color:#1B365D; letter-spacing:-0.01em; margin-bottom:4px;'>"
+        "SmallRadar V2</div>"
+        "<div style='font-size:0.78rem; color:#888; text-transform:uppercase; "
+        "letter-spacing:0.7px; margin-bottom:24px;'>Quantitative Equity Strategy</div>",
+        unsafe_allow_html=True,
+    )
+
     st.header("Configurações")
     periodo = st.radio(
         "Período do backtest",
@@ -43,11 +56,15 @@ with st.sidebar:
         }[x],
     )
     st.divider()
-    st.caption(
-        "**SmallRadar V2**\n\n"
-        "Fórmula: F1 (MMA20/50) + F2 (ROIC>0%) → "
-        "50% Momentum + 30% ROE + 20% CAGR5a\n\n"
-        "Universo: MCAP R$500M–15B"
+    st.markdown(
+        "<div style='font-size:0.82rem; color:#555; line-height:1.6;'>"
+        "<strong style='color:#1B365D;'>Metodologia</strong><br>"
+        "Filtros F1 (MMA 20/50) + F2 (ROIC > 0%)<br>"
+        "Pesos: Momentum 50% · ROE 30% · CAGR 5a 20%<br><br>"
+        "<strong style='color:#1B365D;'>Universo</strong><br>"
+        "Small caps brasileiras — MCAP R$ 500M a R$ 15B"
+        "</div>",
+        unsafe_allow_html=True,
     )
 
 # ---------------------------------------------------------------------------
