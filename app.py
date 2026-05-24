@@ -20,9 +20,11 @@ st.set_page_config(
 # Imports dos componentes
 from components.header import render_header
 from components.carteira import render_aba_carteira
-from components.ranking import render_aba_ranking
 from components.backtest import render_aba_backtest
-from components.historico import render_aba_historico
+
+# Imports preservados (abas ocultas — podem ser reativadas no futuro)
+# from components.ranking import render_aba_ranking
+# from components.historico import render_aba_historico
 
 # ---------------------------------------------------------------------------
 # Sidebar — filtro de período do backtest
@@ -54,20 +56,12 @@ with st.sidebar:
 render_header()
 
 # ---------------------------------------------------------------------------
-# Abas principais
+# Abas principais — Carteira + Backtest (Ranking e Histórico ocultos)
 # ---------------------------------------------------------------------------
-tab1, tab2, tab3, tab4 = st.tabs(
-    ["📋 Carteira", "🏆 Ranking", "📈 Backtest", "📊 Histórico"]
-)
+tab_carteira, tab_backtest = st.tabs(["📋 Carteira", "📈 Backtest"])
 
-with tab1:
+with tab_carteira:
     render_aba_carteira()
 
-with tab2:
-    render_aba_ranking()
-
-with tab3:
+with tab_backtest:
     render_aba_backtest(periodo=periodo)
-
-with tab4:
-    render_aba_historico()

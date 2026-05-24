@@ -15,6 +15,10 @@ from utils.formatters import fmt_data_br, fmt_pct, fmt_pct_delta, fmt_reais
 # Nomes dos dias em PT-BR (independente do locale do browser)
 _DIAS_PT = {0: "Seg", 1: "Ter", 2: "Qua", 3: "Qui", 4: "Sex", 5: "Sáb", 6: "Dom"}
 
+# Simulação de carteira teórica iniciada em 18/05/2026
+VALOR_INICIAL_CARTEIRA = 10_000.0
+DATA_INICIO_SIMULACAO = "18/05/2026"
+
 
 # ---------------------------------------------------------------------------
 # Carregamento de dados
@@ -277,27 +281,41 @@ def render_aba_carteira() -> None:
         c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
 
     # -----------------------------------------------------------------------
-    # Retorno da CARTEIRA na semana (destaque) — agregado ponderado
+    # Retorno da CARTEIRA na semana (destaque) + simulação R$ 10.000
     # -----------------------------------------------------------------------
-    mk1, mk2, mk3 = st.columns([1, 1, 2])
+    valor_atual_carteira = VALOR_INICIAL_CARTEIRA * (1 + ret_total)
+    lucro_prejuizo_rs    = VALOR_INICIAL_CARTEIRA * ret_total
+
+    mk1, mk2, mk3 = st.columns(3)
     mk1.metric(
         "📊 Retorno da carteira na semana",
         fmt_pct(ret_total, sinal=True),
         help="Retorno agregado ponderado (peso igual de 20% por posição).",
     )
-    # Melhor e pior posição da semana
+    mk2.metric(
+        f"💰 Carteira teórica (início em {DATA_INICIO_SIMULACAO})",
+        fmt_reais(valor_atual_carteira),
+        delta=fmt_reais(lucro_prejuizo_rs),
+        help=(
+            f"Valor de uma carteira teórica iniciada com {fmt_reais(VALOR_INICIAL_CARTEIRA)} "
+            f"em {DATA_INICIO_SIMULACAO} aplicando o retorno da estratégia."
+        ),
+    )
+    # Melhor e pior posição da semana (combinadas em uma única coluna)
     rets_individuais = [t.get("retorno_acumulado", 0.0) for t in tickers]
     if rets_individuais:
-        idx_best = max(range(len(tickers)), key=lambda i: rets_individuais[i])
+        idx_best  = max(range(len(tickers)), key=lambda i: rets_individuais[i])
         idx_worst = min(range(len(tickers)), key=lambda i: rets_individuais[i])
-        mk2.metric(
-            f"🏆 Melhor: {tickers[idx_best]['ticker']}",
-            fmt_pct(rets_individuais[idx_best], sinal=True),
-        )
-        mk3.metric(
-            f"📉 Pior: {tickers[idx_worst]['ticker']}",
-            fmt_pct(rets_individuais[idx_worst], sinal=True),
-        )
+        with mk3:
+            sub_a, sub_b = st.columns(2)
+            sub_a.metric(
+                f"🏆 {tickers[idx_best]['ticker']}",
+                fmt_pct(rets_individuais[idx_best], sinal=True),
+            )
+            sub_b.metric(
+                f"📉 {tickers[idx_worst]['ticker']}",
+                fmt_pct(rets_individuais[idx_worst], sinal=True),
+            )
 
     # -----------------------------------------------------------------------
     # Tabela de posições individuais
