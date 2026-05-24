@@ -385,19 +385,41 @@ def render_aba_carteira() -> None:
         fmt_pct(ret_total, sinal=True),
         help="Retorno agregado ponderado da carteira na semana exibida.",
     )
-    mk2.metric(
-        "Carteira teórica",
-        fmt_reais(valor_atual),
-        delta=fmt_reais(lucro_total),
-        delta_color="normal" if lucro_total >= 0 else "inverse",
-        help=(
-            f"Valor de uma carteira teórica iniciada com "
-            f"{fmt_reais(VALOR_INICIAL_CARTEIRA)} em "
-            f"{DATA_INICIO_SIMULACAO.strftime('%d/%m/%Y')}, compondo o retorno "
-            f"de todas as semanas registradas. "
-            f"Acumulado: {fmt_pct(ret_acumulado_geral, sinal=True)}."
-        ),
-    )
+
+    # Card "Carteira teórica" renderizado manualmente
+    # (Streamlit não parseia sinal dentro de strings tipo "R$-156,82")
+    with mk2:
+        cor_delta = COLORS["pos"] if lucro_total >= 0 else COLORS["neg"]
+        arrow     = "▲" if lucro_total >= 0 else "▼"
+        sinal     = "+" if lucro_total >= 0 else "−"
+        valor_abs = fmt_reais(abs(lucro_total))
+        st.markdown(
+            f"""
+            <div style='background:#FFFFFF; border:1px solid #DDD8CE;
+                        border-radius:2px; padding:18px 22px;
+                        height:100%;'>
+              <div style='font-size:0.76rem; color:#4A4A4A;
+                          text-transform:uppercase; letter-spacing:0.7px;
+                          font-weight:500;'
+                   title='Valor de uma carteira teórica iniciada com {fmt_reais(VALOR_INICIAL_CARTEIRA)} em {DATA_INICIO_SIMULACAO.strftime("%d/%m/%Y")}, compondo o retorno de todas as semanas registradas. Acumulado: {fmt_pct(ret_acumulado_geral, sinal=True)}.'>
+                Carteira teórica
+              </div>
+              <div style='font-family:"Source Serif Pro",Georgia,serif;
+                          font-size:1.95rem; font-weight:600; color:#1A1A1A;
+                          margin-top:6px; line-height:1.1;
+                          font-feature-settings:"tnum" 1;'>
+                {fmt_reais(valor_atual)}
+              </div>
+              <div style='font-size:0.85rem; color:{cor_delta};
+                          font-weight:500; margin-top:6px;
+                          font-feature-settings:"tnum" 1;'>
+                {arrow} {sinal}{valor_abs}
+              </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
     if idx_best is not None:
         mk3.metric(
             f"Melhor · {tickers[idx_best]['ticker']}",
@@ -427,7 +449,8 @@ def render_aba_carteira() -> None:
             "Entrada (R$)":     ent,
             "Atual (R$)":       atu,
             "Δ (R$)":           delta_rs,
-            "Retorno":          ret,
+            # Retorno multiplicado por 100 — Streamlit NumberColumn não faz isso sozinho
+            "Retorno (%)":      ret * 100,
         })
 
     df_pos = pd.DataFrame(rows)
@@ -439,7 +462,7 @@ def render_aba_carteira() -> None:
             "Ticker": st.column_config.TextColumn(width="small"),
             "Score": st.column_config.NumberColumn(
                 "Score",
-                help="Score na formação da carteira (0–100). "
+                help="Score na formação (0–100). "
                      "Composto por 50% Momentum + 30% ROE + 20% CAGR 5a.",
                 format="%.1f",
             ),
@@ -449,7 +472,8 @@ def render_aba_carteira() -> None:
                 format="R$ %+.2f",
                 help="Variação absoluta do preço desde a entrada.",
             ),
-            "Retorno":      st.column_config.NumberColumn(
+            "Retorno (%)":  st.column_config.NumberColumn(
+                "Retorno",
                 format="%+.2f%%",
                 help="Retorno acumulado da posição na semana.",
             ),
@@ -509,6 +533,12 @@ def render_aba_carteira() -> None:
             lambda r: f"{fmt_data_br(r['vig_inicio'])} → {fmt_data_br(r['vig_fim'])}",
             axis=1,
         )
+        # Multiplica por 100 — NumberColumn não converte decimal → percentual
+        for col in ("ret", "vs_ibov", "vs_smll", "vs_cdi"):
+            df_hist_display[col] = df_hist_display[col].apply(
+                lambda v: v * 100 if v is not None else None
+            )
+
         df_hist_display = df_hist_display[
             ["Vigência", "ret", "vs_ibov", "vs_smll", "vs_cdi", "valor"]
         ].rename(columns={
@@ -529,7 +559,10 @@ def render_aba_carteira() -> None:
                     format="%+.2f%%",
                     help="Retorno da semana.",
                 ),
-                "vs IBOV":   st.column_config.NumberColumn(format="%+.2f%%"),
+                "vs IBOV":   st.column_config.NumberColumn(
+                    format="%+.2f%%",
+                    help="Delta vs IBOV na semana (Carteira − IBOV).",
+                ),
                 "vs SMAL11": st.column_config.NumberColumn(format="%+.2f%%"),
                 "vs CDI":    st.column_config.NumberColumn(format="%+.2f%%"),
                 "Carteira (R$)": st.column_config.NumberColumn(
