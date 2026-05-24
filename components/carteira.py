@@ -1,8 +1,8 @@
-"""Aba 1 — Carteira da semana (V2)."""
+"""Aba Carteira — versão editorial (sem emojis, com histórico semanal e carteira teórica composta)."""
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, datetime, timedelta
 
 import altair as alt
 import pandas as pd
@@ -11,18 +11,18 @@ import streamlit as st
 import config
 from components.footer import render_footer
 from components.theme import CHART_PALETTE, COLORS
-from utils.formatters import fmt_data_br, fmt_pct, fmt_pct_delta, fmt_reais
+from utils.formatters import fmt_data_br, fmt_pct, fmt_reais
 
 # Nomes dos dias em PT-BR (independente do locale do browser)
 _DIAS_PT = {0: "Seg", 1: "Ter", 2: "Qua", 3: "Qui", 4: "Sex", 5: "Sáb", 6: "Dom"}
 
 # Simulação de carteira teórica iniciada em 18/05/2026
 VALOR_INICIAL_CARTEIRA = 10_000.0
-DATA_INICIO_SIMULACAO = "18/05/2026"
+DATA_INICIO_SIMULACAO  = date(2026, 5, 18)
 
 
 # ---------------------------------------------------------------------------
-# Carregamento de dados
+# Carregamento
 # ---------------------------------------------------------------------------
 
 @st.cache_data(ttl=300)
@@ -33,28 +33,46 @@ def _carregar_carteira() -> dict | None:
         return json.load(f)
 
 
-@st.cache_data(ttl=60)          # TTL curto para pegar atualizações da semana
-def _carregar_historico_com_performance() -> dict | None:
+@st.cache_data(ttl=60)
+def _carregar_todos_historicos() -> list[dict]:
     """
-    Varre historico/ e retorna o arquivo mais recente que tenha
-    performance_diaria não-vazia. Aceita carteira*.json (qualquer prefixo).
+    Lê todos os arquivos historico/carteira*.json com performance_diaria não-vazia.
+    Retorna ordenado cronologicamente (mais antigo primeiro) e sem duplicatas
+    de mesma semana ISO.
     """
     hist_dir = config.HISTORICO_DIR
     if not hist_dir.exists():
-        return None
+        return []
 
-    # Ordena por nome decrescente — nomes ISO-week garantem ordem cronológica
-    candidatos = sorted(hist_dir.glob("carteira*.json"), key=lambda p: p.name, reverse=True)
-
-    for path in candidatos:
+    arquivos = list(hist_dir.glob("carteira*.json"))
+    semana_data: dict[str, dict] = {}
+    for path in arquivos:
         try:
             with open(path, encoding="utf-8") as f:
-                data = json.load(f)
-            if data.get("performance_diaria"):   # lista não-vazia = há pregões
-                return data
+                d = json.load(f)
+            if not d.get("performance_diaria"):
+                continue
+            meta = d.get("metadata", {})
+            chave = meta.get("data_vigencia_inicio") or meta.get("data_formacao") or path.stem
+            # Mantém o mais "completo" (mais pregões) se duplicar
+            existente = semana_data.get(chave)
+            if (existente is None or
+                len(d["performance_diaria"]) > len(existente["performance_diaria"])):
+                semana_data[chave] = d
         except Exception:
             continue
-    return None
+
+    return sorted(
+        semana_data.values(),
+        key=lambda x: x["metadata"].get("data_vigencia_inicio", ""),
+    )
+
+
+@st.cache_data(ttl=60)
+def _carregar_historico_com_performance() -> dict | None:
+    """Retorna o histórico mais recente com performance_diaria não-vazia."""
+    historicos = _carregar_todos_historicos()
+    return historicos[-1] if historicos else None
 
 
 @st.cache_data(ttl=300)
@@ -67,28 +85,89 @@ def _carregar_benchmarks() -> pd.DataFrame | None:
 
 
 # ---------------------------------------------------------------------------
-# Gráfico de performance acumulada
+# Cálculos auxiliares
 # ---------------------------------------------------------------------------
 
-def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data_corte: str) -> None:
+def _calcular_retornos_benchmarks(
+    bench_df: pd.DataFrame | None,
+    data_inicio_iso: str,
+    data_fim_iso: str,
+) -> dict[str, float | None]:
+    """Retorna {ibov, smll, cdi} acumulados na janela ]inicio, fim]."""
+    out: dict[str, float | None] = {"ibov": None, "smll": None, "cdi": None}
+    if bench_df is None:
+        return out
+    dt_ini = date.fromisoformat(data_inicio_iso[:10])
+    dt_fim = date.fromisoformat(data_fim_iso[:10])
+    for col in ("ibov", "smll", "cdi"):
+        if col in bench_df.columns:
+            janela = bench_df[
+                (bench_df["date"].dt.date > dt_ini) &
+                (bench_df["date"].dt.date <= dt_fim)
+            ][col].dropna()
+            out[col] = float((1 + janela).prod() - 1) if not janela.empty else None
+    return out
+
+
+def _historico_semanas_resumido(
+    historicos: list[dict],
+    bench_df: pd.DataFrame | None,
+) -> pd.DataFrame:
     """
-    Gráfico de linha com:
-    - Eixo X: dias da semana em PT-BR (Seg 18/05 …)
-    - Labels de % acumulado ABAIXO de cada ponto da Carteira V2
-    - Linha de base em 0 %
-    - Benchmarks (IBOV, SMAL11, CDI) quando disponíveis
+    Constrói tabela das últimas semanas + valor cumulativo da carteira teórica.
+    Colunas: Semana, Vigência, Retorno, vs IBOV, vs SMAL11, vs CDI, Valor teórico
     """
+    if not historicos:
+        return pd.DataFrame()
+
+    valor_acumulado = VALOR_INICIAL_CARTEIRA
+    rows = []
+
+    for h in historicos:
+        meta = h["metadata"]
+        ret_sem = h.get("retorno_acumulado_total", 0.0)
+        bench   = _calcular_retornos_benchmarks(
+            bench_df,
+            meta.get("data_corte_dados", ""),
+            h["performance_diaria"][-1]["data"],
+        )
+        valor_acumulado *= (1 + ret_sem)
+
+        rows.append({
+            "vig_inicio": meta.get("data_vigencia_inicio"),
+            "vig_fim":    meta.get("data_vigencia_fim"),
+            "ret":        ret_sem,
+            "vs_ibov":    (ret_sem - bench["ibov"]) if bench["ibov"] is not None else None,
+            "vs_smll":    (ret_sem - bench["smll"]) if bench["smll"] is not None else None,
+            "vs_cdi":     (ret_sem - bench["cdi"])  if bench["cdi"]  is not None else None,
+            "valor":      valor_acumulado,
+        })
+
+    return pd.DataFrame(rows)
+
+
+def _proxima_segunda() -> date:
+    """Próxima segunda-feira a partir de hoje (exclusive)."""
+    hoje = date.today()
+    dias = (7 - hoje.weekday()) % 7 or 7
+    return hoje + timedelta(days=dias)
+
+
+# ---------------------------------------------------------------------------
+# Gráfico de performance acumulada (semana atual ou histórica)
+# ---------------------------------------------------------------------------
+
+def _render_grafico_semana(
+    performance: list[dict],
+    bench_df: pd.DataFrame | None,
+    data_corte: str,
+) -> None:
     if not performance:
-        st.info("Nenhum pregão de performance disponível ainda.")
         return
 
     rows = []
     for p in performance:
-        rows.append({
-            "data": p["data"],
-            "serie": "Carteira V2",
-            "retorno": p["retorno_acumulado"],
-        })
+        rows.append({"data": p["data"], "serie": "Carteira V2", "retorno": p["retorno_acumulado"]})
         if "benchmarks" in p:
             b = p["benchmarks"]
             for nome, key in [("IBOV", "ibov"), ("SMAL11", "smll"), ("CDI", "cdi")]:
@@ -96,7 +175,6 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
                 if v is not None:
                     rows.append({"data": p["data"], "serie": nome, "retorno": v})
 
-    # Se não havia benchmarks embutidos, calcula do parquet
     if len(rows) <= len(performance) and bench_df is not None:
         dt_corte = date.fromisoformat(data_corte)
         for p in performance:
@@ -107,22 +185,19 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
                         (bench_df["date"].dt.date > dt_corte) &
                         (bench_df["date"].dt.date <= dt)
                     ][col].dropna()
-                    ret_acum = float(((1 + janela).prod() - 1)) if not janela.empty else 0.0
+                    ret_acum = float((1 + janela).prod() - 1) if not janela.empty else 0.0
                     rows.append({"data": p["data"], "serie": nome, "retorno": ret_acum})
 
     df = pd.DataFrame(rows)
     if df.empty:
         return
 
-    # Normaliza para data e mantém apenas o último valor por (dia, série)
     df["data"] = pd.to_datetime(df["data"]).dt.normalize()
     df = df.groupby(["data", "serie"], as_index=False).last()
 
-    # Rótulo do eixo X: "Seg 18/05" — forçado em PT-BR
     df["dia"] = df["data"].apply(
         lambda d: f"{_DIAS_PT.get(d.dayofweek, '')} {d.strftime('%d/%m')}"
     )
-    # Ordem explícita dos dias (preserva sequência cronológica)
     ordem_dias = (
         df[["data", "dia"]].drop_duplicates().sort_values("data")["dia"].tolist()
     )
@@ -132,28 +207,27 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
     range_c = list(colors.values())
 
     base = alt.Chart(df)
-
-    linhas = base.mark_line(point=alt.OverlayMarkDef(filled=True, size=60)).encode(
+    linhas = base.mark_line(point=alt.OverlayMarkDef(filled=True, size=55)).encode(
         x=alt.X(
             "dia:O",
             sort=ordem_dias,
             title="",
-            axis=alt.Axis(labelAngle=0),
+            axis=alt.Axis(labelAngle=0, labelColor=COLORS["muted"]),
         ),
         y=alt.Y(
             "retorno:Q",
-            title="Retorno acumulado",
-            axis=alt.Axis(format=".1%"),
+            title="",
+            axis=alt.Axis(format=".1%", labelColor=COLORS["muted"]),
         ),
         color=alt.Color(
             "serie:N",
             scale=alt.Scale(domain=domain, range=range_c),
-            legend=alt.Legend(title=""),
+            legend=alt.Legend(title="", labelColor=COLORS["ink"], labelFontSize=12),
         ),
         strokeWidth=alt.condition(
             alt.datum.serie == "Carteira V2",
-            alt.value(3),
-            alt.value(1.5),
+            alt.value(2.5),
+            alt.value(1.2),
         ),
         tooltip=[
             alt.Tooltip("dia:O",      title="Dia"),
@@ -162,15 +236,15 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
         ],
     ).properties(height=320)
 
-    # Labels ABAIXO de cada ponto da Carteira V2
     df_label = df[df["serie"] == "Carteira V2"].copy()
     labels = alt.Chart(df_label).mark_text(
         align="center",
-        baseline="top",     # topo do texto alinhado ao ponto → texto fica abaixo
-        dy=10,
+        baseline="top",
+        dy=12,
         fontSize=11,
         fontWeight="bold",
         color=COLORS["primary"],
+        font="Inter",
     ).encode(
         x=alt.X("dia:O", sort=ordem_dias),
         y=alt.Y("retorno:Q"),
@@ -178,10 +252,21 @@ def _render_grafico(performance: list[dict], bench_df: pd.DataFrame | None, data
     )
 
     baseline = alt.Chart(pd.DataFrame({"y": [0]})).mark_rule(
-        strokeDash=[4, 4], color="gray", opacity=0.5
+        strokeDash=[4, 4], color=COLORS["muted_2"], opacity=0.6
     ).encode(y="y:Q")
 
     st.altair_chart(linhas + baseline + labels, use_container_width=True)
+
+
+# ---------------------------------------------------------------------------
+# Banner editorial (substitui st.info azul)
+# ---------------------------------------------------------------------------
+
+def _banner_editorial(texto: str) -> None:
+    st.markdown(
+        f"<div class='editorial-banner'>{texto}</div>",
+        unsafe_allow_html=True,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -192,10 +277,7 @@ def render_aba_carteira() -> None:
     carteira = _carregar_carteira()
 
     if carteira is None:
-        st.error(
-            "Carteira V2 ainda não gerada. "
-            "Execute `python run_v2.py --fase 3` primeiro."
-        )
+        st.error("Carteira V2 ainda não gerada.")
         render_footer()
         return
 
@@ -208,184 +290,255 @@ def render_aba_carteira() -> None:
     data_corte  = meta.get("data_corte_dados", "")
 
     # -----------------------------------------------------------------------
-    # Bootstrap: quando a semana atual ainda não tem pregões, mostra a última
-    # semana completa do historico (com banner informativo)
+    # Bootstrap: se a semana atual não tem pregões, usa último histórico
     # -----------------------------------------------------------------------
-    historico: dict | None = None
+    historicos = _carregar_todos_historicos()
+    historico_atual: dict | None = None
     usando_historico = False
 
     if not performance:
-        historico = _carregar_historico_com_performance()
-        if historico:
-            st.info(
-                "🔄 **Exibindo a última semana com pregões registrados** — "
-                "a carteira atual ainda não tem dados de performance disponíveis."
-            )
+        historico_atual = historicos[-1] if historicos else None
+        if historico_atual:
             usando_historico = True
-            # Usa dados históricos para performance e tabela
-            performance = historico["performance_diaria"]
-            ret_total   = historico.get("retorno_acumulado_total", 0.0)
-            data_corte  = historico["metadata"].get("data_corte_dados", data_corte)
-            tickers     = historico.get("tickers", tickers)
-        else:
-            st.info(
-                "🕐 **Performance ainda não disponível** — "
-                "aguardando o primeiro pregão da semana."
-            )
+            performance = historico_atual["performance_diaria"]
+            ret_total   = historico_atual.get("retorno_acumulado_total", 0.0)
+            data_corte  = historico_atual["metadata"].get("data_corte_dados", data_corte)
+            tickers     = historico_atual.get("tickers", tickers)
 
-    # Badge de bootstrap retroativo (carteira gerada retroativamente)
     if bootstrap:
-        st.info(
-            f"🔄 **Carteira retroativa de bootstrap** — formada com dados até "
-            f"{fmt_data_br(data_corte)}. "
-            f"Próxima carteira oficial: "
-            f"{fmt_data_br(meta.get('proxima_carteira_oficial'))}."
+        _banner_editorial(
+            f"Carteira retroativa de bootstrap · dados até {fmt_data_br(data_corte)}. "
+            f"Próxima carteira oficial em {fmt_data_br(meta.get('proxima_carteira_oficial'))}."
         )
 
     if n == 0:
-        st.error("🚫 Nenhuma ação atendeu aos filtros F1+F2 esta semana. Sem recomendação.")
+        st.warning("Nenhuma ação atendeu aos filtros F1+F2 esta semana. Sem recomendação.")
         render_footer()
         return
-    elif n < 5:
-        st.warning(
-            f"⚠️ Apenas {n} ações passaram nos filtros esta semana. "
-            f"Peso por posição: {100/n:.1f}%"
-        )
 
     # -----------------------------------------------------------------------
-    # Cabeçalho
+    # Cabeçalho da semana
     # -----------------------------------------------------------------------
-    if usando_historico and historico:
-        h_meta     = historico["metadata"]
-        n_display  = h_meta.get("n_posicoes", n)
-        st.subheader("Carteira da semana anterior")
-        c1, c2, c3 = st.columns(3)
-        c1.markdown(f"**Formada em:** {fmt_data_br(h_meta.get('data_formacao'))}")
-        c2.markdown(
-            f"**Vigência:** {fmt_data_br(h_meta.get('data_vigencia_inicio'))} → "
-            f"{fmt_data_br(h_meta.get('data_vigencia_fim'))}"
-        )
-        c3.markdown(f"**Posições:** {n_display} | Peso: {100/n_display:.0f}%")
-    else:
-        st.subheader("Carteira da semana")
-        c1, c2, c3 = st.columns(3)
-        c1.markdown(f"**Formada em:** {fmt_data_br(meta.get('data_formacao'))}")
-        c2.markdown(
-            f"**Vigência:** {fmt_data_br(meta.get('data_vigencia_inicio'))} → "
-            f"{fmt_data_br(meta.get('data_vigencia_fim'))}"
-        )
-        c3.markdown(f"**Posições:** {n} | Peso: {100/n:.0f}%")
+    h_meta_display = historico_atual["metadata"] if usando_historico else meta
+    n_display      = h_meta_display.get("n_posicoes", n)
+    titulo         = "Carteira da semana" + (" anterior" if usando_historico else "")
+    proxima_seg    = _proxima_segunda()
 
-    # -----------------------------------------------------------------------
-    # Retorno da CARTEIRA na semana (destaque) + simulação R$ 10.000
-    # -----------------------------------------------------------------------
-    valor_atual_carteira = VALOR_INICIAL_CARTEIRA * (1 + ret_total)
-    lucro_prejuizo_rs    = VALOR_INICIAL_CARTEIRA * ret_total
+    tag_html = ""
+    if usando_historico:
+        tag_html = (
+            "<span class='tag-inline' style='margin-left:14px;'>"
+            "Exibindo semana anterior</span>"
+        )
 
-    mk1, mk2, mk3 = st.columns(3)
-    mk1.metric(
-        "📊 Retorno da carteira na semana",
-        fmt_pct(ret_total, sinal=True),
-        help="Retorno agregado ponderado (peso igual de 20% por posição).",
+    st.markdown(
+        f"""
+        <div style='display:flex; align-items:flex-end;
+                    justify-content:space-between;
+                    border-bottom:1px solid #DDD8CE; padding-bottom:14px;
+                    margin-bottom:22px; flex-wrap:wrap; gap:14px;'>
+          <div>
+            <h3 style='margin:0; border-left:none; padding-left:0;'>
+              {titulo}{tag_html}
+            </h3>
+            <div style='font-size:0.85rem; color:#4A4A4A; margin-top:6px;'>
+              Vigência {fmt_data_br(h_meta_display.get('data_vigencia_inicio'))}
+              → {fmt_data_br(h_meta_display.get('data_vigencia_fim'))}
+              · {n_display} posições · peso {100/n_display:.0f}%
+            </div>
+          </div>
+          <div style='text-align:right;'>
+            <div style='font-size:0.7rem; text-transform:uppercase;
+                        letter-spacing:0.9px; color:#7A6F4D; font-weight:600;'>
+              Próxima reponderação
+            </div>
+            <div style='font-size:0.95rem; color:#1A1A1A; font-weight:500;
+                        margin-top:2px;'>
+              Seg {proxima_seg.strftime('%d/%m/%Y')}
+            </div>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
-    mk2.metric(
-        f"💰 Carteira teórica (início em {DATA_INICIO_SIMULACAO})",
-        fmt_reais(valor_atual_carteira),
-        delta=fmt_reais(lucro_prejuizo_rs),
-        help=(
-            f"Valor de uma carteira teórica iniciada com {fmt_reais(VALOR_INICIAL_CARTEIRA)} "
-            f"em {DATA_INICIO_SIMULACAO} aplicando o retorno da estratégia."
-        ),
-    )
-    # Melhor e pior posição da semana (combinadas em uma única coluna)
+
+    # -----------------------------------------------------------------------
+    # Métricas de destaque (sem emojis)
+    # -----------------------------------------------------------------------
+    # Carteira teórica composta multi-semanas (todos os históricos cronológicos)
+    valor_atual = VALOR_INICIAL_CARTEIRA
+    for h in historicos:
+        valor_atual *= (1 + h.get("retorno_acumulado_total", 0.0))
+    lucro_total = valor_atual - VALOR_INICIAL_CARTEIRA
+    ret_acumulado_geral = lucro_total / VALOR_INICIAL_CARTEIRA if VALOR_INICIAL_CARTEIRA else 0
+
     rets_individuais = [t.get("retorno_acumulado", 0.0) for t in tickers]
     if rets_individuais:
         idx_best  = max(range(len(tickers)), key=lambda i: rets_individuais[i])
         idx_worst = min(range(len(tickers)), key=lambda i: rets_individuais[i])
-        with mk3:
-            sub_a, sub_b = st.columns(2)
-            sub_a.metric(
-                f"🏆 {tickers[idx_best]['ticker']}",
-                fmt_pct(rets_individuais[idx_best], sinal=True),
-            )
-            sub_b.metric(
-                f"📉 {tickers[idx_worst]['ticker']}",
-                fmt_pct(rets_individuais[idx_worst], sinal=True),
-            )
+    else:
+        idx_best = idx_worst = None
+
+    mk1, mk2, mk3, mk4 = st.columns(4)
+    mk1.metric(
+        "Retorno na semana",
+        fmt_pct(ret_total, sinal=True),
+        help="Retorno agregado ponderado da carteira na semana exibida.",
+    )
+    mk2.metric(
+        "Carteira teórica",
+        fmt_reais(valor_atual),
+        delta=fmt_reais(lucro_total),
+        delta_color="normal" if lucro_total >= 0 else "inverse",
+        help=(
+            f"Valor de uma carteira teórica iniciada com "
+            f"{fmt_reais(VALOR_INICIAL_CARTEIRA)} em "
+            f"{DATA_INICIO_SIMULACAO.strftime('%d/%m/%Y')}, compondo o retorno "
+            f"de todas as semanas registradas. "
+            f"Acumulado: {fmt_pct(ret_acumulado_geral, sinal=True)}."
+        ),
+    )
+    if idx_best is not None:
+        mk3.metric(
+            f"Melhor · {tickers[idx_best]['ticker']}",
+            fmt_pct(rets_individuais[idx_best], sinal=True),
+        )
+    if idx_worst is not None:
+        mk4.metric(
+            f"Pior · {tickers[idx_worst]['ticker']}",
+            fmt_pct(rets_individuais[idx_worst], sinal=True),
+        )
 
     # -----------------------------------------------------------------------
-    # Tabela de posições individuais
+    # Tabela de posições (sem coluna Status; com Δ R$ e cores no retorno)
     # -----------------------------------------------------------------------
+    st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
+    st.markdown("### Posições")
+
     rows = []
     for t in tickers:
-        ret    = t.get("retorno_acumulado", 0.0)
-        status = "⚠️ Stale" if t.get("is_stale") else "✅ Ativo"
+        ret = t.get("retorno_acumulado", 0.0)
+        ent = t.get("preco_entrada") or 0
+        atu = t.get("preco_atual") or 0
+        delta_rs = atu - ent if (ent and atu) else None
         rows.append({
-            "Ticker":            t["ticker"],
-            "Score (formação)":  fmt_score_val(t.get("score_na_formacao")),
-            "Entrada":           fmt_reais(t.get("preco_entrada")),
-            "Atual":             fmt_reais(t.get("preco_atual")),
-            "Retorno Acum.":     fmt_pct(ret, sinal=True),
-            "Status":            status,
+            "Ticker":           t["ticker"],
+            "Score":            float(t.get("score_na_formacao") or 0),
+            "Entrada (R$)":     ent,
+            "Atual (R$)":       atu,
+            "Δ (R$)":           delta_rs,
+            "Retorno":          ret,
         })
 
-    st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+    df_pos = pd.DataFrame(rows)
+    st.dataframe(
+        df_pos,
+        hide_index=True,
+        use_container_width=True,
+        column_config={
+            "Ticker": st.column_config.TextColumn(width="small"),
+            "Score": st.column_config.NumberColumn(
+                "Score",
+                help="Score na formação da carteira (0–100). "
+                     "Composto por 50% Momentum + 30% ROE + 20% CAGR 5a.",
+                format="%.1f",
+            ),
+            "Entrada (R$)": st.column_config.NumberColumn(format="R$ %.2f"),
+            "Atual (R$)":   st.column_config.NumberColumn(format="R$ %.2f"),
+            "Δ (R$)":       st.column_config.NumberColumn(
+                format="R$ %+.2f",
+                help="Variação absoluta do preço desde a entrada.",
+            ),
+            "Retorno":      st.column_config.NumberColumn(
+                format="%+.2f%%",
+                help="Retorno acumulado da posição na semana.",
+            ),
+        },
+    )
+
+    # Como Streamlit não suporta cores condicionais nativas em columns,
+    # convertemos a coluna Retorno em string formatada com sinal/percentual.
+    # (Já feita via column_config acima.)
 
     # -----------------------------------------------------------------------
-    # Performance da semana (gráfico + métricas numéricas)
+    # Performance da semana (gráfico + comparação com benchmarks)
     # -----------------------------------------------------------------------
     if performance:
+        st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
+        st.markdown("### Performance da semana")
+
         bench_df = _carregar_benchmarks()
+        _render_grafico_semana(performance, bench_df, data_corte)
 
-        # — Gráfico acumulado por dia —
-        st.subheader("Performance acumulada da semana")
-        _render_grafico(performance, bench_df, data_corte)
-
-        # — Métricas numéricas —
-        st.subheader("Performance numérica")
-        ret_ibov = ret_smll = ret_cdi = None
-        if bench_df is not None:
-            dt_corte = date.fromisoformat(data_corte)
-            dt_fim   = date.fromisoformat(performance[-1]["data"][:10])
-            for nome_col, nome_var in [("ibov", "ibov"), ("smll", "smll"), ("cdi", "cdi")]:
-                if nome_col in bench_df.columns:
-                    janela = bench_df[
-                        (bench_df["date"].dt.date > dt_corte) &
-                        (bench_df["date"].dt.date <= dt_fim)
-                    ][nome_col].dropna()
-                    v = float(((1 + janela).prod() - 1)) if not janela.empty else None
-                    if nome_var == "ibov":
-                        ret_ibov = v
-                    elif nome_var == "smll":
-                        ret_smll = v
-                    elif nome_var == "cdi":
-                        ret_cdi = v
-
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Carteira V2", fmt_pct(ret_total, sinal=True))
-        col2.metric(
+        # Cards de comparação (deltas) — sem repetir a Carteira V2
+        b = _calcular_retornos_benchmarks(
+            bench_df,
+            data_corte,
+            performance[-1]["data"],
+        )
+        c1, c2, c3 = st.columns(3)
+        c1.metric(
             "vs IBOV",
-            fmt_pct(ret_ibov, sinal=True) if ret_ibov is not None else "—",
-            delta=fmt_pct_delta(ret_total - ret_ibov) if ret_ibov is not None else None,
-            help="Delta = Carteira − IBOV (positivo: superou o índice)",
+            fmt_pct(b["ibov"], sinal=True) if b["ibov"] is not None else "—",
+            delta=fmt_pct(ret_total - b["ibov"], sinal=True) if b["ibov"] is not None else None,
+            help="Card mostra o retorno do índice na semana; delta é Carteira − Índice.",
         )
-        col3.metric(
+        c2.metric(
             "vs SMAL11",
-            fmt_pct(ret_smll, sinal=True) if ret_smll is not None else "—",
-            delta=fmt_pct_delta(ret_total - ret_smll) if ret_smll is not None else None,
-            help="Delta = Carteira − SMAL11",
+            fmt_pct(b["smll"], sinal=True) if b["smll"] is not None else "—",
+            delta=fmt_pct(ret_total - b["smll"], sinal=True) if b["smll"] is not None else None,
         )
-        col4.metric(
+        c3.metric(
             "vs CDI",
-            fmt_pct(ret_cdi, sinal=True) if ret_cdi is not None else "—",
-            delta=fmt_pct_delta(ret_total - ret_cdi) if ret_cdi is not None else None,
-            help="Delta = Carteira − CDI",
+            fmt_pct(b["cdi"], sinal=True) if b["cdi"] is not None else "—",
+            delta=fmt_pct(ret_total - b["cdi"], sinal=True) if b["cdi"] is not None else None,
+        )
+
+    # -----------------------------------------------------------------------
+    # Histórico semanal
+    # -----------------------------------------------------------------------
+    if historicos:
+        st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
+        st.markdown("### Histórico semanal")
+        bench_df = _carregar_benchmarks()
+        df_hist  = _historico_semanas_resumido(historicos, bench_df)
+
+        # Mostra mais recentes em cima
+        df_hist_display = df_hist.iloc[::-1].copy()
+        df_hist_display["Vigência"] = df_hist_display.apply(
+            lambda r: f"{fmt_data_br(r['vig_inicio'])} → {fmt_data_br(r['vig_fim'])}",
+            axis=1,
+        )
+        df_hist_display = df_hist_display[
+            ["Vigência", "ret", "vs_ibov", "vs_smll", "vs_cdi", "valor"]
+        ].rename(columns={
+            "ret":     "Retorno",
+            "vs_ibov": "vs IBOV",
+            "vs_smll": "vs SMAL11",
+            "vs_cdi":  "vs CDI",
+            "valor":   "Carteira (R$)",
+        })
+
+        st.dataframe(
+            df_hist_display,
+            hide_index=True,
+            use_container_width=True,
+            column_config={
+                "Vigência": st.column_config.TextColumn(width="medium"),
+                "Retorno": st.column_config.NumberColumn(
+                    format="%+.2f%%",
+                    help="Retorno da semana.",
+                ),
+                "vs IBOV":   st.column_config.NumberColumn(format="%+.2f%%"),
+                "vs SMAL11": st.column_config.NumberColumn(format="%+.2f%%"),
+                "vs CDI":    st.column_config.NumberColumn(format="%+.2f%%"),
+                "Carteira (R$)": st.column_config.NumberColumn(
+                    format="R$ %.2f",
+                    help=f"Valor cumulativo de uma carteira teórica iniciada "
+                         f"com R$ {VALOR_INICIAL_CARTEIRA:.0f} em "
+                         f"{DATA_INICIO_SIMULACAO.strftime('%d/%m/%Y')}.",
+                ),
+            },
         )
 
     render_footer()
-
-
-def fmt_score_val(v) -> str:
-    if v is None:
-        return "—"
-    return f"{float(v):.1f}"

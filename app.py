@@ -75,7 +75,7 @@ render_header()
 # ---------------------------------------------------------------------------
 # Abas principais — Carteira + Backtest (Ranking e Histórico ocultos)
 # ---------------------------------------------------------------------------
-tab_carteira, tab_backtest = st.tabs(["📋 Carteira", "📈 Backtest"])
+tab_carteira, tab_backtest = st.tabs(["Carteira", "Backtest"])
 
 with tab_carteira:
     render_aba_carteira()

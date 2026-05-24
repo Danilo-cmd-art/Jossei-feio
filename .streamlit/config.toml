@@ -1,8 +1,8 @@
 [theme]
 base                     = "light"
 primaryColor             = "#1B365D"   # Goldman navy
-backgroundColor          = "#FFFFFF"
-secondaryBackgroundColor = "#F4F4F2"   # bege/cinza quente (sidebar)
+backgroundColor          = "#FAFAF7"   # off-white quente (page)
+secondaryBackgroundColor = "#EFEAE0"   # marfim escuro (sidebar)
 textColor                = "#1A1A1A"
 font                     = "serif"
 
