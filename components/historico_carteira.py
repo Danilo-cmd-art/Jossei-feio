@@ -1,8 +1,17 @@
-"""Aba Histórico — composição da carteira semana a semana (104 semanas)."""
+"""Aba Histórico — composição da carteira semana a semana.
+
+Fonte de dados: mescla de
+  1. data/backtest_carteiras_v2.json    (104 semanas SIMULADAS)
+  2. historico/carteira*.json           (carteiras REAIS do sistema vivo)
+
+Para semanas onde existem AMBAS, a versão REAL tem prioridade — é o que o
+sistema vivo de fato formou e onde os retornos são apurados em produção.
+"""
 from __future__ import annotations
 
 import json
 from collections import Counter, defaultdict
+from datetime import date
 
 import pandas as pd
 import streamlit as st
@@ -14,28 +23,112 @@ from utils.formatters import fmt_data_br, fmt_pct, fmt_reais
 
 
 # ---------------------------------------------------------------------------
-# Carregamento
+# Helpers de normalização
+# ---------------------------------------------------------------------------
+
+def _iso_week_de_data(data_iso: str) -> str:
+    """'2026-05-18' -> '2026-W21'"""
+    try:
+        d   = date.fromisoformat(data_iso[:10])
+        iso = d.isocalendar()
+        return f"{iso[0]}-W{iso[1]:02d}"
+    except Exception:
+        return ""
+
+
+def _normalizar_carteira_real(d: dict) -> dict | None:
+    """
+    Converte o formato de historico/carteira*.json para a estrutura usada
+    pelo módulo (mesma do backtest_carteiras_v2.json).
+
+    Retorna None se faltar performance_diaria (carteira ainda sem fechamento).
+    """
+    if not d.get("performance_diaria"):
+        return None
+    meta = d.get("metadata", {})
+    inicio = meta.get("data_vigencia_inicio") or meta.get("data_formacao")
+    if not inicio:
+        return None
+
+    return {
+        "semana":             _iso_week_de_data(inicio),
+        "data_formacao":      meta.get("data_formacao"),
+        "data_corte_dados":   meta.get("data_corte_dados"),
+        "data_vigencia_fim":  meta.get("data_vigencia_fim"),
+        "is_real":            True,                      # marcador
+        "retorno_total":      d.get("retorno_acumulado_total"),
+        "tickers": [
+            {
+                "ticker":         t["ticker"],
+                "score":          t.get("score_na_formacao"),
+                "preco_entrada":  t.get("preco_entrada"),
+                "preco_saida":    t.get("preco_atual"),
+                "retorno_semana": t.get("retorno_acumulado"),
+            }
+            for t in d.get("tickers", [])
+        ],
+    }
+
+
+# ---------------------------------------------------------------------------
+# Carregamento (mesclado: real tem prioridade sobre simulado)
 # ---------------------------------------------------------------------------
 
 @st.cache_data(ttl=300)
-def _carregar_carteiras_backtest() -> dict | None:
+def _carregar_carteiras_combinadas() -> dict | None:
     if not config.BACKTEST_V2_CARTEIRAS_PATH.exists():
         return None
     with open(config.BACKTEST_V2_CARTEIRAS_PATH, encoding="utf-8") as f:
-        return json.load(f)
+        bt = json.load(f)
+
+    # Indexa carteiras simuladas por chave 'semana' (ex: '2026-W21')
+    carteiras_por_semana: dict[str, dict] = {}
+    for c in bt.get("carteiras", []):
+        sem = c.get("semana") or _iso_week_de_data(c.get("data_formacao", ""))
+        c["is_real"] = False                              # marcador padrão
+        if sem:
+            carteiras_por_semana[sem] = c
+
+    # Sobrescreve com REAIS (do diretório historico/)
+    hist_dir = config.HISTORICO_DIR
+    if hist_dir.exists():
+        for path in hist_dir.glob("carteira*.json"):
+            try:
+                with open(path, encoding="utf-8") as f:
+                    raw = json.load(f)
+                normalizada = _normalizar_carteira_real(raw)
+                if normalizada and normalizada["semana"]:
+                    carteiras_por_semana[normalizada["semana"]] = normalizada
+            except Exception:
+                continue
+
+    # Reordena cronologicamente
+    carteiras_ordenadas = sorted(
+        carteiras_por_semana.values(),
+        key=lambda c: c.get("data_formacao") or "",
+    )
+
+    return {
+        "metadata":  bt.get("metadata", {}),
+        "carteiras": carteiras_ordenadas,
+    }
 
 
 # ---------------------------------------------------------------------------
 # Estatísticas agregadas
 # ---------------------------------------------------------------------------
 
-def _retorno_ponderado_semana(tickers: list[dict]) -> float | None:
-    """Retorno equal-weighted da semana (média simples). None se faltarem dados."""
-    rets = [t.get("retorno_semana") for t in tickers]
+def _retorno_carteira(c: dict) -> float | None:
+    """
+    Retorno da semana. Para carteiras REAIS usa o 'retorno_total' já calculado
+    pelo sistema (com base na evolução diária da carteira composta).
+    Para SIMULADAS, calcula a média equal-weighted dos retornos individuais.
+    """
+    if c.get("is_real") and c.get("retorno_total") is not None:
+        return c["retorno_total"]
+    rets = [t.get("retorno_semana") for t in c.get("tickers", [])]
     rets = [r for r in rets if r is not None]
-    if not rets:
-        return None
-    return sum(rets) / len(rets)
+    return sum(rets) / len(rets) if rets else None
 
 
 def _estatisticas_agregadas(carteiras: list[dict]) -> dict:
@@ -44,7 +137,7 @@ def _estatisticas_agregadas(carteiras: list[dict]) -> dict:
     tickers_set: set[str] = set()
 
     for c in carteiras:
-        r = _retorno_ponderado_semana(c.get("tickers", []))
+        r = _retorno_carteira(c)
         if r is not None:
             rets_sem.append(r)
         for t in c.get("tickers", []):
@@ -182,7 +275,7 @@ def _construir_tabela_master(carteiras: list[dict]) -> pd.DataFrame:
     rows = []
     for c in carteiras:
         tickers = c.get("tickers", [])
-        ret_semana = _retorno_ponderado_semana(tickers)
+        ret_semana = _retorno_carteira(c)
 
         rets = [(t["ticker"], t.get("retorno_semana")) for t in tickers]
         rets_validos = [(tk, r) for tk, r in rets if r is not None]
@@ -197,6 +290,7 @@ def _construir_tabela_master(carteiras: list[dict]) -> pd.DataFrame:
 
         rows.append({
             "Semana":     c.get("semana", "—"),
+            "Origem":     "Real" if c.get("is_real") else "Simulada",
             "Vigência":   f"{fmt_data_br(c.get('data_formacao'))} → {fmt_data_br(c.get('data_vigencia_fim'))}",
             "Retorno (%)":   ret_semana * 100 if ret_semana is not None else None,
             "Melhor":     f"{tk_best} ({ret_best*100:+.2f}%)" if ret_best is not None else "—",
@@ -214,7 +308,8 @@ def _render_composicao_detalhada(carteira: dict) -> None:
     sem    = carteira.get("semana", "—")
     vig    = f"{fmt_data_br(carteira.get('data_formacao'))} → {fmt_data_br(carteira.get('data_vigencia_fim'))}"
     tickers = carteira.get("tickers", [])
-    ret_semana = _retorno_ponderado_semana(tickers)
+    ret_semana = _retorno_carteira(carteira)
+    origem = "Carteira real do sistema vivo" if carteira.get("is_real") else "Simulação do backtest"
 
     cor_ret = COLORS["pos"] if (ret_semana or 0) >= 0 else COLORS["neg"]
 
@@ -229,7 +324,7 @@ def _render_composicao_detalhada(carteira: dict) -> None:
             <div>
               <div style='font-size:0.72rem; text-transform:uppercase;
                           letter-spacing:1px; color:#A89968; font-weight:600;'>
-                Semana {sem}
+                Semana {sem} · {origem}
               </div>
               <div style='font-family:"Source Serif Pro",Georgia,serif;
                           font-size:1.4rem; font-weight:600; color:#1B365D;
@@ -297,7 +392,7 @@ def _render_composicao_detalhada(carteira: dict) -> None:
 # ---------------------------------------------------------------------------
 
 def render_aba_historico_carteira() -> None:
-    bt = _carregar_carteiras_backtest()
+    bt = _carregar_carteiras_combinadas()
 
     if bt is None or not bt.get("carteiras"):
         st.warning(
@@ -350,7 +445,7 @@ def render_aba_historico_carteira() -> None:
     if apenas_pos:
         carteiras_filtradas = [
             c for c in carteiras_filtradas
-            if (_retorno_ponderado_semana(c.get("tickers", [])) or 0) >= 0
+            if (_retorno_carteira(c) or 0) >= 0
         ]
 
     if not carteiras_filtradas:
@@ -369,11 +464,19 @@ def render_aba_historico_carteira() -> None:
         selection_mode="single-row",
         column_config={
             "Semana":     st.column_config.TextColumn(width="small"),
+            "Origem":     st.column_config.TextColumn(
+                width="small",
+                help="'Real' = carteira formada pelo sistema vivo "
+                     "(prioritária quando existe). "
+                     "'Simulada' = carteira reconstruída pelo backtest.",
+            ),
             "Vigência":   st.column_config.TextColumn(width="medium"),
             "Retorno (%)": st.column_config.NumberColumn(
                 "Retorno",
                 format="%+.2f%%",
-                help="Retorno equal-weighted da semana (média simples dos 5 ativos).",
+                help="Retorno da carteira na semana. Para carteiras reais usa "
+                     "o retorno apurado pelo sistema; para simuladas, média "
+                     "equal-weighted dos 5 ativos.",
             ),
             "Melhor":     st.column_config.TextColumn(),
             "Pior":       st.column_config.TextColumn(),
