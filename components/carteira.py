@@ -27,6 +27,37 @@ DATA_INICIO_SIMULACAO  = date(2026, 5, 18)
 
 @st.cache_data(ttl=300)
 def _carregar_carteira() -> dict | None:
+    """
+    Carrega a carteira da semana corrente.
+
+    Prioridade:
+      1. historico/carteira_<semana_corrente>.json se gerado por V3c
+         (versao_formula == 'v3c' no metadata).
+      2. data/carteira_atual_v2.json (fallback para a versão V2 do pipeline).
+
+    O V3c live sobrescreve historico/ a cada hora durante o pregão; usar essa
+    fonte como primária garante que o frontend reflita a lógica V3c assim que
+    o pipeline live rodar.
+    """
+    hist_dir = config.HISTORICO_DIR
+    if hist_dir.exists():
+        # Coleta arquivos historico/carteira_*.json (exclui prefixos v2_)
+        candidatos = sorted(
+            (p for p in hist_dir.glob("carteira_*.json")
+             if not p.name.startswith("carteira_v2_")),
+            key=lambda p: p.stat().st_mtime,
+            reverse=True,
+        )
+        for path in candidatos:
+            try:
+                with open(path, encoding="utf-8") as f:
+                    d = json.load(f)
+                if d.get("metadata", {}).get("versao_formula") == "v3c":
+                    return d
+            except Exception:
+                continue
+
+    # Fallback V2
     if not config.CARTEIRA_V2_ATUAL_PATH.exists():
         return None
     with open(config.CARTEIRA_V2_ATUAL_PATH, encoding="utf-8") as f:

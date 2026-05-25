@@ -1,0 +1,153 @@
+{
+  "versao": "v3c",
+  "semana": "2026-W21",
+  "data_formacao": "2026-05-18",
+  "data_corte_dados": "2026-05-15",
+  "data_vigencia_inicio": "2026-05-18",
+  "data_vigencia_fim": "2026-05-22",
+  "n_posicoes_inicial": 5,
+  "peso_unitario": 0.2,
+  "peso_maximo": 0.4,
+  "posicoes": [
+    {
+      "ticker": "OFSA3",
+      "ticker_yf": "OFSA3.SA",
+      "rank_formacao": 1,
+      "score_formacao": 81.6234,
+      "preco_entrada": 32.2599983215332,
+      "preco_ref_dia": 31.399999618530273,
+      "peso_atual": 0.0,
+      "ativo": false,
+      "preco_atual": 30.6299991607666,
+      "ret_acumulado": -0.050527,
+      "preco_stop": 30.6299991607666,
+      "data_stop": "2026-05-22",
+      "ret_no_stop": -0.050527
+    },
+    {
+      "ticker": "INTB3",
+      "ticker_yf": "INTB3.SA",
+      "rank_formacao": 2,
+      "score_formacao": 74.5671,
+      "preco_entrada": 14.649999618530273,
+      "preco_ref_dia": 13.949999809265137,
+      "peso_atual": 0.2,
+      "ativo": true,
+      "preco_atual": 13.949999809265137,
+      "ret_acumulado": -0.047782,
+      "preco_stop": null,
+      "data_stop": null,
+      "ret_no_stop": null
+    },
+    {
+      "ticker": "EUCA4",
+      "ticker_yf": "EUCA4.SA",
+      "rank_formacao": 3,
+      "score_formacao": 70.7576,
+      "preco_entrada": 26.40999984741211,
+      "preco_ref_dia": 27.149999618530273,
+      "peso_atual": 0.4,
+      "ativo": true,
+      "preco_atual": 27.149999618530273,
+      "ret_acumulado": 0.02802,
+      "preco_stop": null,
+      "data_stop": null,
+      "ret_no_stop": null
+    },
+    {
+      "ticker": "TTEN3",
+      "ticker_yf": "TTEN3.SA",
+      "rank_formacao": 4,
+      "score_formacao": 69.9134,
+      "preco_entrada": 16.65999984741211,
+      "preco_ref_dia": 16.260000228881836,
+      "peso_atual": 0.0,
+      "ativo": false,
+      "preco_atual": 15.760000228881836,
+      "ret_acumulado": -0.054022,
+      "preco_stop": 15.760000228881836,
+      "data_stop": "2026-05-22",
+      "ret_no_stop": -0.054022
+    },
+    {
+      "ticker": "SMTO3",
+      "ticker_yf": "SMTO3.SA",
+      "rank_formacao": 5,
+      "score_formacao": 62.3918,
+      "preco_entrada": 18.25,
+      "preco_ref_dia": 17.600000381469727,
+      "peso_atual": 0.2,
+      "ativo": true,
+      "preco_atual": 17.600000381469727,
+      "ret_acumulado": -0.035616,
+      "preco_stop": null,
+      "data_stop": null,
+      "ret_no_stop": null
+    }
+  ],
+  "stops_semana": [
+    {
+      "data": "2026-05-22",
+      "evento": "STOP_LOSS",
+      "ticker": "OFSA3",
+      "ret_acumulado": -0.050527,
+      "preco_entrada": 32.2599983215332,
+      "preco_stop": 30.6299991607666,
+      "peso_no_stop": 0.2,
+      "peso_redistribuido": 0.2,
+      "peso_caixa": 0.0
+    },
+    {
+      "data": "2026-05-22",
+      "evento": "STOP_LOSS",
+      "ticker": "TTEN3",
+      "ret_acumulado": -0.054022,
+      "preco_entrada": 16.65999984741211,
+      "preco_stop": 15.760000228881836,
+      "peso_no_stop": 0.2,
+      "peso_redistribuido": 0.0,
+      "peso_caixa": 0.2
+    }
+  ],
+  "dias_processados": [
+    "2026-05-18",
+    "2026-05-19",
+    "2026-05-20",
+    "2026-05-21",
+    "2026-05-22"
+  ],
+  "performance_diaria": [
+    {
+      "data": "2026-05-18",
+      "retorno_dia": -0.00154,
+      "retorno_acumulado": -0.00154,
+      "modo": "close"
+    },
+    {
+      "data": "2026-05-19",
+      "retorno_dia": -0.003246,
+      "retorno_acumulado": -0.004781,
+      "modo": "close"
+    },
+    {
+      "data": "2026-05-20",
+      "retorno_dia": -0.003678,
+      "retorno_acumulado": -0.008441,
+      "modo": "close"
+    },
+    {
+      "data": "2026-05-21",
+      "retorno_dia": -0.006214,
+      "retorno_acumulado": -0.014602,
+      "modo": "close"
+    },
+    {
+      "data": "2026-05-22",
+      "retorno_dia": -0.017489,
+      "retorno_acumulado": -0.031835,
+      "modo": "close"
+    }
+  ],
+  "ultima_atualizacao": "2026-05-24T22:46:46",
+  "modo_ultima_atualizacao": "close_backfill"
+}

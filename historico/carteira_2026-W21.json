@@ -4,89 +4,157 @@
     "data_corte_dados": "2026-05-15",
     "data_vigencia_inicio": "2026-05-18",
     "data_vigencia_fim": "2026-05-22",
-    "bootstrap_retroativo": true,
+    "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
-    "proxima_carteira_oficial": "2026-05-25"
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-05-24T22:46:46",
+    "modo_atualizacao": "close_backfill"
   },
   "tickers": [
     {
-      "ticker": "BMOB3",
+      "ticker": "OFSA3",
       "rank_na_formacao": 1,
-      "score_na_formacao": 89.1772,
-      "preco_entrada": 25.651813507080078,
-      "preco_atual": 24.770000457763672,
-      "retorno_acumulado": -0.034376,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "DESK3",
-      "rank_na_formacao": 2,
-      "score_na_formacao": 86.574,
-      "preco_entrada": 17.719999313354492,
-      "preco_atual": 17.299999237060547,
-      "retorno_acumulado": -0.023702,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "PINE4",
-      "rank_na_formacao": 3,
-      "score_na_formacao": 86.2245,
-      "preco_entrada": 14.109999656677246,
-      "preco_atual": 14.470000267028809,
-      "retorno_acumulado": 0.025514,
-      "is_stale": false,
-      "peso": 0.2
+      "score_na_formacao": 81.6234,
+      "preco_entrada": 32.2599983215332,
+      "preco_atual": 30.6299991607666,
+      "retorno_acumulado": -0.050527,
+      "is_stale": true,
+      "peso": 0.0,
+      "v3c_ativo": false,
+      "v3c_data_stop": "2026-05-22"
     },
     {
       "ticker": "INTB3",
-      "rank_na_formacao": 4,
-      "score_na_formacao": 83.3435,
+      "rank_na_formacao": 2,
+      "score_na_formacao": 74.5671,
       "preco_entrada": 14.649999618530273,
       "preco_atual": 13.949999809265137,
       "retorno_acumulado": -0.047782,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
-      "ticker": "BMGB4",
-      "rank_na_formacao": 5,
-      "score_na_formacao": 80.3061,
-      "preco_entrada": 5.159999847412109,
-      "preco_atual": 5.170000076293945,
-      "retorno_acumulado": 0.001938,
+      "ticker": "EUCA4",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 70.7576,
+      "preco_entrada": 26.40999984741211,
+      "preco_atual": 27.149999618530273,
+      "retorno_acumulado": 0.02802,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.4,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "TTEN3",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 69.9134,
+      "preco_entrada": 16.65999984741211,
+      "preco_atual": 15.760000228881836,
+      "retorno_acumulado": -0.054022,
+      "is_stale": true,
+      "peso": 0.0,
+      "v3c_ativo": false,
+      "v3c_data_stop": "2026-05-22"
+    },
+    {
+      "ticker": "SMTO3",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 62.3918,
+      "preco_entrada": 18.25,
+      "preco_atual": 17.600000381469727,
+      "retorno_acumulado": -0.035616,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     }
   ],
   "performance_diaria": [
     {
       "data": "2026-05-18",
-      "retorno_dia": -0.007552,
-      "retorno_acumulado": -0.007552
+      "retorno_dia": -0.00154,
+      "retorno_acumulado": -0.00154,
+      "modo": "close",
+      "benchmarks": {
+        "ibov": -0.007792965026967025,
+        "smll": -0.01601426180891441,
+        "cdi": 0.0010682851559999929
+      }
     },
     {
       "data": "2026-05-19",
-      "retorno_dia": -0.019745,
-      "retorno_acumulado": -0.027297
+      "retorno_dia": -0.003246,
+      "retorno_acumulado": -0.004781,
+      "modo": "close",
+      "benchmarks": {
+        "ibov": -0.022913559759146884,
+        "smll": -0.03176156269003483,
+        "cdi": 0.0016028556202734023
+      }
     },
     {
       "data": "2026-05-20",
-      "retorno_dia": 0.025918,
-      "retorno_acumulado": -0.001379
+      "retorno_dia": -0.003678,
+      "retorno_acumulado": -0.008441,
+      "modo": "close",
+      "benchmarks": {
+        "ibov": -0.00566251415628527,
+        "smll": 0.004448398516123664,
+        "cdi": 0.0021377115451746143
+      }
     },
     {
       "data": "2026-05-21",
-      "retorno_dia": -0.001989,
-      "retorno_acumulado": -0.003368
+      "retorno_dia": -0.006214,
+      "retorno_acumulado": -0.014602,
+      "modo": "close",
+      "benchmarks": {
+        "ibov": -0.004014217956336941,
+        "smll": -0.0017794001327540165,
+        "cdi": 0.0026728530831396924
+      }
     },
     {
       "data": "2026-05-22",
-      "retorno_dia": -0.012314,
-      "retorno_acumulado": -0.015682
+      "retorno_dia": -0.017489,
+      "retorno_acumulado": -0.031835,
+      "modo": "close",
+      "benchmarks": {
+        "ibov": -0.01208750546628845,
+        "smll": -0.00800713090445715,
+        "cdi": 0.0026728530831396924
+      }
     }
   ],
-  "retorno_acumulado_total": -0.015682
+  "retorno_acumulado_total": -0.031835,
+  "stops_semana": [
+    {
+      "data": "2026-05-22",
+      "evento": "STOP_LOSS",
+      "ticker": "OFSA3",
+      "ret_acumulado": -0.050527,
+      "preco_entrada": 32.2599983215332,
+      "preco_stop": 30.6299991607666,
+      "peso_no_stop": 0.2,
+      "peso_redistribuido": 0.2,
+      "peso_caixa": 0.0
+    },
+    {
+      "data": "2026-05-22",
+      "evento": "STOP_LOSS",
+      "ticker": "TTEN3",
+      "ret_acumulado": -0.054022,
+      "preco_entrada": 16.65999984741211,
+      "preco_stop": 15.760000228881836,
+      "peso_no_stop": 0.2,
+      "peso_redistribuido": 0.0,
+      "peso_caixa": 0.2
+    }
+  ]
 }

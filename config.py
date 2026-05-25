@@ -122,6 +122,7 @@ HISTORICO_REAL_PATH        = DATA_DIR / "historico_real.json"
 # Caminhos V3c
 BACKTEST_V3C_RESULTADO_PATH = DATA_DIR / "backtest_resultado_v3c.json"
 BACKTEST_V3C_CARTEIRAS_PATH = DATA_DIR / "backtest_carteiras_v3c.json"
+CARTEIRA_V3C_ESTADO_PATH    = DATA_DIR / "carteira_v3c_estado.json"
 
 # Automação (Fase 6)
 JANELA_FRESCOR_HORAS = 2
