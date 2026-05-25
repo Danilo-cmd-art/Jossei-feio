@@ -53,6 +53,27 @@ V3C_ESTADO_PATH = config.DATA_DIR / "carteira_v3c_estado.json"
 # Download de preços via yfinance
 # ---------------------------------------------------------------------------
 
+def _flatten_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Normaliza DataFrame do yfinance: achata MultiIndex de colunas que aparece
+    em versões recentes do yfinance mesmo para single-ticker downloads.
+    """
+    if df is None or df.empty:
+        return df
+    if isinstance(df.columns, pd.MultiIndex):
+        # Mantém apenas o nível 0 (Open/High/Low/Close/Volume)
+        df = df.copy()
+        df.columns = df.columns.get_level_values(0)
+    return df
+
+
+def _scalar(valor) -> float:
+    """Coage Series/numpy/escalar para float Python."""
+    if hasattr(valor, "iloc"):
+        valor = valor.iloc[0]
+    return float(valor)
+
+
 def _baixar_ultimo_preco(ticker_yf: str) -> float | None:
     """
     Retorna o preço mais recente disponível.
@@ -64,15 +85,17 @@ def _baixar_ultimo_preco(ticker_yf: str) -> float | None:
             ticker_yf, period="1d", interval="5m",
             auto_adjust=True, progress=False,
         )
+        df = _flatten_columns(df)
         if df is not None and not df.empty:
             col = "Close" if "Close" in df.columns else df.columns[0]
-            return float(df[col].dropna().iloc[-1])
+            return _scalar(df[col].dropna().iloc[-1])
         # Fallback: diário
         df = yf.download(ticker_yf, period="2d", interval="1d",
                          auto_adjust=True, progress=False)
+        df = _flatten_columns(df)
         if df is not None and not df.empty:
             col = "Close" if "Close" in df.columns else df.columns[0]
-            return float(df[col].dropna().iloc[-1])
+            return _scalar(df[col].dropna().iloc[-1])
     except Exception as e:
         log.warning(f"{ticker_yf}: yfinance erro — {e}")
     return None
@@ -90,14 +113,15 @@ def _baixar_fechamento(ticker_yf: str, data: date) -> float | None:
             ticker_yf, start=ini, end=fim,
             interval="1d", auto_adjust=True, progress=False,
         )
+        df = _flatten_columns(df)
         if df is None or df.empty:
             return None
         df.index = pd.to_datetime(df.index).normalize()
         ts = pd.Timestamp(data)
         col = "Close" if "Close" in df.columns else df.columns[0]
         if ts in df.index:
-            return float(df.loc[ts, col])
-        return float(df[col].dropna().iloc[-1])
+            return _scalar(df.loc[ts, col])
+        return _scalar(df[col].dropna().iloc[-1])
     except Exception as e:
         log.warning(f"{ticker_yf} ({data}): yfinance erro — {e}")
     return None
@@ -155,7 +179,12 @@ def nova_semana(
     if data_corte is None:
         raise RuntimeError(f"Sem pregão antes de {hoje}")
 
-    data_vigencia_fim = ultimo_pregao_da_semana(hoje, pregoes) or hoje
+    # Vigência SEMPRE vai até sexta-feira da semana de formação.
+    # Não depende do parquet — evita que o estado expire indevidamente quando
+    # a semana é formada na própria segunda (parquet ainda sem dados das ter-sex).
+    sexta_semana = hoje + timedelta(days=(4 - hoje.weekday()) % 7)
+    pregao_fim_parquet = ultimo_pregao_da_semana(hoje, pregoes)
+    data_vigencia_fim = max(sexta_semana, pregao_fim_parquet) if pregao_fim_parquet else sexta_semana
     semana_iso = hoje.strftime("%Y-W%V")
 
     log.info(f"Nova semana V3c: {semana_iso}  corte={data_corte}  fim={data_vigencia_fim}")
