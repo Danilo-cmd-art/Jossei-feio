@@ -36,11 +36,12 @@ from components.historico_carteira import render_aba_historico_carteira
 # ---------------------------------------------------------------------------
 with st.sidebar:
     st.markdown(
-        "<div style='font-family:\"Source Serif Pro\",serif; font-size:1.3rem; "
-        "font-weight:600; color:#1B365D; letter-spacing:-0.01em; margin-bottom:4px;'>"
-        "SmallRadar V2</div>"
-        "<div style='font-size:0.78rem; color:#888; text-transform:uppercase; "
-        "letter-spacing:0.7px; margin-bottom:24px;'>Quantitative Equity Strategy</div>",
+        "<div style='font-family:\"Source Serif Pro\",serif; font-size:1.4rem; "
+        "font-weight:600; color:#1B365D; letter-spacing:-0.01em; margin-bottom:2px;'>"
+        "SmallRadar</div>"
+        "<div style='font-size:0.72rem; color:#A89968; text-transform:uppercase; "
+        "letter-spacing:1.4px; font-weight:600; margin-bottom:22px;'>V3c · "
+        "Quantitative Strategy</div>",
         unsafe_allow_html=True,
     )
 
@@ -58,12 +59,17 @@ with st.sidebar:
     )
     st.divider()
     st.markdown(
-        "<div style='font-size:0.82rem; color:#555; line-height:1.6;'>"
-        "<strong style='color:#1B365D;'>Metodologia</strong><br>"
-        "Filtros F1 (MMA 20/50) + F2 (ROIC > 0%)<br>"
-        "Pesos: Momentum 50% · ROE 30% · CAGR 5a 20%<br><br>"
-        "<strong style='color:#1B365D;'>Universo</strong><br>"
-        "Small caps brasileiras — MCAP R$ 500M a R$ 15B"
+        "<div style='font-size:0.82rem; color:#3A4654; line-height:1.65;'>"
+        "<strong style='color:#1B365D; font-size:0.78rem; "
+        "text-transform:uppercase; letter-spacing:0.9px;'>Metodologia</strong><br>"
+        "Scoring V2 · Stop loss −5% · Redistribuição seletiva "
+        "(posições positivas, cap 2×).<br><br>"
+        "<strong style='color:#1B365D; font-size:0.78rem; "
+        "text-transform:uppercase; letter-spacing:0.9px;'>Pesos do score</strong><br>"
+        "Momentum 50% · ROE 30% · CAGR 5a 20%<br><br>"
+        "<strong style='color:#1B365D; font-size:0.78rem; "
+        "text-transform:uppercase; letter-spacing:0.9px;'>Universo</strong><br>"
+        "Small caps brasileiras · MCAP R$ 500M–15B · liquidez ≥ R$ 1MM/dia"
         "</div>",
         unsafe_allow_html=True,
     )
