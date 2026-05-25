@@ -67,7 +67,37 @@ def _normalizar_carteira_real(d: dict) -> dict | None:
             }
             for t in d.get("tickers", [])
         ],
+        # Eventos da semana (stops, redistribuições) — preserva o campo do live.
+        "eventos": d.get("stops_semana", []),
     }
+
+
+# ---------------------------------------------------------------------------
+# Eventos (stops + redistribuição) — formato unificado
+# ---------------------------------------------------------------------------
+
+def _extrair_eventos(carteira: dict) -> list[dict]:
+    """
+    Retorna a lista de eventos da semana (stops + redistribuição) em formato
+    unificado, independente da origem dos dados:
+
+      - Carteira REAL  (historico/carteira_*.json): campo `eventos`
+                       (mapeado a partir de `stops_semana` no `_normalizar_carteira_real`)
+      - Carteira SIMULADA (backtest_carteiras_v3c.json): campo `log_eventos`
+
+    Cada evento tem o formato:
+      { data, evento, ticker, ret_acumulado, preco_entrada, preco_stop,
+        peso_no_stop, peso_redistribuido, peso_caixa }
+    """
+    eventos = carteira.get("eventos") or carteira.get("log_eventos") or []
+    # Normaliza a data: alguns registros vêm como '2024-11-06 00:00:00'
+    norm = []
+    for e in eventos:
+        e_copy = dict(e)
+        data_raw = str(e_copy.get("data", ""))[:10]
+        e_copy["data"] = data_raw
+        norm.append(e_copy)
+    return sorted(norm, key=lambda x: (x.get("data", ""), x.get("ticker", "")))
 
 
 # ---------------------------------------------------------------------------
@@ -384,6 +414,116 @@ def _render_composicao_detalhada(carteira: dict) -> None:
                 format="%+.2f%%",
             ),
         },
+    )
+
+    # Eventos da semana (stops + redistribuição)
+    _render_eventos_semana(carteira)
+
+
+def _render_eventos_semana(carteira: dict) -> None:
+    """
+    Mostra a timeline de stops e redistribuições da semana. Se nenhum stop
+    ocorreu, exibe uma linha discreta confirmando "Sem stops nesta semana".
+    """
+    eventos = _extrair_eventos(carteira)
+
+    st.markdown(
+        """
+        <div style='font-size:0.72rem; text-transform:uppercase;
+                    letter-spacing:1px; color:#A89968; font-weight:600;
+                    margin-top:22px; margin-bottom:8px;'>
+          Eventos da semana
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    if not eventos:
+        st.markdown(
+            """
+            <div style='font-size:0.85rem; color:#7A7A7A;
+                        padding:10px 14px; background:#F8F6F0;
+                        border:1px solid #DDD8CE; border-radius:2px;'>
+              Sem stops nesta semana — todas as 5 posições mantiveram-se ativas
+              até o fechamento de sexta.
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        return
+
+    # Tabela detalhada de eventos
+    rows = []
+    for e in eventos:
+        rows.append({
+            "Data":           fmt_data_br(e.get("data", "")),
+            "Evento":         e.get("evento", "—").replace("_", " ").title(),
+            "Ticker":         e.get("ticker", "—"),
+            "Retorno no stop (%)": (e.get("ret_acumulado") or 0) * 100,
+            "Entrada (R$)":   e.get("preco_entrada"),
+            "Preço stop (R$)": e.get("preco_stop"),
+            "Peso liberado (%)":    (e.get("peso_no_stop") or 0) * 100,
+            "→ Redistribuído (%)": (e.get("peso_redistribuido") or 0) * 100,
+            "→ Caixa (%)":         (e.get("peso_caixa") or 0) * 100,
+        })
+
+    df_ev = pd.DataFrame(rows)
+    st.dataframe(
+        df_ev,
+        hide_index=True,
+        use_container_width=True,
+        column_config={
+            "Data":     st.column_config.TextColumn(width="small"),
+            "Evento":   st.column_config.TextColumn(width="small"),
+            "Ticker":   st.column_config.TextColumn(width="small"),
+            "Retorno no stop (%)": st.column_config.NumberColumn(
+                "Retorno no stop",
+                format="%+.2f%%",
+                help="Retorno acumulado do ticker no momento em que o stop foi acionado. "
+                     "Disparo ocorre no fechamento do dia quando ret ≤ -5%.",
+            ),
+            "Entrada (R$)":    st.column_config.NumberColumn(format="R$ %.2f"),
+            "Preço stop (R$)": st.column_config.NumberColumn(
+                "Preço no stop",
+                format="R$ %.2f",
+            ),
+            "Peso liberado (%)": st.column_config.NumberColumn(
+                "Peso liberado",
+                format="%.1f%%",
+                help="Peso que a posição tinha quando stopou (será redistribuído).",
+            ),
+            "→ Redistribuído (%)": st.column_config.NumberColumn(
+                "→ Posições positivas",
+                format="%.1f%%",
+                help="Fração do peso liberado que foi para posições com retorno > 0 "
+                     "(cap 2× peso original).",
+            ),
+            "→ Caixa (%)": st.column_config.NumberColumn(
+                "→ Caixa",
+                format="%.1f%%",
+                help="Fração que não pôde ser redistribuída (cap atingido ou "
+                     "nenhuma posição positiva) e ficou em caixa rendendo 0%.",
+            ),
+        },
+    )
+
+    # Resumo embaixo
+    n_stops = len(eventos)
+    total_caixa = sum((e.get("peso_caixa") or 0) for e in eventos) * 100
+    total_redist = sum((e.get("peso_redistribuido") or 0) for e in eventos) * 100
+    st.markdown(
+        f"""
+        <div style='font-size:0.82rem; color:#4A4A4A; margin-top:8px;'>
+          <span style='color:#7A7A7A;'>Total de stops:</span> <b>{n_stops}</b>
+          &nbsp;·&nbsp;
+          <span style='color:#7A7A7A;'>Capital redistribuído:</span>
+          <b style='color:{COLORS["pos"]};'>{total_redist:.1f}%</b> do book
+          &nbsp;·&nbsp;
+          <span style='color:#7A7A7A;'>Capital em caixa:</span>
+          <b>{total_caixa:.1f}%</b> do book
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
 

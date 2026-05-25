@@ -305,6 +305,155 @@ def _banner_editorial(texto: str) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Eventos da semana (stops + redistribuição) — carteira LIVE
+# ---------------------------------------------------------------------------
+
+def _render_eventos_semana_live(carteira: dict) -> None:
+    """
+    Mostra a timeline de stops da semana atual + texto explicativo em
+    linguagem natural. Lê `stops_semana` do JSON do historico (formato live).
+
+    Para cada evento exibe data, ticker, retorno no stop, peso liberado,
+    redistribuído (a posições positivas) e enviado para caixa.
+
+    Se nenhum stop ocorreu, mostra um aviso discreto. Caso contrário,
+    constrói uma "narrativa do dia" para cada data com stop, descrevendo
+    o que aconteceu em linguagem natural (ex: "Terça 26/05 — STOP em
+    TTEN3 a -5,40%; peso de 20% redistribuído para PINE4, HAPV3, MLAS3
+    em proporção pro-rata").
+    """
+    eventos = carteira.get("stops_semana") or []
+    # Normaliza data (alguns chegam com timestamp completo)
+    for e in eventos:
+        e["data"] = str(e.get("data", ""))[:10]
+    eventos = sorted(eventos, key=lambda x: (x.get("data", ""), x.get("ticker", "")))
+
+    st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
+    st.markdown("### Eventos da semana")
+
+    if not eventos:
+        st.markdown(
+            """
+            <div style='font-size:0.85rem; color:#7A7A7A;
+                        padding:10px 14px; background:#F8F6F0;
+                        border:1px solid #DDD8CE; border-radius:2px;'>
+              Nenhum stop loss acionado nesta semana — as 5 posições seguem
+              ativas com pesos originais (20% cada).
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        return
+
+    # Narrativa cronológica — agrupa eventos por data
+    dias_pt_full = {
+        0: "Segunda", 1: "Terça", 2: "Quarta",
+        3: "Quinta", 4: "Sexta", 5: "Sábado", 6: "Domingo",
+    }
+    eventos_por_dia: dict[str, list[dict]] = {}
+    for e in eventos:
+        eventos_por_dia.setdefault(e["data"], []).append(e)
+
+    # Identifica as posições POSITIVAS na semana (para narrar a redistribuição)
+    tickers_positivos = [
+        t["ticker"] for t in carteira.get("tickers", [])
+        if (t.get("retorno_acumulado") or 0) > 0
+    ]
+
+    narrativas = []
+    for data_iso, eventos_dia in sorted(eventos_por_dia.items()):
+        try:
+            d = date.fromisoformat(data_iso)
+            dia_label = f"{dias_pt_full[d.weekday()]} {d.strftime('%d/%m')}"
+        except Exception:
+            dia_label = data_iso
+
+        partes = []
+        for e in eventos_dia:
+            tk     = e.get("ticker", "?")
+            ret    = (e.get("ret_acumulado") or 0) * 100
+            peso_red = (e.get("peso_redistribuido") or 0) * 100
+            peso_cx  = (e.get("peso_caixa") or 0) * 100
+            if peso_cx > 0.01 and peso_red < 0.01:
+                destino = f"peso integral ({peso_cx:.1f}%) foi para caixa (nenhuma posição positiva no momento)"
+            elif peso_cx > 0.01:
+                destino = f"{peso_red:.1f}% redistribuído para posições positivas e {peso_cx:.1f}% para caixa (cap 2× atingido)"
+            else:
+                destino = f"{peso_red:.1f}% redistribuído integralmente para posições positivas"
+            partes.append(f"<b>{tk}</b> stopou em {ret:+.2f}% (fechamento R$ {e.get('preco_stop', 0):.2f}); {destino}")
+
+        narrativa = f"<b>{dia_label}</b> · " + " &nbsp;•&nbsp; ".join(partes)
+        narrativas.append(narrativa)
+
+    # Renderiza narrativa
+    st.markdown(
+        f"""
+        <div style='font-size:0.88rem; color:#2A2A2A; line-height:1.6;
+                    background:#FBF9F4; border-left:3px solid {COLORS["primary"]};
+                    padding:14px 18px; border-radius:2px;
+                    margin-bottom:14px;'>
+          {"<br><br>".join(narrativas)}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Tabela detalhada de eventos (mesma estrutura da aba Histórico)
+    rows = []
+    for e in eventos:
+        rows.append({
+            "Data":              fmt_data_br(e.get("data", "")),
+            "Evento":            e.get("evento", "—").replace("_", " ").title(),
+            "Ticker":            e.get("ticker", "—"),
+            "Retorno no stop (%)": (e.get("ret_acumulado") or 0) * 100,
+            "Entrada (R$)":      e.get("preco_entrada"),
+            "Preço stop (R$)":   e.get("preco_stop"),
+            "Peso liberado (%)": (e.get("peso_no_stop") or 0) * 100,
+            "→ Redistribuído (%)": (e.get("peso_redistribuido") or 0) * 100,
+            "→ Caixa (%)":       (e.get("peso_caixa") or 0) * 100,
+        })
+    df_ev = pd.DataFrame(rows)
+    st.dataframe(
+        df_ev,
+        hide_index=True,
+        use_container_width=True,
+        column_config={
+            "Data":     st.column_config.TextColumn(width="small"),
+            "Evento":   st.column_config.TextColumn(width="small"),
+            "Ticker":   st.column_config.TextColumn(width="small"),
+            "Retorno no stop (%)": st.column_config.NumberColumn(
+                "Retorno no stop",
+                format="%+.2f%%",
+                help="Retorno acumulado quando o stop foi acionado. "
+                     "Trigger: ret ≤ -5%; execução no preço de fechamento.",
+            ),
+            "Entrada (R$)":    st.column_config.NumberColumn(format="R$ %.2f"),
+            "Preço stop (R$)": st.column_config.NumberColumn(
+                "Preço no stop",
+                format="R$ %.2f",
+            ),
+            "Peso liberado (%)": st.column_config.NumberColumn(
+                "Peso liberado",
+                format="%.1f%%",
+                help="Peso que a posição tinha quando stopou.",
+            ),
+            "→ Redistribuído (%)": st.column_config.NumberColumn(
+                "→ Posições positivas",
+                format="%.1f%%",
+                help="Fração do peso liberado realocada para posições com retorno > 0 "
+                     "(respeitando cap 2× peso original).",
+            ),
+            "→ Caixa (%)": st.column_config.NumberColumn(
+                "→ Caixa",
+                format="%.1f%%",
+                help="Fração não redistribuída — cap 2× atingido ou nenhuma "
+                     "posição positiva. Capital fica rendendo 0% até sexta.",
+            ),
+        },
+    )
+
+
+# ---------------------------------------------------------------------------
 # Render principal
 # ---------------------------------------------------------------------------
 
@@ -518,6 +667,11 @@ def render_aba_carteira() -> None:
     # Como Streamlit não suporta cores condicionais nativas em columns,
     # convertemos a coluna Retorno em string formatada com sinal/percentual.
     # (Já feita via column_config acima.)
+
+    # -----------------------------------------------------------------------
+    # Eventos da semana (stops + redistribuição)
+    # -----------------------------------------------------------------------
+    _render_eventos_semana_live(carteira)
 
     # -----------------------------------------------------------------------
     # Performance da semana (gráfico + comparação com benchmarks)
