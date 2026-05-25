@@ -1,0 +1,67 @@
+name: V3c — Atualização Intraday
+
+# Roda de hora em hora durante o pregão da B3 (10:00-18:00 BRT = 13:00-21:00 UTC)
+# Atualiza preços para exibição no site SEM aplicar stop loss
+# O stop loss é aplicado apenas pelo pipeline_v2.yml após o fechamento (~22:00 UTC)
+
+on:
+  schedule:
+    - cron: '0 13 * * 1-5'   # 10:00 BRT
+    - cron: '0 14 * * 1-5'   # 11:00 BRT
+    - cron: '0 15 * * 1-5'   # 12:00 BRT
+    - cron: '0 16 * * 1-5'   # 13:00 BRT
+    - cron: '0 17 * * 1-5'   # 14:00 BRT
+    - cron: '0 18 * * 1-5'   # 15:00 BRT
+    - cron: '0 19 * * 1-5'   # 16:00 BRT
+    - cron: '0 20 * * 1-5'   # 17:00 BRT
+    - cron: '0 21 * * 1-5'   # 18:00 BRT (pós-fechamento, antes do pipeline de close)
+  workflow_dispatch:          # permite disparar manualmente pelo GitHub UI
+
+concurrency:
+  group: v3c-intraday
+  cancel-in-progress: true    # cancela runs anteriores se já houver um novo
+
+jobs:
+  intraday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    permissions:
+      contents: write           # necessário para o push de dados
+
+    steps:
+      # -----------------------------------------------------------------------
+      # Setup
+      # -----------------------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      # -----------------------------------------------------------------------
+      # V3c: atualizar preços intraday
+      # -----------------------------------------------------------------------
+      - name: V3c — Atualização intraday
+        run: python run_v3c.py --mode intraday
+
+      # -----------------------------------------------------------------------
+      # Commit e push (só se houver mudanças)
+      # -----------------------------------------------------------------------
+      - name: Commit e push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/carteira_v3c_estado.json historico/
+          git diff --staged --quiet \
+            || git commit -m "chore: V3c intraday $(date -u '+%H:%M UTC')"
+          git push

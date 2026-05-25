@@ -66,6 +66,27 @@ jobs:
           "
 
       # -----------------------------------------------------------------------
+      # V3c — Nova semana (segunda-feira) + Fechamento diário
+      # Ordem obrigatória:
+      #   1. nova-semana (segunda) → inicializa estado com scoring V2 atualizado
+      #   2. close       (todo dia) → avalia stop loss com preços de fechamento
+      # -----------------------------------------------------------------------
+      - name: V3c — Nova semana (segundas-feiras)
+        if: steps.check_fresh.outputs.skip != 'true'
+        run: |
+          DAY=$(date +%u)   # 1=seg … 7=dom
+          if [ "$DAY" = "1" ]; then
+            echo "Segunda-feira — formando nova carteira V3c..."
+            python run_v3c.py --mode nova-semana
+          else
+            echo "Não é segunda-feira (dia $DAY) — nova-semana ignorada."
+          fi
+
+      - name: V3c — Fechamento do dia
+        if: steps.check_fresh.outputs.skip != 'true'
+        run: python run_v3c.py --mode close
+
+      # -----------------------------------------------------------------------
       # Commit e push dos artefatos atualizados
       # -----------------------------------------------------------------------
       - name: Commit e push dos artefatos
@@ -73,8 +94,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add data/ historico/
-          git diff --staged --quiet || git commit -m "chore: atualização automática $(date -u '+%Y-%m-%d %H:%M UTC') [V2]"
+          git diff --staged --quiet || git commit -m "chore: atualização automática $(date -u '+%Y-%m-%d %H:%M UTC') [V2+V3c]"
           git push
 
       # -----------------------------------------------------------------------

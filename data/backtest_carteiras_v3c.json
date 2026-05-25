@@ -1,0 +1,3578 @@
+{
+  "metadata": {
+    "n_carteiras": 104,
+    "versao_formula": "v3c"
+  },
+  "carteiras": [
+    {
+      "semana": "2024-W22",
+      "data_formacao": "2024-05-27",
+      "data_corte_dados": "2024-05-24",
+      "data_vigencia_fim": "2024-05-31",
+      "tickers_iniciais": [
+        "INTB3",
+        "DIRR3",
+        "DESK3",
+        "EKTR4",
+        "CURY3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.009296,
+      "retorno_ibov_semana": -0.021094,
+      "retorno_smll_semana": -0.024962,
+      "retorno_cdi_semana": 0.001965,
+      "alpha_vs_ibov": 0.011798,
+      "alpha_vs_smll": 0.015666,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W23",
+      "data_formacao": "2024-06-03",
+      "data_corte_dados": "2024-05-31",
+      "data_vigencia_fim": "2024-06-07",
+      "tickers_iniciais": [
+        "BIOM3",
+        "DESK3",
+        "DIRR3",
+        "INTB3",
+        "CLSC4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BIOM3"
+      ],
+      "retorno_carteira": 0.004673,
+      "retorno_ibov_semana": -0.01581,
+      "retorno_smll_semana": -0.020853,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.020483,
+      "alpha_vs_smll": 0.025526,
+      "log_eventos": [
+        {
+          "data": "2024-06-05 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BIOM3",
+          "ret_acumulado": -0.05714285714285716,
+          "preco_entrada": 17.5,
+          "preco_stop": 16.5,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W24",
+      "data_formacao": "2024-06-10",
+      "data_corte_dados": "2024-06-07",
+      "data_vigencia_fim": "2024-06-14",
+      "tickers_iniciais": [
+        "EKTR4",
+        "BIOM3",
+        "DESK3",
+        "WLMM4",
+        "CURY3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BIOM3"
+      ],
+      "retorno_carteira": -0.049109,
+      "retorno_ibov_semana": -0.026339,
+      "retorno_smll_semana": -0.046077,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": -0.02277,
+      "alpha_vs_smll": -0.003032,
+      "log_eventos": [
+        {
+          "data": "2024-06-10 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BIOM3",
+          "ret_acumulado": -0.0879479054019715,
+          "preco_entrada": 15.350000381469727,
+          "preco_stop": 14.0,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W25",
+      "data_formacao": "2024-06-17",
+      "data_corte_dados": "2024-06-14",
+      "data_vigencia_fim": "2024-06-21",
+      "tickers_iniciais": [
+        "BMEB4",
+        "WLMM4",
+        "ENMT3",
+        "DESK3",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.01009,
+      "retorno_ibov_semana": 0.014828,
+      "retorno_smll_semana": 0.010059,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": -0.024918,
+      "alpha_vs_smll": -0.020148,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W26",
+      "data_formacao": "2024-06-24",
+      "data_corte_dados": "2024-06-21",
+      "data_vigencia_fim": "2024-06-28",
+      "tickers_iniciais": [
+        "CURY3",
+        "TECN3",
+        "ENMT3",
+        "SMTO3",
+        "BGIP4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "TECN3",
+        "BGIP4"
+      ],
+      "retorno_carteira": 0.003244,
+      "retorno_ibov_semana": 0.028735,
+      "retorno_smll_semana": 0.026064,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": -0.025491,
+      "alpha_vs_smll": -0.02282,
+      "log_eventos": [
+        {
+          "data": "2024-06-24 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TECN3",
+          "ret_acumulado": -0.0670860769646423,
+          "preco_entrada": 4.312575817108154,
+          "preco_stop": 4.023262023925781,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2024-06-24 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BGIP4",
+          "ret_acumulado": -0.05711840928499867,
+          "preco_entrada": 18.1534423828125,
+          "preco_stop": 17.116546630859375,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.19999999999999996,
+          "peso_caixa": 5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "semana": "2024-W27",
+      "data_formacao": "2024-07-01",
+      "data_corte_dados": "2024-06-28",
+      "data_vigencia_fim": "2024-07-05",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "DIRR3",
+        "FRAS3",
+        "WLMM4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.035999,
+      "retorno_ibov_semana": 0.015759,
+      "retorno_smll_semana": 0.037832,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.02024,
+      "alpha_vs_smll": -0.001833,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W28",
+      "data_formacao": "2024-07-08",
+      "data_corte_dados": "2024-07-05",
+      "data_vigencia_fim": "2024-07-12",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "DIRR3",
+        "BEEF3",
+        "TECN3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.03797,
+      "retorno_ibov_semana": 0.021662,
+      "retorno_smll_semana": 0.02057,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.016308,
+      "alpha_vs_smll": 0.0174,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W29",
+      "data_formacao": "2024-07-15",
+      "data_corte_dados": "2024-07-12",
+      "data_vigencia_fim": "2024-07-19",
+      "tickers_iniciais": [
+        "BMEB4",
+        "MDNE3",
+        "CURY3",
+        "DIRR3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.00759,
+      "retorno_ibov_semana": -0.005285,
+      "retorno_smll_semana": -0.021299,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.012875,
+      "alpha_vs_smll": 0.028889,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W30",
+      "data_formacao": "2024-07-22",
+      "data_corte_dados": "2024-07-19",
+      "data_vigencia_fim": "2024-07-26",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "DIRR3",
+        "MDNE3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.022723,
+      "retorno_ibov_semana": -0.001253,
+      "retorno_smll_semana": -0.00997,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.023977,
+      "alpha_vs_smll": 0.032694,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W31",
+      "data_formacao": "2024-07-29",
+      "data_corte_dados": "2024-07-26",
+      "data_vigencia_fim": "2024-08-02",
+      "tickers_iniciais": [
+        "BMEB4",
+        "MDNE3",
+        "DIRR3",
+        "CURY3",
+        "BMOB3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.00948,
+      "retorno_ibov_semana": -0.000794,
+      "retorno_smll_semana": 0.014581,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.010273,
+      "alpha_vs_smll": -0.005102,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W32",
+      "data_formacao": "2024-08-05",
+      "data_corte_dados": "2024-08-02",
+      "data_vigencia_fim": "2024-08-09",
+      "tickers_iniciais": [
+        "BMEB4",
+        "PLPL3",
+        "CURY3",
+        "BMOB3",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.065511,
+      "retorno_ibov_semana": 0.025276,
+      "retorno_smll_semana": 0.063591,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.040236,
+      "alpha_vs_smll": 0.001921,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W33",
+      "data_formacao": "2024-08-12",
+      "data_corte_dados": "2024-08-09",
+      "data_vigencia_fim": "2024-08-16",
+      "tickers_iniciais": [
+        "CURY3",
+        "PLPL3",
+        "BMEB4",
+        "VULC3",
+        "BEEF3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "PLPL3"
+      ],
+      "retorno_carteira": -0.017433,
+      "retorno_ibov_semana": 0.041131,
+      "retorno_smll_semana": 0.008618,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": -0.058564,
+      "alpha_vs_smll": -0.026051,
+      "log_eventos": [
+        {
+          "data": "2024-08-16 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PLPL3",
+          "ret_acumulado": -0.07255527611061674,
+          "preco_entrada": 11.049330711364746,
+          "preco_stop": 10.24764347076416,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W34",
+      "data_formacao": "2024-08-19",
+      "data_corte_dados": "2024-08-16",
+      "data_vigencia_fim": "2024-08-23",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "MDNE3",
+        "VULC3",
+        "PLPL3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.029886,
+      "retorno_ibov_semana": 0.010846,
+      "retorno_smll_semana": 0.011757,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.019041,
+      "alpha_vs_smll": 0.01813,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W35",
+      "data_formacao": "2024-08-26",
+      "data_corte_dados": "2024-08-23",
+      "data_vigencia_fim": "2024-08-30",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "BEEF3",
+        "MDNE3",
+        "PINE4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BEEF3"
+      ],
+      "retorno_carteira": -0.024769,
+      "retorno_ibov_semana": 0.006148,
+      "retorno_smll_semana": -0.003587,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": -0.030917,
+      "alpha_vs_smll": -0.021182,
+      "log_eventos": [
+        {
+          "data": "2024-08-29 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BEEF3",
+          "ret_acumulado": -0.054087986753252104,
+          "preco_entrada": 7.671871662139893,
+          "preco_stop": 7.25691556930542,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2024-W36",
+      "data_formacao": "2024-09-02",
+      "data_corte_dados": "2024-08-30",
+      "data_vigencia_fim": "2024-09-06",
+      "tickers_iniciais": [
+        "BMEB4",
+        "CURY3",
+        "VULC3",
+        "PINE4",
+        "BEEF3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BEEF3"
+      ],
+      "retorno_carteira": -0.000932,
+      "retorno_ibov_semana": -0.010798,
+      "retorno_smll_semana": -0.009254,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.009866,
+      "alpha_vs_smll": 0.008322,
+      "log_eventos": [
+        {
+          "data": "2024-09-06 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BEEF3",
+          "ret_acumulado": -0.06542055519868828,
+          "preco_entrada": 7.227964878082275,
+          "preco_stop": 6.755107402801514,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W37",
+      "data_formacao": "2024-09-09",
+      "data_corte_dados": "2024-09-06",
+      "data_vigencia_fim": "2024-09-13",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "MDNE3",
+        "PINE4",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.035084,
+      "retorno_ibov_semana": -0.011868,
+      "retorno_smll_semana": -0.005414,
+      "retorno_cdi_semana": 0.002359,
+      "alpha_vs_ibov": 0.046952,
+      "alpha_vs_smll": 0.040499,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W38",
+      "data_formacao": "2024-09-16",
+      "data_corte_dados": "2024-09-13",
+      "data_vigencia_fim": "2024-09-20",
+      "tickers_iniciais": [
+        "CURY3",
+        "BMEB4",
+        "DIRR3",
+        "MDNE3",
+        "PLPL3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.021839,
+      "retorno_ibov_semana": -0.022115,
+      "retorno_smll_semana": -0.031142,
+      "retorno_cdi_semana": 0.002377,
+      "alpha_vs_ibov": 0.000276,
+      "alpha_vs_smll": 0.009303,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W39",
+      "data_formacao": "2024-09-23",
+      "data_corte_dados": "2024-09-20",
+      "data_vigencia_fim": "2024-09-27",
+      "tickers_iniciais": [
+        "BMEB4",
+        "DIRR3",
+        "POMO4",
+        "PLPL3",
+        "CURY3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "CURY3"
+      ],
+      "retorno_carteira": -0.027237,
+      "retorno_ibov_semana": -0.002952,
+      "retorno_smll_semana": -0.015135,
+      "retorno_cdi_semana": 0.002413,
+      "alpha_vs_ibov": -0.024284,
+      "alpha_vs_smll": -0.012102,
+      "log_eventos": [
+        {
+          "data": "2024-09-25 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CURY3",
+          "ret_acumulado": -0.05084053032979896,
+          "preco_entrada": 20.18834686279297,
+          "preco_stop": 19.16196060180664,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W40",
+      "data_formacao": "2024-09-30",
+      "data_corte_dados": "2024-09-27",
+      "data_vigencia_fim": "2024-10-04",
+      "tickers_iniciais": [
+        "BMEB4",
+        "POMO4",
+        "DIRR3",
+        "VIVA3",
+        "SBFG3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "BMEB4",
+        "SBFG3"
+      ],
+      "retorno_carteira": -0.025303,
+      "retorno_ibov_semana": -0.009157,
+      "retorno_smll_semana": -0.000102,
+      "retorno_cdi_semana": 0.002413,
+      "alpha_vs_ibov": -0.016146,
+      "alpha_vs_smll": -0.025201,
+      "log_eventos": [
+        {
+          "data": "2024-10-01 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.06592042553003186,
+          "preco_entrada": 37.92948913574219,
+          "preco_stop": 35.429161071777344,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2024-10-02 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "SBFG3",
+          "ret_acumulado": -0.07628133320447095,
+          "preco_entrada": 15.235618591308594,
+          "preco_stop": 14.07342529296875,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.1,
+          "peso_caixa": 0.1
+        }
+      ]
+    },
+    {
+      "semana": "2024-W41",
+      "data_formacao": "2024-10-07",
+      "data_corte_dados": "2024-10-04",
+      "data_vigencia_fim": "2024-10-11",
+      "tickers_iniciais": [
+        "PLPL3",
+        "BMEB4",
+        "MDNE3",
+        "PINE4",
+        "POMO4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.007321,
+      "retorno_ibov_semana": -0.012759,
+      "retorno_smll_semana": -0.012448,
+      "retorno_cdi_semana": 0.002413,
+      "alpha_vs_ibov": 0.02008,
+      "alpha_vs_smll": 0.019769,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W42",
+      "data_formacao": "2024-10-14",
+      "data_corte_dados": "2024-10-11",
+      "data_vigencia_fim": "2024-10-18",
+      "tickers_iniciais": [
+        "BMEB4",
+        "PLPL3",
+        "POMO4",
+        "PINE4",
+        "MDNE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMEB4"
+      ],
+      "retorno_carteira": 0.010823,
+      "retorno_ibov_semana": 0.00112,
+      "retorno_smll_semana": 0.00977,
+      "retorno_cdi_semana": 0.002413,
+      "alpha_vs_ibov": 0.009703,
+      "alpha_vs_smll": 0.001053,
+      "log_eventos": [
+        {
+          "data": "2024-10-15 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.09044971836547988,
+          "preco_entrada": 37.344505310058594,
+          "preco_stop": 33.966705322265625,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W43",
+      "data_formacao": "2024-10-21",
+      "data_corte_dados": "2024-10-18",
+      "data_vigencia_fim": "2024-10-25",
+      "tickers_iniciais": [
+        "POMO4",
+        "PLPL3",
+        "BMEB4",
+        "PINE4",
+        "CEAB3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "CEAB3"
+      ],
+      "retorno_carteira": -0.017944,
+      "retorno_ibov_semana": -0.006881,
+      "retorno_smll_semana": -0.013306,
+      "retorno_cdi_semana": 0.002413,
+      "alpha_vs_ibov": -0.011063,
+      "alpha_vs_smll": -0.004638,
+      "log_eventos": [
+        {
+          "data": "2024-10-23 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CEAB3",
+          "ret_acumulado": -0.06260305534016064,
+          "preco_entrada": 11.127937316894531,
+          "preco_stop": 10.431294441223145,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2024-W44",
+      "data_formacao": "2024-10-28",
+      "data_corte_dados": "2024-10-25",
+      "data_vigencia_fim": "2024-11-01",
+      "tickers_iniciais": [
+        "POMO4",
+        "CEAB3",
+        "TGMA3",
+        "TEND3",
+        "CURY3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.005644,
+      "retorno_ibov_semana": -0.014962,
+      "retorno_smll_semana": -0.026434,
+      "retorno_cdi_semana": 0.002413,
+      "alpha_vs_ibov": 0.009317,
+      "alpha_vs_smll": 0.02079,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W45",
+      "data_formacao": "2024-11-04",
+      "data_corte_dados": "2024-11-01",
+      "data_vigencia_fim": "2024-11-08",
+      "tickers_iniciais": [
+        "BMEB4",
+        "CEAB3",
+        "PLPL3",
+        "SEER3",
+        "TGMA3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "BMEB4",
+        "PLPL3"
+      ],
+      "retorno_carteira": -0.006749,
+      "retorno_ibov_semana": -0.014517,
+      "retorno_smll_semana": -0.016967,
+      "retorno_cdi_semana": 0.002448,
+      "alpha_vs_ibov": 0.007768,
+      "alpha_vs_smll": 0.010218,
+      "log_eventos": [
+        {
+          "data": "2024-11-06 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.07841342849385635,
+          "preco_entrada": 41.39220428466797,
+          "preco_stop": 38.14649963378906,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2024-11-08 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PLPL3",
+          "ret_acumulado": -0.054347862291721505,
+          "preco_entrada": 12.025297164916992,
+          "preco_stop": 11.371747970581055,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W46",
+      "data_formacao": "2024-11-11",
+      "data_corte_dados": "2024-11-08",
+      "data_vigencia_fim": "2024-11-14",
+      "tickers_iniciais": [
+        "TGMA3",
+        "POMO4",
+        "TEND3",
+        "CEAB3",
+        "SEER3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "CEAB3",
+        "SEER3"
+      ],
+      "retorno_carteira": -0.020044,
+      "retorno_ibov_semana": -0.014574,
+      "retorno_smll_semana": -0.012449,
+      "retorno_cdi_semana": 0.0021,
+      "alpha_vs_ibov": -0.00547,
+      "alpha_vs_smll": -0.007596,
+      "log_eventos": [
+        {
+          "data": "2024-11-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CEAB3",
+          "ret_acumulado": -0.09482757706915634,
+          "preco_entrada": 11.696249961853027,
+          "preco_stop": 10.587122917175293,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2024-11-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "SEER3",
+          "ret_acumulado": -0.07433379485299307,
+          "preco_entrada": 6.7005767822265625,
+          "preco_stop": 6.202497482299805,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.19999999999999996,
+          "peso_caixa": 5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "semana": "2024-W47",
+      "data_formacao": "2024-11-18",
+      "data_corte_dados": "2024-11-14",
+      "data_vigencia_fim": "2024-11-22",
+      "tickers_iniciais": [
+        "POMO4",
+        "TTEN3",
+        "TGMA3",
+        "TEND3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.002756,
+      "retorno_ibov_semana": 0.010898,
+      "retorno_smll_semana": 0.003829,
+      "retorno_cdi_semana": 0.0021,
+      "alpha_vs_ibov": -0.013653,
+      "alpha_vs_smll": -0.006585,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W48",
+      "data_formacao": "2024-11-25",
+      "data_corte_dados": "2024-11-22",
+      "data_vigencia_fim": "2024-11-29",
+      "tickers_iniciais": [
+        "POMO4",
+        "TTEN3",
+        "TGMA3",
+        "TEND3",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 5,
+      "tickers_stopados": [
+        "POMO4",
+        "TTEN3",
+        "TGMA3",
+        "TEND3",
+        "DIRR3"
+      ],
+      "retorno_carteira": -0.095786,
+      "retorno_ibov_semana": -0.00988,
+      "retorno_smll_semana": -0.016649,
+      "retorno_cdi_semana": 0.00252,
+      "alpha_vs_ibov": -0.085906,
+      "alpha_vs_smll": -0.079137,
+      "log_eventos": [
+        {
+          "data": "2024-11-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "POMO4",
+          "ret_acumulado": -0.08176953998812708,
+          "preco_entrada": 7.1062140464782715,
+          "preco_stop": 6.525142192840576,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2024-11-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TTEN3",
+          "ret_acumulado": -0.08222994632274339,
+          "preco_entrada": 14.008606910705566,
+          "preco_stop": 12.856679916381836,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2024-11-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TGMA3",
+          "ret_acumulado": -0.050079684708990824,
+          "preco_entrada": 27.815053939819336,
+          "preco_stop": 26.42208480834961,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2024-11-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.15051797518212295,
+          "preco_entrada": 15.392359733581543,
+          "preco_stop": 13.075532913208008,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2024-11-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "DIRR3",
+          "ret_acumulado": -0.11350676900324197,
+          "preco_entrada": 8.646041870117188,
+          "preco_stop": 7.6646575927734375,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2024-W49",
+      "data_formacao": "2024-12-02",
+      "data_corte_dados": "2024-11-29",
+      "data_vigencia_fim": "2024-12-06",
+      "tickers_iniciais": [
+        "TTEN3",
+        "TGMA3",
+        "POMO4",
+        "UNIP6",
+        "ALLD3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.001338,
+      "retorno_ibov_semana": 0.010721,
+      "retorno_smll_semana": -0.000981,
+      "retorno_cdi_semana": 0.00252,
+      "alpha_vs_ibov": -0.009383,
+      "alpha_vs_smll": 0.002319,
+      "log_eventos": []
+    },
+    {
+      "semana": "2024-W50",
+      "data_formacao": "2024-12-09",
+      "data_corte_dados": "2024-12-06",
+      "data_vigencia_fim": "2024-12-13",
+      "tickers_iniciais": [
+        "TTEN3",
+        "TGMA3",
+        "EKTR4",
+        "UNIP6",
+        "ALLD3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "ALLD3"
+      ],
+      "retorno_carteira": -0.011,
+      "retorno_ibov_semana": -0.025388,
+      "retorno_smll_semana": -0.03009,
+      "retorno_cdi_semana": 0.002591,
+      "alpha_vs_ibov": 0.014388,
+      "alpha_vs_smll": 0.019091,
+      "log_eventos": [
+        {
+          "data": "2024-12-10 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "ALLD3",
+          "ret_acumulado": -0.06236896985307172,
+          "preco_entrada": 5.355450630187988,
+          "preco_stop": 5.02143669128418,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W51",
+      "data_formacao": "2024-12-16",
+      "data_corte_dados": "2024-12-13",
+      "data_vigencia_fim": "2024-12-20",
+      "tickers_iniciais": [
+        "TTEN3",
+        "TGMA3",
+        "GEPA4",
+        "AMER3",
+        "UNIP6"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 4,
+      "tickers_stopados": [
+        "AMER3",
+        "TGMA3",
+        "TTEN3",
+        "UNIP6"
+      ],
+      "retorno_carteira": -0.063233,
+      "retorno_ibov_semana": -0.031259,
+      "retorno_smll_semana": -0.040647,
+      "retorno_cdi_semana": 0.002734,
+      "alpha_vs_ibov": -0.031973,
+      "alpha_vs_smll": -0.022586,
+      "log_eventos": [
+        {
+          "data": "2024-12-16 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "AMER3",
+          "ret_acumulado": -0.053482565967515105,
+          "preco_entrada": 8.039999961853027,
+          "preco_stop": 7.610000133514404,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2024-12-17 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TGMA3",
+          "ret_acumulado": -0.05432340996163554,
+          "preco_entrada": 27.60211753845215,
+          "preco_stop": 26.102676391601562,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2024-12-18 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TTEN3",
+          "ret_acumulado": -0.05985207907616241,
+          "preco_entrada": 14.5162353515625,
+          "preco_stop": 13.647408485412598,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2024-12-18 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "UNIP6",
+          "ret_acumulado": -0.06580027584082071,
+          "preco_entrada": 40.01658630371094,
+          "preco_stop": 37.38348388671875,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2024-W52",
+      "data_formacao": "2024-12-23",
+      "data_corte_dados": "2024-12-20",
+      "data_vigencia_fim": "2024-12-27",
+      "tickers_iniciais": [
+        "TTEN3",
+        "TECN3",
+        "BRAV3",
+        "EKTR4",
+        "TGMA3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BRAV3"
+      ],
+      "retorno_carteira": -0.011076,
+      "retorno_ibov_semana": -0.007583,
+      "retorno_smll_semana": -0.017663,
+      "retorno_cdi_semana": 0.002278,
+      "alpha_vs_ibov": -0.003493,
+      "alpha_vs_smll": 0.006586,
+      "log_eventos": [
+        {
+          "data": "2024-12-23 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BRAV3",
+          "ret_acumulado": -0.07673744865327636,
+          "preco_entrada": 20.594457626342773,
+          "preco_stop": 19.01409149169922,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2024-W01",
+      "data_formacao": "2024-12-30",
+      "data_corte_dados": "2024-12-27",
+      "data_vigencia_fim": "2025-01-03",
+      "tickers_iniciais": [
+        "EKTR4",
+        "TTEN3",
+        "BRAV3",
+        "GEPA4",
+        "BIOM3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "EKTR4"
+      ],
+      "retorno_carteira": -0.003891,
+      "retorno_ibov_semana": -0.02102,
+      "retorno_smll_semana": -0.015444,
+      "retorno_cdi_semana": 0.002278,
+      "alpha_vs_ibov": 0.017128,
+      "alpha_vs_smll": 0.011553,
+      "log_eventos": [
+        {
+          "data": "2025-01-03 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "EKTR4",
+          "ret_acumulado": -0.0714567152335337,
+          "preco_entrada": 44.341941833496094,
+          "preco_stop": 41.17341232299805,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W02",
+      "data_formacao": "2025-01-06",
+      "data_corte_dados": "2025-01-03",
+      "data_vigencia_fim": "2025-01-10",
+      "tickers_iniciais": [
+        "BRAV3",
+        "BIOM3",
+        "VLID3",
+        "GEPA4",
+        "CEBR6"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "BIOM3",
+        "VLID3"
+      ],
+      "retorno_carteira": -0.020041,
+      "retorno_ibov_semana": -0.010564,
+      "retorno_smll_semana": 0.001178,
+      "retorno_cdi_semana": 0.002734,
+      "alpha_vs_ibov": -0.009477,
+      "alpha_vs_smll": -0.021219,
+      "log_eventos": [
+        {
+          "data": "2025-01-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BIOM3",
+          "ret_acumulado": -0.06666664850144155,
+          "preco_entrada": 10.5,
+          "preco_stop": 9.800000190734863,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-01-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "VLID3",
+          "ret_acumulado": -0.06400003803248111,
+          "preco_entrada": 21.665023803710938,
+          "preco_stop": 20.278461456298828,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.19999999999999996,
+          "peso_caixa": 5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "semana": "2025-W03",
+      "data_formacao": "2025-01-13",
+      "data_corte_dados": "2025-01-10",
+      "data_vigencia_fim": "2025-01-17",
+      "tickers_iniciais": [
+        "TTEN3",
+        "EKTR4",
+        "BRAV3",
+        "PGMN3",
+        "CGRA4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "CGRA4"
+      ],
+      "retorno_carteira": 0.006725,
+      "retorno_ibov_semana": 0.021447,
+      "retorno_smll_semana": 0.013327,
+      "retorno_cdi_semana": 0.002734,
+      "alpha_vs_ibov": -0.014723,
+      "alpha_vs_smll": -0.006602,
+      "log_eventos": [
+        {
+          "data": "2025-01-13 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CGRA4",
+          "ret_acumulado": -0.05505908922425251,
+          "preco_entrada": 21.83344078063965,
+          "preco_stop": 20.631311416625977,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W04",
+      "data_formacao": "2025-01-20",
+      "data_corte_dados": "2025-01-17",
+      "data_vigencia_fim": "2025-01-24",
+      "tickers_iniciais": [
+        "TTEN3",
+        "EKTR4",
+        "BRAV3",
+        "VULC3",
+        "PGMN3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BRAV3"
+      ],
+      "retorno_carteira": 0.018162,
+      "retorno_ibov_semana": 0.010005,
+      "retorno_smll_semana": 0.022764,
+      "retorno_cdi_semana": 0.002734,
+      "alpha_vs_ibov": 0.008156,
+      "alpha_vs_smll": -0.004602,
+      "log_eventos": [
+        {
+          "data": "2025-01-20 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BRAV3",
+          "ret_acumulado": -0.06432521350686204,
+          "preco_entrada": 25.186466217041016,
+          "preco_stop": 23.566341400146484,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W05",
+      "data_formacao": "2025-01-27",
+      "data_corte_dados": "2025-01-24",
+      "data_vigencia_fim": "2025-01-31",
+      "tickers_iniciais": [
+        "TTEN3",
+        "EKTR4",
+        "VULC3",
+        "BGIP4",
+        "BRAV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BGIP4"
+      ],
+      "retorno_carteira": 0.002003,
+      "retorno_ibov_semana": 0.029816,
+      "retorno_smll_semana": 0.045647,
+      "retorno_cdi_semana": 0.002805,
+      "alpha_vs_ibov": -0.027814,
+      "alpha_vs_smll": -0.043644,
+      "log_eventos": [
+        {
+          "data": "2025-01-27 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BGIP4",
+          "ret_acumulado": -0.05624773220466506,
+          "preco_entrada": 21.431222915649414,
+          "preco_stop": 20.225765228271484,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W06",
+      "data_formacao": "2025-02-03",
+      "data_corte_dados": "2025-01-31",
+      "data_vigencia_fim": "2025-02-07",
+      "tickers_iniciais": [
+        "LAVV3",
+        "TTEN3",
+        "VULC3",
+        "CURY3",
+        "BGIP4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BGIP4"
+      ],
+      "retorno_carteira": -0.006066,
+      "retorno_ibov_semana": -0.018075,
+      "retorno_smll_semana": -0.021098,
+      "retorno_cdi_semana": 0.002946,
+      "alpha_vs_ibov": 0.012009,
+      "alpha_vs_smll": 0.015032,
+      "log_eventos": [
+        {
+          "data": "2025-02-06 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BGIP4",
+          "ret_acumulado": -0.061688915359423335,
+          "preco_entrada": 22.55818748474121,
+          "preco_stop": 21.166597366333008,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W07",
+      "data_formacao": "2025-02-10",
+      "data_corte_dados": "2025-02-07",
+      "data_vigencia_fim": "2025-02-14",
+      "tickers_iniciais": [
+        "LAVV3",
+        "CURY3",
+        "DIRR3",
+        "TTEN3",
+        "EKTR4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.034719,
+      "retorno_ibov_semana": 0.015797,
+      "retorno_smll_semana": 0.026977,
+      "retorno_cdi_semana": 0.002946,
+      "alpha_vs_ibov": 0.018922,
+      "alpha_vs_smll": 0.007742,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W08",
+      "data_formacao": "2025-02-17",
+      "data_corte_dados": "2025-02-14",
+      "data_vigencia_fim": "2025-02-21",
+      "tickers_iniciais": [
+        "CURY3",
+        "LAVV3",
+        "DIRR3",
+        "PLPL3",
+        "TTEN3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "TTEN3"
+      ],
+      "retorno_carteira": 0.004615,
+      "retorno_ibov_semana": 0.018246,
+      "retorno_smll_semana": 0.016198,
+      "retorno_cdi_semana": 0.002946,
+      "alpha_vs_ibov": -0.013631,
+      "alpha_vs_smll": -0.011583,
+      "log_eventos": [
+        {
+          "data": "2025-02-18 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TTEN3",
+          "ret_acumulado": -0.05582515581448566,
+          "preco_entrada": 16.087932586669922,
+          "preco_stop": 15.189821243286133,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W09",
+      "data_formacao": "2025-02-24",
+      "data_corte_dados": "2025-02-21",
+      "data_vigencia_fim": "2025-02-28",
+      "tickers_iniciais": [
+        "CURY3",
+        "LAVV3",
+        "DIRR3",
+        "PLPL3",
+        "TEND3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 4,
+      "tickers_stopados": [
+        "TEND3",
+        "CURY3",
+        "DIRR3",
+        "PLPL3"
+      ],
+      "retorno_carteira": -0.053811,
+      "retorno_ibov_semana": -0.037633,
+      "retorno_smll_semana": -0.055322,
+      "retorno_cdi_semana": 0.002946,
+      "alpha_vs_ibov": -0.016179,
+      "alpha_vs_smll": 0.001511,
+      "log_eventos": [
+        {
+          "data": "2025-02-24 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.05300339656093034,
+          "preco_entrada": 16.135099411010742,
+          "preco_stop": 15.279884338378906,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2025-02-25 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CURY3",
+          "ret_acumulado": -0.06105271873033358,
+          "preco_entrada": 20.503225326538086,
+          "preco_stop": 19.251447677612305,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2025-02-25 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "DIRR3",
+          "ret_acumulado": -0.05802479561742746,
+          "preco_entrada": 9.327814102172852,
+          "preco_stop": 8.786569595336914,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2025-02-26 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PLPL3",
+          "ret_acumulado": -0.07678402855764033,
+          "preco_entrada": 10.677226066589355,
+          "preco_stop": 9.857385635375977,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2025-W10",
+      "data_formacao": "2025-03-05",
+      "data_corte_dados": "2025-02-28",
+      "data_vigencia_fim": "2025-03-07",
+      "tickers_iniciais": [
+        "LAVV3",
+        "BMOB3",
+        "TFCO4",
+        "TGMA3",
+        "FRAS3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.034583,
+      "retorno_ibov_semana": 0.001891,
+      "retorno_smll_semana": 0.014937,
+      "retorno_cdi_semana": 0.001963,
+      "alpha_vs_ibov": 0.032692,
+      "alpha_vs_smll": 0.019646,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W11",
+      "data_formacao": "2025-03-10",
+      "data_corte_dados": "2025-03-07",
+      "data_vigencia_fim": "2025-03-14",
+      "tickers_iniciais": [
+        "LAVV3",
+        "CURY3",
+        "TFCO4",
+        "TGMA3",
+        "LEVE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.027665,
+      "retorno_ibov_semana": 0.045388,
+      "retorno_smll_semana": 0.046902,
+      "retorno_cdi_semana": 0.002946,
+      "alpha_vs_ibov": -0.017723,
+      "alpha_vs_smll": -0.019237,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W12",
+      "data_formacao": "2025-03-17",
+      "data_corte_dados": "2025-03-14",
+      "data_vigencia_fim": "2025-03-21",
+      "tickers_iniciais": [
+        "LAVV3",
+        "CURY3",
+        "LEVE3",
+        "PLPL3",
+        "CYRE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.029472,
+      "retorno_ibov_semana": 0.053392,
+      "retorno_smll_semana": 0.051598,
+      "retorno_cdi_semana": 0.003016,
+      "alpha_vs_ibov": -0.02392,
+      "alpha_vs_smll": -0.022126,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W13",
+      "data_formacao": "2025-03-24",
+      "data_corte_dados": "2025-03-21",
+      "data_vigencia_fim": "2025-03-28",
+      "tickers_iniciais": [
+        "LAVV3",
+        "PLPL3",
+        "CURY3",
+        "MDNE3",
+        "TFCO4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.01813,
+      "retorno_ibov_semana": -0.000402,
+      "retorno_smll_semana": 0.007392,
+      "retorno_cdi_semana": 0.003156,
+      "alpha_vs_ibov": 0.018532,
+      "alpha_vs_smll": 0.010738,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W14",
+      "data_formacao": "2025-03-31",
+      "data_corte_dados": "2025-03-28",
+      "data_vigencia_fim": "2025-04-04",
+      "tickers_iniciais": [
+        "CURY3",
+        "PLPL3",
+        "MDNE3",
+        "BEEF3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.009986,
+      "retorno_ibov_semana": -0.044259,
+      "retorno_smll_semana": -0.034783,
+      "retorno_cdi_semana": 0.003156,
+      "alpha_vs_ibov": 0.054245,
+      "alpha_vs_smll": 0.044769,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W15",
+      "data_formacao": "2025-04-07",
+      "data_corte_dados": "2025-04-04",
+      "data_vigencia_fim": "2025-04-11",
+      "tickers_iniciais": [
+        "CURY3",
+        "MDNE3",
+        "BEEF3",
+        "BSLI3",
+        "PLPL3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BSLI3"
+      ],
+      "retorno_carteira": 0.011514,
+      "retorno_ibov_semana": -0.026376,
+      "retorno_smll_semana": -0.022211,
+      "retorno_cdi_semana": 0.003156,
+      "alpha_vs_ibov": 0.03789,
+      "alpha_vs_smll": 0.033725,
+      "log_eventos": [
+        {
+          "data": "2025-04-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BSLI3",
+          "ret_acumulado": -0.1192660608940449,
+          "preco_entrada": 10.472524642944336,
+          "preco_stop": 9.22350788116455,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W16",
+      "data_formacao": "2025-04-14",
+      "data_corte_dados": "2025-04-11",
+      "data_vigencia_fim": "2025-04-17",
+      "tickers_iniciais": [
+        "CURY3",
+        "MDNE3",
+        "BEEF3",
+        "PLPL3",
+        "MOVI3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.0266,
+      "retorno_ibov_semana": 0.026077,
+      "retorno_smll_semana": 0.054881,
+      "retorno_cdi_semana": 0.002629,
+      "alpha_vs_ibov": 0.000523,
+      "alpha_vs_smll": -0.02828,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W17",
+      "data_formacao": "2025-04-22",
+      "data_corte_dados": "2025-04-17",
+      "data_vigencia_fim": "2025-04-25",
+      "tickers_iniciais": [
+        "CURY3",
+        "BEEF3",
+        "MDNE3",
+        "PLPL3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BEEF3"
+      ],
+      "retorno_carteira": 0.016581,
+      "retorno_ibov_semana": 0.050048,
+      "retorno_smll_semana": 0.06265,
+      "retorno_cdi_semana": 0.002629,
+      "alpha_vs_ibov": -0.033467,
+      "alpha_vs_smll": -0.046069,
+      "log_eventos": [
+        {
+          "data": "2025-04-23 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BEEF3",
+          "ret_acumulado": -0.05364978870033943,
+          "preco_entrada": 7.150763511657715,
+          "preco_stop": 6.767126560211182,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W18",
+      "data_formacao": "2025-04-28",
+      "data_corte_dados": "2025-04-25",
+      "data_vigencia_fim": "2025-05-02",
+      "tickers_iniciais": [
+        "CURY3",
+        "MDNE3",
+        "JHSF3",
+        "BEEF3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BEEF3"
+      ],
+      "retorno_carteira": -0.01142,
+      "retorno_ibov_semana": 0.004117,
+      "retorno_smll_semana": -0.0089,
+      "retorno_cdi_semana": 0.002629,
+      "alpha_vs_ibov": -0.015537,
+      "alpha_vs_smll": -0.00252,
+      "log_eventos": [
+        {
+          "data": "2025-04-29 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BEEF3",
+          "ret_acumulado": -0.07151979156153798,
+          "preco_entrada": 6.690227508544922,
+          "preco_stop": 6.2117438316345215,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W19",
+      "data_formacao": "2025-05-05",
+      "data_corte_dados": "2025-05-02",
+      "data_vigencia_fim": "2025-05-09",
+      "tickers_iniciais": [
+        "CURY3",
+        "LAVV3",
+        "BMOB3",
+        "JHSF3",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.031562,
+      "retorno_ibov_semana": 0.010698,
+      "retorno_smll_semana": 0.010542,
+      "retorno_cdi_semana": 0.003191,
+      "alpha_vs_ibov": 0.020864,
+      "alpha_vs_smll": 0.02102,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W20",
+      "data_formacao": "2025-05-12",
+      "data_corte_dados": "2025-05-09",
+      "data_vigencia_fim": "2025-05-16",
+      "tickers_iniciais": [
+        "CURY3",
+        "VULC3",
+        "LAVV3",
+        "TEND3",
+        "BMOB3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.020572,
+      "retorno_ibov_semana": 0.021691,
+      "retorno_smll_semana": 0.029926,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": -0.001119,
+      "alpha_vs_smll": -0.009355,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W21",
+      "data_formacao": "2025-05-19",
+      "data_corte_dados": "2025-05-16",
+      "data_vigencia_fim": "2025-05-23",
+      "tickers_iniciais": [
+        "MDNE3",
+        "CURY3",
+        "PLPL3",
+        "TFCO4",
+        "VULC3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "MDNE3",
+        "CURY3"
+      ],
+      "retorno_carteira": -0.008036,
+      "retorno_ibov_semana": -0.010837,
+      "retorno_smll_semana": -0.000476,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": 0.002802,
+      "alpha_vs_smll": -0.007559,
+      "log_eventos": [
+        {
+          "data": "2025-05-22 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MDNE3",
+          "ret_acumulado": -0.05714234601328416,
+          "preco_entrada": 15.939409255981445,
+          "preco_stop": 15.028594017028809,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-05-22 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CURY3",
+          "ret_acumulado": -0.06040484992713835,
+          "preco_entrada": 26.525836944580078,
+          "preco_stop": 24.923547744750977,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.19999999999999996,
+          "peso_caixa": 5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "semana": "2025-W22",
+      "data_formacao": "2025-05-26",
+      "data_corte_dados": "2025-05-23",
+      "data_vigencia_fim": "2025-05-30",
+      "tickers_iniciais": [
+        "MDNE3",
+        "TFCO4",
+        "PLPL3",
+        "TEND3",
+        "VULC3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.03537,
+      "retorno_ibov_semana": -0.001792,
+      "retorno_smll_semana": 0.024655,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": 0.037162,
+      "alpha_vs_smll": 0.010715,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W23",
+      "data_formacao": "2025-06-02",
+      "data_corte_dados": "2025-05-30",
+      "data_vigencia_fim": "2025-06-06",
+      "tickers_iniciais": [
+        "MDNE3",
+        "TFCO4",
+        "PLPL3",
+        "LAVV3",
+        "TEND3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.07386,
+      "retorno_ibov_semana": -0.017555,
+      "retorno_smll_semana": -0.008832,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": 0.091416,
+      "alpha_vs_smll": 0.082692,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W24",
+      "data_formacao": "2025-06-09",
+      "data_corte_dados": "2025-06-06",
+      "data_vigencia_fim": "2025-06-13",
+      "tickers_iniciais": [
+        "PLPL3",
+        "MDNE3",
+        "TFCO4",
+        "TEND3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "PLPL3",
+        "TEND3"
+      ],
+      "retorno_carteira": -0.021622,
+      "retorno_ibov_semana": 0.007171,
+      "retorno_smll_semana": -0.011061,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": -0.028793,
+      "alpha_vs_smll": -0.010561,
+      "log_eventos": [
+        {
+          "data": "2025-06-10 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PLPL3",
+          "ret_acumulado": -0.05378244298317836,
+          "preco_entrada": 16.31966209411621,
+          "preco_stop": 15.441950798034668,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-06-13 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.06173847537317512,
+          "preco_entrada": 23.394947052001953,
+          "preco_stop": 21.950578689575195,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.13333333333333336,
+          "peso_caixa": 0.06666666666666665
+        }
+      ]
+    },
+    {
+      "semana": "2025-W25",
+      "data_formacao": "2025-06-16",
+      "data_corte_dados": "2025-06-13",
+      "data_vigencia_fim": "2025-06-20",
+      "tickers_iniciais": [
+        "MDNE3",
+        "TFCO4",
+        "PLPL3",
+        "TEND3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "MDNE3"
+      ],
+      "retorno_carteira": -0.018528,
+      "retorno_ibov_semana": -0.004964,
+      "retorno_smll_semana": -0.006089,
+      "retorno_cdi_semana": 0.002725,
+      "alpha_vs_ibov": -0.013564,
+      "alpha_vs_smll": -0.012439,
+      "log_eventos": [
+        {
+          "data": "2025-06-18 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MDNE3",
+          "ret_acumulado": -0.05859032277401455,
+          "preco_entrada": 18.900226593017578,
+          "preco_stop": 17.792856216430664,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W26",
+      "data_formacao": "2025-06-23",
+      "data_corte_dados": "2025-06-20",
+      "data_vigencia_fim": "2025-06-27",
+      "tickers_iniciais": [
+        "MDNE3",
+        "PINE4",
+        "TEND3",
+        "TFCO4",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.01255,
+      "retorno_ibov_semana": -0.013344,
+      "retorno_smll_semana": -0.015955,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.025894,
+      "alpha_vs_smll": 0.028504,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W27",
+      "data_formacao": "2025-06-30",
+      "data_corte_dados": "2025-06-27",
+      "data_vigencia_fim": "2025-07-04",
+      "tickers_iniciais": [
+        "MDNE3",
+        "PINE4",
+        "TEND3",
+        "TFCO4",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.031593,
+      "retorno_ibov_semana": 0.031828,
+      "retorno_smll_semana": 0.008528,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.000235,
+      "alpha_vs_smll": 0.023064,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W28",
+      "data_formacao": "2025-07-07",
+      "data_corte_dados": "2025-07-04",
+      "data_vigencia_fim": "2025-07-11",
+      "tickers_iniciais": [
+        "MDNE3",
+        "PINE4",
+        "VULC3",
+        "LAVV3",
+        "TEND3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "VULC3",
+        "TEND3"
+      ],
+      "retorno_carteira": -0.021989,
+      "retorno_ibov_semana": -0.033641,
+      "retorno_smll_semana": -0.02806,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.011652,
+      "alpha_vs_smll": 0.006071,
+      "log_eventos": [
+        {
+          "data": "2025-07-10 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "VULC3",
+          "ret_acumulado": -0.06124287606595913,
+          "preco_entrada": 17.489322662353516,
+          "preco_stop": 16.41822624206543,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-07-11 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.058896181659485736,
+          "preco_entrada": 23.07186508178711,
+          "preco_stop": 21.71302032470703,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.06666666666666668,
+          "peso_caixa": 0.13333333333333333
+        }
+      ]
+    },
+    {
+      "semana": "2025-W29",
+      "data_formacao": "2025-07-14",
+      "data_corte_dados": "2025-07-11",
+      "data_vigencia_fim": "2025-07-18",
+      "tickers_iniciais": [
+        "PINE4",
+        "MDNE3",
+        "LAVV3",
+        "TEND3",
+        "VULC3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 3,
+      "tickers_stopados": [
+        "PINE4",
+        "MDNE3",
+        "VULC3"
+      ],
+      "retorno_carteira": -0.054689,
+      "retorno_ibov_semana": -0.024579,
+      "retorno_smll_semana": -0.029003,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.03011,
+      "alpha_vs_smll": -0.025685,
+      "log_eventos": [
+        {
+          "data": "2025-07-17 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PINE4",
+          "ret_acumulado": -0.053519535924115735,
+          "preco_entrada": 5.750784397125244,
+          "preco_stop": 5.443005084991455,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-07-17 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MDNE3",
+          "ret_acumulado": -0.06244615808991105,
+          "preco_entrada": 19.33318328857422,
+          "preco_stop": 18.125900268554688,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2025-07-18 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "VULC3",
+          "ret_acumulado": -0.062085259853915775,
+          "preco_entrada": 16.146451950073242,
+          "preco_stop": 15.14399528503418,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2025-W30",
+      "data_formacao": "2025-07-21",
+      "data_corte_dados": "2025-07-18",
+      "data_vigencia_fim": "2025-07-25",
+      "tickers_iniciais": [
+        "TFCO4",
+        "BMOB3",
+        "PINE4",
+        "POMO4",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMOB3"
+      ],
+      "retorno_carteira": 0.003892,
+      "retorno_ibov_semana": -0.015056,
+      "retorno_smll_semana": -0.025216,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.018947,
+      "alpha_vs_smll": 0.029107,
+      "log_eventos": [
+        {
+          "data": "2025-07-25 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMOB3",
+          "ret_acumulado": -0.057407426899302894,
+          "preco_entrada": 19.751893997192383,
+          "preco_stop": 18.61798858642578,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W31",
+      "data_formacao": "2025-07-28",
+      "data_corte_dados": "2025-07-25",
+      "data_vigencia_fim": "2025-08-01",
+      "tickers_iniciais": [
+        "PINE4",
+        "MDNE3",
+        "POMO4",
+        "MILS3",
+        "FLRY3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.016121,
+      "retorno_ibov_semana": -0.010246,
+      "retorno_smll_semana": -0.007395,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.026367,
+      "alpha_vs_smll": 0.023516,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W32",
+      "data_formacao": "2025-08-04",
+      "data_corte_dados": "2025-08-01",
+      "data_vigencia_fim": "2025-08-08",
+      "tickers_iniciais": [
+        "MDNE3",
+        "PINE4",
+        "POMO4",
+        "TFCO4",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.019667,
+      "retorno_ibov_semana": 0.021357,
+      "retorno_smll_semana": 0.016484,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.00169,
+      "alpha_vs_smll": 0.003184,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W33",
+      "data_formacao": "2025-08-11",
+      "data_corte_dados": "2025-08-08",
+      "data_vigencia_fim": "2025-08-15",
+      "tickers_iniciais": [
+        "MDNE3",
+        "POMO4",
+        "TFCO4",
+        "BMEB4",
+        "VIVA3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "VIVA3"
+      ],
+      "retorno_carteira": 0.005143,
+      "retorno_ibov_semana": -0.00137,
+      "retorno_smll_semana": -0.014,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.006512,
+      "alpha_vs_smll": 0.019143,
+      "log_eventos": [
+        {
+          "data": "2025-08-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "VIVA3",
+          "ret_acumulado": -0.056338043623545,
+          "preco_entrada": 27.81223487854004,
+          "preco_stop": 26.24534797668457,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W34",
+      "data_formacao": "2025-08-18",
+      "data_corte_dados": "2025-08-15",
+      "data_vigencia_fim": "2025-08-22",
+      "tickers_iniciais": [
+        "PINE4",
+        "POMO4",
+        "MDNE3",
+        "TFCO4",
+        "MILS3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.028765,
+      "retorno_ibov_semana": 0.011822,
+      "retorno_smll_semana": 0.022461,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.016943,
+      "alpha_vs_smll": 0.006304,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W35",
+      "data_formacao": "2025-08-25",
+      "data_corte_dados": "2025-08-22",
+      "data_vigencia_fim": "2025-08-29",
+      "tickers_iniciais": [
+        "MDNE3",
+        "PINE4",
+        "CURY3",
+        "POMO4",
+        "MILS3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.029278,
+      "retorno_ibov_semana": 0.051379,
+      "retorno_smll_semana": 0.060199,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.0221,
+      "alpha_vs_smll": -0.030921,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W36",
+      "data_formacao": "2025-09-01",
+      "data_corte_dados": "2025-08-29",
+      "data_vigencia_fim": "2025-09-05",
+      "tickers_iniciais": [
+        "CURY3",
+        "BEEF3",
+        "DIRR3",
+        "FIQE3",
+        "PINE4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.01946,
+      "retorno_ibov_semana": 0.01128,
+      "retorno_smll_semana": 0.020446,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.00818,
+      "alpha_vs_smll": -0.000986,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W37",
+      "data_formacao": "2025-09-08",
+      "data_corte_dados": "2025-09-05",
+      "data_vigencia_fim": "2025-09-12",
+      "tickers_iniciais": [
+        "BMEB4",
+        "PINE4",
+        "LAVV3",
+        "BEEF3",
+        "DIRR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.047518,
+      "retorno_ibov_semana": 0.009071,
+      "retorno_smll_semana": 0.005522,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.038447,
+      "alpha_vs_smll": 0.041996,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W38",
+      "data_formacao": "2025-09-15",
+      "data_corte_dados": "2025-09-12",
+      "data_vigencia_fim": "2025-09-19",
+      "tickers_iniciais": [
+        "PINE4",
+        "LAVV3",
+        "BEEF3",
+        "PLPL3",
+        "BMEB4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.036686,
+      "retorno_ibov_semana": 0.018959,
+      "retorno_smll_semana": 0.022313,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.017727,
+      "alpha_vs_smll": 0.014373,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W39",
+      "data_formacao": "2025-09-22",
+      "data_corte_dados": "2025-09-19",
+      "data_vigencia_fim": "2025-09-26",
+      "tickers_iniciais": [
+        "PINE4",
+        "PLPL3",
+        "LAVV3",
+        "BEEF3",
+        "MDNE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "PLPL3"
+      ],
+      "retorno_carteira": -0.001591,
+      "retorno_ibov_semana": -0.000364,
+      "retorno_smll_semana": -0.023229,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.001226,
+      "alpha_vs_smll": 0.021638,
+      "log_eventos": [
+        {
+          "data": "2025-09-23 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PLPL3",
+          "ret_acumulado": -0.06670402953676768,
+          "preco_entrada": 17.207019805908203,
+          "preco_stop": 16.059242248535156,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W40",
+      "data_formacao": "2025-09-29",
+      "data_corte_dados": "2025-09-26",
+      "data_vigencia_fim": "2025-10-03",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "LAVV3",
+        "BEEF3",
+        "MDNE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.009209,
+      "retorno_ibov_semana": -0.007605,
+      "retorno_smll_semana": -0.008345,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.001605,
+      "alpha_vs_smll": -0.000864,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W41",
+      "data_formacao": "2025-10-06",
+      "data_corte_dados": "2025-10-03",
+      "data_vigencia_fim": "2025-10-10",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "JHSF3",
+        "BEEF3",
+        "MOVI3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 3,
+      "tickers_stopados": [
+        "MOVI3",
+        "BMEB4",
+        "JHSF3"
+      ],
+      "retorno_carteira": -0.047538,
+      "retorno_ibov_semana": -0.022716,
+      "retorno_smll_semana": -0.044166,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.024822,
+      "alpha_vs_smll": -0.003372,
+      "log_eventos": [
+        {
+          "data": "2025-10-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MOVI3",
+          "ret_acumulado": -0.07665906815705226,
+          "preco_entrada": 8.093597412109375,
+          "preco_stop": 7.47314977645874,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-10-09 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.055418069883125365,
+          "preco_entrada": 51.15155792236328,
+          "preco_stop": 48.316837310791016,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2025-10-10 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "JHSF3",
+          "ret_acumulado": -0.06003163462791994,
+          "preco_entrada": 6.057041168212891,
+          "preco_stop": 5.693427085876465,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2025-W42",
+      "data_formacao": "2025-10-13",
+      "data_corte_dados": "2025-10-10",
+      "data_vigencia_fim": "2025-10-17",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "TFCO4",
+        "JHSF3",
+        "BEEF3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.015921,
+      "retorno_ibov_semana": 0.011933,
+      "retorno_smll_semana": 0.0145,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.003988,
+      "alpha_vs_smll": 0.001421,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W43",
+      "data_formacao": "2025-10-20",
+      "data_corte_dados": "2025-10-17",
+      "data_vigencia_fim": "2025-10-24",
+      "tickers_iniciais": [
+        "PINE4",
+        "BEEF3",
+        "TFCO4",
+        "BMEB4",
+        "MDNE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.044443,
+      "retorno_ibov_semana": 0.027932,
+      "retorno_smll_semana": 0.040564,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.01651,
+      "alpha_vs_smll": 0.003879,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W44",
+      "data_formacao": "2025-10-27",
+      "data_corte_dados": "2025-10-24",
+      "data_vigencia_fim": "2025-10-31",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "BEEF3",
+        "VULC3",
+        "TFCO4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.023488,
+      "retorno_ibov_semana": 0.026208,
+      "retorno_smll_semana": 0.029946,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.002719,
+      "alpha_vs_smll": -0.006457,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W45",
+      "data_formacao": "2025-11-03",
+      "data_corte_dados": "2025-10-31",
+      "data_vigencia_fim": "2025-11-07",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "BEEF3",
+        "VULC3",
+        "FIQE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BEEF3"
+      ],
+      "retorno_carteira": 0.023927,
+      "retorno_ibov_semana": 0.035516,
+      "retorno_smll_semana": 0.013736,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.011588,
+      "alpha_vs_smll": 0.010191,
+      "log_eventos": [
+        {
+          "data": "2025-11-06 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BEEF3",
+          "ret_acumulado": -0.10584953252298845,
+          "preco_entrada": 6.928810119628906,
+          "preco_stop": 6.195398807525635,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W46",
+      "data_formacao": "2025-11-10",
+      "data_corte_dados": "2025-11-07",
+      "data_vigencia_fim": "2025-11-14",
+      "tickers_iniciais": [
+        "PINE4",
+        "LAVV3",
+        "BMEB4",
+        "FIQE3",
+        "MDNE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.028307,
+      "retorno_ibov_semana": 0.028695,
+      "retorno_smll_semana": 0.027462,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.000388,
+      "alpha_vs_smll": 0.000845,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W47",
+      "data_formacao": "2025-11-17",
+      "data_corte_dados": "2025-11-14",
+      "data_vigencia_fim": "2025-11-21",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "LAVV3",
+        "DIRR3",
+        "KEPL3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.005658,
+      "retorno_ibov_semana": -0.01522,
+      "retorno_smll_semana": -0.020336,
+      "retorno_cdi_semana": 0.00276,
+      "alpha_vs_ibov": 0.009562,
+      "alpha_vs_smll": 0.014678,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W48",
+      "data_formacao": "2025-11-24",
+      "data_corte_dados": "2025-11-21",
+      "data_vigencia_fim": "2025-11-28",
+      "tickers_iniciais": [
+        "PINE4",
+        "LAVV3",
+        "BMEB4",
+        "JHSF3",
+        "KEPL3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMEB4"
+      ],
+      "retorno_carteira": 0.029551,
+      "retorno_ibov_semana": 0.023755,
+      "retorno_smll_semana": 0.047384,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.005796,
+      "alpha_vs_smll": -0.017833,
+      "log_eventos": [
+        {
+          "data": "2025-11-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.05384620945805507,
+          "preco_entrada": 63.318443298339844,
+          "preco_stop": 59.90898513793945,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W49",
+      "data_formacao": "2025-12-01",
+      "data_corte_dados": "2025-11-28",
+      "data_vigencia_fim": "2025-12-05",
+      "tickers_iniciais": [
+        "PINE4",
+        "LAVV3",
+        "JHSF3",
+        "BMOB3",
+        "ECOR3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "LAVV3",
+        "BMOB3"
+      ],
+      "retorno_carteira": -0.028908,
+      "retorno_ibov_semana": -0.005831,
+      "retorno_smll_semana": -0.029681,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.023077,
+      "alpha_vs_smll": 0.000772,
+      "log_eventos": [
+        {
+          "data": "2025-12-05 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "LAVV3",
+          "ret_acumulado": -0.050671519747154226,
+          "preco_entrada": 15.438276290893555,
+          "preco_stop": 14.65599536895752,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2025-12-05 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMOB3",
+          "ret_acumulado": -0.05625462008646631,
+          "preco_entrada": 25.159914016723633,
+          "preco_stop": 23.744552612304688,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.19999999999999996,
+          "peso_caixa": 5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "semana": "2025-W50",
+      "data_formacao": "2025-12-08",
+      "data_corte_dados": "2025-12-05",
+      "data_vigencia_fim": "2025-12-12",
+      "tickers_iniciais": [
+        "PINE4",
+        "JHSF3",
+        "BMEB4",
+        "MOVI3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "MOVI3"
+      ],
+      "retorno_carteira": 0.057636,
+      "retorno_ibov_semana": -0.022438,
+      "retorno_smll_semana": -0.046289,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.080074,
+      "alpha_vs_smll": 0.103925,
+      "log_eventos": [
+        {
+          "data": "2025-12-09 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MOVI3",
+          "ret_acumulado": -0.0671642065067295,
+          "preco_entrada": 11.16805362701416,
+          "preco_stop": 10.417960166931152,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2025-W51",
+      "data_formacao": "2025-12-15",
+      "data_corte_dados": "2025-12-12",
+      "data_vigencia_fim": "2025-12-19",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "JHSF3",
+        "LEVE3",
+        "FIQE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.022989,
+      "retorno_ibov_semana": -0.004498,
+      "retorno_smll_semana": -0.022455,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.027487,
+      "alpha_vs_smll": 0.045444,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W52",
+      "data_formacao": "2025-12-22",
+      "data_corte_dados": "2025-12-19",
+      "data_vigencia_fim": "2025-12-26",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "JHSF3",
+        "FIQE3",
+        "BRSR6"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.025199,
+      "retorno_ibov_semana": 0.018832,
+      "retorno_smll_semana": 0.018518,
+      "retorno_cdi_semana": 0.00276,
+      "alpha_vs_ibov": 0.006367,
+      "alpha_vs_smll": 0.00668,
+      "log_eventos": []
+    },
+    {
+      "semana": "2025-W01",
+      "data_formacao": "2025-12-29",
+      "data_corte_dados": "2025-12-26",
+      "data_vigencia_fim": "2026-01-02",
+      "tickers_iniciais": [
+        "PINE4",
+        "BMEB4",
+        "JHSF3",
+        "LEVE3",
+        "FIQE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMEB4"
+      ],
+      "retorno_carteira": -0.004342,
+      "retorno_ibov_semana": 0.000517,
+      "retorno_smll_semana": -0.003046,
+      "retorno_cdi_semana": 0.00276,
+      "alpha_vs_ibov": -0.004859,
+      "alpha_vs_smll": -0.001295,
+      "log_eventos": [
+        {
+          "data": "2025-12-30 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.07572466848223425,
+          "preco_entrada": 76.28410339355469,
+          "preco_stop": 70.50751495361328,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W02",
+      "data_formacao": "2026-01-05",
+      "data_corte_dados": "2026-01-02",
+      "data_vigencia_fim": "2026-01-09",
+      "tickers_iniciais": [
+        "PINE4",
+        "FIQE3",
+        "BMEB4",
+        "BRSR6",
+        "KEPL3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMEB4"
+      ],
+      "retorno_carteira": 0.031564,
+      "retorno_ibov_semana": 0.013933,
+      "retorno_smll_semana": 0.020898,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.017631,
+      "alpha_vs_smll": 0.010666,
+      "log_eventos": [
+        {
+          "data": "2026-01-05 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.0615384778010698,
+          "preco_entrada": 64.95745849609375,
+          "preco_stop": 60.96007537841797,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W03",
+      "data_formacao": "2026-01-12",
+      "data_corte_dados": "2026-01-09",
+      "data_vigencia_fim": "2026-01-16",
+      "tickers_iniciais": [
+        "PINE4",
+        "FIQE3",
+        "LAVV3",
+        "MDNE3",
+        "BRSR6"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "MDNE3"
+      ],
+      "retorno_carteira": -0.03007,
+      "retorno_ibov_semana": 0.011434,
+      "retorno_smll_semana": -0.012714,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.041504,
+      "alpha_vs_smll": -0.017357,
+      "log_eventos": [
+        {
+          "data": "2026-01-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MDNE3",
+          "ret_acumulado": -0.0650375758431001,
+          "preco_entrada": 26.600000381469727,
+          "preco_stop": 24.8700008392334,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W04",
+      "data_formacao": "2026-01-19",
+      "data_corte_dados": "2026-01-16",
+      "data_vigencia_fim": "2026-01-23",
+      "tickers_iniciais": [
+        "PINE4",
+        "JHSF3",
+        "FIQE3",
+        "BRSR6",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.077378,
+      "retorno_ibov_semana": 0.080275,
+      "retorno_smll_semana": 0.069238,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.002897,
+      "alpha_vs_smll": 0.008141,
+      "log_eventos": []
+    },
+    {
+      "semana": "2026-W05",
+      "data_formacao": "2026-01-26",
+      "data_corte_dados": "2026-01-23",
+      "data_vigencia_fim": "2026-01-30",
+      "tickers_iniciais": [
+        "PINE4",
+        "JHSF3",
+        "LAVV3",
+        "ECOR3",
+        "FIQE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.006656,
+      "retorno_ibov_semana": 0.032889,
+      "retorno_smll_semana": 0.035983,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.026233,
+      "alpha_vs_smll": -0.029327,
+      "log_eventos": []
+    },
+    {
+      "semana": "2026-W06",
+      "data_formacao": "2026-02-02",
+      "data_corte_dados": "2026-01-30",
+      "data_vigencia_fim": "2026-02-06",
+      "tickers_iniciais": [
+        "JHSF3",
+        "MDNE3",
+        "LAVV3",
+        "PINE4",
+        "BMEB4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.049789,
+      "retorno_ibov_semana": -0.001005,
+      "retorno_smll_semana": -0.006415,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.050793,
+      "alpha_vs_smll": 0.056204,
+      "log_eventos": []
+    },
+    {
+      "semana": "2026-W07",
+      "data_formacao": "2026-02-09",
+      "data_corte_dados": "2026-02-06",
+      "data_vigencia_fim": "2026-02-13",
+      "tickers_iniciais": [
+        "BMEB4",
+        "PINE4",
+        "JHSF3",
+        "CURY3",
+        "LAVV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMEB4"
+      ],
+      "retorno_carteira": -0.006489,
+      "retorno_ibov_semana": 0.023813,
+      "retorno_smll_semana": 0.009717,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.030302,
+      "alpha_vs_smll": -0.016206,
+      "log_eventos": [
+        {
+          "data": "2026-02-12 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.10256403982255324,
+          "preco_entrada": 77.94894409179688,
+          "preco_stop": 69.95418548583984,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W08",
+      "data_formacao": "2026-02-18",
+      "data_corte_dados": "2026-02-13",
+      "data_vigencia_fim": "2026-02-20",
+      "tickers_iniciais": [
+        "CURY3",
+        "MDNE3",
+        "LAVV3",
+        "PINE4",
+        "TEND3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "PINE4"
+      ],
+      "retorno_carteira": 0.017789,
+      "retorno_ibov_semana": 0.014742,
+      "retorno_smll_semana": 0.032905,
+      "retorno_cdi_semana": 0.002207,
+      "alpha_vs_ibov": 0.003047,
+      "alpha_vs_smll": -0.015116,
+      "log_eventos": [
+        {
+          "data": "2026-02-19 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PINE4",
+          "ret_acumulado": -0.06594982565988106,
+          "preco_entrada": 13.753162384033203,
+          "preco_stop": 12.84614372253418,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W09",
+      "data_formacao": "2026-02-23",
+      "data_corte_dados": "2026-02-20",
+      "data_vigencia_fim": "2026-02-27",
+      "tickers_iniciais": [
+        "MDNE3",
+        "CURY3",
+        "LAVV3",
+        "TEND3",
+        "JHSF3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "TEND3",
+        "CURY3"
+      ],
+      "retorno_carteira": -0.037786,
+      "retorno_ibov_semana": 0.001342,
+      "retorno_smll_semana": -0.009173,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.039128,
+      "alpha_vs_smll": -0.028614,
+      "log_eventos": [
+        {
+          "data": "2026-02-24 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.05597574937449934,
+          "preco_entrada": 33.04999923706055,
+          "preco_stop": 31.200000762939453,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2026-02-25 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "CURY3",
+          "ret_acumulado": -0.05927517349105005,
+          "preco_entrada": 40.957340240478516,
+          "preco_stop": 38.52958679199219,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2026-W10",
+      "data_formacao": "2026-03-02",
+      "data_corte_dados": "2026-02-27",
+      "data_vigencia_fim": "2026-03-06",
+      "tickers_iniciais": [
+        "MDNE3",
+        "BMEB4",
+        "LAVV3",
+        "JHSF3",
+        "TEND3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 4,
+      "tickers_stopados": [
+        "MDNE3",
+        "JHSF3",
+        "TEND3",
+        "BMEB4"
+      ],
+      "retorno_carteira": -0.059509,
+      "retorno_ibov_semana": -0.060941,
+      "retorno_smll_semana": -0.084574,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": 0.001432,
+      "alpha_vs_smll": 0.025065,
+      "log_eventos": [
+        {
+          "data": "2026-03-03 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MDNE3",
+          "ret_acumulado": -0.06494692708487093,
+          "preco_entrada": 32.95000076293945,
+          "preco_stop": 30.809999465942383,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2026-03-03 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "JHSF3",
+          "ret_acumulado": -0.061491987147321514,
+          "preco_entrada": 9.787927627563477,
+          "preco_stop": 9.18604850769043,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2026-03-03 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.061136826420245094,
+          "preco_entrada": 30.260000228881836,
+          "preco_stop": 28.40999984741211,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2026-03-06 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.061853178249535956,
+          "preco_entrada": 83.04560852050781,
+          "preco_stop": 77.90897369384766,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2026-W11",
+      "data_formacao": "2026-03-09",
+      "data_corte_dados": "2026-03-06",
+      "data_vigencia_fim": "2026-03-13",
+      "tickers_iniciais": [
+        "MDNE3",
+        "BMEB4",
+        "RECV3",
+        "BGIP4",
+        "BRAV3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BRAV3"
+      ],
+      "retorno_carteira": -0.024715,
+      "retorno_ibov_semana": -0.015577,
+      "retorno_smll_semana": -0.052393,
+      "retorno_cdi_semana": 0.003312,
+      "alpha_vs_ibov": -0.009139,
+      "alpha_vs_smll": 0.027678,
+      "log_eventos": [
+        {
+          "data": "2026-03-12 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BRAV3",
+          "ret_acumulado": -0.07146477366640192,
+          "preco_entrada": 19.610456466674805,
+          "preco_stop": 18.208999633789062,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W12",
+      "data_formacao": "2026-03-16",
+      "data_corte_dados": "2026-03-13",
+      "data_vigencia_fim": "2026-03-20",
+      "tickers_iniciais": [
+        "MDNE3",
+        "RECV3",
+        "BMEB4",
+        "OFSA3",
+        "FIQE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "BMEB4"
+      ],
+      "retorno_carteira": -0.014404,
+      "retorno_ibov_semana": -0.017101,
+      "retorno_smll_semana": -0.034805,
+      "retorno_cdi_semana": 0.003295,
+      "alpha_vs_ibov": 0.002697,
+      "alpha_vs_smll": 0.020401,
+      "log_eventos": [
+        {
+          "data": "2026-03-20 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "BMEB4",
+          "ret_acumulado": -0.06750001907348635,
+          "preco_entrada": 80.0,
+          "preco_stop": 74.5999984741211,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W13",
+      "data_formacao": "2026-03-23",
+      "data_corte_dados": "2026-03-20",
+      "data_vigencia_fim": "2026-03-27",
+      "tickers_iniciais": [
+        "FIQE3",
+        "OFSA3",
+        "RECV3",
+        "INTB3",
+        "SMTO3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.072218,
+      "retorno_ibov_semana": 0.007134,
+      "retorno_smll_semana": -0.001226,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": 0.065085,
+      "alpha_vs_smll": 0.073444,
+      "log_eventos": []
+    },
+    {
+      "semana": "2026-W14",
+      "data_formacao": "2026-03-30",
+      "data_corte_dados": "2026-03-27",
+      "data_vigencia_fim": "2026-04-02",
+      "tickers_iniciais": [
+        "FIQE3",
+        "MDNE3",
+        "OFSA3",
+        "RECV3",
+        "SMTO3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": 0.019926,
+      "retorno_ibov_semana": 0.029108,
+      "retorno_smll_semana": 0.026925,
+      "retorno_cdi_semana": 0.002716,
+      "alpha_vs_ibov": -0.009182,
+      "alpha_vs_smll": -0.006999,
+      "log_eventos": []
+    },
+    {
+      "semana": "2026-W15",
+      "data_formacao": "2026-04-06",
+      "data_corte_dados": "2026-04-02",
+      "data_vigencia_fim": "2026-04-10",
+      "tickers_iniciais": [
+        "FIQE3",
+        "MDNE3",
+        "JHSF3",
+        "RECV3",
+        "TEND3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "MDNE3",
+        "TEND3"
+      ],
+      "retorno_carteira": 0.078525,
+      "retorno_ibov_semana": 0.049858,
+      "retorno_smll_semana": 0.031107,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": 0.028666,
+      "alpha_vs_smll": 0.047417,
+      "log_eventos": [
+        {
+          "data": "2026-04-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "MDNE3",
+          "ret_acumulado": -0.07358372608782004,
+          "preco_entrada": 32.47999954223633,
+          "preco_stop": 30.09000015258789,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2026-04-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TEND3",
+          "ret_acumulado": -0.05891721031671526,
+          "preco_entrada": 31.399999618530273,
+          "preco_stop": 29.549999237060547,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W16",
+      "data_formacao": "2026-04-13",
+      "data_corte_dados": "2026-04-10",
+      "data_vigencia_fim": "2026-04-17",
+      "tickers_iniciais": [
+        "JHSF3",
+        "FIQE3",
+        "PINE4",
+        "BMEB4",
+        "BMOB3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 1,
+      "tickers_stopados": [
+        "FIQE3"
+      ],
+      "retorno_carteira": 0.014408,
+      "retorno_ibov_semana": 0.003101,
+      "retorno_smll_semana": -0.001125,
+      "retorno_cdi_semana": 0.00326,
+      "alpha_vs_ibov": 0.011308,
+      "alpha_vs_smll": 0.015533,
+      "log_eventos": [
+        {
+          "data": "2026-04-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "FIQE3",
+          "ret_acumulado": -0.05369122533839754,
+          "preco_entrada": 7.449999809265137,
+          "preco_stop": 7.050000190734863,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W17",
+      "data_formacao": "2026-04-20",
+      "data_corte_dados": "2026-04-17",
+      "data_vigencia_fim": "2026-04-24",
+      "tickers_iniciais": [
+        "PINE4",
+        "FIQE3",
+        "JHSF3",
+        "BMOB3",
+        "MDNE3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 0,
+      "tickers_stopados": [],
+      "retorno_carteira": -0.029008,
+      "retorno_ibov_semana": -0.030861,
+      "retorno_smll_semana": -0.025815,
+      "retorno_cdi_semana": 0.002716,
+      "alpha_vs_ibov": 0.001853,
+      "alpha_vs_smll": -0.003193,
+      "log_eventos": []
+    },
+    {
+      "semana": "2026-W18",
+      "data_formacao": "2026-04-27",
+      "data_corte_dados": "2026-04-24",
+      "data_vigencia_fim": "2026-04-30",
+      "tickers_iniciais": [
+        "PINE4",
+        "JHSF3",
+        "FIQE3",
+        "OFSA3",
+        "INTB3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 3,
+      "tickers_stopados": [
+        "PINE4",
+        "INTB3",
+        "JHSF3"
+      ],
+      "retorno_carteira": -0.03491,
+      "retorno_ibov_semana": -0.021215,
+      "retorno_smll_semana": -0.039973,
+      "retorno_cdi_semana": 0.002708,
+      "alpha_vs_ibov": -0.013696,
+      "alpha_vs_smll": 0.005063,
+      "log_eventos": [
+        {
+          "data": "2026-04-27 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PINE4",
+          "ret_acumulado": -0.05825240321301217,
+          "preco_entrada": 15.449999809265137,
+          "preco_stop": 14.550000190734863,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2026-04-28 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "INTB3",
+          "ret_acumulado": -0.0585070539512228,
+          "preco_entrada": 14.869999885559082,
+          "preco_stop": 14.0,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2026-04-29 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "JHSF3",
+          "ret_acumulado": -0.05063296833005704,
+          "preco_entrada": 13.357155799865723,
+          "preco_stop": 12.680843353271484,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2026-W19",
+      "data_formacao": "2026-05-04",
+      "data_corte_dados": "2026-04-30",
+      "data_vigencia_fim": "2026-05-08",
+      "tickers_iniciais": [
+        "JHSF3",
+        "FIQE3",
+        "OFSA3",
+        "PINE4",
+        "INTB3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "JHSF3",
+        "PINE4"
+      ],
+      "retorno_carteira": 0.019939,
+      "retorno_ibov_semana": -0.003475,
+      "retorno_smll_semana": 0.031484,
+      "retorno_cdi_semana": 0.003208,
+      "alpha_vs_ibov": 0.023414,
+      "alpha_vs_smll": -0.011545,
+      "log_eventos": [
+        {
+          "data": "2026-05-04 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "JHSF3",
+          "ret_acumulado": -0.057370538333565535,
+          "preco_entrada": 12.550000190734863,
+          "preco_stop": 11.829999923706055,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2026-05-07 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "PINE4",
+          "ret_acumulado": -0.050104403115017515,
+          "preco_entrada": 14.369999885559082,
+          "preco_stop": 13.649999618530273,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        }
+      ]
+    },
+    {
+      "semana": "2026-W20",
+      "data_formacao": "2026-05-11",
+      "data_corte_dados": "2026-05-08",
+      "data_vigencia_fim": "2026-05-15",
+      "tickers_iniciais": [
+        "FIQE3",
+        "OFSA3",
+        "INTB3",
+        "JHSF3",
+        "GEPA4"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 3,
+      "tickers_stopados": [
+        "FIQE3",
+        "JHSF3",
+        "GEPA4"
+      ],
+      "retorno_carteira": -0.067992,
+      "retorno_ibov_semana": -0.032388,
+      "retorno_smll_semana": -0.065309,
+      "retorno_cdi_semana": 0.003208,
+      "alpha_vs_ibov": -0.035604,
+      "alpha_vs_smll": -0.002683,
+      "log_eventos": [
+        {
+          "data": "2026-05-13 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "FIQE3",
+          "ret_acumulado": -0.0754716968074125,
+          "preco_entrada": 6.889999866485596,
+          "preco_stop": 6.369999885559082,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        },
+        {
+          "data": "2026-05-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "JHSF3",
+          "ret_acumulado": -0.05295678601147469,
+          "preco_entrada": 11.329999923706055,
+          "preco_stop": 10.729999542236328,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2026-05-14 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "GEPA4",
+          "ret_acumulado": -0.0848384827513684,
+          "preco_entrada": 42.08000183105469,
+          "preco_stop": 38.5099983215332,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    },
+    {
+      "semana": "2026-W21",
+      "data_formacao": "2026-05-18",
+      "data_corte_dados": "2026-05-15",
+      "data_vigencia_fim": "2026-05-22",
+      "tickers_iniciais": [
+        "OFSA3",
+        "INTB3",
+        "EUCA4",
+        "TTEN3",
+        "SMTO3"
+      ],
+      "n_posicoes_inicial": 5,
+      "n_stops_semana": 2,
+      "tickers_stopados": [
+        "OFSA3",
+        "TTEN3"
+      ],
+      "retorno_carteira": -0.031836,
+      "retorno_ibov_semana": -0.012088,
+      "retorno_smll_semana": -0.008007,
+      "retorno_cdi_semana": 0.002673,
+      "alpha_vs_ibov": -0.019748,
+      "alpha_vs_smll": -0.023829,
+      "log_eventos": [
+        {
+          "data": "2026-05-22 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "OFSA3",
+          "ret_acumulado": -0.05052694499610666,
+          "preco_entrada": 32.2599983215332,
+          "preco_stop": 30.6299991607666,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.2,
+          "peso_caixa": 0.0
+        },
+        {
+          "data": "2026-05-22 00:00:00",
+          "evento": "STOP_LOSS",
+          "ticker": "TTEN3",
+          "ret_acumulado": -0.05402158624089515,
+          "preco_entrada": 16.65999984741211,
+          "preco_stop": 15.760000228881836,
+          "peso_no_stop": 0.2,
+          "peso_redistribuido": 0.0,
+          "peso_caixa": 0.2
+        }
+      ]
+    }
+  ]
+}
