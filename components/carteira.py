@@ -41,11 +41,15 @@ def _carregar_carteira() -> dict | None:
     """
     hist_dir = config.HISTORICO_DIR
     if hist_dir.exists():
-        # Coleta arquivos historico/carteira_*.json (exclui prefixos v2_)
+        # Coleta arquivos historico/carteira_*.json (exclui prefixos v2_).
+        # Ordena pelo NOME do arquivo (carteira_YYYY-WWW.json) — ordem alfabética
+        # bate com ordem cronológica e é determinística (independente de mtime,
+        # que no Streamlit Cloud pode ser idêntico para vários arquivos após
+        # git pull no mesmo segundo).
         candidatos = sorted(
             (p for p in hist_dir.glob("carteira_*.json")
              if not p.name.startswith("carteira_v2_")),
-            key=lambda p: p.stat().st_mtime,
+            key=lambda p: p.name,
             reverse=True,
         )
         for path in candidatos:
