@@ -9,6 +9,8 @@ Estrutura:
 Paleta restrita a quatro cores: branco, preto, azul navy e dourado.
 Verde/vermelho semânticos são usados APENAS em retornos (pos/neg) — ínfima
 área da UI, justificável para legibilidade financeira.
+
+Build: 2026-05-25T13:00 — redeploy forçado para invalidar cache do Streamlit Cloud.
 """
 from __future__ import annotations
 
