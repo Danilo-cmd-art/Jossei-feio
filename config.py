@@ -32,6 +32,14 @@ MCAP_MAX = 5_000_000_000     # R$ 5B
 UNIVERSO_ALVO = 50           # tickers no universo
 UNIVERSO_MINIMO = 30         # mínimo aceitável antes de abortar
 
+# Filtro de liquidez mínima diária — exclui tickers com baixa negociação onde
+# yfinance falha em retornar preço intraday e a execução real seria inviável.
+# Threshold R$ 1MM/dia: para uma carteira teórica de R$ 1MM (R$ 200k/posição),
+# cada posição equivale a ~20% do volume diário — limite alto mas executável
+# em múltiplos lotes. Aumentar para R$ 5MM+ se o tamanho real da carteira for
+# maior, ou reduzir para R$ 500k para um universo mais inclusivo.
+LIQUIDEZ_MINIMA_DIARIA = 1_000_000  # R$ 1MM
+
 # Critérios de qualidade (Fase 1 §4)
 Q1_HISTORICO_MINIMO = 504    # pregões (~2 anos)
 Q2_RETORNOS_ABSURDOS_MAX = 2 # ocorrências de |retorno| > 50%

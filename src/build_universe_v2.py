@@ -75,7 +75,7 @@ def _deduplicate_by_company(aprovados: list[dict]) -> list[dict]:
 
 
 def filtrar_candidatos_v2(df: pd.DataFrame) -> pd.DataFrame:
-    """Saneamento + filtro R$500M–15B + ranking por liquidez."""
+    """Saneamento + filtro R$500M–15B + liquidez mínima + ranking por liquidez."""
     df = df.dropna(subset=["VALOR DE MERCADO", "LIQUIDEZ MEDIA DIARIA"])
     df = df[df["VALOR DE MERCADO"] > 0]
     df = df[df["LIQUIDEZ MEDIA DIARIA"] > 0]
@@ -83,6 +83,18 @@ def filtrar_candidatos_v2(df: pd.DataFrame) -> pd.DataFrame:
         (df["VALOR DE MERCADO"] >= config.MCAP_MIN) &
         (df["VALOR DE MERCADO"] <= config.MCAP_MAX_V2)
     ]
+
+    # Filtro de liquidez mínima — exclui tickers ilíquidos onde execução real
+    # seria inviável e yfinance frequentemente falha em retornar preço intraday.
+    antes_liq = len(df)
+    df = df[df["LIQUIDEZ MEDIA DIARIA"] >= config.LIQUIDEZ_MINIMA_DIARIA]
+    removidos_por_liquidez = antes_liq - len(df)
+    if removidos_por_liquidez > 0:
+        log.info(
+            f"Filtro liquidez ≥ R$ {config.LIQUIDEZ_MINIMA_DIARIA:,.0f}/dia: "
+            f"{removidos_por_liquidez} tickers removidos"
+        )
+
     df = df.sort_values("LIQUIDEZ MEDIA DIARIA", ascending=False).reset_index(drop=True)
     log.info(f"Candidatos V2 após filtros: {len(df)}")
     return df

@@ -10,29 +10,17 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-05-25T11:03:13",
+    "ultima_atualizacao": "2026-05-25T11:11:19",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
     {
-      "ticker": "OFSA3",
-      "rank_na_formacao": 1,
-      "score_na_formacao": 81.9048,
-      "preco_entrada": 30.6299991607666,
-      "preco_atual": 30.100000381469727,
-      "retorno_acumulado": -0.017303,
-      "is_stale": false,
-      "peso": 0.2,
-      "v3c_ativo": true,
-      "v3c_data_stop": null
-    },
-    {
       "ticker": "PINE4",
-      "rank_na_formacao": 2,
-      "score_na_formacao": 79.5238,
+      "rank_na_formacao": 1,
+      "score_na_formacao": 79.1667,
       "preco_entrada": 14.470000267028809,
-      "preco_atual": 14.670000076293945,
-      "retorno_acumulado": 0.013822,
+      "preco_atual": 14.789999961853027,
+      "retorno_acumulado": 0.022115,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -40,23 +28,11 @@
     },
     {
       "ticker": "EUCA4",
-      "rank_na_formacao": 3,
-      "score_na_formacao": 76.6667,
+      "rank_na_formacao": 2,
+      "score_na_formacao": 78.3333,
       "preco_entrada": 27.149999618530273,
-      "preco_atual": 27.15999984741211,
-      "retorno_acumulado": 0.000368,
-      "is_stale": false,
-      "peso": 0.2,
-      "v3c_ativo": true,
-      "v3c_data_stop": null
-    },
-    {
-      "ticker": "CEBR6",
-      "rank_na_formacao": 4,
-      "score_na_formacao": 75.2381,
-      "preco_entrada": 32.0,
-      "preco_atual": 31.100000381469727,
-      "retorno_acumulado": -0.028125,
+      "preco_atual": 27.110000610351562,
+      "retorno_acumulado": -0.001473,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -64,11 +40,35 @@
     },
     {
       "ticker": "OPCT3",
-      "rank_na_formacao": 5,
-      "score_na_formacao": 66.1905,
+      "rank_na_formacao": 3,
+      "score_na_formacao": 68.3333,
       "preco_entrada": 10.079999923706055,
-      "preco_atual": 10.1899995803833,
-      "retorno_acumulado": 0.010913,
+      "preco_atual": 10.210000038146973,
+      "retorno_acumulado": 0.012897,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "HAPV3",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 63.3333,
+      "preco_entrada": 12.050000190734863,
+      "preco_atual": 12.1899995803833,
+      "retorno_acumulado": 0.011618,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "MLAS3",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 61.6667,
+      "preco_entrada": 1.6399999856948853,
+      "preco_atual": 1.659999966621399,
+      "retorno_acumulado": 0.012195,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -78,8 +78,8 @@
   "performance_diaria": [
     {
       "data": "2026-05-25",
-      "retorno_dia": -0.004065,
-      "retorno_acumulado": -0.004065,
+      "retorno_dia": 0.01147,
+      "retorno_acumulado": 0.01147,
       "modo": "intraday",
       "benchmarks": {
         "ibov": -0.008105826062482446,
@@ -88,6 +88,6 @@
       }
     }
   ],
-  "retorno_acumulado_total": -0.004065,
+  "retorno_acumulado_total": 0.01147,
   "stops_semana": []
 }
