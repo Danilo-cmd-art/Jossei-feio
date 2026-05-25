@@ -71,15 +71,23 @@ def _carregar_carteira() -> dict | None:
 @st.cache_data(ttl=60)
 def _carregar_todos_historicos() -> list[dict]:
     """
-    Lê todos os arquivos historico/carteira*.json com performance_diaria não-vazia.
-    Retorna ordenado cronologicamente (mais antigo primeiro) e sem duplicatas
-    de mesma semana ISO.
+    Lê todos os arquivos historico/carteira_<semana>.json (V3c) com
+    performance_diaria não-vazia. Retorna ordenado cronologicamente
+    (mais antigo primeiro) e sem duplicatas de mesma semana ISO.
+
+    Exclui arquivos `carteira_v2_*.json` — são da pipeline V2 antiga
+    e colidem na mesma chave de data_vigencia_inicio que o V3c live,
+    sobrescrevendo a tabela "Histórico semanal" com vigência errada.
     """
     hist_dir = config.HISTORICO_DIR
     if not hist_dir.exists():
         return []
 
-    arquivos = list(hist_dir.glob("carteira*.json"))
+    # Filtra: só arquivos do V3c (formato `carteira_YYYY-WWW.json`)
+    arquivos = [
+        p for p in hist_dir.glob("carteira_*.json")
+        if not p.name.startswith("carteira_v2_")
+    ]
     semana_data: dict[str, dict] = {}
     for path in arquivos:
         try:
@@ -87,9 +95,11 @@ def _carregar_todos_historicos() -> list[dict]:
                 d = json.load(f)
             if not d.get("performance_diaria"):
                 continue
+            # Só V3c (filtro defensivo — também excluído pelo nome)
+            if d.get("metadata", {}).get("versao_formula") != "v3c":
+                continue
             meta = d.get("metadata", {})
             chave = meta.get("data_vigencia_inicio") or meta.get("data_formacao") or path.stem
-            # Mantém o mais "completo" (mais pregões) se duplicar
             existente = semana_data.get(chave)
             if (existente is None or
                 len(d["performance_diaria"]) > len(existente["performance_diaria"])):

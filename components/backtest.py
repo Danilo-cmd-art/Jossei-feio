@@ -25,6 +25,78 @@ def _carregar_backtest() -> dict | None:
         return json.load(f)
 
 
+@st.cache_data(ttl=60)
+def _carregar_live_atual() -> dict | None:
+    """
+    Lê o JSON da semana V3c LIVE mais recente em historico/.
+    Usado para sobrescrever o último ponto do equity_curve com o retorno
+    real apurado pelo sistema vivo (em vez do retorno simulado do backtest).
+    """
+    hist_dir = config.HISTORICO_DIR
+    if not hist_dir.exists():
+        return None
+    candidatos = sorted(
+        (p for p in hist_dir.glob("carteira_*.json")
+         if not p.name.startswith("carteira_v2_")),
+        key=lambda p: p.name,
+        reverse=True,
+    )
+    for path in candidatos:
+        try:
+            with open(path, encoding="utf-8") as f:
+                d = json.load(f)
+            if d.get("metadata", {}).get("versao_formula") == "v3c":
+                return d
+        except Exception:
+            continue
+    return None
+
+
+def _injetar_live_no_equity_curve(
+    equity_curve: list[dict],
+    live: dict | None,
+) -> list[dict]:
+    """
+    Substitui o último ponto do equity_curve (W atual SIMULADA pelo backtest)
+    pelo retorno REAL da carteira live em curso. Mantém os benchmarks do
+    backtest pois não temos como reconstruir IBOV/SMLL/CDI live aqui.
+
+    Se a semana live não bate com o último ponto do backtest, NÃO altera nada
+    (segurança — evita reescrever o histórico errado).
+    """
+    if not equity_curve or live is None:
+        return equity_curve
+
+    ret_live_pct = live.get("retorno_acumulado_total")
+    if ret_live_pct is None:
+        return equity_curve
+
+    # Confere se a semana live = última semana do equity curve
+    meta = live.get("metadata", {})
+    vig_ini_live = (meta.get("data_vigencia_inicio") or "")[:10]
+    ultima_data_bt = str(equity_curve[-1].get("data", ""))[:10]
+    if not vig_ini_live or not ultima_data_bt:
+        return equity_curve
+    if vig_ini_live != ultima_data_bt:
+        # Não bate — provavelmente backtest desatualizado ou semana nova.
+        # Por segurança, deixa o equity_curve como está.
+        return equity_curve
+
+    # Substitui valor_estrategia: parte do valor do final da W anterior
+    # (penúltimo ponto) e compõe com o retorno live da semana corrente.
+    if len(equity_curve) < 2:
+        return equity_curve
+    valor_anterior = equity_curve[-2].get("valor_estrategia")
+    if valor_anterior is None:
+        return equity_curve
+
+    novo_valor = valor_anterior * (1.0 + ret_live_pct)
+    equity_curve_modificado = list(equity_curve[:-1]) + [
+        {**equity_curve[-1], "valor_estrategia": novo_valor, "_live": True}
+    ]
+    return equity_curve_modificado
+
+
 def _filtrar_equity(equity_curve: list[dict], periodo: str) -> list[dict]:
     n = {"3m": 13, "6m": 26, "1a": 52, "2a": 104}.get(periodo, 104)
     return equity_curve[-n:] if len(equity_curve) >= n else equity_curve
@@ -158,6 +230,13 @@ def render_aba_backtest(periodo: str = "2a") -> None:
     bench        = bt.get("metricas_benchmarks", {})
     alphas       = bt.get("alphas", {})
     equity_curve = bt.get("equity_curve", [])
+
+    # Substitui o último ponto do equity_curve (W simulada da semana corrente)
+    # pelo retorno REAL da carteira live em andamento — assim o gráfico
+    # "Retorno acumulado por semana" reflete a performance atualizada a cada
+    # intraday, e não fica congelado no valor simulado do backtest.
+    live = _carregar_live_atual()
+    equity_curve = _injetar_live_no_equity_curve(equity_curve, live)
 
     # Período em estilo editorial
     st.markdown(
