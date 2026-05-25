@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 104,
+    "n_carteiras": 105,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -12,42 +12,42 @@
       "tickers": [
         {
           "ticker": "INTB3",
-          "score": 77.5,
+          "score": 75.4329,
           "preco_entrada": 21.14468765258789,
           "preco_saida": 20.770915985107422,
           "retorno_semana": -0.017677
         },
         {
           "ticker": "DIRR3",
-          "score": 73.3333,
-          "preco_entrada": 6.423915386199951,
-          "preco_saida": 6.303913593292236,
+          "score": 71.0606,
+          "preco_entrada": 6.423915863037109,
+          "preco_saida": 6.3039140701293945,
           "retorno_semana": -0.01868
         },
         {
           "ticker": "DESK3",
-          "score": 70.5833,
+          "score": 70.8658,
           "preco_entrada": 15.673467636108398,
           "preco_saida": 15.999382019042969,
           "retorno_semana": 0.020794
         },
         {
-          "ticker": "EKTR4",
-          "score": 70.4167,
-          "preco_entrada": 31.749691009521484,
-          "preco_saida": 31.348304748535156,
-          "retorno_semana": -0.012642
+          "ticker": "CURY3",
+          "score": 68.5498,
+          "preco_entrada": 15.544779777526855,
+          "preco_saida": 15.255070686340332,
+          "retorno_semana": -0.018637
         },
         {
-          "ticker": "CURY3",
-          "score": 65.1875,
-          "preco_entrada": 15.544778823852539,
-          "preco_saida": 15.255074501037598,
-          "retorno_semana": -0.018637
+          "ticker": "BMEB4",
+          "score": 63.4632,
+          "preco_entrada": 24.44820213317871,
+          "preco_saida": 24.631404876708984,
+          "retorno_semana": 0.007494
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.009368
+      "retorno_carteira": -0.005341
     },
     {
       "semana": "2024-W23",
@@ -57,42 +57,42 @@
       "tickers": [
         {
           "ticker": "BIOM3",
-          "score": 75.1429,
+          "score": 75.7143,
           "preco_entrada": 17.5,
           "preco_saida": 15.350000381469727,
           "retorno_semana": -0.122857
         },
         {
           "ticker": "DESK3",
-          "score": 70.9048,
+          "score": 69.2857,
           "preco_entrada": 15.999382019042969,
           "preco_saida": 15.456191062927246,
           "retorno_semana": -0.033951
         },
         {
           "ticker": "DIRR3",
-          "score": 68.1905,
-          "preco_entrada": 6.303913593292236,
-          "preco_saida": 6.699663162231445,
+          "score": 66.4286,
+          "preco_entrada": 6.3039140701293945,
+          "preco_saida": 6.6996636390686035,
           "retorno_semana": 0.062778
         },
         {
-          "ticker": "INTB3",
-          "score": 62.8095,
-          "preco_entrada": 20.770915985107422,
-          "preco_saida": 20.904407501220703,
-          "retorno_semana": 0.006427
+          "ticker": "BMOB3",
+          "score": 60.7143,
+          "preco_entrada": 10.915024757385254,
+          "preco_saida": 10.915024757385254,
+          "retorno_semana": 0.0
         },
         {
-          "ticker": "CLSC4",
-          "score": 62.0952,
-          "preco_entrada": 60.992881774902344,
-          "preco_saida": 59.6189079284668,
-          "retorno_semana": -0.022527
+          "ticker": "CAML3",
+          "score": 59.2857,
+          "preco_entrada": 8.75433349609375,
+          "preco_saida": 8.87325382232666,
+          "retorno_semana": 0.013584
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.022026
+      "retorno_carteira": -0.016089
     },
     {
       "semana": "2024-W24",
@@ -101,43 +101,43 @@
       "data_vigencia_fim": "2024-06-14",
       "tickers": [
         {
-          "ticker": "EKTR4",
-          "score": 73.3158,
-          "preco_entrada": 31.62928581237793,
-          "preco_saida": 30.641870498657227,
-          "retorno_semana": -0.031218
-        },
-        {
           "ticker": "BIOM3",
-          "score": 72.8421,
+          "score": 75.0,
           "preco_entrada": 15.350000381469727,
           "preco_saida": 14.010000228881836,
           "retorno_semana": -0.087296
         },
         {
+          "ticker": "CURY3",
+          "score": 71.6667,
+          "preco_entrada": 15.975197792053223,
+          "preco_saida": 15.354400634765625,
+          "retorno_semana": -0.03886
+        },
+        {
+          "ticker": "DIRR3",
+          "score": 70.8333,
+          "preco_entrada": 6.6996636390686035,
+          "preco_saida": 6.452000617980957,
+          "retorno_semana": -0.036966
+        },
+        {
           "ticker": "DESK3",
-          "score": 69.4474,
+          "score": 69.1667,
           "preco_entrada": 15.456191062927246,
           "preco_saida": 15.120402336120605,
           "retorno_semana": -0.021725
         },
         {
-          "ticker": "WLMM4",
-          "score": 69.1842,
-          "preco_entrada": 27.65629005432129,
-          "preco_saida": 26.687576293945312,
-          "retorno_semana": -0.035027
-        },
-        {
-          "ticker": "CURY3",
-          "score": 67.8947,
-          "preco_entrada": 15.975196838378906,
-          "preco_saida": 15.354399681091309,
-          "retorno_semana": -0.03886
+          "ticker": "INTB3",
+          "score": 64.1667,
+          "preco_entrada": 20.904407501220703,
+          "preco_saida": 20.22806167602539,
+          "retorno_semana": -0.032354
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.042825
+      "retorno_carteira": -0.04344
     },
     {
       "semana": "2024-W25",
@@ -147,42 +147,42 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 83.4503,
+          "score": 85.0,
           "preco_entrada": 24.18256187438965,
-          "preco_saida": 23.99936294555664,
+          "preco_saida": 23.999361038208008,
           "retorno_semana": -0.007576
         },
         {
-          "ticker": "WLMM4",
-          "score": 71.2281,
-          "preco_entrada": 26.687576293945312,
-          "preco_saida": 26.434490203857422,
-          "retorno_semana": -0.009483
+          "ticker": "DIRR3",
+          "score": 73.5714,
+          "preco_entrada": 6.452000617980957,
+          "preco_saida": 6.449448108673096,
+          "retorno_semana": -0.000396
         },
         {
-          "ticker": "ENMT3",
-          "score": 70.4094,
-          "preco_entrada": 75.55008697509766,
-          "preco_saida": 75.55008697509766,
-          "retorno_semana": 0.0
+          "ticker": "BMOB3",
+          "score": 72.8571,
+          "preco_entrada": 11.150116920471191,
+          "preco_saida": 10.923421859741211,
+          "retorno_semana": -0.020331
         },
         {
           "ticker": "DESK3",
-          "score": 66.7836,
+          "score": 69.2857,
           "preco_entrada": 15.120402336120605,
           "preco_saida": 14.606842041015625,
           "retorno_semana": -0.033965
         },
         {
-          "ticker": "DIRR3",
-          "score": 65.9064,
-          "preco_entrada": 6.452001094818115,
-          "preco_saida": 6.449448585510254,
-          "retorno_semana": -0.000396
+          "ticker": "SMTO3",
+          "score": 67.1429,
+          "preco_entrada": 28.608776092529297,
+          "preco_saida": 30.539775848388672,
+          "retorno_semana": 0.067497
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.010284
+      "retorno_carteira": 0.001046
     },
     {
       "semana": "2024-W26",
@@ -192,42 +192,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 75.614,
-          "preco_entrada": 15.685494422912598,
-          "preco_saida": 17.05124855041504,
+          "score": 82.5,
+          "preco_entrada": 15.685492515563965,
+          "preco_saida": 17.051246643066406,
           "retorno_semana": 0.087071
         },
         {
-          "ticker": "TECN3",
-          "score": 73.6257,
-          "preco_entrada": 4.312575817108154,
-          "preco_saida": 4.095591068267822,
-          "retorno_semana": -0.050314
+          "ticker": "DESK3",
+          "score": 66.6667,
+          "preco_entrada": 14.606842041015625,
+          "preco_saida": 15.110526084899902,
+          "retorno_semana": 0.034483
         },
         {
-          "ticker": "ENMT3",
-          "score": 69.2982,
-          "preco_entrada": 75.55008697509766,
-          "preco_saida": 75.55008697509766,
-          "retorno_semana": 0.0
+          "ticker": "OPCT3",
+          "score": 65.8333,
+          "preco_entrada": 6.440401077270508,
+          "preco_saida": 6.400767803192139,
+          "retorno_semana": -0.006154
         },
         {
           "ticker": "SMTO3",
-          "score": 65.6725,
+          "score": 62.5,
           "preco_entrada": 30.539775848388672,
-          "preco_saida": 30.87942123413086,
+          "preco_saida": 30.879423141479492,
           "retorno_semana": 0.011121
         },
         {
-          "ticker": "BGIP4",
-          "score": 63.3333,
-          "preco_entrada": 18.1534423828125,
-          "preco_saida": 17.08559226989746,
-          "retorno_semana": -0.058824
+          "ticker": "INTB3",
+          "score": 60.0,
+          "preco_entrada": 20.1568660736084,
+          "preco_saida": 20.54843521118164,
+          "retorno_semana": 0.019426
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.002189
+      "retorno_carteira": 0.02919
     },
     {
       "semana": "2024-W27",
@@ -237,42 +237,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 91.7994,
-          "preco_entrada": 17.05124855041504,
-          "preco_saida": 17.978307723999023,
+          "score": 92.5,
+          "preco_entrada": 17.051246643066406,
+          "preco_saida": 17.978303909301758,
           "retorno_semana": 0.054369
         },
         {
           "ticker": "BMEB4",
-          "score": 89.9431,
+          "score": 89.2857,
           "preco_entrada": 25.32756996154785,
           "preco_saida": 25.932132720947266,
           "retorno_semana": 0.02387
         },
         {
           "ticker": "DIRR3",
-          "score": 77.7525,
-          "preco_entrada": 6.789026260375977,
+          "score": 80.3571,
+          "preco_entrada": 6.789025783538818,
           "preco_saida": 7.242449760437012,
           "retorno_semana": 0.066788
         },
         {
           "ticker": "FRAS3",
-          "score": 74.2425,
+          "score": 74.1071,
           "preco_entrada": 18.38003921508789,
-          "preco_saida": 19.19524383544922,
+          "preco_saida": 19.19524574279785,
           "retorno_semana": 0.044353
         },
         {
-          "ticker": "WLMM4",
-          "score": 73.8193,
-          "preco_entrada": 27.403200149536133,
-          "preco_saida": 27.09775161743164,
-          "retorno_semana": -0.011146
+          "ticker": "BEEF3",
+          "score": 73.5714,
+          "preco_entrada": 6.44630241394043,
+          "preco_saida": 6.620005130767822,
+          "retorno_semana": 0.026946
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.035647
+      "retorno_carteira": 0.043265
     },
     {
       "semana": "2024-W28",
@@ -282,42 +282,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 93.3784,
-          "preco_entrada": 17.978307723999023,
-          "preco_saida": 17.39061737060547,
+          "score": 93.4375,
+          "preco_entrada": 17.978303909301758,
+          "preco_saida": 17.3906192779541,
           "retorno_semana": -0.032689
         },
         {
           "ticker": "BMEB4",
-          "score": 89.4595,
+          "score": 89.375,
           "preco_entrada": 25.932132720947266,
           "preco_saida": 27.159582138061523,
           "retorno_semana": 0.047333
         },
         {
           "ticker": "DIRR3",
-          "score": 86.2162,
+          "score": 85.7812,
           "preco_entrada": 7.242449760437012,
-          "preco_saida": 7.507383346557617,
+          "preco_saida": 7.507384300231934,
           "retorno_semana": 0.036581
         },
         {
           "ticker": "BEEF3",
-          "score": 80.9459,
+          "score": 81.5625,
           "preco_entrada": 6.620005130767822,
           "preco_saida": 6.581404685974121,
           "retorno_semana": -0.005831
         },
         {
-          "ticker": "TECN3",
-          "score": 77.4324,
-          "preco_entrada": 4.710381507873535,
-          "preco_saida": 5.397500038146973,
-          "retorno_semana": 0.145873
+          "ticker": "VAMO3",
+          "score": 77.8125,
+          "preco_entrada": 8.22024917602539,
+          "preco_saida": 8.357254028320312,
+          "retorno_semana": 0.016667
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.038253
+      "retorno_carteira": 0.012412
     },
     {
       "semana": "2024-W29",
@@ -327,35 +327,35 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 91.0109,
+          "score": 90.7763,
           "preco_entrada": 27.159582138061523,
-          "preco_saida": 28.396190643310547,
+          "preco_saida": 28.396188735961914,
           "retorno_semana": 0.045531
         },
         {
           "ticker": "MDNE3",
-          "score": 90.9083,
+          "score": 90.6583,
           "preco_entrada": 10.522856712341309,
           "preco_saida": 10.136271476745605,
           "retorno_semana": -0.036738
         },
         {
           "ticker": "CURY3",
-          "score": 90.2134,
-          "preco_entrada": 17.39061737060547,
-          "preco_saida": 17.92864227294922,
+          "score": 90.1142,
+          "preco_entrada": 17.3906192779541,
+          "preco_saida": 17.92864418029785,
           "retorno_semana": 0.030938
         },
         {
           "ticker": "DIRR3",
-          "score": 88.9959,
-          "preco_entrada": 7.507383346557617,
-          "preco_saida": 7.680403232574463,
-          "retorno_semana": 0.023047
+          "score": 88.5388,
+          "preco_entrada": 7.507384300231934,
+          "preco_saida": 7.6804022789001465,
+          "retorno_semana": 0.023046
         },
         {
           "ticker": "LAVV3",
-          "score": 86.3789,
+          "score": 86.0084,
           "preco_entrada": 7.184447288513184,
           "preco_saida": 7.00884485244751,
           "retorno_semana": -0.024442
@@ -372,42 +372,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 94.0299,
-          "preco_entrada": 17.92864227294922,
+          "score": 93.75,
+          "preco_entrada": 17.92864418029785,
           "preco_saida": 17.862424850463867,
           "retorno_semana": -0.003693
         },
         {
           "ticker": "BMEB4",
-          "score": 89.8507,
-          "preco_entrada": 28.396190643310547,
-          "preco_saida": 30.915203094482422,
+          "score": 89.2857,
+          "preco_entrada": 28.396188735961914,
+          "preco_saida": 30.915206909179688,
           "retorno_semana": 0.08871
         },
         {
           "ticker": "DIRR3",
-          "score": 88.6567,
-          "preco_entrada": 7.680403232574463,
-          "preco_saida": 7.650665283203125,
+          "score": 88.3929,
+          "preco_entrada": 7.6804022789001465,
+          "preco_saida": 7.650664806365967,
           "retorno_semana": -0.003872
         },
         {
           "ticker": "MDNE3",
-          "score": 81.9403,
+          "score": 79.8214,
           "preco_entrada": 10.136271476745605,
           "preco_saida": 10.677491188049316,
           "retorno_semana": 0.053394
         },
         {
-          "ticker": "LAVV3",
-          "score": 79.403,
-          "preco_entrada": 7.00884485244751,
-          "preco_saida": 6.863780498504639,
-          "retorno_semana": -0.020697
+          "ticker": "BMOB3",
+          "score": 78.3929,
+          "preco_entrada": 12.375958442687988,
+          "preco_saida": 12.065300941467285,
+          "retorno_semana": -0.025102
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.022768
+      "retorno_carteira": 0.021887
     },
     {
       "semana": "2024-W31",
@@ -417,35 +417,35 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 92.3188,
-          "preco_entrada": 30.915203094482422,
+          "score": 91.4286,
+          "preco_entrada": 30.915206909179688,
           "preco_saida": 32.174015045166016,
           "retorno_semana": 0.040718
         },
         {
           "ticker": "MDNE3",
-          "score": 89.8551,
+          "score": 88.3929,
           "preco_entrada": 10.677491188049316,
           "preco_saida": 10.770272254943848,
           "retorno_semana": 0.008689
         },
         {
           "ticker": "DIRR3",
-          "score": 89.1304,
-          "preco_entrada": 7.650665283203125,
-          "preco_saida": 7.364102840423584,
+          "score": 87.6786,
+          "preco_entrada": 7.650664806365967,
+          "preco_saida": 7.364103317260742,
           "retorno_semana": -0.037456
         },
         {
           "ticker": "CURY3",
-          "score": 86.6667,
+          "score": 86.6071,
           "preco_entrada": 17.862424850463867,
-          "preco_saida": 18.152130126953125,
+          "preco_saida": 18.152128219604492,
           "retorno_semana": 0.016219
         },
         {
           "ticker": "BMOB3",
-          "score": 80.5797,
+          "score": 80.1786,
           "preco_entrada": 12.065300941467285,
           "preco_saida": 12.233222961425781,
           "retorno_semana": 0.013918
@@ -462,37 +462,37 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 89.7101,
+          "score": 88.3333,
           "preco_entrada": 32.174015045166016,
           "preco_saida": 34.532814025878906,
           "retorno_semana": 0.073314
         },
         {
+          "ticker": "CURY3",
+          "score": 83.7037,
+          "preco_entrada": 18.152128219604492,
+          "preco_saida": 19.294397354125977,
+          "retorno_semana": 0.062928
+        },
+        {
           "ticker": "PLPL3",
-          "score": 84.9275,
+          "score": 82.5926,
           "preco_entrada": 10.465493202209473,
           "preco_saida": 11.049330711364746,
           "retorno_semana": 0.055787
         },
         {
-          "ticker": "CURY3",
-          "score": 84.7826,
-          "preco_entrada": 18.152130126953125,
-          "preco_saida": 19.29439926147461,
-          "retorno_semana": 0.062928
-        },
-        {
           "ticker": "BMOB3",
-          "score": 82.4638,
+          "score": 81.4815,
           "preco_entrada": 12.233222961425781,
           "preco_saida": 13.140009880065918,
           "retorno_semana": 0.074125
         },
         {
           "ticker": "DIRR3",
-          "score": 81.8841,
-          "preco_entrada": 7.364102840423584,
-          "preco_saida": 7.8047590255737305,
+          "score": 78.8889,
+          "preco_entrada": 7.364103317260742,
+          "preco_saida": 7.804758548736572,
           "retorno_semana": 0.059838
         }
       ],
@@ -506,36 +506,36 @@
       "data_vigencia_fim": "2024-08-16",
       "tickers": [
         {
-          "ticker": "CURY3",
-          "score": 92.5581,
-          "preco_entrada": 19.29439926147461,
-          "preco_saida": 19.29439926147461,
-          "retorno_semana": 0.0
-        },
-        {
           "ticker": "PLPL3",
-          "score": 92.4419,
+          "score": 91.7808,
           "preco_entrada": 11.049330711364746,
           "preco_saida": 10.24764347076416,
           "retorno_semana": -0.072555
         },
         {
           "ticker": "BMEB4",
-          "score": 91.9767,
+          "score": 91.6438,
           "preco_entrada": 34.532814025878906,
           "preco_saida": 34.570556640625,
           "retorno_semana": 0.001093
         },
         {
+          "ticker": "CURY3",
+          "score": 91.5068,
+          "preco_entrada": 19.294397354125977,
+          "preco_saida": 19.294397354125977,
+          "retorno_semana": 0.0
+        },
+        {
           "ticker": "VULC3",
-          "score": 87.6744,
+          "score": 86.0274,
           "preco_entrada": 13.240334510803223,
           "preco_saida": 13.164763450622559,
           "retorno_semana": -0.005708
         },
         {
           "ticker": "BEEF3",
-          "score": 86.8605,
+          "score": 85.8904,
           "preco_entrada": 7.247265815734863,
           "preco_saida": 7.189363956451416,
           "retorno_semana": -0.007989
@@ -552,42 +552,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 93.3333,
-          "preco_entrada": 19.29439926147461,
+          "score": 92.8571,
+          "preco_entrada": 19.294397354125977,
           "preco_saida": 19.865530014038086,
           "retorno_semana": 0.029601
         },
         {
           "ticker": "BMEB4",
-          "score": 91.4103,
+          "score": 90.6349,
           "preco_entrada": 34.570556640625,
-          "preco_saida": 36.6651725769043,
-          "retorno_semana": 0.06059
+          "preco_saida": 36.66516876220703,
+          "retorno_semana": 0.060589
         },
         {
           "ticker": "MDNE3",
-          "score": 87.5641,
+          "score": 86.6667,
           "preco_entrada": 11.357881546020508,
           "preco_saida": 11.473857879638672,
           "retorno_semana": 0.010211
         },
         {
+          "ticker": "TTEN3",
+          "score": 82.6984,
+          "preco_entrada": 12.065949440002441,
+          "preco_saida": 11.812135696411133,
+          "retorno_semana": -0.021036
+        },
+        {
           "ticker": "VULC3",
-          "score": 83.8462,
+          "score": 82.5397,
           "preco_entrada": 13.164763450622559,
           "preco_saida": 13.230167388916016,
           "retorno_semana": 0.004968
-        },
-        {
-          "ticker": "PLPL3",
-          "score": 82.9487,
-          "preco_entrada": 10.24764347076416,
-          "preco_saida": 10.70077133178711,
-          "retorno_semana": 0.044218
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.029917
+      "retorno_carteira": 0.016867
     },
     {
       "semana": "2024-W35",
@@ -597,42 +597,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 91.0327,
+          "score": 90.5045,
           "preco_entrada": 19.865530014038086,
-          "preco_saida": 19.716543197631836,
+          "preco_saida": 19.716537475585938,
           "retorno_semana": -0.0075
         },
         {
           "ticker": "BMEB4",
-          "score": 90.1394,
-          "preco_entrada": 36.6651725769043,
+          "score": 89.5459,
+          "preco_entrada": 36.66516876220703,
           "preco_saida": 36.797264099121094,
           "retorno_semana": 0.003603
         },
         {
           "ticker": "BEEF3",
-          "score": 86.5851,
+          "score": 86.0144,
           "preco_entrada": 7.671871662139893,
           "preco_saida": 7.227964878082275,
           "retorno_semana": -0.057862
         },
         {
           "ticker": "MDNE3",
-          "score": 83.7162,
+          "score": 82.2342,
           "preco_entrada": 11.473857879638672,
           "preco_saida": 11.01768684387207,
           "retorno_semana": -0.039757
         },
         {
-          "ticker": "PINE4",
-          "score": 82.6173,
-          "preco_entrada": 4.338521480560303,
-          "preco_saida": 4.225494861602783,
-          "retorno_semana": -0.026052
+          "ticker": "VULC3",
+          "score": 81.5063,
+          "preco_entrada": 13.230167388916016,
+          "preco_saida": 13.185395240783691,
+          "retorno_semana": -0.003384
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.025514
+      "retorno_carteira": -0.02098
     },
     {
       "semana": "2024-W36",
@@ -642,42 +642,42 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 90.0676,
+          "score": 89.4344,
           "preco_entrada": 36.797264099121094,
           "preco_saida": 36.967098236083984,
           "retorno_semana": 0.004615
         },
         {
           "ticker": "CURY3",
-          "score": 88.9041,
-          "preco_entrada": 19.716543197631836,
-          "preco_saida": 20.2711181640625,
-          "retorno_semana": 0.028127
+          "score": 86.8784,
+          "preco_entrada": 19.716537475585938,
+          "preco_saida": 20.271120071411133,
+          "retorno_semana": 0.028128
         },
         {
           "ticker": "VULC3",
-          "score": 84.5059,
+          "score": 81.954,
           "preco_entrada": 13.185395240783691,
           "preco_saida": 13.670428276062012,
           "retorno_semana": 0.036786
         },
         {
-          "ticker": "PINE4",
-          "score": 84.3416,
-          "preco_entrada": 4.225494861602783,
-          "preco_saida": 4.19071626663208,
-          "retorno_semana": -0.008231
-        },
-        {
           "ticker": "BEEF3",
-          "score": 83.4995,
+          "score": 81.7393,
           "preco_entrada": 7.227964878082275,
           "preco_saida": 6.755107402801514,
           "retorno_semana": -0.065421
+        },
+        {
+          "ticker": "PINE4",
+          "score": 81.5094,
+          "preco_entrada": 4.225494861602783,
+          "preco_saida": 4.19071626663208,
+          "retorno_semana": -0.008231
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.000825
+      "retorno_carteira": -0.000824
     },
     {
       "semana": "2024-W37",
@@ -687,37 +687,37 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 89.3552,
-          "preco_entrada": 20.2711181640625,
+          "score": 88.0392,
+          "preco_entrada": 20.271120071411133,
           "preco_saida": 21.09885025024414,
           "retorno_semana": 0.040833
         },
         {
           "ticker": "BMEB4",
-          "score": 87.6166,
+          "score": 87.0588,
           "preco_entrada": 36.967098236083984,
-          "preco_saida": 39.53346633911133,
+          "preco_saida": 39.533470153808594,
           "retorno_semana": 0.069423
         },
         {
           "ticker": "MDNE3",
-          "score": 86.8502,
+          "score": 86.0784,
           "preco_entrada": 11.659418106079102,
           "preco_saida": 11.450663566589355,
           "retorno_semana": -0.017904
         },
         {
           "ticker": "PINE4",
-          "score": 80.9028,
+          "score": 79.0196,
           "preco_entrada": 4.19071626663208,
           "preco_saida": 4.208105564117432,
           "retorno_semana": 0.004149
         },
         {
           "ticker": "DIRR3",
-          "score": 80.8185,
-          "preco_entrada": 8.380587577819824,
-          "preco_saida": 9.045625686645508,
+          "score": 78.6275,
+          "preco_entrada": 8.380586624145508,
+          "preco_saida": 9.045626640319824,
           "retorno_semana": 0.079355
         }
       ],
@@ -731,36 +731,36 @@
       "data_vigencia_fim": "2024-09-20",
       "tickers": [
         {
+          "ticker": "BMEB4",
+          "score": 91.6598,
+          "preco_entrada": 39.533470153808594,
+          "preco_saida": 39.21267318725586,
+          "retorno_semana": -0.008115
+        },
+        {
           "ticker": "CURY3",
-          "score": 92.1566,
+          "score": 90.8358,
           "preco_entrada": 21.09885025024414,
-          "preco_saida": 20.18834686279297,
+          "preco_saida": 20.188344955444336,
           "retorno_semana": -0.043154
         },
         {
-          "ticker": "BMEB4",
-          "score": 91.9771,
-          "preco_entrada": 39.53346633911133,
-          "preco_saida": 39.21267318725586,
-          "retorno_semana": -0.008114
-        },
-        {
           "ticker": "DIRR3",
-          "score": 86.7575,
-          "preco_entrada": 9.045625686645508,
+          "score": 85.6458,
+          "preco_entrada": 9.045626640319824,
           "preco_saida": 8.736504554748535,
           "retorno_semana": -0.034174
         },
         {
           "ticker": "MDNE3",
-          "score": 84.3219,
+          "score": 82.6943,
           "preco_entrada": 11.450663566589355,
           "preco_saida": 11.095004081726074,
           "retorno_semana": -0.03106
         },
         {
           "ticker": "PLPL3",
-          "score": 83.1192,
+          "score": 81.6482,
           "preco_entrada": 10.93604850769043,
           "preco_saida": 11.005760192871094,
           "retorno_semana": 0.006374
@@ -777,38 +777,38 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 90.6091,
+          "score": 90.2857,
           "preco_entrada": 39.21267318725586,
           "preco_saida": 37.92948913574219,
           "retorno_semana": -0.032724
         },
         {
           "ticker": "DIRR3",
-          "score": 87.4972,
+          "score": 85.4286,
           "preco_entrada": 8.736504554748535,
           "preco_saida": 8.402066230773926,
           "retorno_semana": -0.038281
         },
         {
           "ticker": "POMO4",
-          "score": 83.9646,
+          "score": 82.0,
           "preco_entrada": 5.820255756378174,
           "preco_saida": 5.983788013458252,
           "retorno_semana": 0.028097
         },
         {
+          "ticker": "CURY3",
+          "score": 79.7143,
+          "preco_entrada": 20.188344955444336,
+          "preco_saida": 18.789480209350586,
+          "retorno_semana": -0.069291
+        },
+        {
           "ticker": "PLPL3",
-          "score": 81.2957,
+          "score": 79.4286,
           "preco_entrada": 11.005760192871094,
           "preco_saida": 10.604917526245117,
           "retorno_semana": -0.036421
-        },
-        {
-          "ticker": "CURY3",
-          "score": 79.9668,
-          "preco_entrada": 20.18834686279297,
-          "preco_saida": 18.78948402404785,
-          "retorno_semana": -0.069291
         }
       ],
       "n_posicoes": 5,
@@ -822,42 +822,42 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 90.9148,
+          "score": 89.5914,
           "preco_entrada": 37.92948913574219,
           "preco_saida": 36.71234893798828,
           "retorno_semana": -0.03209
         },
         {
           "ticker": "POMO4",
-          "score": 87.0201,
+          "score": 85.5054,
           "preco_entrada": 5.983788013458252,
           "preco_saida": 5.968922138214111,
           "retorno_semana": -0.002484
         },
         {
           "ticker": "DIRR3",
-          "score": 79.4109,
+          "score": 76.5376,
           "preco_entrada": 8.402066230773926,
-          "preco_saida": 8.237588882446289,
+          "preco_saida": 8.237587928771973,
           "retorno_semana": -0.019576
         },
         {
           "ticker": "VIVA3",
-          "score": 77.8448,
-          "preco_entrada": 25.6756591796875,
-          "preco_saida": 26.23444366455078,
+          "score": 74.9032,
+          "preco_entrada": 25.675661087036133,
+          "preco_saida": 26.234445571899414,
           "retorno_semana": 0.021763
         },
         {
-          "ticker": "SBFG3",
-          "score": 69.7505,
-          "preco_entrada": 15.235618591308594,
-          "preco_saida": 13.619443893432617,
-          "retorno_semana": -0.106079
+          "ticker": "VLID3",
+          "score": 68.7742,
+          "preco_entrada": 19.34958267211914,
+          "preco_saida": 19.517911911010742,
+          "retorno_semana": 0.008699
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.027693
+      "retorno_carteira": -0.004737
     },
     {
       "semana": "2024-W41",
@@ -867,35 +867,35 @@
       "tickers": [
         {
           "ticker": "PLPL3",
-          "score": 93.1423,
+          "score": 92.127,
           "preco_entrada": 11.371747970581055,
           "preco_saida": 11.572168350219727,
           "retorno_semana": 0.017624
         },
         {
           "ticker": "BMEB4",
-          "score": 92.0751,
+          "score": 90.754,
           "preco_entrada": 36.71234893798828,
           "preco_saida": 37.344505310058594,
           "retorno_semana": 0.017219
         },
         {
           "ticker": "MDNE3",
-          "score": 86.7194,
+          "score": 85.2619,
           "preco_entrada": 12.200638771057129,
           "preco_saida": 11.883637428283691,
           "retorno_semana": -0.025982
         },
         {
           "ticker": "PINE4",
-          "score": 83.6166,
+          "score": 82.7143,
           "preco_entrada": 4.318634033203125,
           "preco_saida": 4.375848293304443,
           "retorno_semana": 0.013248
         },
         {
           "ticker": "POMO4",
-          "score": 83.3992,
+          "score": 82.2937,
           "preco_entrada": 5.968922138214111,
           "preco_saida": 6.028388023376465,
           "retorno_semana": 0.009963
@@ -912,35 +912,35 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 91.5709,
+          "score": 89.8571,
           "preco_entrada": 37.344505310058594,
           "preco_saida": 37.193538665771484,
           "retorno_semana": -0.004043
         },
         {
           "ticker": "PLPL3",
-          "score": 91.5198,
+          "score": 89.8095,
           "preco_entrada": 11.572168350219727,
           "preco_saida": 12.060152053833008,
           "retorno_semana": 0.042169
         },
         {
           "ticker": "POMO4",
-          "score": 88.9527,
+          "score": 86.3333,
           "preco_entrada": 6.028388023376465,
-          "preco_saida": 6.600750923156738,
+          "preco_saida": 6.60075044631958,
           "retorno_semana": 0.094945
         },
         {
           "ticker": "PINE4",
-          "score": 83.3461,
+          "score": 83.2381,
           "preco_entrada": 4.375848293304443,
           "preco_saida": 4.378659725189209,
           "retorno_semana": 0.000642
         },
         {
           "ticker": "MDNE3",
-          "score": 77.2414,
+          "score": 74.7619,
           "preco_entrada": 11.883637428283691,
           "preco_saida": 11.605297088623047,
           "retorno_semana": -0.023422
@@ -957,35 +957,35 @@
       "tickers": [
         {
           "ticker": "POMO4",
-          "score": 88.0,
-          "preco_entrada": 6.600750923156738,
-          "preco_saida": 6.355451583862305,
+          "score": 87.8261,
+          "preco_entrada": 6.60075044631958,
+          "preco_saida": 6.355452060699463,
           "retorno_semana": -0.037162
         },
         {
           "ticker": "PLPL3",
-          "score": 82.6667,
+          "score": 80.8696,
           "preco_entrada": 12.060152053833008,
           "preco_saida": 12.007867813110352,
           "retorno_semana": -0.004335
         },
         {
           "ticker": "BMEB4",
-          "score": 77.6667,
+          "score": 74.3478,
           "preco_entrada": 37.193538665771484,
           "preco_saida": 38.75034713745117,
           "retorno_semana": 0.041857
         },
         {
           "ticker": "PINE4",
-          "score": 74.6667,
+          "score": 72.6087,
           "preco_entrada": 4.378659725189209,
           "preco_saida": 4.260317802429199,
           "retorno_semana": -0.027027
         },
         {
           "ticker": "CEAB3",
-          "score": 71.3333,
+          "score": 72.1739,
           "preco_entrada": 11.127937316894531,
           "preco_saida": 11.833745002746582,
           "retorno_semana": 0.063427
@@ -1002,38 +1002,38 @@
       "tickers": [
         {
           "ticker": "POMO4",
-          "score": 85.9355,
-          "preco_entrada": 6.355451583862305,
+          "score": 84.9288,
+          "preco_entrada": 6.355452060699463,
           "preco_saida": 6.184486389160156,
           "retorno_semana": -0.026901
         },
         {
           "ticker": "CEAB3",
-          "score": 76.4516,
+          "score": 78.1197,
           "preco_entrada": 11.833745002746582,
           "preco_saida": 11.659584999084473,
           "retorno_semana": -0.014717
         },
         {
-          "ticker": "TGMA3",
-          "score": 75.2473,
-          "preco_entrada": 25.143552780151367,
-          "preco_saida": 25.411869049072266,
-          "retorno_semana": 0.010671
+          "ticker": "CURY3",
+          "score": 74.3875,
+          "preco_entrada": 20.63411521911621,
+          "preco_saida": 20.138225555419922,
+          "retorno_semana": -0.024033
         },
         {
           "ticker": "TEND3",
-          "score": 74.7957,
+          "score": 73.6182,
           "preco_entrada": 13.610185623168945,
           "preco_saida": 13.947859764099121,
           "retorno_semana": 0.02481
         },
         {
-          "ticker": "CURY3",
-          "score": 72.8602,
-          "preco_entrada": 20.634119033813477,
-          "preco_saida": 20.13822364807129,
-          "retorno_semana": -0.024033
+          "ticker": "TGMA3",
+          "score": 72.6496,
+          "preco_entrada": 25.143552780151367,
+          "preco_saida": 25.411869049072266,
+          "retorno_semana": 0.010671
         }
       ],
       "n_posicoes": 5,
@@ -1046,43 +1046,43 @@
       "data_vigencia_fim": "2024-11-08",
       "tickers": [
         {
-          "ticker": "BMEB4",
-          "score": 76.558,
-          "preco_entrada": 41.39220428466797,
-          "preco_saida": 36.5047721862793,
-          "retorno_semana": -0.118076
-        },
-        {
           "ticker": "CEAB3",
-          "score": 75.8152,
+          "score": 76.2987,
           "preco_entrada": 11.659584999084473,
           "preco_saida": 11.696249961853027,
           "retorno_semana": 0.003145
         },
         {
+          "ticker": "BMEB4",
+          "score": 74.4156,
+          "preco_entrada": 41.3922004699707,
+          "preco_saida": 36.50476837158203,
+          "retorno_semana": -0.118076
+        },
+        {
           "ticker": "PLPL3",
-          "score": 71.9384,
+          "score": 71.645,
           "preco_entrada": 12.025297164916992,
           "preco_saida": 11.371747970581055,
           "retorno_semana": -0.054348
         },
         {
           "ticker": "SEER3",
-          "score": 69.0761,
+          "score": 68.9394,
           "preco_entrada": 6.456235885620117,
           "preco_saida": 6.7005767822265625,
           "retorno_semana": 0.037846
         },
         {
-          "ticker": "TGMA3",
-          "score": 68.0072,
-          "preco_entrada": 25.411869049072266,
-          "preco_saida": 27.58437156677246,
-          "retorno_semana": 0.085492
+          "ticker": "PRNR3",
+          "score": 66.3636,
+          "preco_entrada": 13.5093412399292,
+          "preco_saida": 14.476430892944336,
+          "retorno_semana": 0.071587
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.009188
+      "retorno_carteira": -0.011969
     },
     {
       "semana": "2024-W46",
@@ -1092,35 +1092,35 @@
       "tickers": [
         {
           "ticker": "TGMA3",
-          "score": 83.0392,
+          "score": 82.8325,
           "preco_entrada": 27.58437156677246,
           "preco_saida": 27.788436889648438,
           "retorno_semana": 0.007398
         },
         {
-          "ticker": "POMO4",
-          "score": 79.5633,
-          "preco_entrada": 6.600750923156738,
-          "preco_saida": 7.002147197723389,
-          "retorno_semana": 0.060811
-        },
-        {
-          "ticker": "TEND3",
-          "score": 79.4029,
-          "preco_entrada": 15.298561096191406,
-          "preco_saida": 15.261041641235352,
-          "retorno_semana": -0.002452
-        },
-        {
           "ticker": "CEAB3",
-          "score": 78.8324,
+          "score": 79.9754,
           "preco_entrada": 11.696249961853027,
           "preco_saida": 10.587122917175293,
           "retorno_semana": -0.094828
         },
         {
+          "ticker": "TEND3",
+          "score": 78.2266,
+          "preco_entrada": 15.298561096191406,
+          "preco_saida": 15.261041641235352,
+          "retorno_semana": -0.002452
+        },
+        {
+          "ticker": "POMO4",
+          "score": 77.734,
+          "preco_entrada": 6.60075044631958,
+          "preco_saida": 7.002147197723389,
+          "retorno_semana": 0.060811
+        },
+        {
           "ticker": "SEER3",
-          "score": 74.0909,
+          "score": 76.133,
           "preco_entrada": 6.7005767822265625,
           "preco_saida": 6.202497482299805,
           "retorno_semana": -0.074334
@@ -1137,35 +1137,35 @@
       "tickers": [
         {
           "ticker": "POMO4",
-          "score": 92.3423,
+          "score": 91.0714,
           "preco_entrada": 7.002147197723389,
           "preco_saida": 7.1062140464782715,
           "retorno_semana": 0.014862
         },
         {
           "ticker": "TTEN3",
-          "score": 84.3093,
+          "score": 85.7143,
           "preco_entrada": 14.037893295288086,
           "preco_saida": 14.008606910705566,
           "retorno_semana": -0.002086
         },
         {
           "ticker": "TGMA3",
-          "score": 83.3784,
+          "score": 80.3571,
           "preco_entrada": 27.788436889648438,
           "preco_saida": 27.815053939819336,
           "retorno_semana": 0.000958
         },
         {
           "ticker": "TEND3",
-          "score": 82.4474,
+          "score": 78.5714,
           "preco_entrada": 15.261041641235352,
           "preco_saida": 15.392359733581543,
           "retorno_semana": 0.008605
         },
         {
           "ticker": "LAVV3",
-          "score": 75.3754,
+          "score": 71.4286,
           "preco_entrada": 7.065489768981934,
           "preco_saida": 6.809267520904541,
           "retorno_semana": -0.036264
@@ -1182,35 +1182,35 @@
       "tickers": [
         {
           "ticker": "POMO4",
-          "score": 89.8724,
+          "score": 88.9474,
           "preco_entrada": 7.1062140464782715,
-          "preco_saida": 6.479880332946777,
+          "preco_saida": 6.4798808097839355,
           "retorno_semana": -0.088139
         },
         {
           "ticker": "TTEN3",
-          "score": 83.648,
+          "score": 84.4737,
           "preco_entrada": 14.008606910705566,
-          "preco_saida": 13.295973777770996,
+          "preco_saida": 13.29597282409668,
           "retorno_semana": -0.050871
         },
         {
           "ticker": "TGMA3",
-          "score": 82.9082,
+          "score": 80.7895,
           "preco_entrada": 27.815053939819336,
           "preco_saida": 27.14962387084961,
           "retorno_semana": -0.023923
         },
         {
           "ticker": "TEND3",
-          "score": 82.0238,
+          "score": 79.2105,
           "preco_entrada": 15.392359733581543,
           "preco_saida": 13.141192436218262,
           "retorno_semana": -0.146252
         },
         {
           "ticker": "DIRR3",
-          "score": 75.6037,
+          "score": 71.8421,
           "preco_entrada": 8.646041870117188,
           "preco_saida": 7.936046123504639,
           "retorno_semana": -0.082118
@@ -1227,37 +1227,37 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 79.533,
-          "preco_entrada": 13.295973777770996,
+          "score": 78.4762,
+          "preco_entrada": 13.29597282409668,
           "preco_saida": 13.803603172302246,
           "retorno_semana": 0.038179
         },
         {
+          "ticker": "POMO4",
+          "score": 75.9524,
+          "preco_entrada": 6.4798808097839355,
+          "preco_saida": 6.306379795074463,
+          "retorno_semana": -0.026775
+        },
+        {
+          "ticker": "UNIP6",
+          "score": 73.5238,
+          "preco_entrada": 42.25959014892578,
+          "preco_saida": 40.325401306152344,
+          "retorno_semana": -0.045769
+        },
+        {
           "ticker": "TGMA3",
-          "score": 74.8077,
+          "score": 71.4762,
           "preco_entrada": 27.14962387084961,
           "preco_saida": 28.13446044921875,
           "retorno_semana": 0.036274
         },
         {
-          "ticker": "POMO4",
-          "score": 74.6703,
-          "preco_entrada": 6.479880332946777,
-          "preco_saida": 6.306380748748779,
-          "retorno_semana": -0.026775
-        },
-        {
-          "ticker": "UNIP6",
-          "score": 73.8462,
-          "preco_entrada": 42.25959014892578,
-          "preco_saida": 40.32539749145508,
-          "retorno_semana": -0.045769
-        },
-        {
           "ticker": "ALLD3",
-          "score": 71.5934,
+          "score": 70.5714,
           "preco_entrada": 5.337358474731445,
-          "preco_saida": 5.355450630187988,
+          "preco_saida": 5.3554511070251465,
           "retorno_semana": 0.00339
         }
       ],
@@ -1272,42 +1272,42 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 79.9206,
+          "score": 80.5556,
           "preco_entrada": 13.803603172302246,
           "preco_saida": 14.5162353515625,
           "retorno_semana": 0.051627
         },
         {
           "ticker": "TGMA3",
-          "score": 79.0741,
+          "score": 75.0,
           "preco_entrada": 28.13446044921875,
           "preco_saida": 27.60211753845215,
           "retorno_semana": -0.018921
         },
         {
-          "ticker": "EKTR4",
-          "score": 74.5767,
-          "preco_entrada": 40.429237365722656,
-          "preco_saida": 40.559879302978516,
-          "retorno_semana": 0.003231
-        },
-        {
           "ticker": "UNIP6",
-          "score": 69.8016,
-          "preco_entrada": 40.32539749145508,
+          "score": 70.5556,
+          "preco_entrada": 40.325401306152344,
           "preco_saida": 40.01658630371094,
           "retorno_semana": -0.007658
         },
         {
+          "ticker": "AMER3",
+          "score": 67.7778,
+          "preco_entrada": 7.820000171661377,
+          "preco_saida": 8.039999961853027,
+          "retorno_semana": 0.028133
+        },
+        {
           "ticker": "ALLD3",
-          "score": 67.6058,
-          "preco_entrada": 5.355450630187988,
+          "score": 67.2222,
+          "preco_entrada": 5.3554511070251465,
           "preco_saida": 4.96493673324585,
           "retorno_semana": -0.072919
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.008928
+      "retorno_carteira": -0.003948
     },
     {
       "semana": "2024-W51",
@@ -1317,42 +1317,42 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 80.4474,
+          "score": 85.3846,
           "preco_entrada": 14.5162353515625,
           "preco_saida": 13.754792213439941,
           "retorno_semana": -0.052455
         },
         {
-          "ticker": "TGMA3",
-          "score": 73.2368,
-          "preco_entrada": 27.60211753845215,
-          "preco_saida": 26.617277145385742,
-          "retorno_semana": -0.03568
-        },
-        {
-          "ticker": "GEPA4",
-          "score": 70.5526,
-          "preco_entrada": 22.15777587890625,
-          "preco_saida": 21.402935028076172,
-          "retorno_semana": -0.034067
-        },
-        {
           "ticker": "AMER3",
-          "score": 67.7105,
+          "score": 70.7692,
           "preco_entrada": 8.039999961853027,
           "preco_saida": 6.630000114440918,
           "retorno_semana": -0.175373
         },
         {
+          "ticker": "TGMA3",
+          "score": 70.7692,
+          "preco_entrada": 27.60211753845215,
+          "preco_saida": 26.617277145385742,
+          "retorno_semana": -0.03568
+        },
+        {
           "ticker": "UNIP6",
-          "score": 66.7632,
+          "score": 70.0,
           "preco_entrada": 40.01658630371094,
-          "preco_saida": 37.91172790527344,
+          "preco_saida": 37.9117317199707,
           "retorno_semana": -0.0526
+        },
+        {
+          "ticker": "SLCE3",
+          "score": 64.6154,
+          "preco_entrada": 15.709900856018066,
+          "preco_saida": 15.087077140808105,
+          "retorno_semana": -0.039645
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.070035
+      "retorno_carteira": -0.07115
     },
     {
       "semana": "2024-W52",
@@ -1362,42 +1362,42 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 79.4118,
+          "score": 82.0,
           "preco_entrada": 13.754792213439941,
-          "preco_saida": 13.07144546508789,
+          "preco_saida": 13.071446418762207,
           "retorno_semana": -0.049681
         },
         {
-          "ticker": "TECN3",
-          "score": 77.6471,
-          "preco_entrada": 5.108187198638916,
-          "preco_saida": 4.936407089233398,
-          "retorno_semana": -0.033628
-        },
-        {
           "ticker": "BRAV3",
-          "score": 71.7647,
+          "score": 73.0,
           "preco_entrada": 20.594457626342773,
           "preco_saida": 22.433250427246094,
           "retorno_semana": 0.089286
         },
         {
-          "ticker": "EKTR4",
-          "score": 70.0,
-          "preco_entrada": 41.77920150756836,
-          "preco_saida": 44.341941833496094,
-          "retorno_semana": 0.06134
+          "ticker": "PGMN3",
+          "score": 69.0,
+          "preco_entrada": 2.858609914779663,
+          "preco_saida": 2.735469102859497,
+          "retorno_semana": -0.043077
         },
         {
           "ticker": "TGMA3",
-          "score": 68.8235,
+          "score": 69.0,
           "preco_entrada": 26.617277145385742,
           "preco_saida": 26.08493423461914,
           "retorno_semana": -0.02
+        },
+        {
+          "ticker": "SLCE3",
+          "score": 60.0,
+          "preco_entrada": 15.087077140808105,
+          "preco_saida": 14.488838195800781,
+          "retorno_semana": -0.039652
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.009463
+      "retorno_carteira": -0.012625
     },
     {
       "semana": "2024-W01",
@@ -1406,43 +1406,43 @@
       "data_vigencia_fim": "2025-01-03",
       "tickers": [
         {
-          "ticker": "EKTR4",
-          "score": 85.1462,
-          "preco_entrada": 44.341941833496094,
-          "preco_saida": 41.17341232299805,
-          "retorno_semana": -0.071457
-        },
-        {
           "ticker": "TTEN3",
-          "score": 73.6257,
-          "preco_entrada": 13.07144546508789,
+          "score": 81.25,
+          "preco_entrada": 13.071446418762207,
           "preco_saida": 12.778583526611328,
           "retorno_semana": -0.022405
         },
         {
           "ticker": "BRAV3",
-          "score": 71.5789,
+          "score": 73.75,
           "preco_entrada": 22.433250427246094,
           "preco_saida": 23.059432983398438,
           "retorno_semana": 0.027913
         },
         {
-          "ticker": "GEPA4",
-          "score": 68.5965,
-          "preco_entrada": 21.750947952270508,
-          "preco_saida": 21.801700592041016,
-          "retorno_semana": 0.002333
-        },
-        {
           "ticker": "BIOM3",
-          "score": 66.7251,
+          "score": 73.75,
           "preco_entrada": 10.069999694824219,
           "preco_saida": 10.5,
           "retorno_semana": 0.042701
+        },
+        {
+          "ticker": "MELK3",
+          "score": 60.0,
+          "preco_entrada": 2.340399742126465,
+          "preco_saida": 2.268688440322876,
+          "retorno_semana": -0.030641
+        },
+        {
+          "ticker": "UNIP6",
+          "score": 53.75,
+          "preco_entrada": 38.50498962402344,
+          "preco_saida": 36.56267547607422,
+          "retorno_semana": -0.050443
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.004183
+      "retorno_carteira": -0.006575
     },
     {
       "semana": "2025-W02",
@@ -1452,42 +1452,42 @@
       "tickers": [
         {
           "ticker": "BRAV3",
-          "score": 72.3077,
+          "score": 74.2857,
           "preco_entrada": 23.059432983398438,
           "preco_saida": 24.769012451171875,
           "retorno_semana": 0.074138
         },
         {
           "ticker": "BIOM3",
-          "score": 71.4103,
+          "score": 72.8571,
           "preco_entrada": 10.5,
           "preco_saida": 9.399999618530273,
           "retorno_semana": -0.104762
         },
         {
           "ticker": "VLID3",
-          "score": 68.0769,
+          "score": 67.1429,
           "preco_entrada": 21.665023803710938,
           "preco_saida": 19.784502029418945,
           "retorno_semana": -0.0868
         },
         {
-          "ticker": "GEPA4",
-          "score": 67.1795,
-          "preco_entrada": 21.801700592041016,
-          "preco_saida": 21.025917053222656,
-          "retorno_semana": -0.035584
+          "ticker": "BMEB4",
+          "score": 62.8571,
+          "preco_entrada": 37.75225067138672,
+          "preco_saida": 36.22385787963867,
+          "retorno_semana": -0.040485
         },
         {
-          "ticker": "CEBR6",
-          "score": 61.6667,
-          "preco_entrada": 14.263996124267578,
-          "preco_saida": 13.842559814453125,
-          "retorno_semana": -0.029545
+          "ticker": "MELK3",
+          "score": 54.2857,
+          "preco_entrada": 2.268688440322876,
+          "preco_saida": 2.3012845516204834,
+          "retorno_semana": 0.014368
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.036511
+      "retorno_carteira": -0.028708
     },
     {
       "semana": "2025-W03",
@@ -1497,42 +1497,42 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 79.3791,
-          "preco_entrada": 13.3447847366333,
-          "preco_saida": 13.559550285339355,
+          "score": 80.0,
+          "preco_entrada": 13.344783782958984,
+          "preco_saida": 13.559551239013672,
           "retorno_semana": 0.016094
         },
         {
-          "ticker": "EKTR4",
-          "score": 71.9935,
-          "preco_entrada": 43.61745834350586,
-          "preco_saida": 44.50778579711914,
-          "retorno_semana": 0.020412
-        },
-        {
           "ticker": "BRAV3",
-          "score": 71.6667,
+          "score": 73.0,
           "preco_entrada": 24.769012451171875,
           "preco_saida": 25.186466217041016,
           "retorno_semana": 0.016854
         },
         {
           "ticker": "PGMN3",
-          "score": 68.5621,
+          "score": 72.0,
           "preco_entrada": 2.8674051761627197,
           "preco_saida": 2.964158535003662,
           "retorno_semana": 0.033742
         },
         {
-          "ticker": "CGRA4",
-          "score": 65.9477,
-          "preco_entrada": 21.83344078063965,
-          "preco_saida": 21.856857299804688,
-          "retorno_semana": 0.001073
+          "ticker": "MELK3",
+          "score": 53.0,
+          "preco_entrada": 2.3012845516204834,
+          "preco_saida": 2.3990731239318848,
+          "retorno_semana": 0.042493
+        },
+        {
+          "ticker": "IRBR3",
+          "score": 51.0,
+          "preco_entrada": 45.29084396362305,
+          "preco_saida": 51.315860748291016,
+          "retorno_semana": 0.133029
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.017635
+      "retorno_carteira": 0.048443
     },
     {
       "semana": "2025-W04",
@@ -1542,42 +1542,42 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 77.2769,
-          "preco_entrada": 13.559550285339355,
+          "score": 79.4444,
+          "preco_entrada": 13.559551239013672,
           "preco_saida": 14.233135223388672,
           "retorno_semana": 0.049676
         },
         {
-          "ticker": "EKTR4",
-          "score": 74.0308,
-          "preco_entrada": 44.50778579711914,
-          "preco_saida": 46.820899963378906,
-          "retorno_semana": 0.051971
-        },
-        {
           "ticker": "BRAV3",
-          "score": 72.3077,
+          "score": 73.3333,
           "preco_entrada": 25.186466217041016,
           "preco_saida": 22.522705078125,
           "retorno_semana": -0.105762
         },
         {
           "ticker": "VULC3",
-          "score": 72.1231,
+          "score": 71.1111,
           "preco_entrada": 12.680113792419434,
           "preco_saida": 12.986522674560547,
           "retorno_semana": 0.024165
         },
         {
           "ticker": "PGMN3",
-          "score": 65.8462,
+          "score": 66.1111,
           "preco_entrada": 2.964158535003662,
           "preco_saida": 2.9304325580596924,
           "retorno_semana": -0.011378
+        },
+        {
+          "ticker": "BIOM3",
+          "score": 65.5556,
+          "preco_entrada": 9.199999809265137,
+          "preco_saida": 9.40999984741211,
+          "retorno_semana": 0.022826
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.001734
+      "retorno_carteira": -0.004095
     },
     {
       "semana": "2025-W05",
@@ -1587,42 +1587,42 @@
       "tickers": [
         {
           "ticker": "TTEN3",
-          "score": 83.6842,
+          "score": 84.4828,
           "preco_entrada": 14.233135223388672,
           "preco_saida": 15.52173137664795,
           "retorno_semana": 0.090535
         },
         {
-          "ticker": "EKTR4",
-          "score": 76.5789,
-          "preco_entrada": 46.820899963378906,
-          "preco_saida": 45.38938903808594,
-          "retorno_semana": -0.030574
-        },
-        {
           "ticker": "VULC3",
-          "score": 72.8947,
+          "score": 70.3448,
           "preco_entrada": 12.986522674560547,
           "preco_saida": 13.156683921813965,
           "retorno_semana": 0.013103
         },
         {
-          "ticker": "BGIP4",
-          "score": 71.8421,
-          "preco_entrada": 21.431222915649414,
-          "preco_saida": 22.55818748474121,
-          "retorno_semana": 0.052585
+          "ticker": "BIOM3",
+          "score": 67.931,
+          "preco_entrada": 9.40999984741211,
+          "preco_saida": 9.699999809265137,
+          "retorno_semana": 0.030818
         },
         {
           "ticker": "BRAV3",
-          "score": 67.6316,
+          "score": 66.8966,
           "preco_entrada": 22.522705078125,
           "preco_saida": 22.294097900390625,
           "retorno_semana": -0.01015
+        },
+        {
+          "ticker": "PRNR3",
+          "score": 66.5517,
+          "preco_entrada": 14.207240104675293,
+          "preco_saida": 15.971929550170898,
+          "retorno_semana": 0.124211
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.0231
+      "retorno_carteira": 0.049703
     },
     {
       "semana": "2025-W06",
@@ -1632,42 +1632,42 @@
       "tickers": [
         {
           "ticker": "LAVV3",
-          "score": 89.2593,
+          "score": 88.9231,
           "preco_entrada": 7.002896785736084,
           "preco_saida": 7.22879695892334,
           "retorno_semana": 0.032258
         },
         {
           "ticker": "TTEN3",
-          "score": 85.3086,
+          "score": 85.2308,
           "preco_entrada": 15.52173137664795,
           "preco_saida": 15.49244499206543,
           "retorno_semana": -0.001887
         },
         {
           "ticker": "VULC3",
-          "score": 82.0988,
+          "score": 80.1538,
           "preco_entrada": 13.156683921813965,
           "preco_saida": 12.87823486328125,
           "retorno_semana": -0.021164
         },
         {
           "ticker": "CURY3",
-          "score": 80.6173,
-          "preco_entrada": 18.171470642089844,
+          "score": 79.2308,
+          "preco_entrada": 18.171472549438477,
           "preco_saida": 18.785032272338867,
           "retorno_semana": 0.033765
         },
         {
-          "ticker": "BGIP4",
-          "score": 79.7531,
-          "preco_entrada": 22.55818748474121,
-          "preco_saida": 21.131669998168945,
-          "retorno_semana": -0.063237
+          "ticker": "PRNR3",
+          "score": 75.6923,
+          "preco_entrada": 15.971929550170898,
+          "preco_saida": 16.151390075683594,
+          "retorno_semana": 0.011236
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.004053
+      "retorno_carteira": 0.010842
     },
     {
       "semana": "2025-W07",
@@ -1677,42 +1677,42 @@
       "tickers": [
         {
           "ticker": "LAVV3",
-          "score": 92.3944,
+          "score": 92.1429,
           "preco_entrada": 7.22879695892334,
           "preco_saida": 7.4783034324646,
           "retorno_semana": 0.034516
         },
         {
           "ticker": "CURY3",
-          "score": 88.4507,
+          "score": 87.5,
           "preco_entrada": 18.785032272338867,
-          "preco_saida": 20.062942504882812,
+          "preco_saida": 20.06294822692871,
           "retorno_semana": 0.068028
         },
         {
           "ticker": "DIRR3",
-          "score": 87.1831,
+          "score": 86.0714,
           "preco_entrada": 8.55913257598877,
           "preco_saida": 8.97082233428955,
           "retorno_semana": 0.048099
         },
         {
           "ticker": "TTEN3",
-          "score": 84.507,
+          "score": 83.9286,
           "preco_entrada": 15.49244499206543,
           "preco_saida": 16.087932586669922,
           "retorno_semana": 0.038437
         },
         {
-          "ticker": "EKTR4",
-          "score": 81.4085,
-          "preco_entrada": 48.880882263183594,
-          "preco_saida": 48.0167350769043,
-          "retorno_semana": -0.017679
+          "ticker": "TEND3",
+          "score": 77.6786,
+          "preco_entrada": 13.930541038513184,
+          "preco_saida": 15.289386749267578,
+          "retorno_semana": 0.097544
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.03428
+      "retorno_carteira": 0.057325
     },
     {
       "semana": "2025-W08",
@@ -1722,42 +1722,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 94.0493,
-          "preco_entrada": 20.062942504882812,
+          "score": 94.2876,
+          "preco_entrada": 20.06294822692871,
           "preco_saida": 20.503225326538086,
           "retorno_semana": 0.021945
         },
         {
           "ticker": "LAVV3",
-          "score": 93.739,
+          "score": 94.0377,
           "preco_entrada": 7.4783034324646,
           "preco_saida": 7.419154167175293,
           "retorno_semana": -0.007909
         },
         {
-          "ticker": "DIRR3",
-          "score": 87.8465,
-          "preco_entrada": 8.97082233428955,
-          "preco_saida": 9.327814102172852,
-          "retorno_semana": 0.039795
-        },
-        {
           "ticker": "PLPL3",
-          "score": 87.7752,
+          "score": 87.6696,
           "preco_entrada": 10.465032577514648,
           "preco_saida": 10.677226066589355,
           "retorno_semana": 0.020276
         },
         {
+          "ticker": "DIRR3",
+          "score": 87.5041,
+          "preco_entrada": 8.97082233428955,
+          "preco_saida": 9.327814102172852,
+          "retorno_semana": 0.039795
+        },
+        {
           "ticker": "TTEN3",
-          "score": 86.0329,
+          "score": 86.3194,
           "preco_entrada": 16.087932586669922,
           "preco_saida": 14.379566192626953,
           "retorno_semana": -0.106189
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.006416
+      "retorno_carteira": -0.006417
     },
     {
       "semana": "2025-W09",
@@ -1767,35 +1767,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 94.6591,
+          "score": 94.5205,
           "preco_entrada": 20.503225326538086,
           "preco_saida": 18.31045913696289,
           "retorno_semana": -0.106947
         },
         {
           "ticker": "LAVV3",
-          "score": 90.1481,
+          "score": 89.9019,
           "preco_entrada": 7.419154167175293,
           "preco_saida": 7.267053127288818,
           "retorno_semana": -0.020501
         },
         {
           "ticker": "DIRR3",
-          "score": 88.7653,
+          "score": 88.2414,
           "preco_entrada": 9.327814102172852,
           "preco_saida": 8.449731826782227,
           "retorno_semana": -0.094136
         },
         {
           "ticker": "PLPL3",
-          "score": 88.0912,
+          "score": 87.0141,
           "preco_entrada": 10.677226066589355,
           "preco_saida": 9.577674865722656,
           "retorno_semana": -0.102981
         },
         {
           "ticker": "TEND3",
-          "score": 85.8069,
+          "score": 85.0852,
           "preco_entrada": 16.135099411010742,
           "preco_saida": 13.997057914733887,
           "retorno_semana": -0.132509
@@ -1812,42 +1812,42 @@
       "tickers": [
         {
           "ticker": "LAVV3",
-          "score": 88.1883,
+          "score": 87.9697,
           "preco_entrada": 7.267053127288818,
           "preco_saida": 7.6895551681518555,
           "retorno_semana": 0.058139
         },
         {
           "ticker": "BMOB3",
-          "score": 81.25,
+          "score": 82.2222,
           "preco_entrada": 12.736099243164062,
           "preco_saida": 12.692182540893555,
           "retorno_semana": -0.003448
         },
         {
           "ticker": "TFCO4",
-          "score": 78.513,
+          "score": 79.2525,
           "preco_entrada": 9.56337833404541,
           "preco_saida": 9.699718475341797,
           "retorno_semana": 0.014256
         },
         {
           "ticker": "TGMA3",
-          "score": 77.6948,
+          "score": 77.3434,
           "preco_entrada": 28.657934188842773,
           "preco_saida": 29.926694869995117,
           "retorno_semana": 0.044273
         },
         {
-          "ticker": "FRAS3",
-          "score": 74.1948,
-          "preco_entrada": 23.107635498046875,
-          "preco_saida": 24.497787475585938,
-          "retorno_semana": 0.06016
+          "ticker": "CURY3",
+          "score": 77.0707,
+          "preco_entrada": 18.31045913696289,
+          "preco_saida": 19.13058853149414,
+          "retorno_semana": 0.04479
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.034676
+      "retorno_carteira": 0.031602
     },
     {
       "semana": "2025-W11",
@@ -1857,35 +1857,35 @@
       "tickers": [
         {
           "ticker": "LAVV3",
-          "score": 93.6737,
+          "score": 92.9399,
           "preco_entrada": 7.6895551681518555,
           "preco_saida": 8.00220775604248,
           "retorno_semana": 0.040659
         },
         {
           "ticker": "CURY3",
-          "score": 87.0912,
+          "score": 85.8852,
           "preco_entrada": 19.13058853149414,
-          "preco_saida": 20.140640258789062,
+          "preco_saida": 20.140642166137695,
           "retorno_semana": 0.052798
         },
         {
           "ticker": "TFCO4",
-          "score": 82.2053,
+          "score": 80.2842,
           "preco_entrada": 9.699718475341797,
           "preco_saida": 9.66076374053955,
           "retorno_semana": -0.004016
         },
         {
           "ticker": "TGMA3",
-          "score": 80.3965,
+          "score": 78.0273,
           "preco_entrada": 29.926694869995117,
           "preco_saida": 30.600997924804688,
           "retorno_semana": 0.022532
         },
         {
           "ticker": "LEVE3",
-          "score": 77.5053,
+          "score": 75.5738,
           "preco_entrada": 25.355558395385742,
           "preco_saida": 25.99332618713379,
           "retorno_semana": 0.025153
@@ -1902,38 +1902,38 @@
       "tickers": [
         {
           "ticker": "LAVV3",
-          "score": 89.8585,
+          "score": 88.4226,
           "preco_entrada": 8.00220775604248,
           "preco_saida": 8.179659843444824,
           "retorno_semana": 0.022175
         },
         {
           "ticker": "CURY3",
-          "score": 84.5987,
-          "preco_entrada": 20.140640258789062,
-          "preco_saida": 20.65861701965332,
+          "score": 83.1052,
+          "preco_entrada": 20.140642166137695,
+          "preco_saida": 20.658615112304688,
           "retorno_semana": 0.025718
         },
         {
           "ticker": "LEVE3",
-          "score": 81.0306,
+          "score": 78.7525,
           "preco_entrada": 25.99332618713379,
           "preco_saida": 25.062528610229492,
           "retorno_semana": -0.035809
         },
         {
-          "ticker": "PLPL3",
-          "score": 77.7772,
-          "preco_entrada": 10.580774307250977,
-          "preco_saida": 11.622455596923828,
-          "retorno_semana": 0.09845
-        },
-        {
           "ticker": "CYRE3",
-          "score": 77.3227,
+          "score": 75.6424,
           "preco_entrada": 20.33664321899414,
           "preco_saida": 21.11406135559082,
           "retorno_semana": 0.038227
+        },
+        {
+          "ticker": "PLPL3",
+          "score": 75.5655,
+          "preco_entrada": 10.580774307250977,
+          "preco_saida": 11.622455596923828,
+          "retorno_semana": 0.09845
         }
       ],
       "n_posicoes": 5,
@@ -1947,42 +1947,42 @@
       "tickers": [
         {
           "ticker": "LAVV3",
-          "score": 90.2263,
+          "score": 88.9685,
           "preco_entrada": 8.179659843444824,
           "preco_saida": 8.052907943725586,
           "retorno_semana": -0.015496
         },
         {
           "ticker": "PLPL3",
-          "score": 90.0764,
+          "score": 88.3461,
           "preco_entrada": 11.622455596923828,
           "preco_saida": 11.728551864624023,
           "retorno_semana": 0.009129
         },
         {
           "ticker": "CURY3",
-          "score": 89.5004,
-          "preco_entrada": 20.65861701965332,
-          "preco_saida": 21.401052474975586,
+          "score": 87.6598,
+          "preco_entrada": 20.658615112304688,
+          "preco_saida": 21.401050567626953,
           "retorno_semana": 0.035938
         },
         {
           "ticker": "MDNE3",
-          "score": 85.7626,
+          "score": 83.5976,
           "preco_entrada": 11.333436012268066,
           "preco_saida": 11.720627784729004,
           "retorno_semana": 0.034164
         },
         {
-          "ticker": "TFCO4",
-          "score": 80.8052,
-          "preco_entrada": 10.381425857543945,
-          "preco_saida": 10.65918254852295,
-          "retorno_semana": 0.026755
+          "ticker": "BMOB3",
+          "score": 79.9957,
+          "preco_entrada": 14.413752555847168,
+          "preco_saida": 15.046164512634277,
+          "retorno_semana": 0.043876
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.018098
+      "retorno_carteira": 0.021522
     },
     {
       "semana": "2025-W14",
@@ -1992,35 +1992,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 91.2654,
-          "preco_entrada": 21.401052474975586,
-          "preco_saida": 21.89312744140625,
+          "score": 89.2471,
+          "preco_entrada": 21.401050567626953,
+          "preco_saida": 21.893129348754883,
           "retorno_semana": 0.022993
         },
         {
           "ticker": "PLPL3",
-          "score": 90.0752,
+          "score": 88.1738,
           "preco_entrada": 11.728551864624023,
           "preco_saida": 11.159485816955566,
           "retorno_semana": -0.04852
         },
         {
           "ticker": "MDNE3",
-          "score": 88.472,
+          "score": 86.5957,
           "preco_entrada": 11.720627784729004,
           "preco_saida": 12.357881546020508,
           "retorno_semana": 0.05437
         },
         {
           "ticker": "BEEF3",
-          "score": 87.2326,
+          "score": 85.6124,
           "preco_entrada": 5.992745399475098,
           "preco_saida": 6.243649482727051,
           "retorno_semana": 0.041868
         },
         {
           "ticker": "LAVV3",
-          "score": 85.2216,
+          "score": 82.4868,
           "preco_entrada": 8.052907943725586,
           "preco_saida": 7.883908271789551,
           "retorno_semana": -0.020986
@@ -2037,42 +2037,42 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 90.9677,
-          "preco_entrada": 21.89312744140625,
-          "preco_saida": 22.385204315185547,
+          "score": 89.375,
+          "preco_entrada": 21.893129348754883,
+          "preco_saida": 22.38520622253418,
           "retorno_semana": 0.022476
         },
         {
-          "ticker": "MDNE3",
-          "score": 86.9355,
-          "preco_entrada": 12.357881546020508,
-          "preco_saida": 12.478879928588867,
-          "retorno_semana": 0.009791
-        },
-        {
           "ticker": "BEEF3",
-          "score": 86.129,
+          "score": 85.2083,
           "preco_entrada": 6.243649482727051,
           "preco_saida": 6.726156711578369,
           "retorno_semana": 0.07728
         },
         {
-          "ticker": "BSLI3",
-          "score": 82.5806,
-          "preco_entrada": 10.472524642944336,
-          "preco_saida": 9.24272346496582,
-          "retorno_semana": -0.117431
+          "ticker": "MDNE3",
+          "score": 84.7917,
+          "preco_entrada": 12.357881546020508,
+          "preco_saida": 12.478879928588867,
+          "retorno_semana": 0.009791
         },
         {
           "ticker": "PLPL3",
-          "score": 81.7742,
+          "score": 78.5417,
           "preco_entrada": 11.159485816955566,
           "preco_saida": 11.535648345947266,
           "retorno_semana": 0.033708
+        },
+        {
+          "ticker": "LAVV3",
+          "score": 77.2917,
+          "preco_entrada": 7.883908271789551,
+          "preco_saida": 8.061358451843262,
+          "retorno_semana": 0.022508
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.005165
+      "retorno_carteira": 0.033153
     },
     {
       "semana": "2025-W16",
@@ -2082,35 +2082,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 91.8713,
-          "preco_entrada": 22.385204315185547,
+          "score": 89.2081,
+          "preco_entrada": 22.38520622253418,
           "preco_saida": 23.602449417114258,
           "retorno_semana": 0.054377
         },
         {
           "ticker": "MDNE3",
-          "score": 88.5337,
+          "score": 85.9314,
           "preco_entrada": 12.478879928588867,
           "preco_saida": 12.13201904296875,
           "retorno_semana": -0.027796
         },
         {
           "ticker": "BEEF3",
-          "score": 86.8414,
+          "score": 84.8416,
           "preco_entrada": 6.726156711578369,
           "preco_saida": 7.150763511657715,
           "retorno_semana": 0.063128
         },
         {
           "ticker": "PLPL3",
-          "score": 85.4646,
+          "score": 82.2323,
           "preco_entrada": 11.535648345947266,
           "preco_saida": 11.487421989440918,
           "retorno_semana": -0.004181
         },
         {
           "ticker": "MOVI3",
-          "score": 79.5183,
+          "score": 78.5709,
           "preco_entrada": 5.343929767608643,
           "preco_saida": 5.593128204345703,
           "retorno_semana": 0.046632
@@ -2127,35 +2127,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 93.1707,
+          "score": 91.6923,
           "preco_entrada": 23.602449417114258,
-          "preco_saida": 23.99034309387207,
-          "retorno_semana": 0.016434
+          "preco_saida": 23.990345001220703,
+          "retorno_semana": 0.016435
         },
         {
           "ticker": "BEEF3",
-          "score": 88.2927,
+          "score": 87.0769,
           "preco_entrada": 7.150763511657715,
           "preco_saida": 6.690227508544922,
           "retorno_semana": -0.064404
         },
         {
-          "ticker": "MDNE3",
-          "score": 85.9756,
-          "preco_entrada": 12.13201904296875,
-          "preco_saida": 13.229063034057617,
-          "retorno_semana": 0.090426
-        },
-        {
           "ticker": "PLPL3",
-          "score": 85.8537,
+          "score": 83.6923,
           "preco_entrada": 11.487421989440918,
           "preco_saida": 11.130550384521484,
           "retorno_semana": -0.031066
         },
         {
+          "ticker": "MDNE3",
+          "score": 83.5385,
+          "preco_entrada": 12.13201904296875,
+          "preco_saida": 13.229063034057617,
+          "retorno_semana": 0.090426
+        },
+        {
           "ticker": "LAVV3",
-          "score": 84.6341,
+          "score": 82.6154,
           "preco_entrada": 8.19655990600586,
           "preco_saida": 8.492311477661133,
           "retorno_semana": 0.036082
@@ -2172,35 +2172,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 92.4352,
-          "preco_entrada": 23.99034309387207,
-          "preco_saida": 24.659433364868164,
+          "score": 90.7519,
+          "preco_entrada": 23.990345001220703,
+          "preco_saida": 24.65943145751953,
           "retorno_semana": 0.02789
         },
         {
           "ticker": "MDNE3",
-          "score": 88.8226,
+          "score": 86.9822,
           "preco_entrada": 13.229063034057617,
           "preco_saida": 12.672475814819336,
           "retorno_semana": -0.042073
         },
         {
           "ticker": "JHSF3",
-          "score": 86.1541,
-          "preco_entrada": 4.679737091064453,
-          "preco_saida": 4.652336597442627,
+          "score": 84.4532,
+          "preco_entrada": 4.679736614227295,
+          "preco_saida": 4.652335166931152,
           "retorno_semana": -0.005855
         },
         {
           "ticker": "BEEF3",
-          "score": 86.0163,
+          "score": 84.0431,
           "preco_entrada": 6.690227508544922,
           "preco_saida": 5.799742698669434,
           "retorno_semana": -0.133102
         },
         {
           "ticker": "LAVV3",
-          "score": 83.8828,
+          "score": 82.054,
           "preco_entrada": 8.492311477661133,
           "preco_saida": 8.788063049316406,
           "retorno_semana": 0.034826
@@ -2217,35 +2217,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 93.9446,
-          "preco_entrada": 24.659433364868164,
-          "preco_saida": 26.525836944580078,
+          "score": 92.625,
+          "preco_entrada": 24.65943145751953,
+          "preco_saida": 26.525835037231445,
           "retorno_semana": 0.075687
         },
         {
           "ticker": "LAVV3",
-          "score": 87.4119,
+          "score": 85.75,
           "preco_entrada": 8.788063049316406,
           "preco_saida": 9.083815574645996,
           "retorno_semana": 0.033654
         },
         {
           "ticker": "BMOB3",
-          "score": 85.0475,
+          "score": 84.875,
           "preco_entrada": 17.46579360961914,
           "preco_saida": 17.767559051513672,
           "retorno_semana": 0.017278
         },
         {
           "ticker": "JHSF3",
-          "score": 84.2931,
-          "preco_entrada": 4.652336597442627,
-          "preco_saida": 4.643031120300293,
+          "score": 82.0,
+          "preco_entrada": 4.652335166931152,
+          "preco_saida": 4.643030643463135,
           "retorno_semana": -0.002
         },
         {
           "ticker": "DIRR3",
-          "score": 84.0891,
+          "score": 81.875,
           "preco_entrada": 10.410300254821777,
           "preco_saida": 10.741379737854004,
           "retorno_semana": 0.031803
@@ -2262,38 +2262,38 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 92.9604,
-          "preco_entrada": 26.525836944580078,
-          "preco_saida": 26.525836944580078,
+          "score": 91.3514,
+          "preco_entrada": 26.525835037231445,
+          "preco_saida": 26.525835037231445,
           "retorno_semana": 0.0
         },
         {
           "ticker": "VULC3",
-          "score": 86.2102,
+          "score": 84.3243,
           "preco_entrada": 16.277015686035156,
           "preco_saida": 16.727399826049805,
           "retorno_semana": 0.02767
         },
         {
           "ticker": "LAVV3",
-          "score": 85.7287,
+          "score": 83.6486,
           "preco_entrada": 9.083815574645996,
           "preco_saida": 9.38525676727295,
           "retorno_semana": 0.033184
         },
         {
-          "ticker": "TEND3",
-          "score": 83.9099,
-          "preco_entrada": 18.48219871520996,
-          "preco_saida": 19.27090072631836,
-          "retorno_semana": 0.042674
-        },
-        {
           "ticker": "BMOB3",
-          "score": 83.2933,
+          "score": 82.4324,
           "preco_entrada": 17.767559051513672,
           "preco_saida": 17.730981826782227,
           "retorno_semana": -0.002059
+        },
+        {
+          "ticker": "TEND3",
+          "score": 82.1622,
+          "preco_entrada": 18.48219871520996,
+          "preco_saida": 19.27090072631836,
+          "retorno_semana": 0.042674
         }
       ],
       "n_posicoes": 5,
@@ -2307,35 +2307,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.0588,
+          "score": 88.7687,
           "preco_entrada": 15.939409255981445,
           "preco_saida": 15.403267860412598,
           "retorno_semana": -0.033636
         },
         {
           "ticker": "CURY3",
-          "score": 89.8667,
-          "preco_entrada": 26.525836944580078,
-          "preco_saida": 26.244115829467773,
+          "score": 88.4102,
+          "preco_entrada": 26.525835037231445,
+          "preco_saida": 26.24411392211914,
           "retorno_semana": -0.010621
         },
         {
           "ticker": "PLPL3",
-          "score": 87.1725,
+          "score": 84.881,
           "preco_entrada": 13.869784355163574,
           "preco_saida": 14.139849662780762,
           "retorno_semana": 0.019471
         },
         {
           "ticker": "TFCO4",
-          "score": 86.0157,
+          "score": 83.8113,
           "preco_entrada": 12.951155662536621,
           "preco_saida": 13.65758228302002,
           "retorno_semana": 0.054545
         },
         {
           "ticker": "VULC3",
-          "score": 85.4588,
+          "score": 83.1678,
           "preco_entrada": 16.727399826049805,
           "preco_saida": 16.14567756652832,
           "retorno_semana": -0.034777
@@ -2352,42 +2352,42 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 88.2798,
+          "score": 86.338,
           "preco_entrada": 15.403267860412598,
           "preco_saida": 17.201704025268555,
           "retorno_semana": 0.116757
         },
         {
           "ticker": "TFCO4",
-          "score": 88.1505,
+          "score": 86.1972,
           "preco_entrada": 13.65758228302002,
           "preco_saida": 14.216835975646973,
           "retorno_semana": 0.040948
         },
         {
           "ticker": "PLPL3",
-          "score": 88.0264,
+          "score": 85.6338,
           "preco_entrada": 14.139849662780762,
           "preco_saida": 14.139849662780762,
           "retorno_semana": 0.0
         },
         {
           "ticker": "TEND3",
-          "score": 83.0329,
+          "score": 81.4085,
           "preco_entrada": 21.45645523071289,
           "preco_saida": 21.941078186035156,
           "retorno_semana": 0.022586
         },
         {
-          "ticker": "VULC3",
-          "score": 82.6541,
-          "preco_entrada": 16.14567756652832,
-          "preco_saida": 16.129789352416992,
-          "retorno_semana": -0.000984
+          "ticker": "CURY3",
+          "score": 80.2817,
+          "preco_entrada": 26.24411392211914,
+          "preco_saida": 25.23168182373047,
+          "retorno_semana": -0.038577
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.035861
+      "retorno_carteira": 0.028343
     },
     {
       "semana": "2025-W23",
@@ -2397,35 +2397,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.8439,
+          "score": 89.7403,
           "preco_entrada": 17.201704025268555,
           "preco_saida": 19.150009155273438,
           "retorno_semana": 0.113262
         },
         {
           "ticker": "TFCO4",
-          "score": 86.9589,
+          "score": 85.0649,
           "preco_entrada": 14.216835975646973,
           "preco_saida": 14.364009857177734,
           "retorno_semana": 0.010352
         },
         {
           "ticker": "PLPL3",
-          "score": 86.6246,
+          "score": 84.2857,
           "preco_entrada": 14.139849662780762,
           "preco_saida": 16.31966209411621,
           "retorno_semana": 0.154161
         },
         {
           "ticker": "LAVV3",
-          "score": 82.784,
+          "score": 81.2987,
           "preco_entrada": 9.897180557250977,
           "preco_saida": 10.170207023620605,
           "retorno_semana": 0.027586
         },
         {
           "ticker": "TEND3",
-          "score": 81.5849,
+          "score": 79.7403,
           "preco_entrada": 21.941078186035156,
           "preco_saida": 23.394947052001953,
           "retorno_semana": 0.066262
@@ -2442,35 +2442,35 @@
       "tickers": [
         {
           "ticker": "PLPL3",
-          "score": 92.1147,
+          "score": 90.5479,
           "preco_entrada": 16.31966209411621,
           "preco_saida": 14.757142066955566,
           "retorno_semana": -0.095745
         },
         {
           "ticker": "MDNE3",
-          "score": 91.57,
+          "score": 90.274,
           "preco_entrada": 19.150009155273438,
           "preco_saida": 18.900226593017578,
           "retorno_semana": -0.013043
         },
         {
           "ticker": "TFCO4",
-          "score": 85.9888,
+          "score": 84.2466,
           "preco_entrada": 14.364009857177734,
           "preco_saida": 14.697599411010742,
           "retorno_semana": 0.023224
         },
         {
           "ticker": "TEND3",
-          "score": 84.8589,
+          "score": 83.8356,
           "preco_entrada": 23.394947052001953,
           "preco_saida": 21.950578689575195,
           "retorno_semana": -0.061738
         },
         {
           "ticker": "LAVV3",
-          "score": 82.4843,
+          "score": 80.6849,
           "preco_entrada": 10.170207023620605,
           "preco_saida": 10.101950645446777,
           "retorno_semana": -0.006711
@@ -2487,35 +2487,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.4584,
+          "score": 89.1429,
           "preco_entrada": 18.900226593017578,
           "preco_saida": 17.717920303344727,
           "retorno_semana": -0.062555
         },
         {
           "ticker": "TFCO4",
-          "score": 86.9498,
+          "score": 85.0,
           "preco_entrada": 14.697599411010742,
           "preco_saida": 14.089288711547852,
           "retorno_semana": -0.041388
         },
         {
           "ticker": "PLPL3",
-          "score": 83.8055,
+          "score": 83.0,
           "preco_entrada": 14.757142066955566,
           "preco_saida": 14.25559139251709,
           "retorno_semana": -0.033987
         },
         {
           "ticker": "TEND3",
-          "score": 83.4646,
+          "score": 82.0,
           "preco_entrada": 21.950578689575195,
           "preco_saida": 22.501720428466797,
           "retorno_semana": 0.025108
         },
         {
           "ticker": "LAVV3",
-          "score": 79.0185,
+          "score": 79.1429,
           "preco_entrada": 10.101950645446777,
           "preco_saida": 10.25552749633789,
           "retorno_semana": 0.015203
@@ -2532,35 +2532,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.2331,
+          "score": 88.7692,
           "preco_entrada": 17.717920303344727,
           "preco_saida": 18.225811004638672,
           "retorno_semana": 0.028665
         },
         {
           "ticker": "PINE4",
-          "score": 85.9857,
+          "score": 84.0,
           "preco_entrada": 5.684465408325195,
           "preco_saida": 5.551827907562256,
           "retorno_semana": -0.023333
         },
         {
           "ticker": "TEND3",
-          "score": 83.1768,
+          "score": 82.3077,
           "preco_entrada": 22.501720428466797,
           "preco_saida": 23.23340606689453,
           "retorno_semana": 0.032517
         },
         {
           "ticker": "TFCO4",
-          "score": 81.63,
+          "score": 79.2308,
           "preco_entrada": 14.089288711547852,
           "preco_saida": 14.340201377868652,
           "retorno_semana": 0.017809
         },
         {
           "ticker": "DIRR3",
-          "score": 80.5544,
+          "score": 77.8462,
           "preco_entrada": 12.134795188903809,
           "preco_saida": 12.218283653259277,
           "retorno_semana": 0.00688
@@ -2577,42 +2577,42 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 88.7226,
+          "score": 86.5517,
           "preco_entrada": 18.225811004638672,
           "preco_saida": 20.149139404296875,
           "retorno_semana": 0.105528
         },
         {
           "ticker": "PINE4",
-          "score": 87.8736,
+          "score": 85.8621,
           "preco_entrada": 5.551827907562256,
           "preco_saida": 5.589724540710449,
           "retorno_semana": 0.006826
         },
         {
           "ticker": "TEND3",
-          "score": 85.7962,
+          "score": 84.6552,
           "preco_entrada": 23.23340606689453,
           "preco_saida": 23.07186508178711,
           "retorno_semana": -0.006953
         },
         {
           "ticker": "TFCO4",
-          "score": 80.3775,
+          "score": 78.7931,
           "preco_entrada": 14.340201377868652,
           "preco_saida": 14.862560272216797,
           "retorno_semana": 0.036426
         },
         {
-          "ticker": "DIRR3",
-          "score": 76.7117,
-          "preco_entrada": 12.218283653259277,
-          "preco_saida": 12.414670944213867,
-          "retorno_semana": 0.016073
+          "ticker": "LAVV3",
+          "score": 75.6897,
+          "preco_entrada": 10.323783874511719,
+          "preco_saida": 10.758916854858398,
+          "retorno_semana": 0.042149
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.03158
+      "retorno_carteira": 0.036795
     },
     {
       "semana": "2025-W28",
@@ -2622,35 +2622,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.6078,
+          "score": 88.8942,
           "preco_entrada": 20.149139404296875,
           "preco_saida": 19.33318328857422,
           "retorno_semana": -0.040496
         },
         {
           "ticker": "PINE4",
-          "score": 89.5342,
+          "score": 87.6394,
           "preco_entrada": 5.589724540710449,
           "preco_saida": 5.750784397125244,
           "retorno_semana": 0.028814
         },
         {
           "ticker": "VULC3",
-          "score": 87.2433,
+          "score": 85.5913,
           "preco_entrada": 17.489322662353516,
           "preco_saida": 16.146451950073242,
           "retorno_semana": -0.076782
         },
         {
           "ticker": "LAVV3",
-          "score": 86.0762,
+          "score": 83.5192,
           "preco_entrada": 10.758916854858398,
           "preco_saida": 10.793045997619629,
           "retorno_semana": 0.003172
         },
         {
           "ticker": "TEND3",
-          "score": 83.4338,
+          "score": 82.4135,
           "preco_entrada": 23.07186508178711,
           "preco_saida": 21.71302032470703,
           "retorno_semana": -0.058896
@@ -2667,35 +2667,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 88.433,
+          "score": 86.3964,
           "preco_entrada": 5.750784397125244,
           "preco_saida": 5.5395121574401855,
           "retorno_semana": -0.036738
         },
         {
           "ticker": "MDNE3",
-          "score": 86.8207,
+          "score": 84.2793,
           "preco_entrada": 19.33318328857422,
           "preco_saida": 17.58470344543457,
           "retorno_semana": -0.090439
         },
         {
           "ticker": "LAVV3",
-          "score": 86.2319,
+          "score": 83.4985,
           "preco_entrada": 10.793045997619629,
           "preco_saida": 10.298187255859375,
           "retorno_semana": -0.04585
         },
         {
           "ticker": "TEND3",
-          "score": 82.9982,
+          "score": 82.3273,
           "preco_entrada": 21.71302032470703,
           "preco_saida": 21.361431121826172,
           "retorno_semana": -0.016193
         },
         {
           "ticker": "VULC3",
-          "score": 82.4185,
+          "score": 79.2342,
           "preco_entrada": 16.146451950073242,
           "preco_saida": 15.14399528503418,
           "retorno_semana": -0.062085
@@ -2711,43 +2711,43 @@
       "data_vigencia_fim": "2025-07-25",
       "tickers": [
         {
-          "ticker": "TFCO4",
-          "score": 86.9485,
-          "preco_entrada": 14.123373985290527,
-          "preco_saida": 14.08395004272461,
-          "retorno_semana": -0.002791
-        },
-        {
           "ticker": "BMOB3",
-          "score": 86.1765,
+          "score": 88.0,
           "preco_entrada": 19.751893997192383,
           "preco_saida": 18.61798858642578,
           "retorno_semana": -0.057407
         },
         {
+          "ticker": "TFCO4",
+          "score": 86.3,
+          "preco_entrada": 14.123373985290527,
+          "preco_saida": 14.08395004272461,
+          "retorno_semana": -0.002791
+        },
+        {
           "ticker": "PINE4",
-          "score": 86.0294,
+          "score": 85.0667,
           "preco_entrada": 5.5395121574401855,
           "preco_saida": 5.751828193664551,
           "retorno_semana": 0.038328
         },
         {
-          "ticker": "POMO4",
-          "score": 77.4265,
-          "preco_entrada": 6.416263103485107,
-          "preco_saida": 6.6209540367126465,
-          "retorno_semana": 0.031902
-        },
-        {
           "ticker": "LAVV3",
-          "score": 77.3162,
+          "score": 77.1667,
           "preco_entrada": 10.298187255859375,
           "preco_saida": 10.127545356750488,
           "retorno_semana": -0.01657
+        },
+        {
+          "ticker": "VIVA3",
+          "score": 76.0667,
+          "preco_entrada": 25.05059814453125,
+          "preco_saida": 24.727428436279297,
+          "retorno_semana": -0.012901
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.001308
+      "retorno_carteira": -0.010268
     },
     {
       "semana": "2025-W31",
@@ -2757,42 +2757,42 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 92.5977,
+          "score": 93.7945,
           "preco_entrada": 5.751828193664551,
           "preco_saida": 5.664971828460693,
           "retorno_semana": -0.015101
         },
         {
           "ticker": "MDNE3",
-          "score": 91.954,
+          "score": 92.9644,
           "preco_entrada": 18.150876998901367,
           "preco_saida": 18.650442123413086,
           "retorno_semana": 0.027523
         },
         {
           "ticker": "POMO4",
-          "score": 80.7931,
+          "score": 81.4229,
           "preco_entrada": 6.6209540367126465,
-          "preco_saida": 6.998844146728516,
+          "preco_saida": 6.998844623565674,
           "retorno_semana": 0.057075
         },
         {
-          "ticker": "MILS3",
-          "score": 69.908,
-          "preco_entrada": 9.696662902832031,
-          "preco_saida": 9.932741165161133,
-          "retorno_semana": 0.024346
+          "ticker": "BMOB3",
+          "score": 73.8735,
+          "preco_entrada": 18.61798858642578,
+          "preco_saida": 18.499109268188477,
+          "retorno_semana": -0.006385
         },
         {
           "ticker": "FLRY3",
-          "score": 69.1494,
+          "score": 73.6364,
           "preco_entrada": 13.376585960388184,
           "preco_saida": 13.154874801635742,
           "retorno_semana": -0.016575
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.015454
+      "retorno_carteira": 0.009307
     },
     {
       "semana": "2025-W32",
@@ -2801,36 +2801,36 @@
       "data_vigencia_fim": "2025-08-08",
       "tickers": [
         {
-          "ticker": "MDNE3",
-          "score": 88.125,
-          "preco_entrada": 18.650442123413086,
-          "preco_saida": 19.183313369750977,
-          "retorno_semana": 0.028572
-        },
-        {
           "ticker": "PINE4",
-          "score": 87.1875,
+          "score": 86.8,
           "preco_entrada": 5.664971828460693,
           "preco_saida": 5.6939239501953125,
           "retorno_semana": 0.005111
         },
         {
+          "ticker": "MDNE3",
+          "score": 86.0,
+          "preco_entrada": 18.650442123413086,
+          "preco_saida": 19.183313369750977,
+          "retorno_semana": 0.028572
+        },
+        {
           "ticker": "POMO4",
-          "score": 85.0,
-          "preco_entrada": 6.998844146728516,
+          "score": 82.8,
+          "preco_entrada": 6.998844623565674,
           "preco_saida": 7.053954124450684,
           "retorno_semana": 0.007874
         },
         {
           "ticker": "TFCO4",
-          "score": 80.0,
+          "score": 79.6,
           "preco_entrada": 14.389481544494629,
           "preco_saida": 15.128666877746582,
           "retorno_semana": 0.05137
         },
         {
           "ticker": "LAVV3",
-          "score": 78.4375,
+          "score": 77.6,
           "preco_entrada": 10.571212768554688,
           "preco_saida": 10.613872528076172,
           "retorno_semana": 0.004035
@@ -2847,35 +2847,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.9412,
+          "score": 89.9512,
           "preco_entrada": 19.183313369750977,
           "preco_saida": 19.57463836669922,
           "retorno_semana": 0.020399
         },
         {
           "ticker": "POMO4",
-          "score": 87.8667,
+          "score": 87.5854,
           "preco_entrada": 7.053954124450684,
           "preco_saida": 7.101190090179443,
           "retorno_semana": 0.006696
         },
         {
           "ticker": "TFCO4",
-          "score": 86.9961,
+          "score": 85.0366,
           "preco_entrada": 15.128666877746582,
           "preco_saida": 15.58203411102295,
           "retorno_semana": 0.029967
         },
         {
           "ticker": "BMEB4",
-          "score": 82.4706,
+          "score": 79.4024,
           "preco_entrada": 40.85500717163086,
           "preco_saida": 41.8388786315918,
           "retorno_semana": 0.024082
         },
         {
           "ticker": "VIVA3",
-          "score": 80.4471,
+          "score": 78.5976,
           "preco_entrada": 27.81223487854004,
           "preco_saida": 26.66644859313965,
           "retorno_semana": -0.041197
@@ -2892,35 +2892,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 87.7049,
+          "score": 88.0,
           "preco_entrada": 5.906239986419678,
           "preco_saida": 6.176459789276123,
           "retorno_semana": 0.045752
         },
         {
           "ticker": "POMO4",
-          "score": 85.4098,
+          "score": 85.4,
           "preco_entrada": 7.101190090179443,
-          "preco_saida": 7.266517162322998,
+          "preco_saida": 7.2665181159973145,
           "retorno_semana": 0.023282
         },
         {
           "ticker": "MDNE3",
-          "score": 85.4098,
+          "score": 84.8,
           "preco_entrada": 19.57463836669922,
           "preco_saida": 20.765270233154297,
           "retorno_semana": 0.060825
         },
         {
           "ticker": "TFCO4",
-          "score": 82.459,
+          "score": 83.2,
           "preco_entrada": 15.58203411102295,
           "preco_saida": 15.63131332397461,
           "retorno_semana": 0.003163
         },
         {
           "ticker": "MILS3",
-          "score": 78.1967,
+          "score": 78.0,
           "preco_entrada": 10.65846061706543,
           "preco_saida": 10.760538101196289,
           "retorno_semana": 0.009577
@@ -2936,36 +2936,36 @@
       "data_vigencia_fim": "2025-08-29",
       "tickers": [
         {
-          "ticker": "MDNE3",
-          "score": 89.8125,
-          "preco_entrada": 20.765270233154297,
-          "preco_saida": 21.572900772094727,
-          "retorno_semana": 0.038893
-        },
-        {
           "ticker": "PINE4",
-          "score": 88.4135,
+          "score": 89.3746,
           "preco_entrada": 6.176459789276123,
           "preco_saida": 6.2729668617248535,
           "retorno_semana": 0.015625
         },
         {
+          "ticker": "MDNE3",
+          "score": 89.2103,
+          "preco_entrada": 20.765270233154297,
+          "preco_saida": 21.572900772094727,
+          "retorno_semana": 0.038893
+        },
+        {
           "ticker": "CURY3",
-          "score": 85.8173,
-          "preco_entrada": 29.131763458251953,
-          "preco_saida": 30.073766708374023,
+          "score": 85.6988,
+          "preco_entrada": 29.13176155090332,
+          "preco_saida": 30.07376480102539,
           "retorno_semana": 0.032336
         },
         {
           "ticker": "POMO4",
-          "score": 84.0096,
-          "preco_entrada": 7.266517162322998,
+          "score": 84.2558,
+          "preco_entrada": 7.2665181159973145,
           "preco_saida": 7.429971694946289,
           "retorno_semana": 0.022494
         },
         {
           "ticker": "MILS3",
-          "score": 81.476,
+          "score": 81.0203,
           "preco_entrada": 10.760538101196289,
           "preco_saida": 11.152153015136719,
           "retorno_semana": 0.036394
@@ -2982,35 +2982,35 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 89.4897,
-          "preco_entrada": 30.073766708374023,
-          "preco_saida": 30.505155563354492,
+          "score": 89.835,
+          "preco_entrada": 30.07376480102539,
+          "preco_saida": 30.50515365600586,
           "retorno_semana": 0.014344
         },
         {
           "ticker": "BEEF3",
-          "score": 86.0539,
+          "score": 86.6479,
           "preco_entrada": 5.819042682647705,
           "preco_saida": 5.896243572235107,
           "retorno_semana": 0.013267
         },
         {
-          "ticker": "DIRR3",
-          "score": 84.7824,
-          "preco_entrada": 14.003894805908203,
-          "preco_saida": 14.448031425476074,
-          "retorno_semana": 0.031715
-        },
-        {
           "ticker": "FIQE3",
-          "score": 84.7668,
+          "score": 85.0342,
           "preco_entrada": 3.631420135498047,
           "preco_saida": 3.631420135498047,
           "retorno_semana": 0.0
         },
         {
+          "ticker": "DIRR3",
+          "score": 84.829,
+          "preco_entrada": 14.003894805908203,
+          "preco_saida": 14.448031425476074,
+          "retorno_semana": 0.031715
+        },
+        {
           "ticker": "PINE4",
-          "score": 84.6378,
+          "score": 84.4628,
           "preco_entrada": 6.2729668617248535,
           "preco_saida": 6.504583835601807,
           "retorno_semana": 0.036923
@@ -3027,35 +3027,35 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 91.0248,
+          "score": 91.2667,
           "preco_entrada": 47.82977294921875,
           "preco_saida": 48.43373489379883,
           "retorno_semana": 0.012627
         },
         {
           "ticker": "PINE4",
-          "score": 90.3754,
+          "score": 91.1421,
           "preco_entrada": 6.504583835601807,
           "preco_saida": 7.402101516723633,
           "retorno_semana": 0.137982
         },
         {
           "ticker": "LAVV3",
-          "score": 90.1901,
+          "score": 90.9035,
           "preco_entrada": 12.569527626037598,
           "preco_saida": 12.932108879089355,
           "retorno_semana": 0.028846
         },
         {
           "ticker": "BEEF3",
-          "score": 87.7343,
+          "score": 88.707,
           "preco_entrada": 5.896243572235107,
           "preco_saida": 6.4077019691467285,
           "retorno_semana": 0.086743
         },
         {
           "ticker": "DIRR3",
-          "score": 84.0227,
+          "score": 84.6421,
           "preco_entrada": 14.448031425476074,
           "preco_saida": 14.094535827636719,
           "retorno_semana": -0.024467
@@ -3072,38 +3072,38 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.4473,
+          "score": 92.4544,
           "preco_entrada": 7.402101516723633,
           "preco_saida": 8.20311164855957,
           "retorno_semana": 0.108214
         },
         {
           "ticker": "LAVV3",
-          "score": 92.6077,
+          "score": 91.8246,
           "preco_entrada": 12.932108879089355,
           "preco_saida": 13.156564712524414,
           "retorno_semana": 0.017356
         },
         {
           "ticker": "BEEF3",
-          "score": 91.7002,
+          "score": 91.2105,
           "preco_entrada": 6.4077019691467285,
           "preco_saida": 6.272599697113037,
           "retorno_semana": -0.021084
         },
         {
-          "ticker": "PLPL3",
-          "score": 85.4105,
-          "preco_entrada": 16.088178634643555,
-          "preco_saida": 17.207019805908203,
-          "retorno_semana": 0.069544
-        },
-        {
           "ticker": "BMEB4",
-          "score": 85.2006,
+          "score": 84.293,
           "preco_entrada": 48.43373489379883,
           "preco_saida": 48.8818359375,
           "retorno_semana": 0.009252
+        },
+        {
+          "ticker": "PLPL3",
+          "score": 84.1544,
+          "preco_entrada": 16.088178634643555,
+          "preco_saida": 17.207019805908203,
+          "retorno_semana": 0.069544
         }
       ],
       "n_posicoes": 5,
@@ -3117,35 +3117,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 94.6254,
+          "score": 93.7553,
           "preco_entrada": 8.20311164855957,
           "preco_saida": 8.077651977539062,
           "retorno_semana": -0.015294
         },
         {
           "ticker": "PLPL3",
-          "score": 92.2163,
+          "score": 90.8341,
           "preco_entrada": 17.207019805908203,
           "preco_saida": 16.271438598632812,
           "retorno_semana": -0.054372
         },
         {
           "ticker": "LAVV3",
-          "score": 91.7442,
+          "score": 90.6167,
           "preco_entrada": 13.156564712524414,
           "preco_saida": 12.811248779296875,
           "retorno_semana": -0.026247
         },
         {
           "ticker": "BEEF3",
-          "score": 88.6902,
+          "score": 87.8741,
           "preco_entrada": 6.272599697113037,
           "preco_saida": 6.262949466705322,
           "retorno_semana": -0.001538
         },
         {
           "ticker": "MDNE3",
-          "score": 88.6104,
+          "score": 86.8127,
           "preco_entrada": 23.52120590209961,
           "preco_saida": 24.437076568603516,
           "retorno_semana": 0.038938
@@ -3162,35 +3162,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 94.1305,
+          "score": 93.0463,
           "preco_entrada": 8.077651977539062,
           "preco_saida": 8.280316352844238,
           "retorno_semana": 0.02509
         },
         {
           "ticker": "BMEB4",
-          "score": 89.5798,
+          "score": 87.831,
           "preco_entrada": 53.84015655517578,
           "preco_saida": 51.15155792236328,
           "retorno_semana": -0.049937
         },
         {
           "ticker": "LAVV3",
-          "score": 87.0137,
+          "score": 85.332,
           "preco_entrada": 12.811248779296875,
           "preco_saida": 12.491830825805664,
           "retorno_semana": -0.024933
         },
         {
           "ticker": "BEEF3",
-          "score": 86.0703,
+          "score": 84.9537,
           "preco_entrada": 6.262949466705322,
           "preco_saida": 6.513853549957275,
           "retorno_semana": 0.040062
         },
         {
           "ticker": "MDNE3",
-          "score": 85.0714,
+          "score": 82.9296,
           "preco_entrada": 24.437076568603516,
           "preco_saida": 23.571163177490234,
           "retorno_semana": -0.035434
@@ -3207,42 +3207,42 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.5722,
+          "score": 92.6534,
           "preco_entrada": 8.280316352844238,
           "preco_saida": 8.220993995666504,
           "retorno_semana": -0.007164
         },
         {
           "ticker": "BMEB4",
-          "score": 90.1837,
+          "score": 88.5798,
           "preco_entrada": 51.15155792236328,
           "preco_saida": 49.086402893066406,
           "retorno_semana": -0.040373
         },
         {
           "ticker": "JHSF3",
-          "score": 83.4823,
-          "preco_entrada": 6.057041168212891,
-          "preco_saida": 5.693427085876465,
+          "score": 80.9001,
+          "preco_entrada": 6.057039737701416,
+          "preco_saida": 5.693426132202148,
           "retorno_semana": -0.060032
         },
         {
           "ticker": "BEEF3",
-          "score": 80.6083,
+          "score": 79.8539,
           "preco_entrada": 6.513853549957275,
           "preco_saida": 6.301550388336182,
           "retorno_semana": -0.032593
         },
         {
-          "ticker": "MOVI3",
-          "score": 79.7448,
-          "preco_entrada": 8.093597412109375,
-          "preco_saida": 7.27868127822876,
-          "retorno_semana": -0.100687
+          "ticker": "LAVV3",
+          "score": 78.9597,
+          "preco_entrada": 12.491830825805664,
+          "preco_saida": 11.585373878479004,
+          "retorno_semana": -0.072564
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.04817
+      "retorno_carteira": -0.042545
     },
     {
       "semana": "2025-W42",
@@ -3252,35 +3252,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 95.4315,
+          "score": 94.1849,
           "preco_entrada": 8.220993995666504,
           "preco_saida": 8.299617767333984,
           "retorno_semana": 0.009564
         },
         {
           "ticker": "BMEB4",
-          "score": 87.4109,
+          "score": 84.7395,
           "preco_entrada": 49.086402893066406,
           "preco_saida": 48.46295928955078,
           "retorno_semana": -0.012701
         },
         {
+          "ticker": "JHSF3",
+          "score": 78.3697,
+          "preco_entrada": 5.693426132202148,
+          "preco_saida": 5.741271018981934,
+          "retorno_semana": 0.008404
+        },
+        {
           "ticker": "TFCO4",
-          "score": 79.8966,
+          "score": 77.916,
           "preco_entrada": 16.843944549560547,
           "preco_saida": 17.398149490356445,
           "retorno_semana": 0.032902
         },
         {
-          "ticker": "JHSF3",
-          "score": 79.7313,
-          "preco_entrada": 5.693427085876465,
-          "preco_saida": 5.741271018981934,
-          "retorno_semana": 0.008403
-        },
-        {
           "ticker": "BEEF3",
-          "score": 78.7597,
+          "score": 77.479,
           "preco_entrada": 6.301550388336182,
           "preco_saida": 6.552453994750977,
           "retorno_semana": 0.039816
@@ -3297,35 +3297,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.8833,
+          "score": 92.9457,
           "preco_entrada": 8.299617767333984,
           "preco_saida": 8.746889114379883,
           "retorno_semana": 0.053891
         },
         {
           "ticker": "BEEF3",
-          "score": 86.5,
+          "score": 86.0908,
           "preco_entrada": 6.552453994750977,
           "preco_saida": 6.822658538818359,
           "retorno_semana": 0.041237
         },
         {
           "ticker": "TFCO4",
-          "score": 84.9,
+          "score": 83.6545,
           "preco_entrada": 17.398149490356445,
           "preco_saida": 17.932567596435547,
           "retorno_semana": 0.030717
         },
         {
           "ticker": "BMEB4",
-          "score": 82.6667,
+          "score": 82.237,
           "preco_entrada": 48.46295928955078,
           "preco_saida": 52.70042419433594,
           "retorno_semana": 0.087437
         },
         {
           "ticker": "MDNE3",
-          "score": 78.1333,
+          "score": 78.0952,
           "preco_entrada": 22.122421264648438,
           "preco_saida": 22.30559730529785,
           "retorno_semana": 0.00828
@@ -3342,35 +3342,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 91.7641,
+          "score": 92.0426,
           "preco_entrada": 8.746889114379883,
           "preco_saida": 9.166661262512207,
           "retorno_semana": 0.047991
         },
         {
           "ticker": "BMEB4",
-          "score": 88.4728,
+          "score": 88.3521,
           "preco_entrada": 52.70042419433594,
           "preco_saida": 55.544883728027344,
           "retorno_semana": 0.053974
         },
         {
           "ticker": "BEEF3",
-          "score": 87.5504,
+          "score": 87.7444,
           "preco_entrada": 6.822658538818359,
           "preco_saida": 6.928810119628906,
           "retorno_semana": 0.015559
         },
         {
           "ticker": "VULC3",
-          "score": 86.5373,
+          "score": 86.2093,
           "preco_entrada": 18.785144805908203,
           "preco_saida": 18.738143920898438,
           "retorno_semana": -0.002502
         },
         {
           "ticker": "TFCO4",
-          "score": 83.1804,
+          "score": 82.3997,
           "preco_entrada": 17.932567596435547,
           "preco_saida": 17.92266845703125,
           "retorno_semana": -0.000552
@@ -3387,42 +3387,42 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.1951,
+          "score": 92.6017,
           "preco_entrada": 9.166661262512207,
           "preco_saida": 9.381428718566895,
           "retorno_semana": 0.023429
         },
         {
           "ticker": "BMEB4",
-          "score": 89.2147,
+          "score": 88.8467,
           "preco_entrada": 55.544883728027344,
           "preco_saida": 58.399085998535156,
           "retorno_semana": 0.051386
         },
         {
           "ticker": "BEEF3",
-          "score": 85.2479,
+          "score": 85.0223,
           "preco_entrada": 6.928810119628906,
           "preco_saida": 5.896243572235107,
           "retorno_semana": -0.149025
         },
         {
           "ticker": "VULC3",
-          "score": 83.2626,
+          "score": 82.0883,
           "preco_entrada": 18.738143920898438,
           "preco_saida": 19.12079620361328,
           "retorno_semana": 0.020421
         },
         {
-          "ticker": "FIQE3",
-          "score": 81.2927,
-          "preco_entrada": 3.8638949394226074,
-          "preco_saida": 4.320827960968018,
-          "retorno_semana": 0.118257
+          "ticker": "DIRR3",
+          "score": 79.8859,
+          "preco_entrada": 15.390687942504883,
+          "preco_saida": 15.807633399963379,
+          "retorno_semana": 0.027091
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.012894
+      "retorno_carteira": -0.00534
     },
     {
       "semana": "2025-W46",
@@ -3432,35 +3432,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.0856,
+          "score": 92.3047,
           "preco_entrada": 9.381428718566895,
           "preco_saida": 10.172163009643555,
           "retorno_semana": 0.084287
         },
         {
           "ticker": "LAVV3",
-          "score": 91.353,
+          "score": 90.7133,
           "preco_entrada": 13.968058586120605,
           "preco_saida": 14.371781349182129,
           "retorno_semana": 0.028903
         },
         {
           "ticker": "BMEB4",
-          "score": 90.0345,
+          "score": 89.2076,
           "preco_entrada": 58.399085998535156,
           "preco_saida": 60.86363220214844,
           "retorno_semana": 0.042202
         },
         {
           "ticker": "FIQE3",
-          "score": 87.4026,
+          "score": 86.137,
           "preco_entrada": 4.320827960968018,
           "preco_saida": 4.312812328338623,
           "retorno_semana": -0.001855
         },
         {
           "ticker": "MDNE3",
-          "score": 86.9094,
+          "score": 85.5575,
           "preco_entrada": 25.519468307495117,
           "preco_saida": 25.203075408935547,
           "retorno_semana": -0.012398
@@ -3477,42 +3477,42 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.3354,
+          "score": 92.5217,
           "preco_entrada": 10.172163009643555,
           "preco_saida": 9.87929916381836,
           "retorno_semana": -0.028791
         },
         {
           "ticker": "BMEB4",
-          "score": 89.7866,
+          "score": 88.7992,
           "preco_entrada": 60.86363220214844,
           "preco_saida": 63.318443298339844,
           "retorno_semana": 0.040333
         },
         {
           "ticker": "LAVV3",
-          "score": 85.3171,
+          "score": 84.2567,
           "preco_entrada": 14.371781349182129,
           "preco_saida": 14.6771821975708,
           "retorno_semana": 0.02125
         },
         {
           "ticker": "DIRR3",
-          "score": 82.1402,
+          "score": 80.7495,
           "preco_entrada": 16.904376983642578,
           "preco_saida": 16.541818618774414,
           "retorno_semana": -0.021448
         },
         {
-          "ticker": "KEPL3",
-          "score": 79.6341,
-          "preco_entrada": 9.741093635559082,
-          "preco_saida": 9.362704277038574,
-          "retorno_semana": -0.038845
+          "ticker": "MOVI3",
+          "score": 78.501,
+          "preco_entrada": 9.917898178100586,
+          "preco_saida": 9.325231552124023,
+          "retorno_semana": -0.059757
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.0055
+      "retorno_carteira": -0.009683
     },
     {
       "semana": "2025-W48",
@@ -3522,35 +3522,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 92.5571,
+          "score": 91.2712,
           "preco_entrada": 9.87929916381836,
           "preco_saida": 10.357644081115723,
           "retorno_semana": 0.048419
         },
         {
           "ticker": "LAVV3",
-          "score": 91.0693,
+          "score": 89.9661,
           "preco_entrada": 14.6771821975708,
           "preco_saida": 15.438276290893555,
           "retorno_semana": 0.051856
         },
         {
           "ticker": "BMEB4",
-          "score": 89.9505,
+          "score": 88.5989,
           "preco_entrada": 63.318443298339844,
           "preco_saida": 59.90898513793945,
           "retorno_semana": -0.053846
         },
         {
           "ticker": "JHSF3",
-          "score": 81.8265,
+          "score": 80.2147,
           "preco_entrada": 6.893677234649658,
           "preco_saida": 7.374407768249512,
           "retorno_semana": 0.069735
         },
         {
           "ticker": "KEPL3",
-          "score": 79.4559,
+          "score": 77.6638,
           "preco_entrada": 9.362704277038574,
           "preco_saida": 9.586797714233398,
           "retorno_semana": 0.023935
@@ -3567,35 +3567,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.0879,
+          "score": 91.7516,
           "preco_entrada": 10.357644081115723,
           "preco_saida": 10.523600578308105,
           "retorno_semana": 0.016023
         },
         {
           "ticker": "LAVV3",
-          "score": 89.9836,
+          "score": 89.7203,
           "preco_entrada": 15.438276290893555,
           "preco_saida": 14.65599536895752,
           "retorno_semana": -0.050672
         },
         {
-          "ticker": "JHSF3",
-          "score": 83.9154,
-          "preco_entrada": 7.374407768249512,
-          "preco_saida": 7.443209648132324,
-          "retorno_semana": 0.00933
-        },
-        {
           "ticker": "BMOB3",
-          "score": 82.6858,
+          "score": 83.33,
           "preco_entrada": 25.159914016723633,
           "preco_saida": 23.744552612304688,
           "retorno_semana": -0.056255
         },
         {
+          "ticker": "JHSF3",
+          "score": 82.9937,
+          "preco_entrada": 7.374407768249512,
+          "preco_saida": 7.443209648132324,
+          "retorno_semana": 0.00933
+        },
+        {
           "ticker": "ECOR3",
-          "score": 80.6755,
+          "score": 79.3906,
           "preco_entrada": 10.429021835327148,
           "preco_saida": 10.024197578430176,
           "retorno_semana": -0.038817
@@ -3612,35 +3612,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 92.7491,
+          "score": 91.3124,
           "preco_entrada": 10.523600578308105,
           "preco_saida": 11.089805603027344,
           "retorno_semana": 0.053803
         },
         {
           "ticker": "JHSF3",
-          "score": 86.3778,
+          "score": 84.7459,
           "preco_entrada": 7.443209648132324,
           "preco_saida": 7.6266350746154785,
           "retorno_semana": 0.024643
         },
         {
           "ticker": "BMEB4",
-          "score": 83.1224,
+          "score": 81.7576,
           "preco_entrada": 62.841121673583984,
           "preco_saida": 71.98819732666016,
           "retorno_semana": 0.145559
         },
         {
           "ticker": "MOVI3",
-          "score": 79.445,
+          "score": 79.021,
           "preco_entrada": 11.16805362701416,
           "preco_saida": 10.445740699768066,
           "retorno_semana": -0.064677
         },
         {
           "ticker": "LAVV3",
-          "score": 78.7147,
+          "score": 77.2448,
           "preco_entrada": 14.65599536895752,
           "preco_saida": 14.985873222351074,
           "retorno_semana": 0.022508
@@ -3657,35 +3657,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 92.5849,
+          "score": 91.4088,
           "preco_entrada": 11.089805603027344,
           "preco_saida": 11.74386978149414,
           "retorno_semana": 0.058979
         },
         {
           "ticker": "BMEB4",
-          "score": 91.5569,
+          "score": 90.6123,
           "preco_entrada": 71.98819732666016,
           "preco_saida": 76.95626068115234,
           "retorno_semana": 0.069012
         },
         {
           "ticker": "JHSF3",
-          "score": 88.5711,
+          "score": 87.6825,
           "preco_entrada": 7.6266350746154785,
-          "preco_saida": 7.491479396820068,
-          "retorno_semana": -0.017722
+          "preco_saida": 7.491479873657227,
+          "retorno_semana": -0.017721
         },
         {
           "ticker": "LEVE3",
-          "score": 82.4007,
+          "score": 81.986,
           "preco_entrada": 32.124942779541016,
           "preco_saida": 31.60918426513672,
           "retorno_semana": -0.016055
         },
         {
           "ticker": "FIQE3",
-          "score": 77.5875,
+          "score": 76.807,
           "preco_entrada": 4.5159735679626465,
           "preco_saida": 4.604839324951172,
           "retorno_semana": 0.019678
@@ -3702,35 +3702,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.8175,
+          "score": 92.3593,
           "preco_entrada": 11.74386978149414,
           "preco_saida": 12.59317684173584,
           "retorno_semana": 0.072319
         },
         {
           "ticker": "BMEB4",
-          "score": 92.8373,
+          "score": 91.6636,
           "preco_entrada": 76.95626068115234,
           "preco_saida": 76.28410339355469,
           "retorno_semana": -0.008734
         },
         {
           "ticker": "JHSF3",
-          "score": 80.6746,
-          "preco_entrada": 7.491479396820068,
+          "score": 80.242,
+          "preco_entrada": 7.491479873657227,
           "preco_saida": 7.703866958618164,
-          "retorno_semana": 0.028351
+          "retorno_semana": 0.02835
         },
         {
           "ticker": "FIQE3",
-          "score": 79.6587,
+          "score": 78.3999,
           "preco_entrada": 4.604839324951172,
           "preco_saida": 4.637153148651123,
           "retorno_semana": 0.007017
         },
         {
           "ticker": "BRSR6",
-          "score": 75.5198,
+          "score": 75.5808,
           "preco_entrada": 14.244869232177734,
           "preco_saida": 14.559724807739258,
           "retorno_semana": 0.022103
@@ -3747,35 +3747,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 94.8045,
+          "score": 93.7583,
           "preco_entrada": 12.59317684173584,
           "preco_saida": 12.837230682373047,
           "retorno_semana": 0.01938
         },
         {
           "ticker": "BMEB4",
-          "score": 90.7981,
+          "score": 89.15,
           "preco_entrada": 76.28410339355469,
           "preco_saida": 64.95745849609375,
           "retorno_semana": -0.14848
         },
         {
           "ticker": "JHSF3",
-          "score": 81.4776,
+          "score": 79.9027,
           "preco_entrada": 7.703866958618164,
           "preco_saida": 7.568711280822754,
           "retorno_semana": -0.017544
         },
         {
           "ticker": "LEVE3",
-          "score": 79.0385,
+          "score": 77.0046,
           "preco_entrada": 32.23081970214844,
           "preco_saida": 31.552669525146484,
           "retorno_semana": -0.02104
         },
         {
           "ticker": "FIQE3",
-          "score": 77.3109,
+          "score": 74.8746,
           "preco_entrada": 4.637153148651123,
           "preco_saida": 4.889999866485596,
           "retorno_semana": 0.054526
@@ -3792,35 +3792,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.8994,
+          "score": 92.6136,
           "preco_entrada": 12.837230682373047,
           "preco_saida": 12.984169006347656,
           "retorno_semana": 0.011446
         },
         {
           "ticker": "FIQE3",
-          "score": 82.0724,
+          "score": 79.5844,
           "preco_entrada": 4.889999866485596,
           "preco_saida": 4.929999828338623,
           "retorno_semana": 0.00818
         },
         {
           "ticker": "BMEB4",
-          "score": 80.2334,
+          "score": 78.5,
           "preco_entrada": 64.95745849609375,
           "preco_saida": 58.96138381958008,
           "retorno_semana": -0.092308
         },
         {
           "ticker": "BRSR6",
-          "score": 76.66,
+          "score": 75.9416,
           "preco_entrada": 15.041171073913574,
           "preco_saida": 16.40676498413086,
           "retorno_semana": 0.09079
         },
         {
           "ticker": "KEPL3",
-          "score": 76.2012,
+          "score": 73.0325,
           "preco_entrada": 9.880000114440918,
           "preco_saida": 10.09000015258789,
           "retorno_semana": 0.021255
@@ -3837,38 +3837,38 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 93.4208,
+          "score": 92.6032,
           "preco_entrada": 12.984169006347656,
           "preco_saida": 13.053180694580078,
           "retorno_semana": 0.005315
         },
         {
           "ticker": "FIQE3",
-          "score": 83.9028,
+          "score": 81.7296,
           "preco_entrada": 4.929999828338623,
           "preco_saida": 4.889999866485596,
           "retorno_semana": -0.008114
         },
         {
           "ticker": "LAVV3",
-          "score": 79.8637,
+          "score": 78.5075,
           "preco_entrada": 15.730454444885254,
           "preco_saida": 15.315751075744629,
           "retorno_semana": -0.026363
         },
         {
-          "ticker": "MDNE3",
-          "score": 79.1437,
-          "preco_entrada": 26.600000381469727,
-          "preco_saida": 24.139999389648438,
-          "retorno_semana": -0.092481
-        },
-        {
           "ticker": "BRSR6",
-          "score": 78.494,
+          "score": 78.4328,
           "preco_entrada": 16.40676498413086,
           "preco_saida": 16.043258666992188,
           "retorno_semana": -0.022156
+        },
+        {
+          "ticker": "MDNE3",
+          "score": 77.6163,
+          "preco_entrada": 26.600000381469727,
+          "preco_saida": 24.139999389648438,
+          "retorno_semana": -0.092481
         }
       ],
       "n_posicoes": 5,
@@ -3882,38 +3882,38 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 95.5976,
+          "score": 94.6007,
           "preco_entrada": 13.053180694580078,
           "preco_saida": 13.822175025939941,
           "retorno_semana": 0.058912
         },
         {
           "ticker": "JHSF3",
-          "score": 82.1771,
+          "score": 80.5929,
           "preco_entrada": 8.13829517364502,
-          "preco_saida": 9.233784675598145,
+          "preco_saida": 9.233783721923828,
           "retorno_semana": 0.134609
         },
         {
-          "ticker": "FIQE3",
-          "score": 81.5211,
-          "preco_entrada": 4.889999866485596,
-          "preco_saida": 5.079999923706055,
-          "retorno_semana": 0.038855
-        },
-        {
           "ticker": "BRSR6",
-          "score": 80.338,
+          "score": 80.4144,
           "preco_entrada": 16.043258666992188,
           "preco_saida": 17.497272491455078,
           "retorno_semana": 0.090631
         },
         {
           "ticker": "LAVV3",
-          "score": 80.2656,
+          "score": 79.8034,
           "preco_entrada": 15.315751075744629,
           "preco_saida": 16.29595947265625,
           "retorno_semana": 0.064
+        },
+        {
+          "ticker": "FIQE3",
+          "score": 79.268,
+          "preco_entrada": 4.889999866485596,
+          "preco_saida": 5.079999923706055,
+          "retorno_semana": 0.038855
         }
       ],
       "n_posicoes": 5,
@@ -3927,42 +3927,42 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 91.4347,
+          "score": 90.1987,
           "preco_entrada": 13.822175025939941,
           "preco_saida": 13.18134593963623,
           "retorno_semana": -0.046362
         },
         {
           "ticker": "JHSF3",
-          "score": 88.1694,
-          "preco_entrada": 9.233784675598145,
-          "preco_saida": 9.35877799987793,
+          "score": 87.3547,
+          "preco_entrada": 9.233783721923828,
+          "preco_saida": 9.358778953552246,
           "retorno_semana": 0.013537
         },
         {
           "ticker": "LAVV3",
-          "score": 84.4633,
+          "score": 82.6588,
           "preco_entrada": 16.29595947265625,
           "preco_saida": 16.86146354675293,
           "retorno_semana": 0.034702
         },
         {
           "ticker": "ECOR3",
-          "score": 80.1531,
+          "score": 78.4463,
           "preco_entrada": 11.61457633972168,
           "preco_saida": 11.3928861618042,
           "retorno_semana": -0.019087
         },
         {
-          "ticker": "FIQE3",
-          "score": 79.3429,
-          "preco_entrada": 5.079999923706055,
-          "preco_saida": 5.329999923706055,
-          "retorno_semana": 0.049213
+          "ticker": "BRSR6",
+          "score": 77.7176,
+          "preco_entrada": 17.497272491455078,
+          "preco_saida": 17.69375991821289,
+          "retorno_semana": 0.01123
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.0064
+      "retorno_carteira": -0.001196
     },
     {
       "semana": "2026-W06",
@@ -3972,35 +3972,35 @@
       "tickers": [
         {
           "ticker": "JHSF3",
-          "score": 87.8676,
-          "preco_entrada": 9.35877799987793,
-          "preco_saida": 9.554774284362793,
-          "retorno_semana": 0.020943
+          "score": 86.6731,
+          "preco_entrada": 9.358778953552246,
+          "preco_saida": 9.554773330688477,
+          "retorno_semana": 0.020942
         },
         {
           "ticker": "MDNE3",
-          "score": 86.5045,
+          "score": 84.2804,
           "preco_entrada": 28.579999923706055,
           "preco_saida": 31.190000534057617,
           "retorno_semana": 0.091323
         },
         {
           "ticker": "LAVV3",
-          "score": 82.8582,
+          "score": 81.0301,
           "preco_entrada": 16.86146354675293,
           "preco_saida": 17.329999923706055,
           "retorno_semana": 0.027787
         },
         {
           "ticker": "PINE4",
-          "score": 82.8318,
+          "score": 80.6621,
           "preco_entrada": 13.18134593963623,
           "preco_saida": 14.157377243041992,
           "retorno_semana": 0.074046
         },
         {
           "ticker": "BMEB4",
-          "score": 82.632,
+          "score": 80.1915,
           "preco_entrada": 75.53053283691406,
           "preco_saida": 77.94894409179688,
           "retorno_semana": 0.032019
@@ -4017,35 +4017,35 @@
       "tickers": [
         {
           "ticker": "BMEB4",
-          "score": 90.6148,
+          "score": 89.3096,
           "preco_entrada": 77.94894409179688,
           "preco_saida": 66.96614074707031,
           "retorno_semana": -0.140897
         },
         {
           "ticker": "PINE4",
-          "score": 90.2969,
+          "score": 88.5373,
           "preco_entrada": 14.157377243041992,
           "preco_saida": 13.753162384033203,
           "retorno_semana": -0.028552
         },
         {
           "ticker": "JHSF3",
-          "score": 86.7158,
-          "preco_entrada": 9.554774284362793,
-          "preco_saida": 9.456775665283203,
+          "score": 85.3828,
+          "preco_entrada": 9.554773330688477,
+          "preco_saida": 9.456774711608887,
           "retorno_semana": -0.010257
         },
         {
           "ticker": "CURY3",
-          "score": 84.9345,
+          "score": 84.6617,
           "preco_entrada": 37.841556549072266,
           "preco_saida": 40.10221862792969,
           "retorno_semana": 0.05974
         },
         {
           "ticker": "LAVV3",
-          "score": 82.7863,
+          "score": 82.4573,
           "preco_entrada": 17.329999923706055,
           "preco_saida": 18.170000076293945,
           "retorno_semana": 0.048471
@@ -4062,38 +4062,38 @@
       "tickers": [
         {
           "ticker": "CURY3",
-          "score": 91.1688,
+          "score": 90.6486,
           "preco_entrada": 40.10221862792969,
           "preco_saida": 40.957340240478516,
           "retorno_semana": 0.021324
         },
         {
           "ticker": "MDNE3",
-          "score": 87.7256,
+          "score": 87.1784,
           "preco_entrada": 32.15999984741211,
           "preco_saida": 34.279998779296875,
           "retorno_semana": 0.06592
         },
         {
           "ticker": "LAVV3",
-          "score": 85.7948,
+          "score": 85.4523,
           "preco_entrada": 18.170000076293945,
           "preco_saida": 18.940000534057617,
           "retorno_semana": 0.042378
         },
         {
-          "ticker": "PINE4",
-          "score": 84.7031,
-          "preco_entrada": 13.753162384033203,
-          "preco_saida": 12.402493476867676,
-          "retorno_semana": -0.098208
-        },
-        {
           "ticker": "TEND3",
-          "score": 84.3899,
+          "score": 83.9748,
           "preco_entrada": 32.63999938964844,
           "preco_saida": 33.04999923706055,
           "retorno_semana": 0.012561
+        },
+        {
+          "ticker": "PINE4",
+          "score": 83.6937,
+          "preco_entrada": 13.753162384033203,
+          "preco_saida": 12.402493476867676,
+          "retorno_semana": -0.098208
         }
       ],
       "n_posicoes": 5,
@@ -4107,35 +4107,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 90.4913,
+          "score": 89.854,
           "preco_entrada": 34.279998779296875,
           "preco_saida": 32.95000076293945,
           "retorno_semana": -0.038798
         },
         {
           "ticker": "CURY3",
-          "score": 87.126,
+          "score": 86.6862,
           "preco_entrada": 40.957340240478516,
           "preco_saida": 38.19540023803711,
           "retorno_semana": -0.067435
         },
         {
           "ticker": "LAVV3",
-          "score": 86.4138,
+          "score": 85.5917,
           "preco_entrada": 18.940000534057617,
           "preco_saida": 18.40999984741211,
           "retorno_semana": -0.027983
         },
         {
           "ticker": "TEND3",
-          "score": 83.1391,
+          "score": 82.6513,
           "preco_entrada": 33.04999923706055,
           "preco_saida": 30.260000228881836,
           "retorno_semana": -0.084418
         },
         {
           "ticker": "JHSF3",
-          "score": 82.2859,
+          "score": 81.3881,
           "preco_entrada": 9.887965202331543,
           "preco_saida": 9.787927627563477,
           "retorno_semana": -0.010117
@@ -4152,35 +4152,35 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 89.8714,
+          "score": 88.5045,
           "preco_entrada": 32.95000076293945,
           "preco_saida": 31.09000015258789,
           "retorno_semana": -0.056449
         },
         {
           "ticker": "BMEB4",
-          "score": 87.4895,
+          "score": 85.5459,
           "preco_entrada": 83.04560852050781,
           "preco_saida": 77.90897369384766,
           "retorno_semana": -0.061853
         },
         {
           "ticker": "LAVV3",
-          "score": 81.274,
+          "score": 79.1784,
           "preco_entrada": 18.40999984741211,
           "preco_saida": 17.5,
           "retorno_semana": -0.04943
         },
         {
           "ticker": "JHSF3",
-          "score": 79.9299,
+          "score": 78.3063,
           "preco_entrada": 9.787927627563477,
           "preco_saida": 8.85057544708252,
           "retorno_semana": -0.095766
         },
         {
           "ticker": "TEND3",
-          "score": 78.8967,
+          "score": 76.8901,
           "preco_entrada": 30.260000228881836,
           "preco_saida": 30.059999465942383,
           "retorno_semana": -0.006609
@@ -4197,42 +4197,42 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 85.8491,
+          "score": 82.8205,
           "preco_entrada": 31.09000015258789,
           "preco_saida": 29.700000762939453,
           "retorno_semana": -0.044709
         },
         {
           "ticker": "BMEB4",
-          "score": 79.8113,
+          "score": 77.1795,
           "preco_entrada": 77.90897369384766,
           "preco_saida": 80.0,
           "retorno_semana": 0.026839
         },
         {
           "ticker": "RECV3",
-          "score": 76.7925,
+          "score": 75.1282,
           "preco_entrada": 12.518882751464844,
           "preco_saida": 12.489701271057129,
           "retorno_semana": -0.002331
         },
         {
-          "ticker": "BGIP4",
-          "score": 72.2642,
-          "preco_entrada": 37.84113693237305,
-          "preco_saida": 36.709510803222656,
-          "retorno_semana": -0.029905
+          "ticker": "LAVV3",
+          "score": 71.5385,
+          "preco_entrada": 17.5,
+          "preco_saida": 15.3100004196167,
+          "retorno_semana": -0.125143
         },
         {
           "ticker": "BRAV3",
-          "score": 70.3774,
+          "score": 70.5128,
           "preco_entrada": 19.610456466674805,
           "preco_saida": 17.801485061645508,
           "retorno_semana": -0.092245
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.02847
+      "retorno_carteira": -0.047518
     },
     {
       "semana": "2026-W12",
@@ -4242,42 +4242,42 @@
       "tickers": [
         {
           "ticker": "MDNE3",
-          "score": 85.1724,
+          "score": 78.125,
           "preco_entrada": 29.700000762939453,
           "preco_saida": 28.93000030517578,
           "retorno_semana": -0.025926
         },
         {
           "ticker": "RECV3",
-          "score": 77.5862,
+          "score": 77.5,
           "preco_entrada": 12.489701271057129,
           "preco_saida": 12.37297534942627,
           "retorno_semana": -0.009346
         },
         {
           "ticker": "BMEB4",
-          "score": 76.5517,
+          "score": 68.75,
           "preco_entrada": 80.0,
           "preco_saida": 74.5999984741211,
           "retorno_semana": -0.0675
         },
         {
-          "ticker": "OFSA3",
-          "score": 73.1034,
-          "preco_entrada": 26.82171058654785,
-          "preco_saida": 26.52522850036621,
-          "retorno_semana": -0.011054
+          "ticker": "SMTO3",
+          "score": 65.0,
+          "preco_entrada": 17.1299991607666,
+          "preco_saida": 18.780000686645508,
+          "retorno_semana": 0.096322
         },
         {
           "ticker": "FIQE3",
-          "score": 72.069,
+          "score": 62.5,
           "preco_entrada": 5.360000133514404,
           "preco_saida": 5.659999847412109,
           "retorno_semana": 0.05597
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.011571
+      "retorno_carteira": 0.009904
     },
     {
       "semana": "2026-W13",
@@ -4287,42 +4287,42 @@
       "tickers": [
         {
           "ticker": "FIQE3",
-          "score": 81.0,
+          "score": 75.4545,
           "preco_entrada": 5.659999847412109,
           "preco_saida": 6.670000076293945,
           "retorno_semana": 0.178445
         },
         {
-          "ticker": "OFSA3",
-          "score": 75.0,
-          "preco_entrada": 26.52522850036621,
-          "preco_saida": 27.6716251373291,
-          "retorno_semana": 0.043219
-        },
-        {
           "ticker": "RECV3",
-          "score": 74.0,
+          "score": 71.8182,
           "preco_entrada": 12.37297534942627,
           "preco_saida": 13.209512710571289,
           "retorno_semana": 0.06761
         },
         {
+          "ticker": "SMTO3",
+          "score": 66.3636,
+          "preco_entrada": 18.780000686645508,
+          "preco_saida": 20.3700008392334,
+          "retorno_semana": 0.084665
+        },
+        {
           "ticker": "INTB3",
-          "score": 70.5,
+          "score": 60.9091,
           "preco_entrada": 13.949999809265137,
           "preco_saida": 13.800000190734863,
           "retorno_semana": -0.010753
         },
         {
-          "ticker": "SMTO3",
-          "score": 68.0,
-          "preco_entrada": 18.780000686645508,
-          "preco_saida": 20.3700008392334,
-          "retorno_semana": 0.084665
+          "ticker": "AZZA3",
+          "score": 53.6364,
+          "preco_entrada": 26.6200008392334,
+          "preco_saida": 24.3700008392334,
+          "retorno_semana": -0.084523
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.072637
+      "retorno_carteira": 0.047089
     },
     {
       "semana": "2026-W14",
@@ -4332,42 +4332,42 @@
       "tickers": [
         {
           "ticker": "FIQE3",
-          "score": 90.8333,
+          "score": 90.0,
           "preco_entrada": 6.670000076293945,
           "preco_saida": 6.860000133514404,
           "retorno_semana": 0.028486
         },
         {
           "ticker": "MDNE3",
-          "score": 80.4167,
+          "score": 75.625,
           "preco_entrada": 30.270000457763672,
           "preco_saida": 32.47999954223633,
           "retorno_semana": 0.07301
         },
         {
-          "ticker": "OFSA3",
-          "score": 76.25,
-          "preco_entrada": 27.6716251373291,
-          "preco_saida": 27.22690200805664,
-          "retorno_semana": -0.016071
-        },
-        {
           "ticker": "RECV3",
-          "score": 73.3333,
+          "score": 69.375,
           "preco_entrada": 13.209512710571289,
           "preco_saida": 13.326238632202148,
           "retorno_semana": 0.008837
         },
         {
           "ticker": "SMTO3",
-          "score": 67.9167,
+          "score": 63.75,
           "preco_entrada": 20.3700008392334,
           "preco_saida": 20.350000381469727,
           "retorno_semana": -0.000982
+        },
+        {
+          "ticker": "SEER3",
+          "score": 61.875,
+          "preco_entrada": 11.884796142578125,
+          "preco_saida": 13.061699867248535,
+          "retorno_semana": 0.099026
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.018656
+      "retorno_carteira": 0.041675
     },
     {
       "semana": "2026-W15",
@@ -4377,42 +4377,42 @@
       "tickers": [
         {
           "ticker": "FIQE3",
-          "score": 91.5957,
+          "score": 90.2857,
           "preco_entrada": 6.860000133514404,
           "preco_saida": 7.449999809265137,
           "retorno_semana": 0.086006
         },
         {
           "ticker": "MDNE3",
-          "score": 88.4885,
+          "score": 85.1429,
           "preco_entrada": 32.47999954223633,
           "preco_saida": 32.4900016784668,
           "retorno_semana": 0.000308
         },
         {
-          "ticker": "JHSF3",
-          "score": 81.9326,
-          "preco_entrada": 9.88608455657959,
-          "preco_saida": 12.471982955932617,
-          "retorno_semana": 0.26157
-        },
-        {
           "ticker": "RECV3",
-          "score": 80.5452,
+          "score": 79.4286,
           "preco_entrada": 13.326238632202148,
           "preco_saida": 13.909870147705078,
           "retorno_semana": 0.043796
         },
         {
-          "ticker": "TEND3",
-          "score": 80.359,
-          "preco_entrada": 31.399999618530273,
-          "preco_saida": 33.77000045776367,
-          "retorno_semana": 0.075478
+          "ticker": "JHSF3",
+          "score": 78.8571,
+          "preco_entrada": 9.88608455657959,
+          "preco_saida": 12.471982955932617,
+          "retorno_semana": 0.26157
+        },
+        {
+          "ticker": "SEER3",
+          "score": 76.8571,
+          "preco_entrada": 13.061699867248535,
+          "preco_saida": 13.100000381469727,
+          "retorno_semana": 0.002932
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.093431
+      "retorno_carteira": 0.078922
     },
     {
       "semana": "2026-W16",
@@ -4422,42 +4422,42 @@
       "tickers": [
         {
           "ticker": "JHSF3",
-          "score": 90.8807,
+          "score": 89.8742,
           "preco_entrada": 12.471982955932617,
           "preco_saida": 13.745039939880371,
           "retorno_semana": 0.102073
         },
         {
           "ticker": "FIQE3",
-          "score": 90.5092,
+          "score": 89.5493,
           "preco_entrada": 7.449999809265137,
           "preco_saida": 7.119999885559082,
           "retorno_semana": -0.044295
         },
         {
-          "ticker": "PINE4",
-          "score": 84.8842,
-          "preco_entrada": 14.512297630310059,
-          "preco_saida": 15.557340621948242,
-          "retorno_semana": 0.072011
-        },
-        {
-          "ticker": "BMEB4",
-          "score": 84.1521,
-          "preco_entrada": 82.30000305175781,
-          "preco_saida": 78.62999725341797,
-          "retorno_semana": -0.044593
-        },
-        {
           "ticker": "BMOB3",
-          "score": 83.5358,
+          "score": 83.7526,
           "preco_entrada": 27.95491600036621,
           "preco_saida": 27.389068603515625,
           "retorno_semana": -0.020241
+        },
+        {
+          "ticker": "TEND3",
+          "score": 82.2746,
+          "preco_entrada": 33.77000045776367,
+          "preco_saida": 32.84000015258789,
+          "retorno_semana": -0.027539
+        },
+        {
+          "ticker": "PINE4",
+          "score": 81.5304,
+          "preco_entrada": 14.512297630310059,
+          "preco_saida": 15.557340621948242,
+          "retorno_semana": 0.072011
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": 0.012991
+      "retorno_carteira": 0.016402
     },
     {
       "semana": "2026-W17",
@@ -4467,35 +4467,35 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 90.8996,
+          "score": 88.8353,
           "preco_entrada": 15.557340621948242,
           "preco_saida": 15.449999809265137,
           "retorno_semana": -0.0069
         },
         {
           "ticker": "FIQE3",
-          "score": 89.7244,
+          "score": 88.5176,
           "preco_entrada": 7.119999885559082,
           "preco_saida": 6.900000095367432,
           "retorno_semana": -0.030899
         },
         {
           "ticker": "JHSF3",
-          "score": 89.0061,
+          "score": 87.8824,
           "preco_entrada": 13.745039939880371,
           "preco_saida": 13.357155799865723,
           "retorno_semana": -0.02822
         },
         {
           "ticker": "BMOB3",
-          "score": 83.4228,
+          "score": 82.3765,
           "preco_entrada": 27.389068603515625,
           "preco_saida": 26.287151336669922,
           "retorno_semana": -0.040232
         },
         {
           "ticker": "MDNE3",
-          "score": 83.0061,
+          "score": 80.3059,
           "preco_entrada": 33.209999084472656,
           "preco_saida": 31.860000610351562,
           "retorno_semana": -0.04065
@@ -4512,42 +4512,42 @@
       "tickers": [
         {
           "ticker": "PINE4",
-          "score": 91.3385,
+          "score": 90.6818,
           "preco_entrada": 15.449999809265137,
           "preco_saida": 14.369999885559082,
           "retorno_semana": -0.069903
         },
         {
           "ticker": "JHSF3",
-          "score": 88.29,
+          "score": 87.3295,
           "preco_entrada": 13.357155799865723,
           "preco_saida": 12.550000190734863,
           "retorno_semana": -0.060429
         },
         {
           "ticker": "FIQE3",
-          "score": 85.6735,
+          "score": 84.9148,
           "preco_entrada": 6.900000095367432,
           "preco_saida": 6.849999904632568,
           "retorno_semana": -0.007246
         },
         {
-          "ticker": "OFSA3",
-          "score": 81.348,
-          "preco_entrada": 31.540000915527344,
-          "preco_saida": 31.5,
-          "retorno_semana": -0.001268
-        },
-        {
           "ticker": "INTB3",
-          "score": 69.9197,
+          "score": 67.4432,
           "preco_entrada": 14.869999885559082,
           "preco_saida": 14.270000457763672,
           "retorno_semana": -0.04035
+        },
+        {
+          "ticker": "SEER3",
+          "score": 66.875,
+          "preco_entrada": 12.300000190734863,
+          "preco_saida": 12.710000038146973,
+          "retorno_semana": 0.033333
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.035839
+      "retorno_carteira": -0.028919
     },
     {
       "semana": "2026-W19",
@@ -4557,42 +4557,42 @@
       "tickers": [
         {
           "ticker": "JHSF3",
-          "score": 88.7059,
+          "score": 85.9091,
           "preco_entrada": 12.550000190734863,
           "preco_saida": 11.329999923706055,
           "retorno_semana": -0.097211
         },
         {
           "ticker": "FIQE3",
-          "score": 86.9916,
+          "score": 85.8009,
           "preco_entrada": 6.849999904632568,
           "preco_saida": 6.889999866485596,
           "retorno_semana": 0.005839
         },
         {
-          "ticker": "OFSA3",
-          "score": 81.5714,
-          "preco_entrada": 31.5,
-          "preco_saida": 33.540000915527344,
-          "retorno_semana": 0.064762
-        },
-        {
           "ticker": "PINE4",
-          "score": 70.3445,
+          "score": 67.9004,
           "preco_entrada": 14.369999885559082,
           "preco_saida": 13.399999618530273,
           "retorno_semana": -0.067502
         },
         {
-          "ticker": "INTB3",
-          "score": 70.2521,
-          "preco_entrada": 14.270000457763672,
-          "preco_saida": 15.390000343322754,
-          "retorno_semana": 0.078486
+          "ticker": "OPCT3",
+          "score": 66.3853,
+          "preco_entrada": 10.329999923706055,
+          "preco_saida": 10.079999923706055,
+          "retorno_semana": -0.024201
+        },
+        {
+          "ticker": "DESK3",
+          "score": 66.039,
+          "preco_entrada": 18.399999618530273,
+          "preco_saida": 18.270000457763672,
+          "retorno_semana": -0.007065
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.003125
+      "retorno_carteira": -0.038028
     },
     {
       "semana": "2026-W20",
@@ -4602,42 +4602,42 @@
       "tickers": [
         {
           "ticker": "FIQE3",
-          "score": 85.4991,
+          "score": 88.4615,
           "preco_entrada": 6.889999866485596,
           "preco_saida": 6.429999828338623,
           "retorno_semana": -0.066763
         },
         {
-          "ticker": "OFSA3",
-          "score": 81.3191,
-          "preco_entrada": 33.540000915527344,
-          "preco_saida": 32.2599983215332,
-          "retorno_semana": -0.038163
-        },
-        {
           "ticker": "INTB3",
-          "score": 74.6613,
+          "score": 75.3846,
           "preco_entrada": 15.390000343322754,
           "preco_saida": 14.649999618530273,
           "retorno_semana": -0.048083
         },
         {
           "ticker": "JHSF3",
-          "score": 72.7451,
+          "score": 75.3846,
           "preco_entrada": 11.329999923706055,
           "preco_saida": 10.680000305175781,
           "retorno_semana": -0.05737
         },
         {
-          "ticker": "GEPA4",
-          "score": 71.4884,
-          "preco_entrada": 42.08000183105469,
-          "preco_saida": 38.33000183105469,
-          "retorno_semana": -0.089116
+          "ticker": "DESK3",
+          "score": 68.4615,
+          "preco_entrada": 18.270000457763672,
+          "preco_saida": 17.719999313354492,
+          "retorno_semana": -0.030104
+        },
+        {
+          "ticker": "LEVE3",
+          "score": 65.3846,
+          "preco_entrada": 34.43000030517578,
+          "preco_saida": 33.18000030517578,
+          "retorno_semana": -0.036306
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.059899
+      "retorno_carteira": -0.047725
     },
     {
       "semana": "2026-W21",
@@ -4646,43 +4646,88 @@
       "data_vigencia_fim": "2026-05-22",
       "tickers": [
         {
-          "ticker": "OFSA3",
-          "score": 81.6234,
-          "preco_entrada": 32.2599983215332,
-          "preco_saida": 30.6299991607666,
-          "retorno_semana": -0.050527
-        },
-        {
-          "ticker": "INTB3",
-          "score": 74.5671,
-          "preco_entrada": 14.649999618530273,
-          "preco_saida": 13.949999809265137,
-          "retorno_semana": -0.047782
-        },
-        {
-          "ticker": "EUCA4",
-          "score": 70.7576,
-          "preco_entrada": 26.40999984741211,
-          "preco_saida": 27.149999618530273,
-          "retorno_semana": 0.02802
-        },
-        {
           "ticker": "TTEN3",
-          "score": 69.9134,
+          "score": 76.0,
           "preco_entrada": 16.65999984741211,
           "preco_saida": 15.760000228881836,
           "retorno_semana": -0.054022
         },
         {
+          "ticker": "EUCA4",
+          "score": 74.0,
+          "preco_entrada": 26.40999984741211,
+          "preco_saida": 27.149999618530273,
+          "retorno_semana": 0.02802
+        },
+        {
+          "ticker": "INTB3",
+          "score": 72.6667,
+          "preco_entrada": 14.649999618530273,
+          "preco_saida": 13.949999809265137,
+          "retorno_semana": -0.047782
+        },
+        {
+          "ticker": "BMOB3",
+          "score": 70.6667,
+          "preco_entrada": 25.651813507080078,
+          "preco_saida": 24.770000457763672,
+          "retorno_semana": -0.034376
+        },
+        {
           "ticker": "SMTO3",
-          "score": 62.3918,
+          "score": 61.6667,
           "preco_entrada": 18.25,
           "preco_saida": 17.600000381469727,
           "retorno_semana": -0.035616
         }
       ],
       "n_posicoes": 5,
-      "retorno_carteira": -0.031985
+      "retorno_carteira": -0.028755
+    },
+    {
+      "semana": "2026-W22",
+      "data_formacao": "2026-05-25",
+      "data_corte_dados": "2026-05-22",
+      "data_vigencia_fim": "2026-05-25",
+      "tickers": [
+        {
+          "ticker": "PINE4",
+          "score": 79.1667,
+          "preco_entrada": 14.470000267028809,
+          "preco_saida": 14.729999542236328,
+          "retorno_semana": 0.017968
+        },
+        {
+          "ticker": "EUCA4",
+          "score": 78.3333,
+          "preco_entrada": 27.149999618530273,
+          "preco_saida": 27.100000381469727,
+          "retorno_semana": -0.001842
+        },
+        {
+          "ticker": "OPCT3",
+          "score": 68.3333,
+          "preco_entrada": 10.079999923706055,
+          "preco_saida": 10.220000267028809,
+          "retorno_semana": 0.013889
+        },
+        {
+          "ticker": "HAPV3",
+          "score": 63.3333,
+          "preco_entrada": 12.050000190734863,
+          "preco_saida": 12.25,
+          "retorno_semana": 0.016597
+        },
+        {
+          "ticker": "MLAS3",
+          "score": 61.6667,
+          "preco_entrada": 1.6399999856948853,
+          "preco_saida": 1.659999966621399,
+          "retorno_semana": 0.012195
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": 0.011762
     }
   ]
 }
