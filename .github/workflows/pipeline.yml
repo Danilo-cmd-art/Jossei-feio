@@ -66,20 +66,22 @@ jobs:
           "
 
       # -----------------------------------------------------------------------
-      # V3c — Nova semana (segunda-feira) + Fechamento diário
+      # V3c — Nova semana (idempotente) + Fechamento diário
       # Ordem obrigatória:
-      #   1. nova-semana (segunda) → inicializa estado com scoring V2 atualizado
-      #   2. close       (todo dia) → avalia stop loss com preços de fechamento
+      #   1. nova-semana → só roda se semana-alvo ainda não foi inicializada
+      #                    (normalmente já foi pelo workflow v3c_nova_semana.yml
+      #                     no domingo 19h BRT, então este step costuma pular)
+      #   2. close       → avalia stop loss com preços de fechamento (todo dia útil)
       # -----------------------------------------------------------------------
-      - name: V3c — Nova semana (segundas-feiras)
+      - name: V3c — Nova semana (idempotente, fallback de segurança)
         if: steps.check_fresh.outputs.skip != 'true'
         run: |
-          DAY=$(date +%u)   # 1=seg … 7=dom
-          if [ "$DAY" = "1" ]; then
-            echo "Segunda-feira — formando nova carteira V3c..."
+          SHOULD_INIT=$(python src/check_v3c_week.py)
+          if [ "$SHOULD_INIT" = "yes" ]; then
+            echo "Semana-alvo NÃO inicializada — formando nova carteira V3c (fallback)..."
             python run_v3c.py --mode nova-semana
           else
-            echo "Não é segunda-feira (dia $DAY) — nova-semana ignorada."
+            echo "Semana-alvo já inicializada — nova-semana ignorada."
           fi
 
       - name: V3c — Fechamento do dia

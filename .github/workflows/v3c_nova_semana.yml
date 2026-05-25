@@ -1,0 +1,91 @@
+name: V3c — Formação da Nova Semana
+
+# Forma a carteira V3c da semana que se inicia na próxima segunda-feira.
+# Roda ANTES da abertura do pregão para que o site exiba a nova carteira
+# (com preços de entrada = adj_close da última sexta) já às 9h BRT de segunda.
+#
+# Schedule (BRT = UTC-3):
+#   Domingo 22:00 UTC (19:00 BRT) — execução primária
+#   Segunda 11:00 UTC (08:00 BRT) — fallback se domingo falhar
+#   workflow_dispatch              — disparo manual via GitHub UI
+#
+# Idempotência: pula automaticamente se a semana-alvo já está inicializada
+# (via src/check_v3c_week.py).
+
+on:
+  schedule:
+    - cron: '0 22 * * 0'   # Domingo 22:00 UTC = Domingo 19:00 BRT
+    - cron: '0 11 * * 1'   # Segunda 11:00 UTC = Segunda 08:00 BRT (fallback)
+  workflow_dispatch:        # disparo manual
+
+concurrency:
+  group: v3c-nova-semana
+  cancel-in-progress: false  # NÃO cancelar — nova-semana não pode ser interrompida
+
+jobs:
+  nova_semana:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    steps:
+      # -----------------------------------------------------------------------
+      # Setup
+      # -----------------------------------------------------------------------
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      # -----------------------------------------------------------------------
+      # Idempotência: pula se semana-alvo já foi inicializada
+      # -----------------------------------------------------------------------
+      - name: Verificar se nova semana deve ser formada
+        id: check_week
+        run: |
+          SHOULD_INIT=$(python src/check_v3c_week.py)
+          echo "should_init=$SHOULD_INIT" >> $GITHUB_OUTPUT
+          if [ "$SHOULD_INIT" = "no" ]; then
+            echo "Semana-alvo já inicializada — pulando."
+          else
+            echo "Semana-alvo NÃO inicializada — formando nova carteira V3c."
+          fi
+
+      # -----------------------------------------------------------------------
+      # Atualizar preços do parquet (garante sexta-feira no histórico)
+      # -----------------------------------------------------------------------
+      - name: Rodar pipeline V2 (atualiza preços)
+        if: steps.check_week.outputs.should_init == 'yes'
+        run: python run_v2.py
+
+      # -----------------------------------------------------------------------
+      # V3c — formar nova carteira
+      # -----------------------------------------------------------------------
+      - name: V3c — Nova semana
+        if: steps.check_week.outputs.should_init == 'yes'
+        run: python run_v3c.py --mode nova-semana
+
+      # -----------------------------------------------------------------------
+      # Commit e push
+      # -----------------------------------------------------------------------
+      - name: Commit e push
+        if: steps.check_week.outputs.should_init == 'yes'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/ historico/
+          git diff --staged --quiet \
+            || git commit -m "chore: V3c nova semana formada $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
