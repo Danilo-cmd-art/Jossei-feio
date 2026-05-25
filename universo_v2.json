@@ -10,7 +10,8 @@
     "total_apos_filtros": 192,
     "total_aprovados": 133,
     "total_excluidos": 29,
-    "total_deduplicados": 30
+    "total_deduplicados": 30,
+    "ultima_atualizacao": "2026-05-25"
   },
   "tickers": [
     {
@@ -2388,24 +2389,6 @@
         "q5_recente": true,
         "criterios_atendidos": 4
       }
-    },
-    {
-      "rank_liquidez": 133,
-      "ticker_b3": "RPAD5",
-      "ticker_yf": "RPAD5.SA",
-      "mcap": 615781699.0,
-      "liquidez_diaria": 7861.17,
-      "roic": 6.7,
-      "roe": 8.43,
-      "cagr_receita_5a": null,
-      "qualidade_dados": {
-        "q1_historico": true,
-        "q2_retornos_absurdos": true,
-        "q3_volume_zerado": false,
-        "q4_close_integro": true,
-        "q5_recente": true,
-        "criterios_atendidos": 4
-      }
     }
   ],
   "excluidos": [
@@ -2582,6 +2565,10 @@
       "rank_liquidez_original": 192,
       "motivo": "FAIL_FILTRO_AUTO",
       "detalhe": "F3_VOL_COLAPSADO: 26.8% do histórico"
+    },
+    {
+      "ticker": "RPAD5",
+      "motivo": "Liquidez diaria insuficiente — blacklisted manualmente"
     }
   ]
 }

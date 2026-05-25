@@ -1,4 +1,10 @@
 {
-  "ultima_atualizacao": "2026-05-22",
-  "blacklist": []
+  "ultima_atualizacao": "2026-05-25",
+  "blacklist": [
+    {
+      "ticker": "RPAD5",
+      "motivo": "Liquidez diaria insuficiente (R$ 7.861, rank 133/133)",
+      "data_inclusao": "2026-05-25"
+    }
+  ]
 }
