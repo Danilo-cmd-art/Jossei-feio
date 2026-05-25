@@ -37,6 +37,7 @@ COLORS = {
 # Paleta dos gráficos (Carteira vs benchmarks)
 CHART_PALETTE = {
     "Carteira V2":   COLORS["primary"],
+    "Carteira V3c":  COLORS["primary"],
     "Estratégia V2": COLORS["primary"],
     "IBOV":          COLORS["ink_soft"],
     "SMAL11":        COLORS["muted"],

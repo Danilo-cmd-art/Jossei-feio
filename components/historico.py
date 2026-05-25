@@ -51,7 +51,7 @@ def _render_grafico_real(semanas: list[dict]) -> None:
     # Remove ponto inicial (base)
     df = pd.DataFrame({
         "data": pd.to_datetime(datas),
-        "Carteira V2": cart[1:],
+        "Carteira V3c": cart[1:],
         "IBOV": ibov[1:],
         "SMAL11": smll[1:],
         "CDI": cdi_[1:],
@@ -59,7 +59,7 @@ def _render_grafico_real(semanas: list[dict]) -> None:
 
     df_long = df.melt(
         id_vars="data",
-        value_vars=["Carteira V2", "IBOV", "SMAL11", "CDI"],
+        value_vars=["Carteira V3c", "IBOV", "SMAL11", "CDI"],
         var_name="serie",
         value_name="valor",
     )
@@ -68,7 +68,7 @@ def _render_grafico_real(semanas: list[dict]) -> None:
     bootstrap_set = {s["data_vigencia_fim"] for s in semanas if s.get("bootstrap")}
 
     colors = {
-        "Carteira V2": "#2563eb",
+        "Carteira V3c": "#2563eb",
         "IBOV": "#6b7280",
         "SMAL11": "#9ca3af",
         "CDI": "#d1d5db",
@@ -86,7 +86,7 @@ def _render_grafico_real(semanas: list[dict]) -> None:
             legend=alt.Legend(title=""),
         ),
         strokeWidth=alt.condition(
-            alt.datum.serie == "Carteira V2",
+            alt.datum.serie == "Carteira V3c",
             alt.value(3),
             alt.value(1.5),
         ),

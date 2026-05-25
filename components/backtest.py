@@ -19,9 +19,9 @@ from utils.formatters import fmt_data_br, fmt_pct
 
 @st.cache_data(ttl=300)
 def _carregar_backtest() -> dict | None:
-    if not config.BACKTEST_V2_RESULTADO_PATH.exists():
+    if not config.BACKTEST_V3C_RESULTADO_PATH.exists():
         return None
-    with open(config.BACKTEST_V2_RESULTADO_PATH, encoding="utf-8") as f:
+    with open(config.BACKTEST_V3C_RESULTADO_PATH, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -57,19 +57,19 @@ def _render_retorno_acumulado(equity_curve: list[dict], periodo: str) -> None:
         base_smll = df["valor_smll"].iloc[0]
         base_cdi  = df["valor_cdi"].iloc[0]
 
-    df["Carteira V2"] = df["valor_estrategia"] / base_est  - 1
-    df["IBOV"]        = df["valor_ibov"]       / base_ibov - 1
-    df["SMAL11"]      = df["valor_smll"]       / base_smll - 1
-    df["CDI"]         = df["valor_cdi"]        / base_cdi  - 1
+    df["Carteira V3c"] = df["valor_estrategia"] / base_est  - 1
+    df["IBOV"]         = df["valor_ibov"]       / base_ibov - 1
+    df["SMAL11"]       = df["valor_smll"]       / base_smll - 1
+    df["CDI"]          = df["valor_cdi"]        / base_cdi  - 1
 
     df_long = df.melt(
         id_vars="data",
-        value_vars=["Carteira V2", "IBOV", "SMAL11", "CDI"],
+        value_vars=["Carteira V3c", "IBOV", "SMAL11", "CDI"],
         var_name="serie",
         value_name="retorno",
     )
 
-    colors = {k: CHART_PALETTE[k] for k in ("Carteira V2", "IBOV", "SMAL11", "CDI")}
+    colors = {k: CHART_PALETTE[k] for k in ("Carteira V3c", "IBOV", "SMAL11", "CDI")}
     base   = alt.Chart(df_long)
 
     linhas = base.mark_line().encode(
@@ -85,7 +85,7 @@ def _render_retorno_acumulado(equity_curve: list[dict], periodo: str) -> None:
             legend=alt.Legend(title="", labelColor=COLORS["ink"], labelFontSize=12),
         ),
         strokeWidth=alt.condition(
-            alt.datum.serie == "Carteira V2",
+            alt.datum.serie == "Carteira V3c",
             alt.value(2.5),
             alt.value(1.2),
         ),
@@ -149,7 +149,7 @@ def render_aba_backtest(periodo: str = "2a") -> None:
     bt = _carregar_backtest()
 
     if bt is None:
-        st.warning("Backtest V2 ainda não gerado.")
+        st.warning("Backtest V3c ainda não gerado.")
         render_footer()
         return
 

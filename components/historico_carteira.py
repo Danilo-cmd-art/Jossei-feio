@@ -76,9 +76,9 @@ def _normalizar_carteira_real(d: dict) -> dict | None:
 
 @st.cache_data(ttl=300)
 def _carregar_carteiras_combinadas() -> dict | None:
-    if not config.BACKTEST_V2_CARTEIRAS_PATH.exists():
+    if not config.BACKTEST_V3C_CARTEIRAS_PATH.exists():
         return None
-    with open(config.BACKTEST_V2_CARTEIRAS_PATH, encoding="utf-8") as f:
+    with open(config.BACKTEST_V3C_CARTEIRAS_PATH, encoding="utf-8") as f:
         bt = json.load(f)
 
     # Indexa carteiras simuladas por chave 'semana' (ex: '2026-W21')

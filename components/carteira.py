@@ -167,7 +167,7 @@ def _render_grafico_semana(
 
     rows = []
     for p in performance:
-        rows.append({"data": p["data"], "serie": "Carteira V2", "retorno": p["retorno_acumulado"]})
+        rows.append({"data": p["data"], "serie": "Carteira V3c", "retorno": p["retorno_acumulado"]})
         if "benchmarks" in p:
             b = p["benchmarks"]
             for nome, key in [("IBOV", "ibov"), ("SMAL11", "smll"), ("CDI", "cdi")]:
@@ -202,7 +202,7 @@ def _render_grafico_semana(
         df[["data", "dia"]].drop_duplicates().sort_values("data")["dia"].tolist()
     )
 
-    colors  = {k: CHART_PALETTE[k] for k in ("Carteira V2", "IBOV", "SMAL11", "CDI")}
+    colors  = {k: CHART_PALETTE[k] for k in ("Carteira V3c", "IBOV", "SMAL11", "CDI")}
     domain  = list(colors.keys())
     range_c = list(colors.values())
 
@@ -225,7 +225,7 @@ def _render_grafico_semana(
             legend=alt.Legend(title="", labelColor=COLORS["ink"], labelFontSize=12),
         ),
         strokeWidth=alt.condition(
-            alt.datum.serie == "Carteira V2",
+            alt.datum.serie == "Carteira V3c",
             alt.value(2.5),
             alt.value(1.2),
         ),
@@ -236,7 +236,7 @@ def _render_grafico_semana(
         ],
     ).properties(height=320)
 
-    df_label = df[df["serie"] == "Carteira V2"].copy()
+    df_label = df[df["serie"] == "Carteira V3c"].copy()
     labels = alt.Chart(df_label).mark_text(
         align="center",
         baseline="top",
@@ -277,7 +277,7 @@ def render_aba_carteira() -> None:
     carteira = _carregar_carteira()
 
     if carteira is None:
-        st.error("Carteira V2 ainda não gerada.")
+        st.error("Carteira ainda não gerada.")
         render_footer()
         return
 

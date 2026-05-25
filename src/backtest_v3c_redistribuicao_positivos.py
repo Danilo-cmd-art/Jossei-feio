@@ -267,9 +267,33 @@ def main() -> None:
         )
 
         pregoes = obter_pregoes_entre(data_formacao, data_vigencia_fim, df_precos)
-        retorno_carteira, log_eventos, _ = simular_semana_v3c(
+        retorno_carteira, log_eventos, posicoes_semana = simular_semana_v3c(
             tickers_entrada, preco_entrada, pregoes, df_precos
         )
+
+        # Enriquece cada ticker com preco_saida e retorno_semana (para frontend)
+        score_map = {t["ticker"]: t.get("score") for t in semana["tickers"]}
+        dt_vigencia_fim_date = date.fromisoformat(data_vigencia_fim)
+        tickers_enriquecidos = []
+        for ticker in tickers_entrada:
+            pos = posicoes_semana[ticker]
+            ent = pos.preco_entrada
+            score = score_map.get(ticker)
+            if not pos.ativo:
+                # Posição stopada: preço de saída é o preço no dia do stop
+                sai = pos.preco_stop
+                ret = pos.ret_no_stop
+            else:
+                # Posição ativa até o fim da semana: preço de fechamento de sexta
+                sai = obter_adj_close(ticker, dt_vigencia_fim_date, df_precos)
+                ret = (sai / ent - 1) if (sai is not None and ent) else None
+            tickers_enriquecidos.append({
+                "ticker":         ticker,
+                "score":          score,
+                "preco_entrada":  round(ent, 4) if ent is not None else None,
+                "preco_saida":    round(sai, 4) if sai is not None else None,
+                "retorno_semana": round(ret, 6) if ret is not None else None,
+            })
 
         dt_corte = date.fromisoformat(data_corte)
         dt_fim   = date.fromisoformat(data_vigencia_fim)
@@ -285,6 +309,7 @@ def main() -> None:
             "data_corte_dados":    data_corte,
             "data_vigencia_fim":   data_vigencia_fim,
             "tickers_iniciais":    tickers_entrada,
+            "tickers":             tickers_enriquecidos,
             "n_posicoes_inicial":  len(tickers_entrada),
             "n_stops_semana":      n_stops,
             "tickers_stopados":    [e["ticker"] for e in log_eventos],
