@@ -36,7 +36,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0           # full clone — necessario para pull --rebase
+          persist-credentials: true  # mantem GITHUB_TOKEN para git push
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -58,10 +59,30 @@ jobs:
       # -----------------------------------------------------------------------
       - name: Commit e push
         run: |
+          set -e
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
+
           git add data/carteira_v3c_estado.json historico/
-          git diff --staged --quiet \
-            || git commit -m "chore: V3c intraday $(date -u '+%H:%M UTC')"
-          git push
+
+          # Se nao houver mudancas, encerra sem erro
+          if git diff --staged --quiet; then
+            echo "Sem alteracoes para commitar — encerrando."
+            exit 0
+          fi
+
+          git commit -m "chore: V3c intraday $(date -u '+%H:%M UTC')"
+
+          # Tenta push com retry: se outro run pushou no meio, faz pull rebase
+          # e tenta novamente (max 3 tentativas)
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push OK na tentativa $i"
+              exit 0
+            fi
+            echo "Push falhou na tentativa $i — fazendo pull --rebase e tentando novamente..."
+            git pull --rebase origin main
+          done
+
+          echo "Push falhou apos 3 tentativas"
+          exit 1

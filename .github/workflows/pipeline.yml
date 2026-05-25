@@ -20,7 +20,8 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1      # shallow clone, mais rápido
+          fetch-depth: 0           # full clone — necessario para pull --rebase
+          persist-credentials: true  # mantem GITHUB_TOKEN para git push
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -94,12 +95,25 @@ jobs:
       - name: Commit e push dos artefatos
         if: steps.check_fresh.outputs.skip != 'true'
         run: |
-          git config user.name "github-actions[bot]"
+          set -e
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/ historico/
-          git diff --staged --quiet || git commit -m "chore: atualização automática $(date -u '+%Y-%m-%d %H:%M UTC') [V2+V3c]"
-          git push
+          if git diff --staged --quiet; then
+            echo "Sem alteracoes para commitar — encerrando."
+            exit 0
+          fi
+          git commit -m "chore: atualização automática $(date -u '+%Y-%m-%d %H:%M UTC') [V2+V3c]"
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push OK na tentativa $i"
+              exit 0
+            fi
+            echo "Push falhou na tentativa $i — pull --rebase e retry..."
+            git pull --rebase origin main
+          done
+          echo "Push falhou apos 3 tentativas"
+          exit 1
 
       # -----------------------------------------------------------------------
       # Health check — abre Issue se pipeline falhar por 2+ dias úteis
