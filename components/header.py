@@ -86,7 +86,7 @@ def _render_status_strip() -> None:
           <div style='margin-left:auto; font-size:0.7rem;
                       letter-spacing:0.9px; text-transform:uppercase;
                       color:#A8A8A8; font-weight:500;'>
-            v2.1
+            v3c
           </div>
         </div>
         """,
