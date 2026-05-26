@@ -446,8 +446,11 @@ def atualizar_intraday(estado: dict) -> dict:
         preco_entrada = pos["preco_entrada"] or preco_agora
         pos["ret_acumulado"] = round(preco_agora / preco_entrada - 1, 6)
 
-    # Retorno intraday do dia: vs preco_ref_dia (último close processado, ou entrada)
-    ret_dia_intraday = 0.0
+    # ── RETORNO ACUMULADO (desde preco_entrada da semana) ──────────────────
+    # Fonte canônica: weighted sum direto dos retornos individuais por posição.
+    # Esta é a métrica que aparece em "Retorno na semana" (cards) e em
+    # historico/carteira_*.json (retorno_acumulado_total).
+    ret_acum_semana = 0.0
     for pos in posicoes:
         if not pos["ativo"]:
             continue
@@ -455,13 +458,18 @@ def atualizar_intraday(estado: dict) -> dict:
         preco_agora = precos.get(ticker)
         if preco_agora is None:
             continue
-        preco_ref = pos.get("preco_ref_dia") or pos.get("preco_entrada") or preco_agora
-        ret_dia_intraday += (preco_agora / preco_ref - 1) * pos["peso_atual"]
+        preco_entrada = pos["preco_entrada"] or preco_agora
+        ret_acum_semana += (preco_agora / preco_entrada - 1) * pos["peso_atual"]
 
-    # Retorno acumulado composto (vs último close processado)
-    perf_close = [p for p in estado.get("performance_diaria", []) if p["modo"] == "close"]
-    ret_acum_base  = perf_close[-1]["retorno_acumulado"] if perf_close else 0.0
-    ret_acum_total = (1 + ret_acum_base) * (1 + ret_dia_intraday) - 1
+    # ── RETORNO DO DIA (delta vs último cumulative do dia anterior) ───────
+    # Para compor ret_dia corretamente, precisamos do cumulative do PREGÃO
+    # ANTERIOR (qualquer modo: close ou intraday). Se hoje 26/05, pegamos o
+    # último entry de 25/05; se não houver (primeira semana), ret_dia = acum.
+    perf_passada = [p for p in estado.get("performance_diaria", [])
+                    if p["data"] < data_hoje_str]
+    ret_acum_ontem = perf_passada[-1]["retorno_acumulado"] if perf_passada else 0.0
+    ret_dia_intraday = ((1 + ret_acum_semana) / (1 + ret_acum_ontem) - 1
+                        if (1 + ret_acum_ontem) != 0 else 0.0)
 
     # Substituir entry intraday de hoje
     perf = [p for p in estado.get("performance_diaria", [])
@@ -469,7 +477,7 @@ def atualizar_intraday(estado: dict) -> dict:
     perf.append({
         "data":              data_hoje_str,
         "retorno_dia":       round(ret_dia_intraday, 6),
-        "retorno_acumulado": round(ret_acum_total, 6),
+        "retorno_acumulado": round(ret_acum_semana, 6),
         "modo":              "intraday",
     })
     estado["performance_diaria"]     = sorted(perf, key=lambda x: x["data"])
@@ -478,7 +486,7 @@ def atualizar_intraday(estado: dict) -> dict:
 
     salvar_estado(estado)
     log.info(f"Intraday OK: ret_dia={ret_dia_intraday*100:.3f}%  "
-             f"acum_semana={ret_acum_total*100:.3f}%")
+             f"acum_semana={ret_acum_semana*100:.3f}%")
     return estado
 
 

@@ -241,19 +241,19 @@ def _construir_equity_curve_live(
     if not dias_pregao:
         return []
 
-    # Coleta retornos diários da Carteira de todos os historicos
-    carteira_daily: dict[date, float] = {}
-    for h in (historicos or []):
-        for p in h.get("performance_diaria", []):
-            try:
-                d = date.fromisoformat(p["data"][:10])
-                ret = p.get("retorno_dia")
-                if ret is not None:
-                    carteira_daily[d] = float(ret)
-            except Exception:
-                continue
+    # Filtra apenas semanas a partir do INÍCIO LIVE (exclui W21 backfill).
+    # Critério: vigencia_inicio >= DATA_INICIO_LIVE. Isso garante que o
+    # baseline em 22/05 seja 0% (semana W21 com vig_inicio=18/05 fica fora).
+    historicos_live = sorted(
+        (h for h in (historicos or [])
+         if h.get("metadata", {}).get("data_vigencia_inicio", "")[:10]
+            and date.fromisoformat(
+                h["metadata"]["data_vigencia_inicio"][:10]
+            ) > DATA_INICIO_LIVE),
+        key=lambda h: h["metadata"]["data_vigencia_inicio"],
+    )
 
-    # Indexa benchmarks por dia
+    # Indexa benchmarks por dia (retornos DIÁRIOS do parquet)
     bench_map: dict[date, dict[str, float]] = {}
     for _, row in bench_df.iterrows():
         d = row["date"].date()
@@ -263,17 +263,51 @@ def _construir_equity_curve_live(
             for col in ("ibov", "smll", "cdi")
         }
 
-    # Compõe: primeiro dia = baseline 100 (0%); demais acumulam
-    val_strat = val_ibov = val_smll = val_cdi = 100.0
+    def _val_carteira_em(d: date) -> float:
+        """
+        Valor cumulativo da carteira em `d`, ancorado em 100 = DATA_INICIO_LIVE.
+        Compõe multiplicativamente:
+          • Semanas inteiras anteriores ao dia `d`: multiplica pelo
+            retorno_acumulado_total final daquela semana.
+          • Semana corrente ao dia `d`: multiplica pelo retorno_acumulado
+            registrado em performance_diaria daquele dia.
+        Lógica robusta para multi-semana — quando W23+ entrar, o
+        cumulative segue corretamente sem mudança de código.
+        """
+        val = 100.0
+        for h in historicos_live:
+            vig_ini = date.fromisoformat(h["metadata"]["data_vigencia_inicio"][:10])
+            vig_fim = date.fromisoformat(h["metadata"]["data_vigencia_fim"][:10])
+            if d < vig_ini:
+                break                                  # ainda não chegou nesta semana
+            if vig_ini <= d <= vig_fim:
+                # dia dentro desta semana — usa retorno_acumulado do dia
+                partial = None
+                for p in h.get("performance_diaria", []):
+                    if str(p.get("data", ""))[:10] == d.isoformat():
+                        partial = p.get("retorno_acumulado")
+                        break
+                if partial is not None:
+                    val *= (1.0 + float(partial))
+                return val
+            # d > vig_fim → semana encerrada, compõe pelo retorno total final
+            ret_total = h.get("retorno_acumulado_total") or 0.0
+            val *= (1.0 + float(ret_total))
+        return val
+
+    # Compõe a curva:
+    #   • Carteira V3c: usa _val_carteira_em() — multi-semana
+    #   • Benchmarks: cumulative produto dos retornos diários (parquet)
+    val_ibov = val_smll = val_cdi = 100.0
     curve: list[dict] = []
     for i, d in enumerate(dias_pregao):
         if i > 0:
-            ret_strat = carteira_daily.get(d, 0.0)
-            b         = bench_map.get(d, {"ibov": 0.0, "smll": 0.0, "cdi": 0.0})
-            val_strat *= (1 + ret_strat)
-            val_ibov  *= (1 + b["ibov"])
-            val_smll  *= (1 + b["smll"])
-            val_cdi   *= (1 + b["cdi"])
+            b = bench_map.get(d, {"ibov": 0.0, "smll": 0.0, "cdi": 0.0})
+            val_ibov *= (1 + b["ibov"])
+            val_smll *= (1 + b["smll"])
+            val_cdi  *= (1 + b["cdi"])
+
+        val_strat = _val_carteira_em(d)
 
         curve.append({
             "data":             d.isoformat(),
