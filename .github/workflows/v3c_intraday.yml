@@ -6,7 +6,8 @@ name: V3c — Atualização Intraday
 
 on:
   schedule:
-    - cron: '0 13 * * 1-5'   # 10:00 BRT
+    - cron: '0 13 * * 1-5'   # 10:00 BRT — abertura do pregao
+    - cron: '10 13 * * 1-5'  # 10:10 BRT — fallback (precos podem nao estar formados as 10h)
     - cron: '0 14 * * 1-5'   # 11:00 BRT
     - cron: '0 15 * * 1-5'   # 12:00 BRT
     - cron: '0 16 * * 1-5'   # 13:00 BRT
