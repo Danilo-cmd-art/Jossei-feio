@@ -213,14 +213,12 @@ def _render_grafico_semana(
     rows = []
     for p in performance:
         rows.append({"data": p["data"], "serie": "Carteira V3c", "retorno": p["retorno_acumulado"]})
-        if "benchmarks" in p:
-            b = p["benchmarks"]
-            for nome, key in [("IBOV", "ibov"), ("SMAL11", "smll"), ("CDI", "cdi")]:
-                v = b.get(key)
-                if v is not None:
-                    rows.append({"data": p["data"], "serie": nome, "retorno": v})
 
-    if len(rows) <= len(performance) and bench_df is not None:
+    # SEMPRE recalcula benchmarks do parquet (fonte canonica, sincronizado com
+    # os cards "VS IBOV / VS SMAL11 / VS CDI"). O campo `benchmarks` salvo
+    # dentro de `performance_diaria` pode estar com snapshot stale do momento
+    # do intraday — divergiria do que os cards exibem.
+    if bench_df is not None:
         dt_corte = date.fromisoformat(data_corte)
         for p in performance:
             dt = date.fromisoformat(p["data"][:10])
@@ -230,8 +228,9 @@ def _render_grafico_semana(
                         (bench_df["date"].dt.date > dt_corte) &
                         (bench_df["date"].dt.date <= dt)
                     ][col].dropna()
-                    ret_acum = float((1 + janela).prod() - 1) if not janela.empty else 0.0
-                    rows.append({"data": p["data"], "serie": nome, "retorno": ret_acum})
+                    if not janela.empty:
+                        ret_acum = float((1 + janela).prod() - 1)
+                        rows.append({"data": p["data"], "serie": nome, "retorno": ret_acum})
 
     df = pd.DataFrame(rows)
     if df.empty:

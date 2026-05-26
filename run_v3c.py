@@ -233,6 +233,24 @@ def main() -> None:
 
         estado = atualizar_intraday(estado)
 
+        # Atualiza benchmarks.parquet a cada intraday (fonte canonica para o
+        # grafico "Performance da semana" na aba Carteira). Sem isso, o grafico
+        # exibiria valores stale de IBOV/SMLL/CDI ate o pipeline das 19h rodar.
+        try:
+            from src import benchmarks as bm
+            from datetime import timedelta
+            data_corte_estado = date.fromisoformat(estado["data_corte_dados"])
+            bench_atualizado = bm.carregar_benchmarks(
+                data_corte_estado - timedelta(days=5),
+                hoje,
+            )
+            if not bench_atualizado.empty:
+                bm.salvar_benchmarks(bench_atualizado)
+                bench_df = bench_atualizado
+                log.info(f"benchmarks.parquet atualizado ({len(bench_atualizado)} linhas)")
+        except Exception as e:
+            log.warning(f"Falha ao atualizar benchmarks no intraday: {e}")
+
         carteira = gerar_carteira_json(estado, bench_df)
         salvar_carteira_historico(carteira, estado["semana"])
         log.info("Frontend atualizado com preços intraday.")

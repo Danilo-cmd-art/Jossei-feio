@@ -64,7 +64,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data/carteira_v3c_estado.json historico/
+          git add data/carteira_v3c_estado.json data/benchmarks.parquet historico/
 
           # Se nao houver mudancas, encerra sem erro
           if git diff --staged --quiet; then
