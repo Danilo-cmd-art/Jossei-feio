@@ -199,41 +199,46 @@ def _proxima_segunda() -> date:
 
 
 # ---------------------------------------------------------------------------
-# NOVO: equity curve diária dos últimos 30 dias úteis
+# "Performance Live" — equity curve diária desde 22/05/2026
 # Reaproveita o componente gráfico do Backtest (_render_retorno_acumulado).
 # Fonte unificada de benchmarks: data/benchmarks.parquet (mesma dos cards).
 # ---------------------------------------------------------------------------
 
-JANELA_DIAS_GRAFICO = 30   # número de pregões exibidos
+DATA_INICIO_LIVE = date(2026, 5, 22)   # sexta — fechamento antes da W22 live
 
 
-def _construir_equity_curve_30dias(
+def _construir_equity_curve_live(
     historicos: list[dict],
     bench_df: pd.DataFrame | None,
 ) -> list[dict]:
     """
-    Constrói uma equity_curve DIÁRIA no MESMO formato consumido por
-    _render_retorno_acumulado() do backtest:
+    Constrói equity_curve DIÁRIA do gráfico "Performance Live", no MESMO
+    formato consumido por _render_retorno_acumulado() do backtest:
         [{ data, valor_estrategia, valor_ibov, valor_smll, valor_cdi }, ...]
 
     Lógica:
-      • Janela: últimos JANELA_DIAS_GRAFICO pregões da parquet (≤ hoje).
-      • Baseline 100 ANTES do primeiro dia (igual ao backtest).
-      • Carteira V3c diária: usa `retorno_dia` de cada `performance_diaria`
-        dos arquivos historico/. Para dias antes do início do live (18/05),
-        retorno = 0 (carteira em caixa, ainda não operava).
-      • Benchmarks: cumulativos do parquet (fonte única — mesma dos cards
-        VS IBOV/SMAL11/CDI e da tabela "Histórico semanal").
+      • Início FIXO: DATA_INICIO_LIVE (22/05/2026)
+      • Fim: hoje
+      • Apenas pregões registrados no parquet de benchmarks (skipa
+        sábado/domingo/feriado automaticamente).
+      • Primeiro ponto = baseline (valor=100, retorno=0%).
+      • Pontos subsequentes acumulam:
+          - Carteira V3c: usa retorno_dia das performance_diaria dos historicos
+          - IBOV/SMAL11/CDI: usa retornos diários do parquet (fonte única —
+            mesma usada nos cards VS IBOV/SMAL11/CDI e na tabela "Histórico
+            semanal").
+      • Cresce 1 ponto por pregão automaticamente — não precisa de mudança
+        no código quando avança o tempo.
     """
     if bench_df is None or bench_df.empty:
         return []
 
     hoje = date.today()
     dias_pregao = sorted(
-        d for d in bench_df["date"].dt.date.unique() if d <= hoje
+        d for d in bench_df["date"].dt.date.unique()
+        if DATA_INICIO_LIVE <= d <= hoje
     )
-    dias_janela = dias_pregao[-JANELA_DIAS_GRAFICO:]
-    if not dias_janela:
+    if not dias_pregao:
         return []
 
     # Coleta retornos diários da Carteira de todos os historicos
@@ -258,17 +263,17 @@ def _construir_equity_curve_30dias(
             for col in ("ibov", "smll", "cdi")
         }
 
-    # Compõe cumulativo desde 100 (baseline)
+    # Compõe: primeiro dia = baseline 100 (0%); demais acumulam
     val_strat = val_ibov = val_smll = val_cdi = 100.0
     curve: list[dict] = []
-    for d in dias_janela:
-        ret_strat = carteira_daily.get(d, 0.0)
-        b         = bench_map.get(d, {"ibov": 0.0, "smll": 0.0, "cdi": 0.0})
-
-        val_strat *= (1 + ret_strat)
-        val_ibov  *= (1 + b["ibov"])
-        val_smll  *= (1 + b["smll"])
-        val_cdi   *= (1 + b["cdi"])
+    for i, d in enumerate(dias_pregao):
+        if i > 0:
+            ret_strat = carteira_daily.get(d, 0.0)
+            b         = bench_map.get(d, {"ibov": 0.0, "smll": 0.0, "cdi": 0.0})
+            val_strat *= (1 + ret_strat)
+            val_ibov  *= (1 + b["ibov"])
+            val_smll  *= (1 + b["smll"])
+            val_cdi   *= (1 + b["cdi"])
 
         curve.append({
             "data":             d.isoformat(),
@@ -767,21 +772,33 @@ def render_aba_carteira() -> None:
     _render_eventos_semana_live(carteira)
 
     # -----------------------------------------------------------------------
-    # Performance da semana (gráfico de 30 pregões + comparação com benchmarks)
+    # Performance Live — gráfico diário desde 22/05/2026.
     # Reusa o componente _render_retorno_acumulado() da aba Backtest para
-    # garantir mesma estética e exatamente a mesma lógica de plotagem.
-    # Fonte UNIFICADA de benchmarks: data/benchmarks.parquet (atualizado a
-    # cada execução intraday do workflow v3c_intraday.yml).
+    # mesma estética e mesma lógica de plotagem. Cresce 1 ponto por pregão
+    # automaticamente (sem mudança de código): cada intraday alimenta o
+    # parquet de benchmarks com o pregão do dia.
+    # Fonte UNIFICADA: data/benchmarks.parquet (mesma usada pelos cards
+    # VS IBOV/SMAL11/CDI e pela tabela "Histórico semanal").
     # -----------------------------------------------------------------------
     st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
-    st.markdown(f"### Performance da semana — últimos {JANELA_DIAS_GRAFICO} pregões")
+    st.markdown("### Performance Live")
+    st.markdown(
+        f"""
+        <div style='font-size:0.82rem; color:{COLORS["muted"]};
+                    margin-top:-12px; margin-bottom:14px;'>
+          Pregões desde {DATA_INICIO_LIVE.strftime("%d/%m/%Y")} —
+          baseline 0% no primeiro dia, cresce a cada pregão.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     bench_df = _carregar_benchmarks()
-    curva_30d = _construir_equity_curve_30dias(historicos, bench_df)
-    if curva_30d:
+    curva_live = _construir_equity_curve_live(historicos, bench_df)
+    if curva_live and len(curva_live) >= 1:
         # Lazy import para evitar ciclo de import
         from components.backtest import _render_retorno_acumulado
-        _render_retorno_acumulado(curva_30d, periodo="2a")
+        _render_retorno_acumulado(curva_live, periodo="2a")
     else:
         st.info("Aguardando dados de benchmark para plotar o gráfico.")
 

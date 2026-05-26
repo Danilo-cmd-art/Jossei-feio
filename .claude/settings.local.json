@@ -11,7 +11,21 @@
       "Bash(Remove-Item -ErrorAction SilentlyContinue data\\\\backtest_resultado.json, data\\\\backtest_carteiras.json)",
       "WebSearch",
       "Bash(python src/build_universe_v2.py)",
-      "Bash(python -m pip install \"streamlit>=1.35.0\" \"altair>=5.3.0\")"
+      "Bash(python -m pip install \"streamlit>=1.35.0\" \"altair>=5.3.0\")",
+      "Bash(git commit -m ' *)",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "mcp__Claude_in_Chrome__read_page",
+      "mcp__Claude_in_Chrome__find",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__tabs_create_mcp",
+      "Bash(git push *)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/backtest_resultado_v3c.json',encoding='utf-8'\\)\\); print\\('versao_formula:', d['metadata'].get\\('versao_formula'\\)\\); print\\('retorno_total:', d['metricas_estrategia'].get\\('retorno_total'\\)\\); print\\('janela:', d['metadata'].get\\('janela_inicio'\\), '->', d['metadata'].get\\('janela_fim'\\)\\)\")",
+      "Bash(python -m src.backtest_v3)",
+      "Bash(git stash *)",
+      "Bash(git pull *)"
     ]
   }
 }
