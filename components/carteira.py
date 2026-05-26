@@ -717,21 +717,21 @@ def render_aba_carteira() -> None:
         )
 
     # -----------------------------------------------------------------------
-    # Histórico semanal
+    # Histórico semanal — versão enxuta (3 últimas semanas)
+    # Visão completa de todas as semanas: aba "Live"
     # -----------------------------------------------------------------------
     if historicos:
         st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
-        st.markdown("### Histórico semanal")
+        st.markdown("### Últimas semanas")
         bench_df = _carregar_benchmarks()
         df_hist  = _historico_semanas_resumido(historicos, bench_df)
 
-        # Mostra mais recentes em cima
-        df_hist_display = df_hist.iloc[::-1].copy()
+        # Mostra as 3 mais recentes (mais recente em cima)
+        df_hist_display = df_hist.iloc[::-1].head(3).copy()
         df_hist_display["Vigência"] = df_hist_display.apply(
             lambda r: f"{fmt_data_br(r['vig_inicio'])} → {fmt_data_br(r['vig_fim'])}",
             axis=1,
         )
-        # Multiplica por 100 — NumberColumn não converte decimal → percentual
         for col in ("ret", "vs_ibov", "vs_smll", "vs_cdi"):
             df_hist_display[col] = df_hist_display[col].apply(
                 lambda v: v * 100 if v is not None else None
@@ -771,5 +771,28 @@ def render_aba_carteira() -> None:
                 ),
             },
         )
+
+        if len(historicos) > 3:
+            st.markdown(
+                f"""
+                <div style='font-size:0.82rem; color:{COLORS["muted"]};
+                            margin-top:10px; font-style:italic;'>
+                  Mostrando 3 últimas de {len(historicos)} semanas.
+                  Histórico completo + gráfico cumulativo na aba <b>Live</b>.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        else:
+            st.markdown(
+                f"""
+                <div style='font-size:0.82rem; color:{COLORS["muted"]};
+                            margin-top:10px; font-style:italic;'>
+                  Gráfico cumulativo + tabela completa de todas as semanas
+                  na aba <b>Live</b>.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     render_footer()

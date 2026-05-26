@@ -24,6 +24,7 @@ aplicar_tema()
 # Imports dos componentes
 from components.header import render_header
 from components.carteira import render_aba_carteira
+from components.live import render_aba_live
 from components.backtest import render_aba_backtest
 from components.historico_carteira import render_aba_historico_carteira
 
@@ -82,12 +83,15 @@ render_header()
 # ---------------------------------------------------------------------------
 # Abas principais — Carteira + Backtest (Ranking e Histórico ocultos)
 # ---------------------------------------------------------------------------
-tab_carteira, tab_backtest, tab_historico = st.tabs(
-    ["Carteira", "Backtest", "Histórico"]
+tab_carteira, tab_live, tab_backtest, tab_historico = st.tabs(
+    ["Carteira", "Live", "Backtest", "Histórico"]
 )
 
 with tab_carteira:
     render_aba_carteira()
+
+with tab_live:
+    render_aba_live()
 
 with tab_backtest:
     render_aba_backtest(periodo=periodo)
