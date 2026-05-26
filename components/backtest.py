@@ -151,6 +151,11 @@ def _render_retorno_acumulado(equity_curve: list[dict], periodo: str) -> None:
     df = pd.DataFrame(dados)
     df["data"] = pd.to_datetime(df["data"])
 
+    # Formato do eixo X adaptativo: curto prazo (<60 dias) usa "dd/mm";
+    # longo prazo (backtest 2 anos) usa "%b/%y" (May/26).
+    janela_dias = (df["data"].max() - df["data"].min()).days
+    eixo_x_format = "%d/%m" if janela_dias <= 90 else "%b/%y"
+
     # Base canônica do backtest = 100. Quando o usuário filtra para uma janela
     # parcial (3m/6m/1a), renormalizamos para o primeiro ponto da janela para
     # que o gráfico exiba o retorno DENTRO da janela escolhida.
@@ -180,8 +185,28 @@ def _render_retorno_acumulado(equity_curve: list[dict], periodo: str) -> None:
     colors = {k: CHART_PALETTE[k] for k in ("Carteira V3c", "IBOV", "SMAL11", "CDI")}
     base   = alt.Chart(df_long)
 
-    linhas = base.mark_line().encode(
-        x=alt.X("data:T", title="", axis=alt.Axis(format="%b/%y", labelColor=COLORS["muted"])),
+    # Para gráficos curtos com poucos pontos, força 1 tick por ponto único
+    # (evita Altair colapsar pra mês/repetir labels).
+    if eixo_x_format == "%d/%m":
+        eixo_x = alt.X(
+            "data:T",
+            title="",
+            axis=alt.Axis(
+                format=eixo_x_format,
+                labelColor=COLORS["muted"],
+                values=sorted(df["data"].unique().tolist()),
+                labelAngle=0,
+            ),
+        )
+    else:
+        eixo_x = alt.X(
+            "data:T",
+            title="",
+            axis=alt.Axis(format=eixo_x_format, labelColor=COLORS["muted"]),
+        )
+
+    linhas = base.mark_line(point=alt.OverlayMarkDef(filled=True, size=55)).encode(
+        x=eixo_x,
         y=alt.Y(
             "retorno:Q",
             title="",
