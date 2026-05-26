@@ -119,11 +119,35 @@ def retorno_benchmark_periodo(
 
 
 def salvar_benchmarks(df: pd.DataFrame) -> None:
-    """Salva benchmarks.parquet."""
+    """
+    Salva benchmarks.parquet fazendo MERGE com o existente (linhas novas
+    sobrescrevem antigas para a mesma data; histórico anterior é preservado).
+
+    Comportamento anterior (sobrescrita) causava perda do histórico longo
+    sempre que um intraday baixava só a janela curta da semana corrente.
+    """
     import config
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(config.BENCHMARKS_PARQUET_PATH, engine="pyarrow", index=False)
-    log.info(f"benchmarks.parquet salvo: {len(df)} linhas")
+
+    existente = ler_benchmarks()
+    if existente is not None and not existente.empty and not df.empty:
+        # Garantir colunas iguais antes de concatenar
+        df["date"] = pd.to_datetime(df["date"])
+        existente["date"] = pd.to_datetime(existente["date"])
+        combinado = pd.concat([existente, df], ignore_index=True)
+        # Para cada data, mantém a última ocorrência (= dados novos)
+        combinado = (combinado
+                     .sort_values("date")
+                     .drop_duplicates(subset="date", keep="last")
+                     .reset_index(drop=True))
+    else:
+        combinado = df
+
+    combinado.to_parquet(
+        config.BENCHMARKS_PARQUET_PATH, engine="pyarrow", index=False,
+    )
+    log.info(f"benchmarks.parquet salvo: {len(combinado)} linhas "
+             f"(+{len(df) if existente is None else max(0, len(combinado) - len(existente))} novas)")
 
 
 def ler_benchmarks() -> pd.DataFrame | None:

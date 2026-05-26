@@ -199,7 +199,91 @@ def _proxima_segunda() -> date:
 
 
 # ---------------------------------------------------------------------------
-# Gráfico de performance acumulada (semana atual ou histórica)
+# NOVO: equity curve diária dos últimos 30 dias úteis
+# Reaproveita o componente gráfico do Backtest (_render_retorno_acumulado).
+# Fonte unificada de benchmarks: data/benchmarks.parquet (mesma dos cards).
+# ---------------------------------------------------------------------------
+
+JANELA_DIAS_GRAFICO = 30   # número de pregões exibidos
+
+
+def _construir_equity_curve_30dias(
+    historicos: list[dict],
+    bench_df: pd.DataFrame | None,
+) -> list[dict]:
+    """
+    Constrói uma equity_curve DIÁRIA no MESMO formato consumido por
+    _render_retorno_acumulado() do backtest:
+        [{ data, valor_estrategia, valor_ibov, valor_smll, valor_cdi }, ...]
+
+    Lógica:
+      • Janela: últimos JANELA_DIAS_GRAFICO pregões da parquet (≤ hoje).
+      • Baseline 100 ANTES do primeiro dia (igual ao backtest).
+      • Carteira V3c diária: usa `retorno_dia` de cada `performance_diaria`
+        dos arquivos historico/. Para dias antes do início do live (18/05),
+        retorno = 0 (carteira em caixa, ainda não operava).
+      • Benchmarks: cumulativos do parquet (fonte única — mesma dos cards
+        VS IBOV/SMAL11/CDI e da tabela "Histórico semanal").
+    """
+    if bench_df is None or bench_df.empty:
+        return []
+
+    hoje = date.today()
+    dias_pregao = sorted(
+        d for d in bench_df["date"].dt.date.unique() if d <= hoje
+    )
+    dias_janela = dias_pregao[-JANELA_DIAS_GRAFICO:]
+    if not dias_janela:
+        return []
+
+    # Coleta retornos diários da Carteira de todos os historicos
+    carteira_daily: dict[date, float] = {}
+    for h in (historicos or []):
+        for p in h.get("performance_diaria", []):
+            try:
+                d = date.fromisoformat(p["data"][:10])
+                ret = p.get("retorno_dia")
+                if ret is not None:
+                    carteira_daily[d] = float(ret)
+            except Exception:
+                continue
+
+    # Indexa benchmarks por dia
+    bench_map: dict[date, dict[str, float]] = {}
+    for _, row in bench_df.iterrows():
+        d = row["date"].date()
+        bench_map[d] = {
+            col: (float(row[col]) if (col in bench_df.columns
+                  and pd.notna(row.get(col))) else 0.0)
+            for col in ("ibov", "smll", "cdi")
+        }
+
+    # Compõe cumulativo desde 100 (baseline)
+    val_strat = val_ibov = val_smll = val_cdi = 100.0
+    curve: list[dict] = []
+    for d in dias_janela:
+        ret_strat = carteira_daily.get(d, 0.0)
+        b         = bench_map.get(d, {"ibov": 0.0, "smll": 0.0, "cdi": 0.0})
+
+        val_strat *= (1 + ret_strat)
+        val_ibov  *= (1 + b["ibov"])
+        val_smll  *= (1 + b["smll"])
+        val_cdi   *= (1 + b["cdi"])
+
+        curve.append({
+            "data":             d.isoformat(),
+            "valor_estrategia": val_strat,
+            "valor_ibov":       val_ibov,
+            "valor_smll":       val_smll,
+            "valor_cdi":        val_cdi,
+        })
+
+    return curve
+
+
+# ---------------------------------------------------------------------------
+# Gráfico LEGADO de performance da semana (mantido por compatibilidade —
+# não é mais chamado pelo render_aba_carteira)
 # ---------------------------------------------------------------------------
 
 def _render_grafico_semana(
@@ -683,16 +767,26 @@ def render_aba_carteira() -> None:
     _render_eventos_semana_live(carteira)
 
     # -----------------------------------------------------------------------
-    # Performance da semana (gráfico + comparação com benchmarks)
+    # Performance da semana (gráfico de 30 pregões + comparação com benchmarks)
+    # Reusa o componente _render_retorno_acumulado() da aba Backtest para
+    # garantir mesma estética e exatamente a mesma lógica de plotagem.
+    # Fonte UNIFICADA de benchmarks: data/benchmarks.parquet (atualizado a
+    # cada execução intraday do workflow v3c_intraday.yml).
     # -----------------------------------------------------------------------
+    st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
+    st.markdown(f"### Performance da semana — últimos {JANELA_DIAS_GRAFICO} pregões")
+
+    bench_df = _carregar_benchmarks()
+    curva_30d = _construir_equity_curve_30dias(historicos, bench_df)
+    if curva_30d:
+        # Lazy import para evitar ciclo de import
+        from components.backtest import _render_retorno_acumulado
+        _render_retorno_acumulado(curva_30d, periodo="2a")
+    else:
+        st.info("Aguardando dados de benchmark para plotar o gráfico.")
+
+    # Cards de comparação (deltas) — calculados sobre a semana CORRENTE
     if performance:
-        st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
-        st.markdown("### Performance da semana")
-
-        bench_df = _carregar_benchmarks()
-        _render_grafico_semana(performance, bench_df, data_corte)
-
-        # Cards de comparação (deltas) — sem repetir a Carteira V2
         b = _calcular_retornos_benchmarks(
             bench_df,
             data_corte,
@@ -717,17 +811,16 @@ def render_aba_carteira() -> None:
         )
 
     # -----------------------------------------------------------------------
-    # Histórico semanal — versão enxuta (3 últimas semanas)
-    # Visão completa de todas as semanas: aba "Live"
+    # Histórico semanal
     # -----------------------------------------------------------------------
     if historicos:
         st.markdown("<div style='height:32px;'></div>", unsafe_allow_html=True)
-        st.markdown("### Últimas semanas")
+        st.markdown("### Histórico semanal")
         bench_df = _carregar_benchmarks()
         df_hist  = _historico_semanas_resumido(historicos, bench_df)
 
-        # Mostra as 3 mais recentes (mais recente em cima)
-        df_hist_display = df_hist.iloc[::-1].head(3).copy()
+        # Mostra mais recentes em cima
+        df_hist_display = df_hist.iloc[::-1].copy()
         df_hist_display["Vigência"] = df_hist_display.apply(
             lambda r: f"{fmt_data_br(r['vig_inicio'])} → {fmt_data_br(r['vig_fim'])}",
             axis=1,
@@ -771,28 +864,5 @@ def render_aba_carteira() -> None:
                 ),
             },
         )
-
-        if len(historicos) > 3:
-            st.markdown(
-                f"""
-                <div style='font-size:0.82rem; color:{COLORS["muted"]};
-                            margin-top:10px; font-style:italic;'>
-                  Mostrando 3 últimas de {len(historicos)} semanas.
-                  Histórico completo + gráfico cumulativo na aba <b>Live</b>.
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-        else:
-            st.markdown(
-                f"""
-                <div style='font-size:0.82rem; color:{COLORS["muted"]};
-                            margin-top:10px; font-style:italic;'>
-                  Gráfico cumulativo + tabela completa de todas as semanas
-                  na aba <b>Live</b>.
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
 
     render_footer()

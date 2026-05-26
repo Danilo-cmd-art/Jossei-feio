@@ -234,20 +234,21 @@ def main() -> None:
         estado = atualizar_intraday(estado)
 
         # Atualiza benchmarks.parquet a cada intraday (fonte canonica para o
-        # grafico "Performance da semana" na aba Carteira). Sem isso, o grafico
-        # exibiria valores stale de IBOV/SMLL/CDI ate o pipeline das 19h rodar.
+        # grafico "Performance" na aba Carteira + cards + tabela). Janela
+        # de 60 dias garante que o grafico de 30 pregoes sempre tenha dados,
+        # e o salvar_benchmarks faz MERGE entao o historico longo nao se
+        # perde se a janela do download for curta.
         try:
             from src import benchmarks as bm
             from datetime import timedelta
-            data_corte_estado = date.fromisoformat(estado["data_corte_dados"])
-            bench_atualizado = bm.carregar_benchmarks(
-                data_corte_estado - timedelta(days=5),
+            bench_novo = bm.carregar_benchmarks(
+                hoje - timedelta(days=60),
                 hoje,
             )
-            if not bench_atualizado.empty:
-                bm.salvar_benchmarks(bench_atualizado)
-                bench_df = bench_atualizado
-                log.info(f"benchmarks.parquet atualizado ({len(bench_atualizado)} linhas)")
+            if not bench_novo.empty:
+                bm.salvar_benchmarks(bench_novo)
+                bench_df = bm.ler_benchmarks()
+                log.info(f"benchmarks.parquet atualizado ({len(bench_df)} linhas totais)")
         except Exception as e:
             log.warning(f"Falha ao atualizar benchmarks no intraday: {e}")
 

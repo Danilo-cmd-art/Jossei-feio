@@ -26,6 +26,17 @@ def _carregar_backtest() -> dict | None:
 
 
 @st.cache_data(ttl=60)
+def _carregar_benchmarks_df_live() -> "pd.DataFrame | None":
+    """Le data/benchmarks.parquet (fonte canonica) - cache curto para refletir
+    cada update intraday."""
+    if not config.BENCHMARKS_PARQUET_PATH.exists():
+        return None
+    df = pd.read_parquet(config.BENCHMARKS_PARQUET_PATH, engine="pyarrow")
+    df["date"] = pd.to_datetime(df["date"])
+    return df
+
+
+@st.cache_data(ttl=60)
 def _carregar_live_atual() -> dict | None:
     """
     Lê o JSON da semana V3c LIVE mais recente em historico/.
@@ -55,46 +66,71 @@ def _carregar_live_atual() -> dict | None:
 def _injetar_live_no_equity_curve(
     equity_curve: list[dict],
     live: dict | None,
+    bench_df: "pd.DataFrame | None" = None,
 ) -> list[dict]:
     """
     Substitui o último ponto do equity_curve (W atual SIMULADA pelo backtest)
-    pelo retorno REAL da carteira live em curso. Mantém os benchmarks do
-    backtest pois não temos como reconstruir IBOV/SMLL/CDI live aqui.
+    pelos valores REAIS LIVE — para TODAS as séries (estrategia + benchmarks),
+    garantindo total consistência com a aba Carteira (mesma fonte: parquet).
+
+    Mudanças no último ponto:
+      • valor_estrategia: penúltimo × (1 + retorno_acumulado_total live)
+      • valor_ibov:       penúltimo × (1 + IBOV cumulado no parquet da semana)
+      • valor_smll:       penúltimo × (1 + SMAL11 cumulado no parquet da semana)
+      • valor_cdi:        penúltimo × (1 + CDI cumulado no parquet da semana)
 
     Se a semana live não bate com o último ponto do backtest, NÃO altera nada
-    (segurança — evita reescrever o histórico errado).
+    (segurança — evita reescrever histórico errado).
     """
-    if not equity_curve or live is None:
+    if not equity_curve or live is None or len(equity_curve) < 2:
         return equity_curve
 
     ret_live_pct = live.get("retorno_acumulado_total")
     if ret_live_pct is None:
         return equity_curve
 
-    # Confere se a semana live = última semana do equity curve
     meta = live.get("metadata", {})
-    vig_ini_live = (meta.get("data_vigencia_inicio") or "")[:10]
+    vig_ini_live   = (meta.get("data_vigencia_inicio") or "")[:10]
     ultima_data_bt = str(equity_curve[-1].get("data", ""))[:10]
-    if not vig_ini_live or not ultima_data_bt:
-        return equity_curve
-    if vig_ini_live != ultima_data_bt:
-        # Não bate — provavelmente backtest desatualizado ou semana nova.
-        # Por segurança, deixa o equity_curve como está.
+    if not vig_ini_live or not ultima_data_bt or vig_ini_live != ultima_data_bt:
         return equity_curve
 
-    # Substitui valor_estrategia: parte do valor do final da W anterior
-    # (penúltimo ponto) e compõe com o retorno live da semana corrente.
-    if len(equity_curve) < 2:
-        return equity_curve
-    valor_anterior = equity_curve[-2].get("valor_estrategia")
-    if valor_anterior is None:
+    valor_estrategia_anterior = equity_curve[-2].get("valor_estrategia")
+    if valor_estrategia_anterior is None:
         return equity_curve
 
-    novo_valor = valor_anterior * (1.0 + ret_live_pct)
-    equity_curve_modificado = list(equity_curve[:-1]) + [
-        {**equity_curve[-1], "valor_estrategia": novo_valor, "_live": True}
-    ]
-    return equity_curve_modificado
+    novo_ponto = dict(equity_curve[-1])
+    novo_ponto["valor_estrategia"] = valor_estrategia_anterior * (1.0 + ret_live_pct)
+    novo_ponto["_live"] = True
+
+    # Atualiza TAMBÉM os benchmarks do último ponto a partir do parquet
+    # (centraliza fonte: mesmo cálculo dos cards e tabela da Carteira).
+    if bench_df is not None and not bench_df.empty:
+        from datetime import date
+        data_corte_str = meta.get("data_corte_dados", "")[:10]
+        perf = live.get("performance_diaria", [])
+        data_x_str = (perf[-1]["data"][:10] if perf
+                      else meta.get("data_vigencia_fim", "")[:10])
+        if data_corte_str and data_x_str:
+            try:
+                dt_corte = date.fromisoformat(data_corte_str)
+                dt_x     = date.fromisoformat(data_x_str)
+                for col, key in [("ibov", "valor_ibov"),
+                                 ("smll", "valor_smll"),
+                                 ("cdi",  "valor_cdi")]:
+                    if col in bench_df.columns:
+                        janela = bench_df[
+                            (bench_df["date"].dt.date > dt_corte) &
+                            (bench_df["date"].dt.date <= dt_x)
+                        ][col].dropna()
+                        prev_val = equity_curve[-2].get(key)
+                        if not janela.empty and prev_val is not None:
+                            ret_bench = float((1 + janela).prod() - 1)
+                            novo_ponto[key] = prev_val * (1 + ret_bench)
+            except Exception:
+                pass  # mantém valores do backtest se algo der errado
+
+    return list(equity_curve[:-1]) + [novo_ponto]
 
 
 def _filtrar_equity(equity_curve: list[dict], periodo: str) -> list[dict]:
@@ -232,11 +268,14 @@ def render_aba_backtest(periodo: str = "2a") -> None:
     equity_curve = bt.get("equity_curve", [])
 
     # Substitui o último ponto do equity_curve (W simulada da semana corrente)
-    # pelo retorno REAL da carteira live em andamento — assim o gráfico
-    # "Retorno acumulado por semana" reflete a performance atualizada a cada
-    # intraday, e não fica congelado no valor simulado do backtest.
+    # pelos valores REAIS LIVE (estrategia + benchmarks). Garante que o
+    # gráfico, os cards de spread e a tabela da Carteira/Backtest todos
+    # usem a MESMA fonte canônica (parquet de benchmarks atualizado a cada
+    # intraday). Sem isso, o último ponto da curva benchmark ficava congelado
+    # no valor simulado do backtest, divergindo dos cards da Carteira.
     live = _carregar_live_atual()
-    equity_curve = _injetar_live_no_equity_curve(equity_curve, live)
+    bench_df_live = _carregar_benchmarks_df_live()
+    equity_curve = _injetar_live_no_equity_curve(equity_curve, live, bench_df_live)
 
     # Período em estilo editorial
     st.markdown(
