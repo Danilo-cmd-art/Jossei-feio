@@ -18,13 +18,8 @@
       "preco_ref_dia": 14.470000267028809,
       "peso_atual": 0.2,
       "ativo": true,
-<<<<<<< Updated upstream
-      "preco_atual": 15.229999542236328,
-      "ret_acumulado": 0.052522,
-=======
-      "preco_atual": 15.600000381469727,
-      "ret_acumulado": 0.078093,
->>>>>>> Stashed changes
+      "preco_atual": 15.550000190734863,
+      "ret_acumulado": 0.074637,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -38,8 +33,8 @@
       "preco_ref_dia": 27.149999618530273,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 27.5,
-      "ret_acumulado": 0.012891,
+      "preco_atual": 27.56999969482422,
+      "ret_acumulado": 0.01547,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -53,13 +48,8 @@
       "preco_ref_dia": 10.079999923706055,
       "peso_atual": 0.2,
       "ativo": true,
-<<<<<<< Updated upstream
-      "preco_atual": 10.199999809265137,
-      "ret_acumulado": 0.011905,
-=======
-      "preco_atual": 10.649999618530273,
-      "ret_acumulado": 0.056548,
->>>>>>> Stashed changes
+      "preco_atual": 10.680000305175781,
+      "ret_acumulado": 0.059524,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -73,13 +63,8 @@
       "preco_ref_dia": 12.050000190734863,
       "peso_atual": 0.2,
       "ativo": true,
-<<<<<<< Updated upstream
-      "preco_atual": 12.489999771118164,
-      "ret_acumulado": 0.036514,
-=======
-      "preco_atual": 12.800000190734863,
-      "ret_acumulado": 0.062241,
->>>>>>> Stashed changes
+      "preco_atual": 12.75,
+      "ret_acumulado": 0.058091,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -117,21 +102,11 @@
     },
     {
       "data": "2026-05-27",
-      "retorno_dia": 0.0,
-      "retorno_acumulado": 0.021547,
-      "modo": "intraday"
-    },
-    {
-      "data": "2026-05-27",
-      "retorno_dia": 0.031457,
-      "retorno_acumulado": 0.044393,
+      "retorno_dia": 0.021963,
+      "retorno_acumulado": 0.043983,
       "modo": "intraday"
     }
   ],
-<<<<<<< Updated upstream
-  "ultima_atualizacao": "2026-05-27T08:54:38",
-=======
-  "ultima_atualizacao": "2026-05-27T11:50:37",
->>>>>>> Stashed changes
+  "ultima_atualizacao": "2026-05-27T12:00:51",
   "modo_ultima_atualizacao": "intraday"
 }

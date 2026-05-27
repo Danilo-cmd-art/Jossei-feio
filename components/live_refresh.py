@@ -1,6 +1,10 @@
 """
 Live refresh — polling client-side via Streamlit.
 
+Inclui também detecção de JSONs corrompidos (markers de conflict git
+deixados por git stash pop com conflito). Se detectado, mostra erro
+VISÍVEL no site em vez de cair em fallback silencioso (W21 ao invés W22).
+
 Como funciona:
   • st_autorefresh() força um rerun completo da página a cada N segundos.
   • A cada rerun, _trigger_intraday_se_stale() verifica a idade dos dados.
@@ -23,7 +27,9 @@ Idempotência:
 """
 from __future__ import annotations
 
+import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -33,6 +39,78 @@ from pathlib import Path
 import streamlit as st
 
 import config
+
+
+# ---------------------------------------------------------------------------
+# Detecção defensiva de JSONs corrompidos (markers de conflict)
+# ---------------------------------------------------------------------------
+
+_CONFLICT_MARKER_PATTERN = re.compile(
+    r"^(<{7}|={7}|>{7})", flags=re.MULTILINE
+)
+
+
+def _arquivos_corrompidos() -> list[tuple[str, str]]:
+    """
+    Retorna lista de (caminho, motivo) de arquivos JSON críticos que
+    estão corrompidos por:
+      • markers de conflict git (<<<<<<< / ======= / >>>>>>>)
+      • JSON parse inválido
+    """
+    paths_criticos = [
+        config.CARTEIRA_V3C_ESTADO_PATH,
+        *config.HISTORICO_DIR.glob("carteira_2026-W*.json"),
+    ]
+    problemas: list[tuple[str, str]] = []
+    for p in paths_criticos:
+        path = Path(p)
+        if not path.exists() or path.name.startswith("carteira_v2_"):
+            continue
+        try:
+            content = path.read_text(encoding="utf-8")
+        except Exception as e:
+            problemas.append((str(path), f"Erro leitura: {e!r}"))
+            continue
+        if _CONFLICT_MARKER_PATTERN.search(content):
+            problemas.append((str(path), "Markers de merge conflict (<<<<<<< / =======)"))
+            continue
+        try:
+            json.loads(content)
+        except json.JSONDecodeError as e:
+            problemas.append((str(path), f"JSON invalido: {e!s}"))
+    return problemas
+
+
+def verificar_integridade_dados() -> None:
+    """
+    Bloqueia a renderização do site se houver JSONs corrompidos —
+    mostra mensagem clara em vez do fallback silencioso.
+    Chamar uma vez no app.py logo após configurar_polling().
+    """
+    problemas = _arquivos_corrompidos()
+    if not problemas:
+        return
+
+    st.error("**⚠ Detectado problema de integridade nos dados**", icon=None)
+    for caminho, motivo in problemas:
+        st.markdown(f"• `{caminho}` — {motivo}")
+    st.markdown(
+        """
+        **Causa típica:** git stash pop com conflito deixou markers
+        (`<<<<<<<` / `=======` / `>>>>>>>`) ou JSON malformado.
+
+        **Como resolver localmente:**
+        ```
+        python -c "import re,pathlib; p=pathlib.Path('arquivo.json');
+                  p.write_text(re.sub(r'<<<<<<< Updated upstream\\n(.*?)\\n=======\\n(.*?)\\n>>>>>>> Stashed changes\\n',
+                                       r'\\2\\n', p.read_text(), flags=re.DOTALL))"
+        rm historico/carteira_<semana>.json
+        python run_v3c.py --mode intraday
+        ```
+        Depois `git commit` + `git push`.
+        """
+    )
+    st.stop()
 
 
 # ---------------------------------------------------------------------------

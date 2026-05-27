@@ -24,7 +24,10 @@ aplicar_tema()
 # Live refresh (polling client-side — independente do cron do GitHub Actions)
 # Dispara intraday automaticamente se os dados estiverem > 5 min antigos,
 # E re-roda a página a cada 5 min enquanto o usuário tiver o site aberto.
-from components.live_refresh import configurar_polling, render_banner_atualizacao
+from components.live_refresh import (
+    configurar_polling, render_banner_atualizacao, verificar_integridade_dados,
+)
+verificar_integridade_dados()           # bloqueia se houver JSON corrompido
 _refresh_info = configurar_polling()
 
 # Imports dos componentes
