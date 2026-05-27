@@ -60,11 +60,20 @@ def verificar_frescor() -> bool:
 
 
 if __name__ == "__main__":
-    skip = verificar_frescor()
-    # Seta output para GitHub Actions
+    # NUNCA falha — em caso de qualquer erro, retorna skip=false (executa o
+    # pipeline) e exit 0. Step de idempotência NÃO pode bloquear o pipeline.
+    try:
+        skip = verificar_frescor()
+    except Exception as e:
+        print(f"Erro inesperado em check_freshness: {e!r} — assumindo skip=false.")
+        skip = False
+
+    valor = "true" if skip else "false"
     github_output = os.environ.get("GITHUB_OUTPUT", "")
     if github_output:
-        with open(github_output, "a") as f:
-            f.write(f"skip={'true' if skip else 'false'}\n")
-    else:
-        print(f"skip={'true' if skip else 'false'}")
+        try:
+            with open(github_output, "a") as f:
+                f.write(f"skip={valor}\n")
+        except Exception as e:
+            print(f"Falha ao escrever GITHUB_OUTPUT: {e!r} — pipeline seguira.")
+    print(f"skip={valor}")

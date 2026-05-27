@@ -25,7 +25,8 @@
       "Bash(python -c \"import json; d=json.load\\(open\\('data/backtest_resultado_v3c.json',encoding='utf-8'\\)\\); print\\('versao_formula:', d['metadata'].get\\('versao_formula'\\)\\); print\\('retorno_total:', d['metricas_estrategia'].get\\('retorno_total'\\)\\); print\\('janela:', d['metadata'].get\\('janela_inicio'\\), '->', d['metadata'].get\\('janela_fim'\\)\\)\")",
       "Bash(python -m src.backtest_v3)",
       "Bash(git stash *)",
-      "Bash(git pull *)"
+      "Bash(git pull *)",
+      "Bash(python src/check_freshness.py)"
     ]
   }
 }

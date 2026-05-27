@@ -10,7 +10,11 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
+<<<<<<< Updated upstream
     "ultima_atualizacao": "2026-05-27T08:54:38",
+=======
+    "ultima_atualizacao": "2026-05-27T11:50:37",
+>>>>>>> Stashed changes
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -19,8 +23,13 @@
       "rank_na_formacao": 1,
       "score_na_formacao": 79.1667,
       "preco_entrada": 14.470000267028809,
+<<<<<<< Updated upstream
       "preco_atual": 15.229999542236328,
       "retorno_acumulado": 0.052522,
+=======
+      "preco_atual": 15.600000381469727,
+      "retorno_acumulado": 0.078093,
+>>>>>>> Stashed changes
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -43,8 +52,13 @@
       "rank_na_formacao": 3,
       "score_na_formacao": 68.3333,
       "preco_entrada": 10.079999923706055,
+<<<<<<< Updated upstream
       "preco_atual": 10.199999809265137,
       "retorno_acumulado": 0.011905,
+=======
+      "preco_atual": 10.649999618530273,
+      "retorno_acumulado": 0.056548,
+>>>>>>> Stashed changes
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -55,8 +69,13 @@
       "rank_na_formacao": 4,
       "score_na_formacao": 63.3333,
       "preco_entrada": 12.050000190734863,
+<<<<<<< Updated upstream
       "preco_atual": 12.489999771118164,
       "retorno_acumulado": 0.036514,
+=======
+      "preco_atual": 12.800000190734863,
+      "retorno_acumulado": 0.062241,
+>>>>>>> Stashed changes
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -67,8 +86,8 @@
       "rank_na_formacao": 5,
       "score_na_formacao": 61.6667,
       "preco_entrada": 1.6399999856948853,
-      "preco_atual": 1.6299999952316284,
-      "retorno_acumulado": -0.006098,
+      "preco_atual": 1.659999966621399,
+      "retorno_acumulado": 0.012195,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -95,11 +114,16 @@
       "benchmarks": {
         "ibov": -0.005972417675204067,
         "smll": 0.007308375375469023,
+<<<<<<< Updated upstream
         "cdi": 0.0010682851559999929
+=======
+        "cdi": 0.0016028556202734023
+>>>>>>> Stashed changes
       }
     },
     {
       "data": "2026-05-27",
+<<<<<<< Updated upstream
       "retorno_dia": 0.0,
       "retorno_acumulado": 0.021547,
       "modo": "intraday",
@@ -111,5 +135,18 @@
     }
   ],
   "retorno_acumulado_total": 0.021547,
+=======
+      "retorno_dia": 0.031457,
+      "retorno_acumulado": 0.044393,
+      "modo": "intraday",
+      "benchmarks": {
+        "ibov": -0.006673145933014268,
+        "smll": 0.008645287407187618,
+        "cdi": 0.0016028556202734023
+      }
+    }
+  ],
+  "retorno_acumulado_total": 0.044393,
+>>>>>>> Stashed changes
   "stops_semana": []
 }
