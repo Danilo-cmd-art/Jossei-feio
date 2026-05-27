@@ -204,7 +204,7 @@ def _proxima_segunda() -> date:
 # Fonte unificada de benchmarks: data/benchmarks.parquet (mesma dos cards).
 # ---------------------------------------------------------------------------
 
-DATA_INICIO_LIVE = date(2026, 5, 22)   # sexta — fechamento antes da W22 live
+DATA_INICIO_LIVE = date(2026, 5, 21)   # quinta — pregão antes do fechamento W21
 
 
 def _construir_equity_curve_live(
@@ -241,15 +241,17 @@ def _construir_equity_curve_live(
     if not dias_pregao:
         return []
 
-    # Filtra apenas semanas a partir do INÍCIO LIVE (exclui W21 backfill).
-    # Critério: vigencia_inicio >= DATA_INICIO_LIVE. Isso garante que o
-    # baseline em 22/05 seja 0% (semana W21 com vig_inicio=18/05 fica fora).
+    # Inclui TODAS as semanas que terminem em ou após DATA_INICIO_LIVE.
+    # Com baseline 21/05, isso inclui W21 (vig_fim=22/05) e W22 (vig_fim=29/05).
+    # No loop abaixo, o PRIMEIRO dia é forçado em 100 (baseline 0%) — assim,
+    # 22/05 mostra o W21 cumulative final (-3.18%), e dias subsequentes
+    # compõem corretamente W21 + W22 partial.
     historicos_live = sorted(
         (h for h in (historicos or [])
-         if h.get("metadata", {}).get("data_vigencia_inicio", "")[:10]
+         if h.get("metadata", {}).get("data_vigencia_fim", "")[:10]
             and date.fromisoformat(
-                h["metadata"]["data_vigencia_inicio"][:10]
-            ) > DATA_INICIO_LIVE),
+                h["metadata"]["data_vigencia_fim"][:10]
+            ) >= DATA_INICIO_LIVE),
         key=lambda h: h["metadata"]["data_vigencia_inicio"],
     )
 
@@ -296,7 +298,10 @@ def _construir_equity_curve_live(
         return val
 
     # Compõe a curva:
-    #   • Carteira V3c: usa _val_carteira_em() — multi-semana
+    #   • Carteira V3c: primeiro dia FORÇADO em 100 (baseline 0%); demais
+    #     dias usam _val_carteira_em() com W21+W22+... compondo.
+    #     -> 21/05 baseline 0%; 22/05 mostra W21 final -3.18%;
+    #        25-29/05 compõem W21 final * W22 partial.
     #   • Benchmarks: cumulative produto dos retornos diários (parquet)
     val_ibov = val_smll = val_cdi = 100.0
     curve: list[dict] = []
@@ -307,7 +312,9 @@ def _construir_equity_curve_live(
             val_smll *= (1 + b["smll"])
             val_cdi  *= (1 + b["cdi"])
 
-        val_strat = _val_carteira_em(d)
+        # Primeiro dia (DATA_INICIO_LIVE) = baseline 0%
+        # Demais dias = retorno real composto desde a entrada de cada semana
+        val_strat = 100.0 if i == 0 else _val_carteira_em(d)
 
         curve.append({
             "data":             d.isoformat(),
