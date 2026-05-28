@@ -105,8 +105,14 @@
       "retorno_dia": 0.01965,
       "retorno_acumulado": 0.041621,
       "modo": "intraday"
+    },
+    {
+      "data": "2026-05-28",
+      "retorno_dia": -0.0,
+      "retorno_acumulado": 0.041621,
+      "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-05-27T23:48:41",
+  "ultima_atualizacao": "2026-05-28T11:06:09",
   "modo_ultima_atualizacao": "intraday"
 }
