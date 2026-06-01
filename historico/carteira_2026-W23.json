@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "data_formacao": "2026-06-01",
+    "data_corte_dados": "2026-05-29",
+    "data_vigencia_inicio": "2026-06-01",
+    "data_vigencia_fim": "2026-06-05",
+    "bootstrap_retroativo": false,
+    "n_posicoes": 5,
+    "peso_por_posicao": 0.2,
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-06-01T13:34:10",
+    "modo_atualizacao": "intraday"
+  },
+  "tickers": [
+    {
+      "ticker": "BMEB4",
+      "rank_na_formacao": 1,
+      "score_na_formacao": 81.7647,
+      "preco_entrada": 85.26000213623047,
+      "preco_atual": 76.23999786376953,
+      "retorno_acumulado": -0.105794,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "MILS3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 78.8235,
+      "preco_entrada": 15.119999885559082,
+      "preco_atual": 15.180000305175781,
+      "retorno_acumulado": 0.003968,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "EUCA4",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 72.9412,
+      "preco_entrada": 27.420000076293945,
+      "preco_atual": 27.270000457763672,
+      "retorno_acumulado": -0.00547,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "PINE4",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 70.5882,
+      "preco_entrada": 14.729999542236328,
+      "preco_atual": 12.930000305175781,
+      "retorno_acumulado": -0.1222,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "OPCT3",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 63.5294,
+      "preco_entrada": 10.649999618530273,
+      "preco_atual": 10.539999961853027,
+      "retorno_acumulado": -0.010329,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    }
+  ],
+  "performance_diaria": [
+    {
+      "data": "2026-06-01",
+      "retorno_dia": -0.047965,
+      "retorno_acumulado": -0.047965,
+      "modo": "intraday",
+      "benchmarks": {
+        "ibov": -0.01777931373277042,
+        "smll": -0.017289033573075874,
+        "cdi": 0.0005340000000000344
+      }
+    }
+  ],
+  "retorno_acumulado_total": -0.047965,
+  "stops_semana": []
+}
