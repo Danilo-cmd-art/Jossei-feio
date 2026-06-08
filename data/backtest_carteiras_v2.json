@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 105,
+    "n_carteiras": 107,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -4728,6 +4728,96 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.011762
+    },
+    {
+      "semana": "2026-W23",
+      "data_formacao": "2026-06-01",
+      "data_corte_dados": "2026-05-29",
+      "data_vigencia_fim": "2026-06-05",
+      "tickers": [
+        {
+          "ticker": "MILS3",
+          "score": 77.7778,
+          "preco_entrada": 15.199999809265137,
+          "preco_saida": 15.260000228881836,
+          "retorno_semana": 0.003947
+        },
+        {
+          "ticker": "BMEB4",
+          "score": 76.1111,
+          "preco_entrada": 85.26000213623047,
+          "preco_saida": 77.69999694824219,
+          "retorno_semana": -0.08867
+        },
+        {
+          "ticker": "TEND3",
+          "score": 75.0,
+          "preco_entrada": 32.689998626708984,
+          "preco_saida": 30.170000076293945,
+          "retorno_semana": -0.077088
+        },
+        {
+          "ticker": "EUCA4",
+          "score": 73.8889,
+          "preco_entrada": 27.420000076293945,
+          "preco_saida": 25.25,
+          "retorno_semana": -0.079139
+        },
+        {
+          "ticker": "DESK3",
+          "score": 72.7778,
+          "preco_entrada": 18.149999618530273,
+          "preco_saida": 17.989999771118164,
+          "retorno_semana": -0.008815
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.049953
+    },
+    {
+      "semana": "2026-W24",
+      "data_formacao": "2026-06-08",
+      "data_corte_dados": "2026-06-05",
+      "data_vigencia_fim": "2026-06-08",
+      "tickers": [
+        {
+          "ticker": "MILS3",
+          "score": 85.0,
+          "preco_entrada": 15.260000228881836,
+          "preco_saida": 15.229999542236328,
+          "retorno_semana": -0.001966
+        },
+        {
+          "ticker": "EUCA4",
+          "score": 77.5,
+          "preco_entrada": 25.25,
+          "preco_saida": 25.299999237060547,
+          "retorno_semana": 0.00198
+        },
+        {
+          "ticker": "BRAV3",
+          "score": 61.25,
+          "preco_entrada": 21.0,
+          "preco_saida": 21.239999771118164,
+          "retorno_semana": 0.011429
+        },
+        {
+          "ticker": "BMEB4",
+          "score": 60.0,
+          "preco_entrada": 77.69999694824219,
+          "preco_saida": 77.9800033569336,
+          "retorno_semana": 0.003604
+        },
+        {
+          "ticker": "LOGG3",
+          "score": 53.75,
+          "preco_entrada": 30.799999237060547,
+          "preco_saida": 31.479999542236328,
+          "retorno_semana": 0.022078
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": 0.007425
     }
   ]
 }

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "data_formacao": "2026-06-08",
+    "data_corte_dados": "2026-06-05",
+    "data_vigencia_inicio": "2026-06-08",
+    "data_vigencia_fim": "2026-06-12",
+    "bootstrap_retroativo": false,
+    "n_posicoes": 5,
+    "peso_por_posicao": 0.2,
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-06-08T13:56:16",
+    "modo_atualizacao": "nova_semana"
+  },
+  "tickers": [
+    {
+      "ticker": "MILS3",
+      "rank_na_formacao": 1,
+      "score_na_formacao": 85.0,
+      "preco_entrada": 15.260000228881836,
+      "preco_atual": 15.260000228881836,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "EUCA4",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 77.5,
+      "preco_entrada": 25.25,
+      "preco_atual": 25.25,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "BRAV3",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 61.25,
+      "preco_entrada": 21.0,
+      "preco_atual": 21.0,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "BMEB4",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 60.0,
+      "preco_entrada": 77.69999694824219,
+      "preco_atual": 77.69999694824219,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "LOGG3",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 53.75,
+      "preco_entrada": 30.799999237060547,
+      "preco_atual": 30.799999237060547,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    }
+  ],
+  "performance_diaria": [],
+  "retorno_acumulado_total": 0.0,
+  "stops_semana": []
+}
