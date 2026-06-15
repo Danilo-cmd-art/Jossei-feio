@@ -3,11 +3,15 @@
     "data_formacao": "2026-06-15",
     "data_corte_dados": "2026-06-12",
     "data_vigencia_inicio": "2026-06-15",
-    "data_vigencia_fim": "2026-06-15",
+    "data_vigencia_fim": "2026-06-19",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
-    "versao_formula": "v2"
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-06-15T17:35:17",
+    "modo_atualizacao": "nova_semana"
   },
   "tickers": [
     {
@@ -18,7 +22,9 @@
       "preco_atual": 15.199999809265137,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "TEND3",
@@ -28,7 +34,9 @@
       "preco_atual": 34.15999984741211,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "MLAS3",
@@ -38,7 +46,9 @@
       "preco_atual": 1.649999976158142,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "ALPA4",
@@ -48,7 +58,9 @@
       "preco_atual": 13.199999809265137,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "CURY3",
@@ -58,9 +70,12 @@
       "preco_atual": 32.11000061035156,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     }
   ],
   "performance_diaria": [],
-  "retorno_acumulado_total": 0.0
+  "retorno_acumulado_total": 0.0,
+  "stops_semana": []
 }
