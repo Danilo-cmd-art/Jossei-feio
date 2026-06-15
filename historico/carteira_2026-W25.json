@@ -10,8 +10,8 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-06-15T17:35:17",
-    "modo_atualizacao": "nova_semana"
+    "ultima_atualizacao": "2026-06-15T22:05:34",
+    "modo_atualizacao": "intraday"
   },
   "tickers": [
     {
@@ -19,8 +19,8 @@
       "rank_na_formacao": 1,
       "score_na_formacao": 79.0909,
       "preco_entrada": 15.199999809265137,
-      "preco_atual": 15.199999809265137,
-      "retorno_acumulado": 0.0,
+      "preco_atual": 15.270000457763672,
+      "retorno_acumulado": 0.004605,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -31,8 +31,8 @@
       "rank_na_formacao": 2,
       "score_na_formacao": 72.7273,
       "preco_entrada": 34.15999984741211,
-      "preco_atual": 34.15999984741211,
-      "retorno_acumulado": 0.0,
+      "preco_atual": 34.119998931884766,
+      "retorno_acumulado": -0.001171,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -43,8 +43,8 @@
       "rank_na_formacao": 3,
       "score_na_formacao": 59.0909,
       "preco_entrada": 1.649999976158142,
-      "preco_atual": 1.649999976158142,
-      "retorno_acumulado": 0.0,
+      "preco_atual": 1.7200000286102295,
+      "retorno_acumulado": 0.042424,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -55,8 +55,8 @@
       "rank_na_formacao": 4,
       "score_na_formacao": 59.0909,
       "preco_entrada": 13.199999809265137,
-      "preco_atual": 13.199999809265137,
-      "retorno_acumulado": 0.0,
+      "preco_atual": 13.270000457763672,
+      "retorno_acumulado": 0.005303,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -67,15 +67,27 @@
       "rank_na_formacao": 5,
       "score_na_formacao": 57.2727,
       "preco_entrada": 32.11000061035156,
-      "preco_atual": 32.11000061035156,
-      "retorno_acumulado": 0.0,
+      "preco_atual": 33.16999816894531,
+      "retorno_acumulado": 0.033011,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
       "v3c_data_stop": null
     }
   ],
-  "performance_diaria": [],
-  "retorno_acumulado_total": 0.0,
+  "performance_diaria": [
+    {
+      "data": "2026-06-15",
+      "retorno_dia": 0.016835,
+      "retorno_acumulado": 0.016835,
+      "modo": "intraday",
+      "benchmarks": {
+        "ibov": -0.006310415389335411,
+        "smll": -0.01507532153942992,
+        "cdi": 0.0
+      }
+    }
+  ],
+  "retorno_acumulado_total": 0.016835,
   "stops_semana": []
 }
