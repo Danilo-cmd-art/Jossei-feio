@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 108,
+    "n_carteiras": 109,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -4863,6 +4863,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.024371
+    },
+    {
+      "semana": "2026-W26",
+      "data_formacao": "2026-06-22",
+      "data_corte_dados": "2026-06-19",
+      "data_vigencia_fim": "2026-06-22",
+      "tickers": [
+        {
+          "ticker": "MILS3",
+          "score": 89.0,
+          "preco_entrada": 15.270000457763672,
+          "preco_saida": 15.300000190734863,
+          "retorno_semana": 0.001965
+        },
+        {
+          "ticker": "TEND3",
+          "score": 81.0,
+          "preco_entrada": 33.97999954223633,
+          "preco_saida": 34.29999923706055,
+          "retorno_semana": 0.009417
+        },
+        {
+          "ticker": "CURY3",
+          "score": 70.0,
+          "preco_entrada": 33.27000045776367,
+          "preco_saida": 33.75,
+          "retorno_semana": 0.014427
+        },
+        {
+          "ticker": "MLAS3",
+          "score": 60.0,
+          "preco_entrada": 1.659999966621399,
+          "preco_saida": 1.649999976158142,
+          "retorno_semana": -0.006024
+        },
+        {
+          "ticker": "ALPA4",
+          "score": 57.0,
+          "preco_entrada": 13.079999923706055,
+          "preco_saida": 13.140000343322754,
+          "retorno_semana": 0.004587
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": 0.004874
     }
   ]
 }
