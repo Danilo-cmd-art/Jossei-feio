@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "data_geracao": "2026-06-22",
-    "janela_inicio": "2024-06-22",
-    "janela_fim": "2026-06-22",
-    "n_semanas_simuladas": 109,
+    "data_geracao": "2026-06-29",
+    "janela_inicio": "2024-06-29",
+    "janela_fim": "2026-06-29",
+    "n_semanas_simuladas": 110,
     "universo_versao": "v2-2026-06",
     "modo": "incremental",
     "versao_formula": "v2",
@@ -13,46 +13,46 @@
     ]
   },
   "metricas_estrategia": {
-    "retorno_total": 0.458206,
-    "retorno_anualizado": 0.19716,
-    "retorno_medio_semanal": 0.003994,
-    "volatilidade_anualizada": 0.235038,
+    "retorno_total": 0.453167,
+    "retorno_anualizado": 0.193249,
+    "retorno_medio_semanal": 0.003927,
+    "volatilidade_anualizada": 0.234014,
     "max_drawdown": -0.236671,
     "data_max_drawdown": "2025-01-10",
-    "sharpe_ratio": 0.2669,
-    "win_rate_semanal": 0.5596,
-    "hit_rate_vs_smll": 0.5688,
-    "beta_vs_ibov": 0.8037,
+    "sharpe_ratio": 0.2498,
+    "win_rate_semanal": 0.5545,
+    "hit_rate_vs_smll": 0.5545,
+    "beta_vs_ibov": 0.7981,
     "n_semanas_positivas": 61,
-    "n_semanas_negativas": 48
+    "n_semanas_negativas": 49
   },
   "metricas_benchmarks": {
     "ibov": {
-      "retorno_total": 0.258968,
-      "retorno_anualizado": 0.116126,
-      "volatilidade_anualizada": 0.164222,
-      "sharpe_ratio": -0.1114,
+      "retorno_total": 0.2486,
+      "retorno_anualizado": 0.110662,
+      "volatilidade_anualizada": 0.163305,
+      "sharpe_ratio": -0.1478,
       "max_drawdown": -0.185919
     },
     "smll": {
-      "retorno_total": 0.001713,
-      "retorno_anualizado": 0.000817,
-      "volatilidade_anualizada": 0.206141,
-      "sharpe_ratio": -0.6481,
+      "retorno_total": 0.017282,
+      "retorno_anualizado": 0.008133,
+      "volatilidade_anualizada": 0.206252,
+      "sharpe_ratio": -0.6141,
       "max_drawdown": -0.255201
     },
     "cdi": {
-      "retorno_total": 0.345187,
-      "retorno_anualizado": 0.151961,
-      "volatilidade_anualizada": 0.005549,
-      "sharpe_ratio": 3.1612,
+      "retorno_total": 0.343432,
+      "retorno_anualizado": 0.14977,
+      "volatilidade_anualizada": 0.005937,
+      "sharpe_ratio": 2.5218,
       "max_drawdown": 0.0
     }
   },
   "alphas": {
-    "vs_ibov": 0.081034,
-    "vs_smll": 0.196343,
-    "vs_cdi": 0.045199
+    "vs_ibov": 0.082587,
+    "vs_smll": 0.185116,
+    "vs_cdi": 0.043479
   },
   "equity_curve": [
     {
@@ -86,737 +86,744 @@
     {
       "data": "2024-06-28",
       "valor_estrategia": 96.4477,
-      "valor_ibov": 101.0356,
-      "valor_smll": 100.1558,
-      "valor_cdi": 100.1965
+      "valor_ibov": 100.0,
+      "valor_smll": 100.0,
+      "valor_cdi": 100.0
     },
     {
       "data": "2024-07-05",
       "valor_estrategia": 100.6205,
-      "valor_ibov": 102.6278,
-      "valor_smll": 103.9449,
-      "valor_cdi": 100.4328
+      "valor_ibov": 101.242,
+      "valor_smll": 105.3451,
+      "valor_cdi": 100.1965
     },
     {
       "data": "2024-07-12",
       "valor_estrategia": 101.8694,
-      "valor_ibov": 104.851,
-      "valor_smll": 106.0831,
-      "valor_cdi": 100.6697
+      "valor_ibov": 103.4351,
+      "valor_smll": 107.5121,
+      "valor_cdi": 100.4328
     },
     {
       "data": "2024-07-19",
       "valor_estrategia": 102.6504,
-      "valor_ibov": 104.2969,
-      "valor_smll": 103.8236,
-      "valor_cdi": 100.9071
+      "valor_ibov": 102.8885,
+      "valor_smll": 105.2221,
+      "valor_cdi": 100.6697
     },
     {
       "data": "2024-07-26",
       "valor_estrategia": 104.8971,
-      "valor_ibov": 104.1661,
-      "valor_smll": 102.7884,
-      "valor_cdi": 101.1451
+      "valor_ibov": 102.7595,
+      "valor_smll": 104.1731,
+      "valor_cdi": 100.9071
     },
     {
       "data": "2024-08-02",
       "valor_estrategia": 105.7802,
-      "valor_ibov": 104.0834,
-      "valor_smll": 104.2872,
-      "valor_cdi": 101.3837
+      "valor_ibov": 102.678,
+      "valor_smll": 105.6921,
+      "valor_cdi": 101.1451
     },
     {
       "data": "2024-08-09",
       "valor_estrategia": 112.6768,
-      "valor_ibov": 106.7142,
-      "valor_smll": 110.9189,
-      "valor_cdi": 101.6228
+      "valor_ibov": 105.2732,
+      "valor_smll": 112.4131,
+      "valor_cdi": 101.3837
     },
     {
       "data": "2024-08-16",
       "valor_estrategia": 110.7577,
-      "valor_ibov": 111.1035,
-      "valor_smll": 111.8749,
-      "valor_cdi": 101.8625
+      "valor_ibov": 109.6032,
+      "valor_smll": 113.3819,
+      "valor_cdi": 101.6228
     },
     {
       "data": "2024-08-23",
       "valor_estrategia": 112.6259,
-      "valor_ibov": 112.3085,
-      "valor_smll": 113.1902,
-      "valor_cdi": 102.1027
+      "valor_ibov": 110.792,
+      "valor_smll": 114.7149,
+      "valor_cdi": 101.8625
     },
     {
       "data": "2024-08-30",
       "valor_estrategia": 110.263,
-      "valor_ibov": 112.999,
-      "valor_smll": 112.7841,
-      "valor_cdi": 102.3435
+      "valor_ibov": 111.4731,
+      "valor_smll": 114.3034,
+      "valor_cdi": 102.1027
     },
     {
       "data": "2024-09-06",
       "valor_estrategia": 110.1721,
-      "valor_ibov": 111.7788,
-      "valor_smll": 111.7404,
-      "valor_cdi": 102.5849
+      "valor_ibov": 110.2694,
+      "valor_smll": 113.2456,
+      "valor_cdi": 102.3435
     },
     {
       "data": "2024-09-13",
       "valor_estrategia": 114.047,
-      "valor_ibov": 110.4522,
-      "valor_smll": 111.1354,
-      "valor_cdi": 102.8268
+      "valor_ibov": 108.9607,
+      "valor_smll": 112.6325,
+      "valor_cdi": 102.5849
     },
     {
       "data": "2024-09-20",
       "valor_estrategia": 111.535,
-      "valor_ibov": 108.0096,
-      "valor_smll": 107.6744,
-      "valor_cdi": 103.0712
+      "valor_ibov": 106.5511,
+      "valor_smll": 109.1249,
+      "valor_cdi": 102.8287
     },
     {
       "data": "2024-09-27",
       "valor_estrategia": 108.2197,
-      "valor_ibov": 107.6907,
-      "valor_smll": 106.0448,
-      "valor_cdi": 103.3199
+      "valor_ibov": 106.2365,
+      "valor_smll": 107.4733,
+      "valor_cdi": 103.0768
     },
     {
       "data": "2024-10-04",
       "valor_estrategia": 107.7071,
-      "valor_ibov": 106.7046,
-      "valor_smll": 106.034,
-      "valor_cdi": 103.5691
+      "valor_ibov": 105.2637,
+      "valor_smll": 107.4624,
+      "valor_cdi": 103.3254
     },
     {
       "data": "2024-10-11",
       "valor_estrategia": 108.3979,
-      "valor_ibov": 105.3431,
-      "valor_smll": 104.7141,
-      "valor_cdi": 103.819
+      "valor_ibov": 103.9207,
+      "valor_smll": 106.1247,
+      "valor_cdi": 103.5747
     },
     {
       "data": "2024-10-18",
       "valor_estrategia": 110.789,
-      "valor_ibov": 105.4611,
-      "valor_smll": 105.7372,
-      "valor_cdi": 104.0695
+      "valor_ibov": 104.037,
+      "valor_smll": 107.1616,
+      "valor_cdi": 103.8246
     },
     {
       "data": "2024-10-25",
       "valor_estrategia": 111.6035,
-      "valor_ibov": 104.7354,
-      "valor_smll": 104.3303,
-      "valor_cdi": 104.3205
+      "valor_ibov": 103.3212,
+      "valor_smll": 105.7357,
+      "valor_cdi": 104.0751
     },
     {
       "data": "2024-11-01",
       "valor_estrategia": 110.9301,
-      "valor_ibov": 103.1684,
-      "valor_smll": 101.5724,
-      "valor_cdi": 104.5722
+      "valor_ibov": 101.7753,
+      "valor_smll": 102.9406,
+      "valor_cdi": 104.3261
     },
     {
       "data": "2024-11-08",
       "valor_estrategia": 109.6023,
-      "valor_ibov": 101.6708,
-      "valor_smll": 99.849,
-      "valor_cdi": 104.8282
+      "valor_ibov": 100.2979,
+      "valor_smll": 101.1941,
+      "valor_cdi": 104.5816
     },
     {
       "data": "2024-11-14",
       "valor_estrategia": 107.3357,
-      "valor_ibov": 100.189,
-      "valor_smll": 98.606,
-      "valor_cdi": 105.0483
+      "valor_ibov": 98.8361,
+      "valor_smll": 99.9343,
+      "valor_cdi": 104.8011
     },
     {
       "data": "2024-11-22",
       "valor_estrategia": 107.0367,
-      "valor_ibov": 101.2808,
-      "valor_smll": 98.9836,
-      "valor_cdi": 105.2689
+      "valor_ibov": 99.9132,
+      "valor_smll": 100.317,
+      "valor_cdi": 105.0212
     },
     {
       "data": "2024-11-29",
       "valor_estrategia": 98.6599,
-      "valor_ibov": 100.2802,
-      "valor_smll": 97.3356,
-      "valor_cdi": 105.5342
+      "valor_ibov": 98.9261,
+      "valor_smll": 98.6468,
+      "valor_cdi": 105.2858
     },
     {
       "data": "2024-12-06",
       "valor_estrategia": 98.7645,
-      "valor_ibov": 101.3553,
-      "valor_smll": 97.2402,
-      "valor_cdi": 105.8001
+      "valor_ibov": 99.9867,
+      "valor_smll": 98.5501,
+      "valor_cdi": 105.5512
     },
     {
       "data": "2024-12-13",
       "valor_estrategia": 98.3746,
-      "valor_ibov": 98.7822,
-      "valor_smll": 94.3142,
-      "valor_cdi": 106.0743
+      "valor_ibov": 97.4483,
+      "valor_smll": 95.5846,
+      "valor_cdi": 105.8247
     },
     {
       "data": "2024-12-20",
       "valor_estrategia": 91.3752,
-      "valor_ibov": 95.6943,
-      "valor_smll": 90.4806,
-      "valor_cdi": 106.3643
+      "valor_ibov": 94.4021,
+      "valor_smll": 91.6994,
+      "valor_cdi": 106.114
     },
     {
       "data": "2024-12-27",
       "valor_estrategia": 90.2216,
-      "valor_ibov": 94.9686,
-      "valor_smll": 88.8825,
-      "valor_cdi": 106.6065
+      "valor_ibov": 93.6862,
+      "valor_smll": 90.0798,
+      "valor_cdi": 106.3557
     },
     {
       "data": "2025-01-03",
       "valor_estrategia": 89.6284,
-      "valor_ibov": 92.9724,
-      "valor_smll": 87.5098,
-      "valor_cdi": 106.8494
+      "valor_ibov": 91.717,
+      "valor_smll": 88.6886,
+      "valor_cdi": 106.598
     },
     {
       "data": "2025-01-10",
       "valor_estrategia": 87.0554,
-      "valor_ibov": 91.9903,
-      "valor_smll": 87.6128,
-      "valor_cdi": 107.1415
+      "valor_ibov": 90.7481,
+      "valor_smll": 88.793,
+      "valor_cdi": 106.8894
     },
     {
       "data": "2025-01-17",
       "valor_estrategia": 91.2726,
-      "valor_ibov": 93.9632,
-      "valor_smll": 88.7805,
-      "valor_cdi": 107.4344
+      "valor_ibov": 92.6944,
+      "valor_smll": 89.9764,
+      "valor_cdi": 107.1816
     },
     {
       "data": "2025-01-24",
       "valor_estrategia": 90.8988,
-      "valor_ibov": 94.9034,
-      "valor_smll": 90.8015,
-      "valor_cdi": 107.7281
+      "valor_ibov": 93.6218,
+      "valor_smll": 92.0246,
+      "valor_cdi": 107.4746
     },
     {
       "data": "2025-01-31",
       "valor_estrategia": 95.4168,
-      "valor_ibov": 97.733,
-      "valor_smll": 94.9463,
-      "valor_cdi": 108.0302
+      "valor_ibov": 96.4133,
+      "valor_smll": 96.2253,
+      "valor_cdi": 107.776
     },
     {
       "data": "2025-02-07",
       "valor_estrategia": 96.4513,
-      "valor_ibov": 95.9665,
-      "valor_smll": 92.9431,
-      "valor_cdi": 108.3485
+      "valor_ibov": 94.6706,
+      "valor_smll": 94.1951,
+      "valor_cdi": 108.0935
     },
     {
       "data": "2025-02-14",
       "valor_estrategia": 101.9803,
-      "valor_ibov": 97.4825,
-      "valor_smll": 95.4504,
-      "valor_cdi": 108.6676
+      "valor_ibov": 96.1661,
+      "valor_smll": 96.7362,
+      "valor_cdi": 108.412
     },
     {
       "data": "2025-02-21",
       "valor_estrategia": 101.3259,
-      "valor_ibov": 99.2611,
-      "valor_smll": 96.9965,
-      "valor_cdi": 108.9878
+      "valor_ibov": 97.9208,
+      "valor_smll": 98.3031,
+      "valor_cdi": 108.7313
     },
     {
       "data": "2025-02-28",
       "valor_estrategia": 92.0632,
-      "valor_ibov": 95.5256,
-      "valor_smll": 91.6305,
-      "valor_cdi": 109.3088
+      "valor_ibov": 94.2357,
+      "valor_smll": 92.8648,
+      "valor_cdi": 109.0516
     },
     {
       "data": "2025-03-07",
       "valor_estrategia": 94.9726,
-      "valor_ibov": 95.7063,
-      "valor_smll": 92.9992,
-      "valor_cdi": 109.5234
+      "valor_ibov": 94.4139,
+      "valor_smll": 94.2519,
+      "valor_cdi": 109.2657
     },
     {
       "data": "2025-03-14",
       "valor_estrategia": 97.5772,
-      "valor_ibov": 100.0502,
-      "valor_smll": 97.361,
-      "valor_cdi": 109.846
+      "valor_ibov": 98.6992,
+      "valor_smll": 98.6725,
+      "valor_cdi": 109.5876
     },
     {
       "data": "2025-03-21",
       "valor_estrategia": 100.4803,
-      "valor_ibov": 105.3921,
-      "valor_smll": 102.3846,
-      "valor_cdi": 110.1773
+      "valor_ibov": 103.9689,
+      "valor_smll": 103.7638,
+      "valor_cdi": 109.9181
     },
     {
       "data": "2025-03-28",
       "valor_estrategia": 102.6429,
-      "valor_ibov": 105.3498,
-      "valor_smll": 103.1414,
-      "valor_cdi": 110.525
+      "valor_ibov": 103.9272,
+      "valor_smll": 104.5308,
+      "valor_cdi": 110.265
     },
     {
       "data": "2025-04-04",
       "valor_estrategia": 103.6637,
-      "valor_ibov": 100.6871,
-      "valor_smll": 99.5538,
-      "valor_cdi": 110.8738
+      "valor_ibov": 99.3275,
+      "valor_smll": 100.8948,
+      "valor_cdi": 110.613
     },
     {
       "data": "2025-04-11",
       "valor_estrategia": 107.1004,
-      "valor_ibov": 98.0314,
-      "valor_smll": 97.3426,
-      "valor_cdi": 111.2238
+      "valor_ibov": 96.7076,
+      "valor_smll": 98.6539,
+      "valor_cdi": 110.9621
     },
     {
       "data": "2025-04-17",
       "valor_estrategia": 109.9313,
-      "valor_ibov": 100.5878,
-      "valor_smll": 102.6848,
-      "valor_cdi": 111.5162
+      "valor_ibov": 99.2295,
+      "valor_smll": 104.0681,
+      "valor_cdi": 111.2538
     },
     {
       "data": "2025-04-25",
       "valor_estrategia": 110.975,
-      "valor_ibov": 105.622,
-      "valor_smll": 109.118,
-      "valor_cdi": 111.8094
+      "valor_ibov": 104.1957,
+      "valor_smll": 110.5879,
+      "valor_cdi": 111.5463
     },
     {
       "data": "2025-05-02",
       "valor_estrategia": 108.349,
-      "valor_ibov": 106.0568,
-      "valor_smll": 108.1469,
-      "valor_cdi": 112.1034
+      "valor_ibov": 104.6247,
+      "valor_smll": 109.6037,
+      "valor_cdi": 111.8396
     },
     {
       "data": "2025-05-09",
       "valor_estrategia": 111.7386,
-      "valor_ibov": 107.1914,
-      "valor_smll": 109.287,
-      "valor_cdi": 112.4611
+      "valor_ibov": 105.744,
+      "valor_smll": 110.7591,
+      "valor_cdi": 112.1965
     },
     {
       "data": "2025-05-16",
       "valor_estrategia": 114.0062,
-      "valor_ibov": 109.5165,
-      "valor_smll": 112.5575,
-      "valor_cdi": 112.8278
+      "valor_ibov": 108.0377,
+      "valor_smll": 114.0737,
+      "valor_cdi": 112.5623
     },
     {
       "data": "2025-05-23",
       "valor_estrategia": 113.8919,
-      "valor_ibov": 108.3296,
-      "valor_smll": 112.5039,
-      "valor_cdi": 113.1956
+      "valor_ibov": 106.8668,
+      "valor_smll": 114.0194,
+      "valor_cdi": 112.9293
     },
     {
       "data": "2025-05-30",
       "valor_estrategia": 117.1199,
-      "valor_ibov": 108.1355,
-      "valor_smll": 115.2777,
-      "valor_cdi": 113.5647
+      "valor_ibov": 106.6753,
+      "valor_smll": 116.8305,
+      "valor_cdi": 113.2975
     },
     {
       "data": "2025-06-06",
       "valor_estrategia": 125.8248,
-      "valor_ibov": 106.2372,
-      "valor_smll": 114.2596,
-      "valor_cdi": 113.9349
+      "valor_ibov": 104.8026,
+      "valor_smll": 115.7987,
+      "valor_cdi": 113.6669
     },
     {
       "data": "2025-06-13",
       "valor_estrategia": 121.949,
-      "valor_ibov": 106.999,
-      "valor_smll": 112.9958,
-      "valor_cdi": 114.3064
+      "valor_ibov": 105.5542,
+      "valor_smll": 114.5179,
+      "valor_cdi": 114.0375
     },
     {
       "data": "2025-06-20",
       "valor_estrategia": 119.5681,
-      "valor_ibov": 106.4679,
-      "valor_smll": 112.3078,
-      "valor_cdi": 114.6179
+      "valor_ibov": 105.0302,
+      "valor_smll": 113.8207,
+      "valor_cdi": 114.3482
     },
     {
       "data": "2025-06-27",
       "valor_estrategia": 121.0637,
-      "valor_ibov": 105.0472,
-      "valor_smll": 110.516,
-      "valor_cdi": 114.9976
+      "valor_ibov": 103.6287,
+      "valor_smll": 112.0047,
+      "valor_cdi": 114.727
     },
     {
       "data": "2025-07-04",
       "valor_estrategia": 125.5182,
-      "valor_ibov": 108.3906,
-      "valor_smll": 111.4584,
-      "valor_cdi": 115.3785
+      "valor_ibov": 106.927,
+      "valor_smll": 112.9599,
+      "valor_cdi": 115.107
     },
     {
       "data": "2025-07-11",
       "valor_estrategia": 121.8985,
-      "valor_ibov": 104.7442,
-      "valor_smll": 108.331,
-      "valor_cdi": 115.7607
+      "valor_ibov": 103.3298,
+      "valor_smll": 109.7903,
+      "valor_cdi": 115.4883
     },
     {
       "data": "2025-07-18",
       "valor_estrategia": 115.7718,
-      "valor_ibov": 102.1697,
-      "valor_smll": 105.189,
-      "valor_cdi": 116.1441
+      "valor_ibov": 100.7901,
+      "valor_smll": 106.606,
+      "valor_cdi": 115.8708
     },
     {
       "data": "2025-07-25",
       "valor_estrategia": 114.583,
-      "valor_ibov": 100.6315,
-      "valor_smll": 102.5366,
-      "valor_cdi": 116.5288
+      "valor_ibov": 99.2726,
+      "valor_smll": 103.9178,
+      "valor_cdi": 116.2546
     },
     {
       "data": "2025-08-01",
       "valor_estrategia": 115.6495,
-      "valor_ibov": 99.6004,
-      "valor_smll": 101.7783,
-      "valor_cdi": 116.9148
+      "valor_ibov": 98.2555,
+      "valor_smll": 103.1494,
+      "valor_cdi": 116.6397
     },
     {
       "data": "2025-08-08",
       "valor_estrategia": 117.8921,
-      "valor_ibov": 101.7276,
-      "valor_smll": 103.456,
-      "valor_cdi": 117.3021
+      "valor_ibov": 100.3539,
+      "valor_smll": 104.8496,
+      "valor_cdi": 117.0261
     },
     {
       "data": "2025-08-15",
       "valor_estrategia": 118.8341,
-      "valor_ibov": 101.5883,
-      "valor_smll": 102.0076,
-      "valor_cdi": 117.6906
+      "valor_ibov": 100.2165,
+      "valor_smll": 103.3817,
+      "valor_cdi": 117.4137
     },
     {
       "data": "2025-08-22",
       "valor_estrategia": 122.2232,
-      "valor_ibov": 102.7892,
-      "valor_smll": 104.2988,
-      "valor_cdi": 118.0805
+      "valor_ibov": 101.4012,
+      "valor_smll": 105.7038,
+      "valor_cdi": 117.8026
     },
     {
       "data": "2025-08-29",
       "valor_estrategia": 125.7858,
-      "valor_ibov": 108.0704,
-      "valor_smll": 110.5775,
-      "valor_cdi": 118.4716
+      "valor_ibov": 106.6111,
+      "valor_smll": 112.0671,
+      "valor_cdi": 118.1929
     },
     {
       "data": "2025-09-05",
       "valor_estrategia": 128.2072,
-      "valor_ibov": 109.2894,
-      "valor_smll": 112.8384,
-      "valor_cdi": 118.864
+      "valor_ibov": 107.8137,
+      "valor_smll": 114.3584,
+      "valor_cdi": 118.5844
     },
     {
       "data": "2025-09-12",
       "valor_estrategia": 134.4055,
-      "valor_ibov": 110.2808,
-      "valor_smll": 113.4615,
-      "valor_cdi": 119.2578
+      "valor_ibov": 108.7917,
+      "valor_smll": 114.9899,
+      "valor_cdi": 118.9772
     },
     {
       "data": "2025-09-19",
       "valor_estrategia": 139.3322,
-      "valor_ibov": 112.3717,
-      "valor_smll": 115.9932,
-      "valor_cdi": 119.6528
+      "valor_ibov": 110.8543,
+      "valor_smll": 117.5557,
+      "valor_cdi": 119.3713
     },
     {
       "data": "2025-09-26",
       "valor_estrategia": 137.7016,
-      "valor_ibov": 112.3307,
-      "valor_smll": 113.2988,
-      "valor_cdi": 120.0491
+      "valor_ibov": 110.8139,
+      "valor_smll": 114.825,
+      "valor_cdi": 119.7667
     },
     {
       "data": "2025-10-03",
       "valor_estrategia": 136.4581,
-      "valor_ibov": 111.4765,
-      "valor_smll": 112.3533,
-      "valor_cdi": 120.4468
+      "valor_ibov": 109.9712,
+      "valor_smll": 113.8668,
+      "valor_cdi": 120.1634
     },
     {
       "data": "2025-10-10",
       "valor_estrategia": 130.6524,
-      "valor_ibov": 108.9442,
-      "valor_smll": 107.3912,
-      "valor_cdi": 120.8458
+      "valor_ibov": 107.473,
+      "valor_smll": 108.8378,
+      "valor_cdi": 120.5614
     },
     {
       "data": "2025-10-17",
       "valor_estrategia": 132.6902,
-      "valor_ibov": 110.2442,
-      "valor_smll": 108.9483,
-      "valor_cdi": 121.2461
+      "valor_ibov": 108.7555,
+      "valor_smll": 110.4159,
+      "valor_cdi": 120.9608
     },
     {
       "data": "2025-10-24",
       "valor_estrategia": 138.57,
-      "valor_ibov": 113.3236,
-      "valor_smll": 113.3677,
-      "valor_cdi": 121.6477
+      "valor_ibov": 111.7933,
+      "valor_smll": 113.9564,
+      "valor_cdi": 121.3615
     },
     {
       "data": "2025-10-31",
       "valor_estrategia": 141.7424,
-      "valor_ibov": 116.2935,
-      "valor_smll": 116.7626,
-      "valor_cdi": 122.0506
+      "valor_ibov": 114.7232,
+      "valor_smll": 117.3689,
+      "valor_cdi": 121.7635
     },
     {
       "data": "2025-11-07",
       "valor_estrategia": 140.9855,
-      "valor_ibov": 120.4238,
-      "valor_smll": 118.3664,
-      "valor_cdi": 122.4549
+      "valor_ibov": 118.7976,
+      "valor_smll": 118.9811,
+      "valor_cdi": 122.1668
     },
     {
       "data": "2025-11-14",
       "valor_estrategia": 144.9653,
-      "valor_ibov": 123.8793,
-      "valor_smll": 121.617,
-      "valor_cdi": 122.8605
+      "valor_ibov": 122.2065,
+      "valor_smll": 122.2485,
+      "valor_cdi": 122.5715
     },
     {
       "data": "2025-11-21",
       "valor_estrategia": 143.5616,
-      "valor_ibov": 121.9938,
-      "valor_smll": 119.1438,
-      "valor_cdi": 123.1996
+      "valor_ibov": 120.3465,
+      "valor_smll": 119.7625,
+      "valor_cdi": 122.9097
     },
     {
       "data": "2025-11-28",
       "valor_estrategia": 147.5842,
-      "valor_ibov": 124.8917,
-      "valor_smll": 124.7892,
-      "valor_cdi": 123.6077
+      "valor_ibov": 123.2053,
+      "valor_smll": 125.4373,
+      "valor_cdi": 123.3168
     },
     {
       "data": "2025-12-05",
       "valor_estrategia": 144.0306,
-      "valor_ibov": 124.1635,
-      "valor_smll": 121.0854,
-      "valor_cdi": 124.0171
+      "valor_ibov": 122.4869,
+      "valor_smll": 121.7142,
+      "valor_cdi": 123.7253
     },
     {
       "data": "2025-12-12",
       "valor_estrategia": 149.2686,
-      "valor_ibov": 121.3776,
-      "valor_smll": 115.4805,
-      "valor_cdi": 124.4279
+      "valor_ibov": 119.7385,
+      "valor_smll": 116.0802,
+      "valor_cdi": 124.1351
     },
     {
       "data": "2025-12-19",
       "valor_estrategia": 152.6688,
-      "valor_ibov": 120.8316,
-      "valor_smll": 112.8874,
-      "valor_cdi": 124.8401
+      "valor_ibov": 119.2,
+      "valor_smll": 113.4736,
+      "valor_cdi": 124.5463
     },
     {
       "data": "2025-12-26",
       "valor_estrategia": 156.365,
-      "valor_ibov": 123.1071,
-      "valor_smll": 114.9779,
-      "valor_cdi": 125.1846
+      "valor_ibov": 121.4448,
+      "valor_smll": 115.575,
+      "valor_cdi": 124.89
     },
     {
       "data": "2026-01-02",
       "valor_estrategia": 152.8262,
-      "valor_ibov": 123.1708,
-      "valor_smll": 114.6276,
-      "valor_cdi": 125.53
+      "valor_ibov": 121.5076,
+      "valor_smll": 115.2229,
+      "valor_cdi": 125.2347
     },
     {
       "data": "2026-01-09",
       "valor_estrategia": 154.0294,
-      "valor_ibov": 124.887,
-      "valor_smll": 117.0231,
-      "valor_cdi": 125.9458
+      "valor_ibov": 123.2006,
+      "valor_smll": 117.6308,
+      "valor_cdi": 125.6495
     },
     {
       "data": "2026-01-16",
       "valor_estrategia": 149.5995,
-      "valor_ibov": 126.3149,
-      "valor_smll": 115.5353,
-      "valor_cdi": 126.363
+      "valor_ibov": 124.6092,
+      "valor_smll": 116.1353,
+      "valor_cdi": 126.0657
     },
     {
       "data": "2026-01-23",
       "valor_estrategia": 161.1787,
-      "valor_ibov": 136.4549,
-      "valor_smll": 123.5347,
-      "valor_cdi": 126.7816
+      "valor_ibov": 134.6123,
+      "valor_smll": 124.1762,
+      "valor_cdi": 126.4833
     },
     {
       "data": "2026-01-30",
       "valor_estrategia": 160.9859,
-      "valor_ibov": 140.9428,
-      "valor_smll": 127.9799,
-      "valor_cdi": 127.2015
+      "valor_ibov": 139.0396,
+      "valor_smll": 128.6445,
+      "valor_cdi": 126.9022
     },
     {
       "data": "2026-02-06",
       "valor_estrategia": 168.9103,
-      "valor_ibov": 140.8012,
-      "valor_smll": 127.1589,
-      "valor_cdi": 127.6229
+      "valor_ibov": 138.8999,
+      "valor_smll": 127.8192,
+      "valor_cdi": 127.3226
     },
     {
       "data": "2026-02-13",
       "valor_estrategia": 166.495,
-      "valor_ibov": 144.1541,
-      "valor_smll": 128.3944,
-      "valor_cdi": 128.0456
+      "valor_ibov": 142.2075,
+      "valor_smll": 129.0612,
+      "valor_cdi": 127.7443
     },
     {
       "data": "2026-02-20",
       "valor_estrategia": 167.9593,
-      "valor_ibov": 146.2791,
-      "valor_smll": 132.6193,
-      "valor_cdi": 128.3282
+      "valor_ibov": 144.3039,
+      "valor_smll": 133.308,
+      "valor_cdi": 128.0263
     },
     {
       "data": "2026-02-27",
       "valor_estrategia": 160.2752,
-      "valor_ibov": 146.4754,
-      "valor_smll": 131.4028,
-      "valor_cdi": 128.7533
+      "valor_ibov": 144.4975,
+      "valor_smll": 132.0851,
+      "valor_cdi": 128.4504
     },
     {
       "data": "2026-03-06",
       "valor_estrategia": 151.6168,
-      "valor_ibov": 137.5491,
-      "valor_smll": 120.2896,
-      "valor_cdi": 129.1798
+      "valor_ibov": 135.6917,
+      "valor_smll": 120.9142,
+      "valor_cdi": 128.8758
     },
     {
       "data": "2026-03-13",
       "valor_estrategia": 144.4123,
-      "valor_ibov": 135.4066,
-      "valor_smll": 113.9872,
-      "valor_cdi": 129.6077
+      "valor_ibov": 133.5781,
+      "valor_smll": 114.5792,
+      "valor_cdi": 129.3027
     },
     {
       "data": "2026-03-20",
       "valor_estrategia": 145.8425,
-      "valor_ibov": 133.091,
-      "valor_smll": 110.0199,
-      "valor_cdi": 130.0348
+      "valor_ibov": 131.2938,
+      "valor_smll": 110.5912,
+      "valor_cdi": 129.7288
     },
     {
       "data": "2026-03-27",
       "valor_estrategia": 152.7101,
-      "valor_ibov": 134.0404,
-      "valor_smll": 109.885,
-      "valor_cdi": 130.4587
+      "valor_ibov": 132.2304,
+      "valor_smll": 110.4556,
+      "valor_cdi": 130.1518
     },
     {
       "data": "2026-04-02",
       "valor_estrategia": 159.0743,
-      "valor_ibov": 137.942,
-      "valor_smll": 112.8437,
-      "valor_cdi": 130.8131
+      "valor_ibov": 136.0794,
+      "valor_smll": 113.4297,
+      "valor_cdi": 130.5053
     },
     {
       "data": "2026-04-10",
       "valor_estrategia": 171.6288,
-      "valor_ibov": 144.8196,
-      "valor_smll": 116.3539,
-      "valor_cdi": 131.2396
+      "valor_ibov": 142.864,
+      "valor_smll": 116.9582,
+      "valor_cdi": 130.9308
     },
     {
       "data": "2026-04-17",
       "valor_estrategia": 174.4438,
-      "valor_ibov": 145.2686,
-      "valor_smll": 116.223,
-      "valor_cdi": 131.6675
+      "valor_ibov": 143.307,
+      "valor_smll": 116.8266,
+      "valor_cdi": 131.3577
     },
     {
       "data": "2026-04-24",
       "valor_estrategia": 169.3187,
-      "valor_ibov": 140.7855,
-      "valor_smll": 113.2228,
-      "valor_cdi": 132.0251
+      "valor_ibov": 138.8844,
+      "valor_smll": 113.8107,
+      "valor_cdi": 131.7145
     },
     {
       "data": "2026-04-30",
       "valor_estrategia": 164.4221,
-      "valor_ibov": 137.7988,
-      "valor_smll": 108.6969,
-      "valor_cdi": 132.3826
+      "valor_ibov": 135.938,
+      "valor_smll": 109.2613,
+      "valor_cdi": 132.0711
     },
     {
       "data": "2026-05-08",
       "valor_estrategia": 158.1695,
-      "valor_ibov": 137.3199,
-      "valor_smll": 112.119,
-      "valor_cdi": 132.8073
+      "valor_ibov": 135.4657,
+      "valor_smll": 112.7013,
+      "valor_cdi": 132.4948
     },
     {
       "data": "2026-05-15",
       "valor_estrategia": 150.6209,
-      "valor_ibov": 132.8725,
-      "valor_smll": 104.7966,
-      "valor_cdi": 133.2334
+      "valor_ibov": 131.0782,
+      "valor_smll": 105.3408,
+      "valor_cdi": 132.9199
     },
     {
       "data": "2026-05-22",
       "valor_estrategia": 146.2898,
-      "valor_ibov": 131.2664,
-      "valor_smll": 103.9575,
-      "valor_cdi": 133.6608
+      "valor_ibov": 129.4938,
+      "valor_smll": 104.4973,
+      "valor_cdi": 133.3463
     },
     {
       "data": "2026-05-25",
       "valor_estrategia": 148.0104,
-      "valor_ibov": 131.0513,
-      "valor_smll": 106.1812,
-      "valor_cdi": 133.8036
+      "valor_ibov": 129.2817,
+      "valor_smll": 106.7326,
+      "valor_cdi": 133.4888
     },
     {
       "data": "2026-06-05",
       "valor_estrategia": 140.6168,
-      "valor_ibov": 126.5268,
-      "valor_smll": 101.923,
-      "valor_cdi": 134.1613
+      "valor_ibov": 124.8183,
+      "valor_smll": 102.4522,
+      "valor_cdi": 133.8456
     },
     {
       "data": "2026-06-08",
       "valor_estrategia": 141.6609,
-      "valor_ibov": 125.2923,
-      "valor_smll": 100.2866,
-      "valor_cdi": 134.3046
+      "valor_ibov": 123.6004,
+      "valor_smll": 100.8074,
+      "valor_cdi": 133.9886
     },
     {
       "data": "2026-06-15",
       "valor_estrategia": 145.1133,
-      "valor_ibov": 124.5018,
-      "valor_smll": 98.7747,
-      "valor_cdi": 134.4481
+      "valor_ibov": 122.8206,
+      "valor_smll": 99.2877,
+      "valor_cdi": 134.1317
     },
     {
       "data": "2026-06-22",
       "valor_estrategia": 145.8206,
-      "valor_ibov": 125.8968,
-      "valor_smll": 100.1713,
-      "valor_cdi": 134.5187
+      "valor_ibov": 124.3475,
+      "valor_smll": 100.8443,
+      "valor_cdi": 134.2727
+    },
+    {
+      "data": "2026-06-29",
+      "valor_estrategia": 145.3167,
+      "valor_ibov": 124.86,
+      "valor_smll": 101.7282,
+      "valor_cdi": 134.3432
     }
   ]
 }

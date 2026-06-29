@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-06-22T16:14:27.036390",
+  "timestamp": "2026-06-29T13:56:28.068278",
   "status": "success",
   "modo": "incremental",
-  "ultimo_pregao": "2026-06-22",
+  "ultimo_pregao": "2026-06-29",
   "tickers_baixados": 50,
   "tickers_falharam": 0,
   "tickers_falharam_lista": [],
   "tickers_stale": [],
   "tickers_suspeitos": [],
-  "duracao_segundos": 3,
+  "duracao_segundos": 2,
   "validacao_leve": {
     "LV1_passou": 50,
     "LV2_passou": 50,

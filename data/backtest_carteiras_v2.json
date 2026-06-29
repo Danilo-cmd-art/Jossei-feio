@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 109,
+    "n_carteiras": 110,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -4908,6 +4908,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.004874
+    },
+    {
+      "semana": "2026-W27",
+      "data_formacao": "2026-06-29",
+      "data_corte_dados": "2026-06-26",
+      "data_vigencia_fim": "2026-06-29",
+      "tickers": [
+        {
+          "ticker": "CURY3",
+          "score": 87.5,
+          "preco_entrada": 35.11000061035156,
+          "preco_saida": 35.040000915527344,
+          "retorno_semana": -0.001994
+        },
+        {
+          "ticker": "TEND3",
+          "score": 86.0,
+          "preco_entrada": 36.849998474121094,
+          "preco_saida": 36.619998931884766,
+          "retorno_semana": -0.006242
+        },
+        {
+          "ticker": "MILS3",
+          "score": 85.5,
+          "preco_entrada": 15.489999771118164,
+          "preco_saida": 15.479999542236328,
+          "retorno_semana": -0.000646
+        },
+        {
+          "ticker": "DIRR3",
+          "score": 74.5,
+          "preco_entrada": 14.199999809265137,
+          "preco_saida": 14.039999961853027,
+          "retorno_semana": -0.011268
+        },
+        {
+          "ticker": "OPCT3",
+          "score": 69.5,
+          "preco_entrada": 10.449999809265137,
+          "preco_saida": 10.479999542236328,
+          "retorno_semana": 0.002871
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.003456
     }
   ]
 }
