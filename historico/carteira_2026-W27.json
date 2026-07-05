@@ -1,38 +1,38 @@
 {
   "metadata": {
-    "data_formacao": "2026-06-29",
-    "data_corte_dados": "2026-06-26",
-    "data_vigencia_inicio": "2026-06-29",
-    "data_vigencia_fim": "2026-07-03",
+    "data_formacao": "2026-07-05",
+    "data_corte_dados": "2026-07-03",
+    "data_vigencia_inicio": "2026-07-05",
+    "data_vigencia_fim": "2026-07-10",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-07-03T22:02:44",
-    "modo_atualizacao": "intraday"
+    "ultima_atualizacao": "2026-07-05T23:00:45",
+    "modo_atualizacao": "nova_semana"
   },
   "tickers": [
     {
-      "ticker": "CURY3",
+      "ticker": "TEND3",
       "rank_na_formacao": 1,
       "score_na_formacao": 87.5,
-      "preco_entrada": 35.11000061035156,
-      "preco_atual": 35.0,
-      "retorno_acumulado": -0.003133,
+      "preco_entrada": 37.0,
+      "preco_atual": 37.0,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
       "v3c_data_stop": null
     },
     {
-      "ticker": "TEND3",
+      "ticker": "CURY3",
       "rank_na_formacao": 2,
-      "score_na_formacao": 86.0,
-      "preco_entrada": 36.849998474121094,
-      "preco_atual": 37.0099983215332,
-      "retorno_acumulado": 0.004342,
+      "score_na_formacao": 86.6667,
+      "preco_entrada": 34.93000030517578,
+      "preco_atual": 34.93000030517578,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -41,10 +41,10 @@
     {
       "ticker": "MILS3",
       "rank_na_formacao": 3,
-      "score_na_formacao": 85.5,
-      "preco_entrada": 15.489999771118164,
-      "preco_atual": 15.390000343322754,
-      "retorno_acumulado": -0.006456,
+      "score_na_formacao": 86.25,
+      "preco_entrada": 15.420000076293945,
+      "preco_atual": 15.420000076293945,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -53,85 +53,29 @@
     {
       "ticker": "DIRR3",
       "rank_na_formacao": 4,
-      "score_na_formacao": 74.5,
-      "preco_entrada": 14.199999809265137,
-      "preco_atual": 14.260000228881836,
-      "retorno_acumulado": 0.004225,
+      "score_na_formacao": 84.1667,
+      "preco_entrada": 14.279999732971191,
+      "preco_atual": 14.279999732971191,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
       "v3c_data_stop": null
     },
     {
-      "ticker": "OPCT3",
+      "ticker": "MDNE3",
       "rank_na_formacao": 5,
-      "score_na_formacao": 69.5,
-      "preco_entrada": 10.449999809265137,
-      "preco_atual": 10.25,
-      "retorno_acumulado": -0.019139,
+      "score_na_formacao": 67.0833,
+      "preco_entrada": 30.049999237060547,
+      "preco_atual": 30.049999237060547,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
       "v3c_data_stop": null
     }
   ],
-  "performance_diaria": [
-    {
-      "data": "2026-06-29",
-      "retorno_dia": -6.3e-05,
-      "retorno_acumulado": -6.3e-05,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.007064364207221452,
-        "smll": 0.010630356325599832,
-        "cdi": 0.0010508959505961535
-      }
-    },
-    {
-      "data": "2026-06-30",
-      "retorno_dia": -0.007496,
-      "retorno_acumulado": -0.007558,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.00019768591197166785,
-        "smll": 0.006900461655213075,
-        "cdi": 0.0015767579967480572
-      }
-    },
-    {
-      "data": "2026-07-01",
-      "retorno_dia": -0.002827,
-      "retorno_acumulado": -0.010364,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": -0.0017501017501017069,
-        "smll": 0.0015852834924132697,
-        "cdi": 0.0021028962834912512
-      }
-    },
-    {
-      "data": "2026-07-02",
-      "retorno_dia": 0.002861,
-      "retorno_acumulado": -0.007532,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.004639804639804623,
-        "smll": 0.008485674004445665,
-        "cdi": 0.0026293109559378802
-      }
-    },
-    {
-      "data": "2026-07-03",
-      "retorno_dia": 0.003527,
-      "retorno_acumulado": -0.004032,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.012095270800627889,
-        "smll": 0.01781055296677403,
-        "cdi": 0.0026293109559378802
-      }
-    }
-  ],
-  "retorno_acumulado_total": -0.004032,
+  "performance_diaria": [],
+  "retorno_acumulado_total": 0.0,
   "stops_semana": []
 }
