@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-07-20T15:10:14",
+    "ultima_atualizacao": "2026-07-20T15:19:35",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -31,8 +31,8 @@
       "rank_na_formacao": 2,
       "score_na_formacao": 81.4286,
       "preco_entrada": 15.569999694824219,
-      "preco_atual": 15.529999732971191,
-      "retorno_acumulado": -0.002569,
+      "preco_atual": 15.699999809265137,
+      "retorno_acumulado": 0.008349,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -55,8 +55,8 @@
       "rank_na_formacao": 4,
       "score_na_formacao": 72.1429,
       "preco_entrada": 8.40999984741211,
-      "preco_atual": 8.460000038146973,
-      "retorno_acumulado": 0.005945,
+      "preco_atual": 8.449999809265137,
+      "retorno_acumulado": 0.004756,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -67,8 +67,8 @@
       "rank_na_formacao": 5,
       "score_na_formacao": 68.9286,
       "preco_entrada": 16.59000015258789,
-      "preco_atual": 16.6200008392334,
-      "retorno_acumulado": 0.001808,
+      "preco_atual": 16.6299991607666,
+      "retorno_acumulado": 0.002411,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -78,16 +78,16 @@
   "performance_diaria": [
     {
       "data": "2026-07-20",
-      "retorno_dia": 0.001848,
-      "retorno_acumulado": 0.001848,
+      "retorno_dia": 0.003914,
+      "retorno_acumulado": 0.003914,
       "modo": "intraday",
       "benchmarks": {
-        "ibov": 0.002200039551272681,
-        "smll": -0.008669939382833891,
+        "ibov": 0.001538005177621038,
+        "smll": -0.00913113706409463,
         "cdi": 0.0
       }
     }
   ],
-  "retorno_acumulado_total": 0.001848,
+  "retorno_acumulado_total": 0.003914,
   "stops_semana": []
 }
