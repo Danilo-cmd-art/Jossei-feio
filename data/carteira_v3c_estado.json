@@ -1,9 +1,9 @@
 {
   "versao": "v3c",
-  "semana": "2026-W30",
-  "data_formacao": "2026-07-26",
+  "semana": "2026-W31",
+  "data_formacao": "2026-07-27",
   "data_corte_dados": "2026-07-24",
-  "data_vigencia_inicio": "2026-07-26",
+  "data_vigencia_inicio": "2026-07-27",
   "data_vigencia_fim": "2026-07-31",
   "n_posicoes_inicial": 5,
   "peso_unitario": 0.2,
@@ -88,6 +88,6 @@
   "stops_semana": [],
   "dias_processados": [],
   "performance_diaria": [],
-  "ultima_atualizacao": "2026-07-26T22:58:30",
+  "ultima_atualizacao": "2026-07-27T13:34:58",
   "modo_ultima_atualizacao": "nova_semana"
 }

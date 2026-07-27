@@ -3,11 +3,15 @@
     "data_formacao": "2026-07-27",
     "data_corte_dados": "2026-07-24",
     "data_vigencia_inicio": "2026-07-27",
-    "data_vigencia_fim": "2026-07-27",
+    "data_vigencia_fim": "2026-07-31",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
-    "versao_formula": "v2"
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-07-27T13:34:58",
+    "modo_atualizacao": "nova_semana"
   },
   "tickers": [
     {
@@ -18,7 +22,9 @@
       "preco_atual": 15.430000305175781,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "OPCT3",
@@ -28,7 +34,9 @@
       "preco_atual": 10.739999771118164,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "BRAV3",
@@ -38,7 +46,9 @@
       "preco_atual": 20.639999389648438,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "FLRY3",
@@ -48,7 +58,9 @@
       "preco_atual": 16.260000228881836,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "WIZC3",
@@ -58,9 +70,12 @@
       "preco_atual": 8.260000228881836,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     }
   ],
   "performance_diaria": [],
-  "retorno_acumulado_total": 0.0
+  "retorno_acumulado_total": 0.0,
+  "stops_semana": []
 }

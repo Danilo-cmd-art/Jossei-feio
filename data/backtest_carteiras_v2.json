@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 113,
+    "n_carteiras": 114,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5088,6 +5088,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": -0.023297
+    },
+    {
+      "semana": "2026-W31",
+      "data_formacao": "2026-07-27",
+      "data_corte_dados": "2026-07-24",
+      "data_vigencia_fim": "2026-07-27",
+      "tickers": [
+        {
+          "ticker": "MILS3",
+          "score": 91.1111,
+          "preco_entrada": 15.430000305175781,
+          "preco_saida": 15.460000038146973,
+          "retorno_semana": 0.001944
+        },
+        {
+          "ticker": "OPCT3",
+          "score": 76.2963,
+          "preco_entrada": 10.739999771118164,
+          "preco_saida": 10.6899995803833,
+          "retorno_semana": -0.004656
+        },
+        {
+          "ticker": "BRAV3",
+          "score": 73.7037,
+          "preco_entrada": 20.639999389648438,
+          "preco_saida": 20.649999618530273,
+          "retorno_semana": 0.000485
+        },
+        {
+          "ticker": "FLRY3",
+          "score": 72.2222,
+          "preco_entrada": 16.260000228881836,
+          "preco_saida": 16.360000610351562,
+          "retorno_semana": 0.00615
+        },
+        {
+          "ticker": "WIZC3",
+          "score": 69.6296,
+          "preco_entrada": 8.260000228881836,
+          "preco_saida": 8.210000038146973,
+          "retorno_semana": -0.006053
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.000426
     }
   ]
 }
