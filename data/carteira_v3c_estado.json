@@ -33,8 +33,8 @@
       "preco_ref_dia": 10.739999771118164,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 10.34000015258789,
-      "ret_acumulado": -0.037244,
+      "preco_atual": 10.3100004196167,
+      "ret_acumulado": -0.040037,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 20.639999389648438,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 20.790000915527344,
-      "ret_acumulado": 0.007268,
+      "preco_atual": 20.719999313354492,
+      "ret_acumulado": 0.003876,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 16.260000228881836,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 16.889999389648438,
-      "ret_acumulado": 0.038745,
+      "preco_atual": 16.899999618530273,
+      "ret_acumulado": 0.03936,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -102,11 +102,11 @@
     },
     {
       "data": "2026-07-29",
-      "retorno_dia": -0.005548,
-      "retorno_acumulado": 0.00024,
+      "retorno_dia": -0.006655,
+      "retorno_acumulado": -0.000874,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-07-29T15:48:08",
+  "ultima_atualizacao": "2026-07-29T16:14:13",
   "modo_ultima_atualizacao": "intraday"
 }
