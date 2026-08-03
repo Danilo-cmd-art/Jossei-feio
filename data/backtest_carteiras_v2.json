@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 114,
+    "n_carteiras": 115,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5133,6 +5133,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": -0.000426
+    },
+    {
+      "semana": "2026-W32",
+      "data_formacao": "2026-08-03",
+      "data_corte_dados": "2026-07-31",
+      "data_vigencia_fim": "2026-08-03",
+      "tickers": [
+        {
+          "ticker": "MILS3",
+          "score": 91.6667,
+          "preco_entrada": 15.75,
+          "preco_saida": 15.699999809265137,
+          "retorno_semana": -0.003175
+        },
+        {
+          "ticker": "PINE4",
+          "score": 86.1111,
+          "preco_entrada": 13.069999694824219,
+          "preco_saida": 13.029999732971191,
+          "retorno_semana": -0.00306
+        },
+        {
+          "ticker": "INTB3",
+          "score": 78.0556,
+          "preco_entrada": 14.649999618530273,
+          "preco_saida": 14.729999542236328,
+          "retorno_semana": 0.005461
+        },
+        {
+          "ticker": "PRNR3",
+          "score": 74.7222,
+          "preco_entrada": 19.739999771118164,
+          "preco_saida": 19.6200008392334,
+          "retorno_semana": -0.006079
+        },
+        {
+          "ticker": "FLRY3",
+          "score": 68.3333,
+          "preco_entrada": 17.139999389648438,
+          "preco_saida": 17.25,
+          "retorno_semana": 0.006418
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -8.7e-05
     }
   ]
 }
