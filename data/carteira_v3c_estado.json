@@ -18,8 +18,8 @@
       "preco_ref_dia": 15.75,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 15.59000015258789,
-      "ret_acumulado": -0.010159,
+      "preco_atual": 15.640000343322754,
+      "ret_acumulado": -0.006984,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -33,8 +33,8 @@
       "preco_ref_dia": 13.069999694824219,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 12.0,
-      "ret_acumulado": -0.081867,
+      "preco_atual": 11.989999771118164,
+      "ret_acumulado": -0.082632,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 14.649999618530273,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 14.600000381469727,
-      "ret_acumulado": -0.003413,
+      "preco_atual": 14.630000114440918,
+      "ret_acumulado": -0.001365,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 19.739999771118164,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 18.299999237060547,
-      "ret_acumulado": -0.072948,
+      "preco_atual": 18.3799991607666,
+      "ret_acumulado": -0.068896,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -78,8 +78,8 @@
       "preco_ref_dia": 17.139999389648438,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 18.969999313354492,
-      "ret_acumulado": 0.106768,
+      "preco_atual": 18.959999084472656,
+      "ret_acumulado": 0.106184,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -114,11 +114,11 @@
     },
     {
       "data": "2026-08-07",
-      "retorno_dia": 0.001881,
-      "retorno_acumulado": -0.012324,
+      "retorno_dia": 0.003489,
+      "retorno_acumulado": -0.010739,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-08-07T19:45:35",
+  "ultima_atualizacao": "2026-08-07T20:37:00",
   "modo_ultima_atualizacao": "intraday"
 }
