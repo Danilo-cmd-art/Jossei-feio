@@ -18,8 +18,8 @@
       "preco_ref_dia": 15.600000381469727,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 15.619999885559082,
-      "ret_acumulado": 0.001282,
+      "preco_atual": 15.600000381469727,
+      "ret_acumulado": 0.0,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -33,8 +33,8 @@
       "preco_ref_dia": 33.47999954223633,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 33.02000045776367,
-      "ret_acumulado": -0.01374,
+      "preco_atual": 33.04999923706055,
+      "ret_acumulado": -0.012843,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 18.950000762939453,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 18.0,
-      "ret_acumulado": -0.050132,
+      "preco_atual": 18.06999969482422,
+      "ret_acumulado": -0.046438,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 14.720000267028809,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 13.84000015258789,
-      "ret_acumulado": -0.059783,
+      "preco_atual": 13.850000381469727,
+      "ret_acumulado": -0.059103,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -78,8 +78,8 @@
       "preco_ref_dia": 33.630001068115234,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 32.72999954223633,
-      "ret_acumulado": -0.026762,
+      "preco_atual": 32.9900016784668,
+      "ret_acumulado": -0.019031,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -114,11 +114,11 @@
     },
     {
       "data": "2026-08-14",
-      "retorno_dia": -0.022761,
-      "retorno_acumulado": -0.029827,
+      "retorno_dia": -0.020401,
+      "retorno_acumulado": -0.027483,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-08-14T17:54:51",
+  "ultima_atualizacao": "2026-08-14T18:55:39",
   "modo_ultima_atualizacao": "intraday"
 }
