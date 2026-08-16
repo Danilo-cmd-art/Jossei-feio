@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 115,
+    "n_carteiras": 116,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5178,6 +5178,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": -8.7e-05
+    },
+    {
+      "semana": "2026-W33",
+      "data_formacao": "2026-08-10",
+      "data_corte_dados": "2026-08-07",
+      "data_vigencia_fim": "2026-08-14",
+      "tickers": [
+        {
+          "ticker": "MILS3",
+          "score": 86.5217,
+          "preco_entrada": 15.600000381469727,
+          "preco_saida": 15.600000381469727,
+          "retorno_semana": 0.0
+        },
+        {
+          "ticker": "TGMA3",
+          "score": 85.6522,
+          "preco_entrada": 33.47999954223633,
+          "preco_saida": 33.2400016784668,
+          "retorno_semana": -0.007168
+        },
+        {
+          "ticker": "FLRY3",
+          "score": 83.4783,
+          "preco_entrada": 18.541507720947266,
+          "preco_saida": 18.229999542236328,
+          "retorno_semana": -0.016801
+        },
+        {
+          "ticker": "INTB3",
+          "score": 77.8261,
+          "preco_entrada": 14.720000267028809,
+          "preco_saida": 14.109999656677246,
+          "retorno_semana": -0.04144
+        },
+        {
+          "ticker": "TEND3",
+          "score": 76.9565,
+          "preco_entrada": 33.00244140625,
+          "preco_saida": 33.66999816894531,
+          "retorno_semana": 0.020227
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.009036
     }
   ]
 }
