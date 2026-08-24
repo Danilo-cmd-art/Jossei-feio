@@ -18,8 +18,8 @@
       "preco_ref_dia": 34.380001068115234,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 34.58000183105469,
-      "ret_acumulado": 0.005817,
+      "preco_atual": 34.61000061035156,
+      "ret_acumulado": 0.00669,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -33,8 +33,8 @@
       "preco_ref_dia": 3.990000009536743,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 4.039999961853027,
-      "ret_acumulado": 0.012531,
+      "preco_atual": 3.9800000190734863,
+      "ret_acumulado": -0.002506,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 18.68000030517578,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 18.639999389648438,
-      "ret_acumulado": -0.002141,
+      "preco_atual": 18.59000015258789,
+      "ret_acumulado": -0.004818,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 23.110000610351562,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 23.899999618530273,
-      "ret_acumulado": 0.034184,
+      "preco_atual": 23.799999237060547,
+      "ret_acumulado": 0.029857,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -78,8 +78,8 @@
       "preco_ref_dia": 23.299999237060547,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 23.280000686645508,
-      "ret_acumulado": -0.000858,
+      "preco_atual": 23.270000457763672,
+      "ret_acumulado": -0.001288,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -90,11 +90,11 @@
   "performance_diaria": [
     {
       "data": "2026-08-24",
-      "retorno_dia": 0.009907,
-      "retorno_acumulado": 0.009907,
+      "retorno_dia": 0.005587,
+      "retorno_acumulado": 0.005587,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-08-24T17:32:49",
+  "ultima_atualizacao": "2026-08-24T18:41:05",
   "modo_ultima_atualizacao": "intraday"
 }
