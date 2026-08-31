@@ -3,11 +3,15 @@
     "data_formacao": "2026-08-31",
     "data_corte_dados": "2026-08-27",
     "data_vigencia_inicio": "2026-08-31",
-    "data_vigencia_fim": "2026-08-31",
+    "data_vigencia_fim": "2026-09-04",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
-    "versao_formula": "v2"
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-08-31T00:12:27",
+    "modo_atualizacao": "nova_semana"
   },
   "tickers": [
     {
@@ -18,7 +22,9 @@
       "preco_atual": 32.849998474121094,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "TGMA3",
@@ -28,7 +34,9 @@
       "preco_atual": 35.20000076293945,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "BEEF3",
@@ -38,7 +46,9 @@
       "preco_atual": 3.9700000286102295,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "GMAT3",
@@ -48,7 +58,9 @@
       "preco_atual": 4.760000228881836,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     },
     {
       "ticker": "FLRY3",
@@ -58,9 +70,12 @@
       "preco_atual": 18.739999771118164,
       "retorno_acumulado": 0.0,
       "is_stale": false,
-      "peso": 0.2
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
     }
   ],
   "performance_diaria": [],
-  "retorno_acumulado_total": 0.0
+  "retorno_acumulado_total": 0.0,
+  "stops_semana": []
 }
