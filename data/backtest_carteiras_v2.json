@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 118,
+    "n_carteiras": 119,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5313,6 +5313,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.008321
+    },
+    {
+      "semana": "2026-W36",
+      "data_formacao": "2026-08-31",
+      "data_corte_dados": "2026-08-28",
+      "data_vigencia_fim": "2026-09-04",
+      "tickers": [
+        {
+          "ticker": "CURY3",
+          "score": 88.5459,
+          "preco_entrada": 32.720001220703125,
+          "preco_saida": 33.209999084472656,
+          "retorno_semana": 0.014975
+        },
+        {
+          "ticker": "TGMA3",
+          "score": 81.8452,
+          "preco_entrada": 34.7599983215332,
+          "preco_saida": 33.65999984741211,
+          "retorno_semana": -0.031646
+        },
+        {
+          "ticker": "BEEF3",
+          "score": 78.2398,
+          "preco_entrada": 3.880000114440918,
+          "preco_saida": 3.950000047683716,
+          "retorno_semana": 0.018041
+        },
+        {
+          "ticker": "GMAT3",
+          "score": 78.0612,
+          "preco_entrada": 4.78000020980835,
+          "preco_saida": 4.869999885559082,
+          "retorno_semana": 0.018828
+        },
+        {
+          "ticker": "FLRY3",
+          "score": 76.8027,
+          "preco_entrada": 18.8700008392334,
+          "preco_saida": 20.170000076293945,
+          "retorno_semana": 0.068892
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": 0.017818
     }
   ]
 }

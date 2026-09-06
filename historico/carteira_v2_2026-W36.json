@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "data_formacao": "2026-08-31",
-    "data_corte_dados": "2026-08-27",
-    "data_vigencia_inicio": "2026-08-31",
-    "data_vigencia_fim": "2026-08-31",
+    "data_formacao": "2026-09-06",
+    "data_corte_dados": "2026-09-04",
+    "data_vigencia_inicio": "2026-09-06",
+    "data_vigencia_fim": "2026-09-04",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
@@ -11,41 +11,41 @@
   },
   "tickers": [
     {
-      "ticker": "CURY3",
+      "ticker": "CYRE3",
       "rank_na_formacao": 1,
-      "score_na_formacao": 87.2651,
-      "preco_entrada": 32.849998474121094,
-      "preco_atual": 32.849998474121094,
-      "retorno_acumulado": 0.0,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "TGMA3",
-      "rank_na_formacao": 2,
-      "score_na_formacao": 84.1622,
-      "preco_entrada": 35.20000076293945,
-      "preco_atual": 35.20000076293945,
-      "retorno_acumulado": 0.0,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "BEEF3",
-      "rank_na_formacao": 3,
-      "score_na_formacao": 81.5248,
-      "preco_entrada": 3.9700000286102295,
-      "preco_atual": 3.9700000286102295,
+      "score_na_formacao": 80.704,
+      "preco_entrada": 25.600000381469727,
+      "preco_atual": 25.600000381469727,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
     },
     {
       "ticker": "GMAT3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 80.6012,
+      "preco_entrada": 4.869999885559082,
+      "preco_atual": 4.869999885559082,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "CURY3",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 77.5076,
+      "preco_entrada": 33.209999084472656,
+      "preco_atual": 33.209999084472656,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "CSED3",
       "rank_na_formacao": 4,
-      "score_na_formacao": 77.3936,
-      "preco_entrada": 4.760000228881836,
-      "preco_atual": 4.760000228881836,
+      "score_na_formacao": 77.2032,
+      "preco_entrada": 5.579999923706055,
+      "preco_atual": 5.579999923706055,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
@@ -53,9 +53,9 @@
     {
       "ticker": "FLRY3",
       "rank_na_formacao": 5,
-      "score_na_formacao": 74.8493,
-      "preco_entrada": 18.739999771118164,
-      "preco_atual": 18.739999771118164,
+      "score_na_formacao": 76.054,
+      "preco_entrada": 20.170000076293945,
+      "preco_atual": 20.170000076293945,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
