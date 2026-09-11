@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-09-11T18:50:26",
+    "ultima_atualizacao": "2026-09-11T19:29:00",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -19,8 +19,8 @@
       "rank_na_formacao": 1,
       "score_na_formacao": 81.3889,
       "preco_entrada": 25.600000381469727,
-      "preco_atual": 25.68000030517578,
-      "retorno_acumulado": 0.003125,
+      "preco_atual": 25.850000381469727,
+      "retorno_acumulado": 0.009766,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -31,8 +31,8 @@
       "rank_na_formacao": 2,
       "score_na_formacao": 80.9323,
       "preco_entrada": 33.209999084472656,
-      "preco_atual": 31.84000015258789,
-      "retorno_acumulado": -0.041253,
+      "preco_atual": 32.040000915527344,
+      "retorno_acumulado": -0.03523,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -43,8 +43,8 @@
       "rank_na_formacao": 3,
       "score_na_formacao": 79.9163,
       "preco_entrada": 4.869999885559082,
-      "preco_atual": 4.820000171661377,
-      "retorno_acumulado": -0.010267,
+      "preco_atual": 4.849999904632568,
+      "retorno_acumulado": -0.004107,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -67,8 +67,8 @@
       "rank_na_formacao": 5,
       "score_na_formacao": 76.739,
       "preco_entrada": 20.170000076293945,
-      "preco_atual": 20.989999771118164,
-      "retorno_acumulado": 0.040654,
+      "preco_atual": 21.059999465942383,
+      "retorno_acumulado": 0.044125,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -122,16 +122,16 @@
     },
     {
       "data": "2026-09-11",
-      "retorno_dia": -0.013636,
-      "retorno_acumulado": -0.008358,
+      "retorno_dia": -0.009201,
+      "retorno_acumulado": -0.003899,
       "modo": "intraday",
       "benchmarks": {
-        "ibov": 0.005910823921584152,
-        "smll": 0.011440516310374349,
+        "ibov": 0.008459917174794995,
+        "smll": 0.015569565859564483,
         "cdi": 0.0015506007645482711
       }
     }
   ],
-  "retorno_acumulado_total": -0.008358,
+  "retorno_acumulado_total": -0.003899,
   "stops_semana": []
 }
