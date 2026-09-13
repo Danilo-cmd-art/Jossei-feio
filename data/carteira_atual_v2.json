@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "data_formacao": "2026-09-07",
-    "data_corte_dados": "2026-09-04",
-    "data_vigencia_inicio": "2026-09-07",
-    "data_vigencia_fim": "2026-09-07",
+    "data_formacao": "2026-09-13",
+    "data_corte_dados": "2026-09-11",
+    "data_vigencia_inicio": "2026-09-13",
+    "data_vigencia_fim": "2026-09-11",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
@@ -11,31 +11,31 @@
   },
   "tickers": [
     {
-      "ticker": "CYRE3",
-      "rank_na_formacao": 1,
-      "score_na_formacao": 81.3889,
-      "preco_entrada": 25.600000381469727,
-      "preco_atual": 25.600000381469727,
-      "retorno_acumulado": 0.0,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "CURY3",
-      "rank_na_formacao": 2,
-      "score_na_formacao": 80.9323,
-      "preco_entrada": 33.209999084472656,
-      "preco_atual": 33.209999084472656,
-      "retorno_acumulado": 0.0,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
       "ticker": "GMAT3",
+      "rank_na_formacao": 1,
+      "score_na_formacao": 81.1831,
+      "preco_entrada": 4.880000114440918,
+      "preco_atual": 4.880000114440918,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "CYRE3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 78.1851,
+      "preco_entrada": 25.969999313354492,
+      "preco_atual": 25.969999313354492,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "BEEF3",
       "rank_na_formacao": 3,
-      "score_na_formacao": 79.9163,
-      "preco_entrada": 4.869999885559082,
-      "preco_atual": 4.869999885559082,
+      "score_na_formacao": 77.3561,
+      "preco_entrada": 4.130000114440918,
+      "preco_atual": 4.130000114440918,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
@@ -43,19 +43,19 @@
     {
       "ticker": "CSED3",
       "rank_na_formacao": 4,
-      "score_na_formacao": 77.2032,
-      "preco_entrada": 5.579999923706055,
-      "preco_atual": 5.579999923706055,
+      "score_na_formacao": 77.1147,
+      "preco_entrada": 5.340000152587891,
+      "preco_atual": 5.340000152587891,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
     },
     {
-      "ticker": "FLRY3",
+      "ticker": "JHSF3",
       "rank_na_formacao": 5,
-      "score_na_formacao": 76.739,
-      "preco_entrada": 20.170000076293945,
-      "preco_atual": 20.170000076293945,
+      "score_na_formacao": 76.8129,
+      "preco_entrada": 12.15999984741211,
+      "preco_atual": 12.15999984741211,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2

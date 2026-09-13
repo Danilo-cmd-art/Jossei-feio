@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 119,
+    "n_carteiras": 120,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5358,6 +5358,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.017818
+    },
+    {
+      "semana": "2026-W37",
+      "data_formacao": "2026-09-08",
+      "data_corte_dados": "2026-09-04",
+      "data_vigencia_fim": "2026-09-11",
+      "tickers": [
+        {
+          "ticker": "CYRE3",
+          "score": 80.704,
+          "preco_entrada": 25.600000381469727,
+          "preco_saida": 25.969999313354492,
+          "retorno_semana": 0.014453
+        },
+        {
+          "ticker": "GMAT3",
+          "score": 80.6012,
+          "preco_entrada": 4.869999885559082,
+          "preco_saida": 4.880000114440918,
+          "retorno_semana": 0.002053
+        },
+        {
+          "ticker": "CURY3",
+          "score": 77.5076,
+          "preco_entrada": 33.209999084472656,
+          "preco_saida": 31.81999969482422,
+          "retorno_semana": -0.041855
+        },
+        {
+          "ticker": "CSED3",
+          "score": 77.2032,
+          "preco_entrada": 5.579999923706055,
+          "preco_saida": 5.340000152587891,
+          "retorno_semana": -0.043011
+        },
+        {
+          "ticker": "FLRY3",
+          "score": 76.054,
+          "preco_entrada": 20.170000076293945,
+          "preco_saida": 21.059999465942383,
+          "retorno_semana": 0.044125
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.004847
     }
   ]
 }
