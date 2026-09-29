@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-09-29T00:48:40",
+    "ultima_atualizacao": "2026-09-29T18:27:15",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -19,8 +19,8 @@
       "rank_na_formacao": 1,
       "score_na_formacao": 82.0,
       "preco_entrada": 8.979999542236328,
-      "preco_atual": 8.670000076293945,
-      "retorno_acumulado": -0.034521,
+      "preco_atual": 8.619999885559082,
+      "retorno_acumulado": -0.040089,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -31,8 +31,8 @@
       "rank_na_formacao": 2,
       "score_na_formacao": 80.3077,
       "preco_entrada": 3.869999885559082,
-      "preco_atual": 3.8399999141693115,
-      "retorno_acumulado": -0.007752,
+      "preco_atual": 3.950000047683716,
+      "retorno_acumulado": 0.020672,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -43,8 +43,8 @@
       "rank_na_formacao": 3,
       "score_na_formacao": 79.3846,
       "preco_entrada": 27.5,
-      "preco_atual": 27.190000534057617,
-      "retorno_acumulado": -0.011273,
+      "preco_atual": 27.530000686645508,
+      "retorno_acumulado": 0.001091,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -55,8 +55,8 @@
       "rank_na_formacao": 4,
       "score_na_formacao": 76.6154,
       "preco_entrada": 21.739999771118164,
-      "preco_atual": 21.43000030517578,
-      "retorno_acumulado": -0.014259,
+      "preco_atual": 22.100000381469727,
+      "retorno_acumulado": 0.016559,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -67,8 +67,8 @@
       "rank_na_formacao": 5,
       "score_na_formacao": 74.0,
       "preco_entrada": 4.900000095367432,
-      "preco_atual": 4.829999923706055,
-      "retorno_acumulado": -0.014286,
+      "preco_atual": 5.0,
+      "retorno_acumulado": 0.020408,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -82,23 +82,23 @@
       "retorno_acumulado": -0.016418,
       "modo": "intraday",
       "benchmarks": {
-        "ibov": -0.005299212898035477,
-        "smll": -0.008640263525331426,
-        "cdi": 0.0005078800000000161
+        "ibov": -0.00529989237141637,
+        "smll": 0.004547521726947945,
+        "cdi": 0.0010160179420943827
       }
     },
     {
       "data": "2026-09-29",
-      "retorno_dia": -0.0,
-      "retorno_acumulado": -0.016418,
+      "retorno_dia": 0.020483,
+      "retorno_acumulado": 0.003728,
       "modo": "intraday",
       "benchmarks": {
-        "ibov": -0.005299212898035477,
-        "smll": -0.008640263525331426,
-        "cdi": 0.0005078800000000161
+        "ibov": -0.0041398614417880175,
+        "smll": -0.007275993129312042,
+        "cdi": 0.0010160179420943827
       }
     }
   ],
-  "retorno_acumulado_total": -0.016418,
+  "retorno_acumulado_total": 0.003728,
   "stops_semana": []
 }
