@@ -18,8 +18,8 @@
       "preco_ref_dia": 8.979999542236328,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 8.949999809265137,
-      "ret_acumulado": -0.003341,
+      "preco_atual": 8.880000114440918,
+      "ret_acumulado": -0.011136,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -33,8 +33,8 @@
       "preco_ref_dia": 3.869999885559082,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 4.25,
-      "ret_acumulado": 0.098191,
+      "preco_atual": 4.300000190734863,
+      "ret_acumulado": 0.111111,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 27.5,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 28.440000534057617,
-      "ret_acumulado": 0.034182,
+      "preco_atual": 28.18000030517578,
+      "ret_acumulado": 0.024727,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 21.739999771118164,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 22.959999084472656,
-      "ret_acumulado": 0.056118,
+      "preco_atual": 22.920000076293945,
+      "ret_acumulado": 0.054278,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -78,8 +78,8 @@
       "preco_ref_dia": 4.900000095367432,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 5.03000020980835,
-      "ret_acumulado": 0.026531,
+      "preco_atual": 5.050000190734863,
+      "ret_acumulado": 0.030612,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -102,11 +102,11 @@
     },
     {
       "data": "2026-09-30",
-      "retorno_dia": 0.029495,
-      "retorno_acumulado": 0.042336,
+      "retorno_dia": 0.029083,
+      "retorno_acumulado": 0.041919,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-09-30T18:48:27",
+  "ultima_atualizacao": "2026-09-30T19:42:35",
   "modo_ultima_atualizacao": "intraday"
 }
