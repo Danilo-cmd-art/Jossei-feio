@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 122,
+    "n_carteiras": 123,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5493,6 +5493,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.021832
+    },
+    {
+      "semana": "2026-W40",
+      "data_formacao": "2026-09-28",
+      "data_corte_dados": "2026-09-25",
+      "data_vigencia_fim": "2026-10-02",
+      "tickers": [
+        {
+          "ticker": "ECOR3",
+          "score": 82.0,
+          "preco_entrada": 8.979999542236328,
+          "preco_saida": 9.890000343322754,
+          "retorno_semana": 0.101336
+        },
+        {
+          "ticker": "VAMO3",
+          "score": 80.3077,
+          "preco_entrada": 3.869999885559082,
+          "preco_saida": 4.739999771118164,
+          "retorno_semana": 0.224806
+        },
+        {
+          "ticker": "BMOB3",
+          "score": 80.1538,
+          "preco_entrada": 27.5,
+          "preco_saida": 28.34000015258789,
+          "retorno_semana": 0.030545
+        },
+        {
+          "ticker": "FLRY3",
+          "score": 76.6154,
+          "preco_entrada": 21.739999771118164,
+          "preco_saida": 23.5,
+          "retorno_semana": 0.080957
+        },
+        {
+          "ticker": "JHSF3",
+          "score": 73.8462,
+          "preco_entrada": 11.65090274810791,
+          "preco_saida": 12.050000190734863,
+          "retorno_semana": 0.034255
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": 0.09438
     }
   ]
 }
