@@ -18,8 +18,8 @@
       "preco_ref_dia": 4.739999771118164,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 6.079999923706055,
-      "ret_acumulado": 0.2827,
+      "preco_atual": 6.579999923706055,
+      "ret_acumulado": 0.388186,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -33,8 +33,8 @@
       "preco_ref_dia": 39.5,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 44.099998474121094,
-      "ret_acumulado": 0.116456,
+      "preco_atual": 45.0,
+      "ret_acumulado": 0.139241,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 9.890000343322754,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 12.970000267028809,
-      "ret_acumulado": 0.311426,
+      "preco_atual": 14.020000457763672,
+      "ret_acumulado": 0.417594,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 10.850000381469727,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 14.90999984741211,
-      "ret_acumulado": 0.374193,
+      "preco_atual": 16.93000030517578,
+      "ret_acumulado": 0.560369,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -78,8 +78,8 @@
       "preco_ref_dia": 28.34000015258789,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 31.010000228881836,
-      "ret_acumulado": 0.094213,
+      "preco_atual": 32.349998474121094,
+      "ret_acumulado": 0.141496,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -108,11 +108,11 @@
     },
     {
       "data": "2026-10-08",
-      "retorno_dia": -0.0,
-      "retorno_acumulado": 0.235798,
+      "retorno_dia": 0.075723,
+      "retorno_acumulado": 0.329377,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-10-08T00:42:02",
+  "ultima_atualizacao": "2026-10-08T19:08:24",
   "modo_ultima_atualizacao": "intraday"
 }
