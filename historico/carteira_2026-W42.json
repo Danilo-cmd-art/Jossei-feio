@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "data_formacao": "2026-10-12",
+    "data_corte_dados": "2026-10-09",
+    "data_vigencia_inicio": "2026-10-12",
+    "data_vigencia_fim": "2026-10-16",
+    "bootstrap_retroativo": false,
+    "n_posicoes": 5,
+    "peso_por_posicao": 0.2,
+    "versao_formula": "v3c",
+    "stop_loss_pct": -0.05,
+    "redistribuicao": "positivas_cap_2x",
+    "ultima_atualizacao": "2026-10-12T00:58:46",
+    "modo_atualizacao": "nova_semana"
+  },
+  "tickers": [
+    {
+      "ticker": "LAVV3",
+      "rank_na_formacao": 1,
+      "score_na_formacao": 86.1702,
+      "preco_entrada": 16.100000381469727,
+      "preco_atual": 16.100000381469727,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "ECOR3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 80.2128,
+      "preco_entrada": 14.75,
+      "preco_atual": 14.75,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "MOVI3",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 80.1064,
+      "preco_entrada": 18.940000534057617,
+      "preco_atual": 18.940000534057617,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "VAMO3",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 78.4043,
+      "preco_entrada": 6.860000133514404,
+      "preco_atual": 6.860000133514404,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "BMOB3",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 76.383,
+      "preco_entrada": 34.54999923706055,
+      "preco_atual": 34.54999923706055,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    }
+  ],
+  "performance_diaria": [],
+  "retorno_acumulado_total": 0.0,
+  "stops_semana": []
+}
