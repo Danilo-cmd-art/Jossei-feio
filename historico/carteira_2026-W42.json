@@ -1,26 +1,38 @@
 {
   "metadata": {
-    "data_formacao": "2026-10-12",
-    "data_corte_dados": "2026-10-09",
-    "data_vigencia_inicio": "2026-10-12",
-    "data_vigencia_fim": "2026-10-16",
+    "data_formacao": "2026-10-18",
+    "data_corte_dados": "2026-10-16",
+    "data_vigencia_inicio": "2026-10-18",
+    "data_vigencia_fim": "2026-10-23",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-10-16T23:14:18",
-    "modo_atualizacao": "intraday"
+    "ultima_atualizacao": "2026-10-18T23:55:46",
+    "modo_atualizacao": "nova_semana"
   },
   "tickers": [
     {
-      "ticker": "LAVV3",
+      "ticker": "PINE4",
       "rank_na_formacao": 1,
-      "score_na_formacao": 86.1702,
-      "preco_entrada": 16.100000381469727,
-      "preco_atual": 14.65999984741211,
-      "retorno_acumulado": -0.089441,
+      "score_na_formacao": 82.0,
+      "preco_entrada": 15.800000190734863,
+      "preco_atual": 15.800000190734863,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2,
+      "v3c_ativo": true,
+      "v3c_data_stop": null
+    },
+    {
+      "ticker": "LAVV3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 81.4444,
+      "preco_entrada": 14.539999961853027,
+      "preco_atual": 14.539999961853027,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -28,11 +40,11 @@
     },
     {
       "ticker": "ECOR3",
-      "rank_na_formacao": 2,
-      "score_na_formacao": 80.2128,
-      "preco_entrada": 14.75,
-      "preco_atual": 12.960000038146973,
-      "retorno_acumulado": -0.121356,
+      "rank_na_formacao": 3,
+      "score_na_formacao": 80.3333,
+      "preco_entrada": 13.0600004196167,
+      "preco_atual": 13.0600004196167,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -40,98 +52,30 @@
     },
     {
       "ticker": "MOVI3",
-      "rank_na_formacao": 3,
-      "score_na_formacao": 80.1064,
-      "preco_entrada": 18.940000534057617,
-      "preco_atual": 16.469999313354492,
-      "retorno_acumulado": -0.130412,
-      "is_stale": false,
-      "peso": 0.2,
-      "v3c_ativo": true,
-      "v3c_data_stop": null
-    },
-    {
-      "ticker": "VAMO3",
       "rank_na_formacao": 4,
-      "score_na_formacao": 78.4043,
-      "preco_entrada": 6.860000133514404,
-      "preco_atual": 5.679999828338623,
-      "retorno_acumulado": -0.172012,
+      "score_na_formacao": 79.0,
+      "preco_entrada": 16.56999969482422,
+      "preco_atual": 16.56999969482422,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
       "v3c_data_stop": null
     },
     {
-      "ticker": "BMOB3",
+      "ticker": "TGMA3",
       "rank_na_formacao": 5,
-      "score_na_formacao": 76.383,
-      "preco_entrada": 34.54999923706055,
-      "preco_atual": 32.0099983215332,
-      "retorno_acumulado": -0.073517,
+      "score_na_formacao": 78.4444,
+      "preco_entrada": 47.970001220703125,
+      "preco_atual": 47.970001220703125,
+      "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
       "v3c_data_stop": null
     }
   ],
-  "performance_diaria": [
-    {
-      "data": "2026-10-12",
-      "retorno_dia": 0.002812,
-      "retorno_acumulado": 0.002812,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.013805644457375532,
-        "smll": 0.040255998859138886,
-        "cdi": 0.0005078800000000161
-      }
-    },
-    {
-      "data": "2026-10-13",
-      "retorno_dia": -0.068718,
-      "retorno_acumulado": -0.0661,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.003239259043739562,
-        "smll": 0.004464663339836417,
-        "cdi": 0.0010160179420943827
-      }
-    },
-    {
-      "data": "2026-10-14",
-      "retorno_dia": -0.025329,
-      "retorno_acumulado": -0.089755,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": 0.0013868683929783021,
-        "smll": -0.00751539929624967,
-        "cdi": 0.001524413957286752
-      }
-    },
-    {
-      "data": "2026-10-15",
-      "retorno_dia": -0.036882,
-      "retorno_acumulado": -0.123326,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": -0.009194064591213413,
-        "smll": -0.00751539929624967,
-        "cdi": 0.00203306817664739
-      }
-    },
-    {
-      "data": "2026-10-16",
-      "retorno_dia": 0.00682,
-      "retorno_acumulado": -0.117347,
-      "modo": "intraday",
-      "benchmarks": {
-        "ibov": -0.0038292691058096073,
-        "smll": -0.006225782522843781,
-        "cdi": 0.00203306817664739
-      }
-    }
-  ],
-  "retorno_acumulado_total": -0.117347,
+  "performance_diaria": [],
+  "retorno_acumulado_total": 0.0,
   "stops_semana": []
 }

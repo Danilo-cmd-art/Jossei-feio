@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "data_formacao": "2026-10-12",
-    "data_corte_dados": "2026-10-09",
-    "data_vigencia_inicio": "2026-10-12",
-    "data_vigencia_fim": "2026-10-12",
+    "data_formacao": "2026-10-18",
+    "data_corte_dados": "2026-10-16",
+    "data_vigencia_inicio": "2026-10-18",
+    "data_vigencia_fim": "2026-10-16",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
@@ -11,51 +11,51 @@
   },
   "tickers": [
     {
-      "ticker": "LAVV3",
+      "ticker": "PINE4",
       "rank_na_formacao": 1,
-      "score_na_formacao": 86.1702,
-      "preco_entrada": 16.100000381469727,
-      "preco_atual": 16.100000381469727,
+      "score_na_formacao": 82.3596,
+      "preco_entrada": 15.800000190734863,
+      "preco_atual": 15.800000190734863,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "LAVV3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 81.236,
+      "preco_entrada": 14.539999961853027,
+      "preco_atual": 14.539999961853027,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
     },
     {
       "ticker": "ECOR3",
-      "rank_na_formacao": 2,
-      "score_na_formacao": 80.2128,
-      "preco_entrada": 14.75,
-      "preco_atual": 14.75,
+      "rank_na_formacao": 3,
+      "score_na_formacao": 80.1124,
+      "preco_entrada": 13.0600004196167,
+      "preco_atual": 13.0600004196167,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "TGMA3",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 79.8876,
+      "preco_entrada": 47.970001220703125,
+      "preco_atual": 47.970001220703125,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
     },
     {
       "ticker": "MOVI3",
-      "rank_na_formacao": 3,
-      "score_na_formacao": 80.1064,
-      "preco_entrada": 18.940000534057617,
-      "preco_atual": 18.940000534057617,
-      "retorno_acumulado": 0.0,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "VAMO3",
-      "rank_na_formacao": 4,
-      "score_na_formacao": 78.4043,
-      "preco_entrada": 6.860000133514404,
-      "preco_atual": 6.860000133514404,
-      "retorno_acumulado": 0.0,
-      "is_stale": false,
-      "peso": 0.2
-    },
-    {
-      "ticker": "BMOB3",
       "rank_na_formacao": 5,
-      "score_na_formacao": 76.9149,
-      "preco_entrada": 34.54999923706055,
-      "preco_atual": 34.54999923706055,
+      "score_na_formacao": 78.764,
+      "preco_entrada": 16.56999969482422,
+      "preco_atual": 16.56999969482422,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
