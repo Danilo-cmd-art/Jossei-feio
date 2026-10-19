@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "data_referencia": "2026-10-18",
+    "data_referencia": "2026-10-19",
     "data_corte_dados": "2026-10-16",
     "total_tickers": 107,
     "universo_versao": "v2-2026-05",
@@ -9,19 +9,19 @@
   "scores": [
     {
       "ticker": "PINE4",
-      "score_final": 82.3596,
+      "score_final": 82.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.36103099371913305,
+      "momentum_bruto": 0.36430244395779565,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 15.8,
             "mma20": 13.2875,
-            "mma50": 12.0154,
+            "mma50": 11.9788,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -33,22 +33,22 @@
           "roic_bruto": null
         },
         "momentum": {
-          "ret_1m": 0.318865,
-          "ret_3m": 0.403197,
-          "bruto": 0.361031,
-          "normalizado": 75.28,
-          "contribuicao_score": 37.6404
+          "ret_1m": 0.338983,
+          "ret_3m": 0.389622,
+          "bruto": 0.364302,
+          "normalizado": 74.44,
+          "contribuicao_score": 37.2222
         },
         "roe": {
           "bruto": 30.83,
-          "normalizado": 94.38,
-          "contribuicao_score": 28.3146,
+          "normalizado": 94.44,
+          "contribuicao_score": 28.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 31.37,
-          "normalizado": 82.02,
-          "contribuicao_score": 16.4045,
+          "normalizado": 82.22,
+          "contribuicao_score": 16.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -57,19 +57,19 @@
     },
     {
       "ticker": "LAVV3",
-      "score_final": 81.236,
+      "score_final": 81.4444,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.32664680305803684,
+      "momentum_bruto": 0.3361285133826004,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 14.54,
             "mma20": 12.407,
-            "mma50": 11.0316,
+            "mma50": 11.0252,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -81,22 +81,22 @@
           "roic_bruto": 13.59
         },
         "momentum": {
-          "ret_1m": 0.324226,
-          "ret_3m": 0.329068,
-          "bruto": 0.326647,
-          "normalizado": 70.79,
-          "contribuicao_score": 35.3933
+          "ret_1m": 0.35761,
+          "ret_3m": 0.314647,
+          "bruto": 0.336129,
+          "normalizado": 71.11,
+          "contribuicao_score": 35.5556
         },
         "roe": {
           "bruto": 29.03,
-          "normalizado": 92.13,
-          "contribuicao_score": 27.6404,
+          "normalizado": 92.22,
+          "contribuicao_score": 27.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 37.41,
-          "normalizado": 91.01,
-          "contribuicao_score": 18.2022,
+          "normalizado": 91.11,
+          "contribuicao_score": 18.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -105,7 +105,7 @@
     },
     {
       "ticker": "ECOR3",
-      "score_final": 80.1124,
+      "score_final": 80.3333,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -132,19 +132,19 @@
           "ret_1m": 0.588808,
           "ret_3m": 0.855114,
           "bruto": 0.721961,
-          "normalizado": 93.26,
-          "contribuicao_score": 46.6292
+          "normalizado": 93.33,
+          "contribuicao_score": 46.6667
         },
         "roe": {
           "bruto": 17.81,
-          "normalizado": 69.66,
-          "contribuicao_score": 20.8989,
+          "normalizado": 70.0,
+          "contribuicao_score": 21.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 23.56,
-          "normalizado": 62.92,
-          "contribuicao_score": 12.5843,
+          "normalizado": 63.33,
+          "contribuicao_score": 12.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -152,68 +152,20 @@
       "rank": 3
     },
     {
-      "ticker": "TGMA3",
-      "score_final": 79.8876,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.4789408114723861,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 47.97,
-            "mma20": 40.6105,
-            "mma50": 36.78,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 13.14
-        },
-        "momentum": {
-          "ret_1m": 0.339196,
-          "ret_3m": 0.618686,
-          "bruto": 0.478941,
-          "normalizado": 87.64,
-          "contribuicao_score": 43.8202
-        },
-        "roe": {
-          "bruto": 26.13,
-          "normalizado": 86.52,
-          "contribuicao_score": 25.9551,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 17.07,
-          "normalizado": 50.56,
-          "contribuicao_score": 10.1124,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 4
-    },
-    {
       "ticker": "MOVI3",
-      "score_final": 78.764,
+      "score_final": 79.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 1.0068747963569615,
+      "momentum_bruto": 0.9912189572247921,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 16.57,
             "mma20": 12.3205,
-            "mma50": 9.3608,
+            "mma50": 9.3618,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -225,22 +177,70 @@
           "roic_bruto": 12.75
         },
         "momentum": {
-          "ret_1m": 1.11352,
-          "ret_3m": 0.900229,
-          "bruto": 1.006875,
-          "normalizado": 97.75,
-          "contribuicao_score": 48.8764
+          "ret_1m": 1.07125,
+          "ret_3m": 0.911188,
+          "bruto": 0.991219,
+          "normalizado": 97.78,
+          "contribuicao_score": 48.8889
         },
         "roe": {
           "bruto": 11.92,
-          "normalizado": 49.44,
-          "contribuicao_score": 14.8315,
+          "normalizado": 50.0,
+          "contribuicao_score": 15.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 29.14,
-          "normalizado": 75.28,
-          "contribuicao_score": 15.0562,
+          "normalizado": 75.56,
+          "contribuicao_score": 15.1111,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 4
+    },
+    {
+      "ticker": "TGMA3",
+      "score_final": 78.4444,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.44722559389890915,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 47.97,
+            "mma20": 40.6105,
+            "mma50": 36.85,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.14
+        },
+        "momentum": {
+          "ret_1m": 0.318944,
+          "ret_3m": 0.575507,
+          "bruto": 0.447226,
+          "normalizado": 84.44,
+          "contribuicao_score": 42.2222
+        },
+        "roe": {
+          "bruto": 26.13,
+          "normalizado": 86.67,
+          "contribuicao_score": 26.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.07,
+          "normalizado": 51.11,
+          "contribuicao_score": 10.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -249,19 +249,19 @@
     },
     {
       "ticker": "VAMO3",
-      "score_final": 77.5281,
+      "score_final": 77.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.753647381046989,
+      "momentum_bruto": 0.7456731393834698,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 5.67,
             "mma20": 4.904,
-            "mma50": 3.797,
+            "mma50": 3.7976,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -273,22 +273,22 @@
           "roic_bruto": 12.65
         },
         "momentum": {
-          "ret_1m": 0.712991,
-          "ret_3m": 0.794304,
-          "bruto": 0.753647,
-          "normalizado": 94.38,
-          "contribuicao_score": 47.191
+          "ret_1m": 0.702703,
+          "ret_3m": 0.788644,
+          "bruto": 0.745673,
+          "normalizado": 94.44,
+          "contribuicao_score": 47.2222
         },
         "roe": {
           "bruto": 11.81,
-          "normalizado": 47.19,
-          "contribuicao_score": 14.1573,
+          "normalizado": 47.78,
+          "contribuicao_score": 14.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 30.63,
-          "normalizado": 80.9,
-          "contribuicao_score": 16.1798,
+          "normalizado": 81.11,
+          "contribuicao_score": 16.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -297,7 +297,7 @@
     },
     {
       "ticker": "BMEB4",
-      "score_final": 75.3933,
+      "score_final": 75.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -324,19 +324,19 @@
           "ret_1m": 0.291611,
           "ret_3m": 0.32201,
           "bruto": 0.306811,
-          "normalizado": 66.29,
-          "contribuicao_score": 33.1461
+          "normalizado": 65.56,
+          "contribuicao_score": 32.7778
         },
         "roe": {
           "bruto": 26.89,
-          "normalizado": 87.64,
-          "contribuicao_score": 26.2921,
+          "normalizado": 87.78,
+          "contribuicao_score": 26.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 29.99,
-          "normalizado": 79.78,
-          "contribuicao_score": 15.9551,
+          "normalizado": 80.0,
+          "contribuicao_score": 16.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -345,19 +345,19 @@
     },
     {
       "ticker": "ARML3",
-      "score_final": 71.0674,
+      "score_final": 71.3889,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.692131641425094,
+      "momentum_bruto": 0.657253446444841,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 5.88,
             "mma20": 4.989,
-            "mma50": 4.1068,
+            "mma50": 4.1154,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -369,22 +369,22 @@
           "roic_bruto": 8.42
         },
         "momentum": {
-          "ret_1m": 0.56383,
-          "ret_3m": 0.820433,
-          "bruto": 0.692132,
-          "normalizado": 92.13,
-          "contribuicao_score": 46.0674
+          "ret_1m": 0.527273,
+          "ret_3m": 0.787234,
+          "bruto": 0.657253,
+          "normalizado": 92.22,
+          "contribuicao_score": 46.1111
         },
         "roe": {
           "bruto": 3.96,
-          "normalizado": 17.42,
-          "contribuicao_score": 5.2247,
+          "normalizado": 18.33,
+          "contribuicao_score": 5.5,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 76.15,
-          "normalizado": 98.88,
-          "contribuicao_score": 19.7753,
+          "normalizado": 98.89,
+          "contribuicao_score": 19.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -393,7 +393,7 @@
     },
     {
       "ticker": "ALLD3",
-      "score_final": 70.6742,
+      "score_final": 70.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -420,19 +420,19 @@
           "ret_1m": 0.449706,
           "ret_3m": 0.616738,
           "bruto": 0.533222,
-          "normalizado": 89.89,
-          "contribuicao_score": 44.9438
+          "normalizado": 90.0,
+          "contribuicao_score": 45.0
         },
         "roe": {
           "bruto": 22.27,
-          "normalizado": 82.02,
-          "contribuicao_score": 24.6067,
+          "normalizado": 82.22,
+          "contribuicao_score": 24.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 3.11,
-          "normalizado": 5.62,
-          "contribuicao_score": 1.1236,
+          "normalizado": 5.56,
+          "contribuicao_score": 1.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -441,7 +441,7 @@
     },
     {
       "ticker": "FLRY3",
-      "score_final": 69.7753,
+      "score_final": 70.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -468,19 +468,19 @@
           "ret_1m": 0.269789,
           "ret_3m": 0.670119,
           "bruto": 0.469954,
-          "normalizado": 85.39,
-          "contribuicao_score": 42.6966
+          "normalizado": 86.67,
+          "contribuicao_score": 43.3333
         },
         "roe": {
           "bruto": 12.25,
-          "normalizado": 50.56,
-          "contribuicao_score": 15.1685,
+          "normalizado": 51.11,
+          "contribuicao_score": 15.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 22.78,
-          "normalizado": 59.55,
-          "contribuicao_score": 11.9101,
+          "normalizado": 60.0,
+          "contribuicao_score": 12.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -489,19 +489,19 @@
     },
     {
       "ticker": "AZZA3",
-      "score_final": 69.7753,
+      "score_final": 70.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.39611435337627177,
+      "momentum_bruto": 0.40781372885693734,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 23.4,
             "mma20": 19.7475,
-            "mma50": 17.3448,
+            "mma50": 17.3218,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -513,22 +513,22 @@
           "roic_bruto": 1.51
         },
         "momentum": {
-          "ret_1m": 0.529412,
-          "ret_3m": 0.262817,
-          "bruto": 0.396114,
-          "normalizado": 78.65,
-          "contribuicao_score": 39.3258
+          "ret_1m": 0.556886,
+          "ret_3m": 0.258741,
+          "bruto": 0.407814,
+          "normalizado": 78.89,
+          "contribuicao_score": 39.4444
         },
         "roe": {
           "bruto": 10.39,
-          "normalizado": 37.08,
-          "contribuicao_score": 11.1236,
+          "normalizado": 37.78,
+          "contribuicao_score": 11.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 49.34,
-          "normalizado": 96.63,
-          "contribuicao_score": 19.3258,
+          "normalizado": 96.67,
+          "contribuicao_score": 19.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -536,56 +536,8 @@
       "rank": 11
     },
     {
-      "ticker": "CYRE3",
-      "score_final": 69.7753,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.34914502608384124,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 32.2,
-            "mma20": 29.8555,
-            "mma50": 26.1322,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 10.64
-        },
-        "momentum": {
-          "ret_1m": 0.209617,
-          "ret_3m": 0.488673,
-          "bruto": 0.349145,
-          "normalizado": 73.03,
-          "contribuicao_score": 36.5169
-        },
-        "roe": {
-          "bruto": 18.6,
-          "normalizado": 74.16,
-          "contribuicao_score": 22.2472,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 19.77,
-          "normalizado": 55.06,
-          "contribuicao_score": 11.0112,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 12
-    },
-    {
       "ticker": "CSED3",
-      "score_final": 69.1011,
+      "score_final": 69.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -612,19 +564,67 @@
           "ret_1m": 0.238007,
           "ret_3m": 0.711735,
           "bruto": 0.474871,
-          "normalizado": 86.52,
-          "contribuicao_score": 43.2584
+          "normalizado": 87.78,
+          "contribuicao_score": 43.8889
         },
         "roe": {
           "bruto": 16.46,
-          "normalizado": 67.42,
-          "contribuicao_score": 20.2247,
+          "normalizado": 67.78,
+          "contribuicao_score": 20.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 9.51,
-          "normalizado": 28.09,
-          "contribuicao_score": 5.618,
+          "normalizado": 27.78,
+          "contribuicao_score": 5.5556,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 12
+    },
+    {
+      "ticker": "CYRE3",
+      "score_final": 69.5556,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.34914502608384124,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 32.2,
+            "mma20": 29.8555,
+            "mma50": 26.1322,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.64
+        },
+        "momentum": {
+          "ret_1m": 0.209617,
+          "ret_3m": 0.488673,
+          "bruto": 0.349145,
+          "normalizado": 72.22,
+          "contribuicao_score": 36.1111
+        },
+        "roe": {
+          "bruto": 18.6,
+          "normalizado": 74.44,
+          "contribuicao_score": 22.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 19.77,
+          "normalizado": 55.56,
+          "contribuicao_score": 11.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -633,19 +633,19 @@
     },
     {
       "ticker": "ANIM3",
-      "score_final": 68.764,
+      "score_final": 68.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 1.0788379743056487,
+      "momentum_bruto": 1.0036404432726576,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 5.1,
             "mma20": 3.7795,
-            "mma50": 3.0374,
+            "mma50": 3.0516,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -658,21 +658,21 @@
         },
         "momentum": {
           "ret_1m": 0.740614,
-          "ret_3m": 1.417062,
-          "bruto": 1.078838,
-          "normalizado": 100.0,
-          "contribuicao_score": 50.0
+          "ret_3m": 1.266667,
+          "bruto": 1.00364,
+          "normalizado": 98.89,
+          "contribuicao_score": 49.4444
         },
         "roe": {
           "bruto": 5.62,
-          "normalizado": 21.35,
-          "contribuicao_score": 6.4045,
+          "normalizado": 22.22,
+          "contribuicao_score": 6.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 23.12,
-          "normalizado": 61.8,
-          "contribuicao_score": 12.3596,
+          "normalizado": 62.22,
+          "contribuicao_score": 12.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -680,56 +680,8 @@
       "rank": 14
     },
     {
-      "ticker": "RIAA3",
-      "score_final": 68.6517,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.31015659891389147,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 10.0,
-            "mma20": 8.2112,
-            "mma50": 7.5447,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 26.65
-        },
-        "momentum": {
-          "ret_1m": 0.432665,
-          "ret_3m": 0.187648,
-          "bruto": 0.310157,
-          "normalizado": 69.66,
-          "contribuicao_score": 34.8315
-        },
-        "roe": {
-          "bruto": 28.33,
-          "normalizado": 91.01,
-          "contribuicao_score": 27.3034,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 10.94,
-          "normalizado": 32.58,
-          "contribuicao_score": 6.5169,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 15
-    },
-    {
       "ticker": "SIMH3",
-      "score_final": 67.6404,
+      "score_final": 68.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -756,19 +708,67 @@
           "ret_1m": 0.900393,
           "ret_3m": 0.923077,
           "bruto": 0.911735,
-          "normalizado": 96.63,
-          "contribuicao_score": 48.3146
+          "normalizado": 96.67,
+          "contribuicao_score": 48.3333
         },
         "roe": {
           "bruto": -2.1,
-          "normalizado": 6.74,
-          "contribuicao_score": 2.0225,
+          "normalizado": 7.78,
+          "contribuicao_score": 2.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 34.72,
-          "normalizado": 86.52,
-          "contribuicao_score": 17.3034,
+          "normalizado": 86.67,
+          "contribuicao_score": 17.3333,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 15
+    },
+    {
+      "ticker": "RIAA3",
+      "score_final": 67.8889,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.32451744540186167,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 10.0,
+            "mma20": 8.1938,
+            "mma50": 7.483,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 26.65
+        },
+        "momentum": {
+          "ret_1m": 0.422277,
+          "ret_3m": 0.226757,
+          "bruto": 0.324517,
+          "normalizado": 67.78,
+          "contribuicao_score": 33.8889
+        },
+        "roe": {
+          "bruto": 28.33,
+          "normalizado": 91.11,
+          "contribuicao_score": 27.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.94,
+          "normalizado": 33.33,
+          "contribuicao_score": 6.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -777,19 +777,19 @@
     },
     {
       "ticker": "BMOB3",
-      "score_final": 67.5281,
+      "score_final": 66.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.24461419814440233,
+      "momentum_bruto": 0.24769419626980604,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 31.83,
             "mma20": 29.7405,
-            "mma50": 26.516,
+            "mma50": 26.5941,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -801,22 +801,22 @@
           "roic_bruto": 12.15
         },
         "momentum": {
-          "ret_1m": 0.151175,
-          "ret_3m": 0.338053,
-          "bruto": 0.244614,
-          "normalizado": 56.18,
-          "contribuicao_score": 28.0899
+          "ret_1m": 0.159563,
+          "ret_3m": 0.335826,
+          "bruto": 0.247694,
+          "normalizado": 54.44,
+          "contribuicao_score": 27.2222
         },
         "roe": {
           "bruto": 16.39,
-          "normalizado": 66.29,
-          "contribuicao_score": 19.8876,
+          "normalizado": 66.67,
+          "contribuicao_score": 20.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 58.14,
-          "normalizado": 97.75,
-          "contribuicao_score": 19.5506,
+          "normalizado": 97.78,
+          "contribuicao_score": 19.5556,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -825,19 +825,19 @@
     },
     {
       "ticker": "INTB3",
-      "score_final": 65.3933,
+      "score_final": 64.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3090054148511987,
+      "momentum_bruto": 0.30834487251282505,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 18.21,
-            "mma20": 16.1814,
-            "mma50": 15.2426,
+            "mma20": 16.1784,
+            "mma50": 15.1974,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -849,22 +849,22 @@
           "roic_bruto": 11.86
         },
         "momentum": {
-          "ret_1m": 0.23207,
-          "ret_3m": 0.385941,
-          "bruto": 0.309005,
-          "normalizado": 68.54,
-          "contribuicao_score": 34.2697
+          "ret_1m": 0.219821,
+          "ret_3m": 0.396869,
+          "bruto": 0.308345,
+          "normalizado": 66.67,
+          "contribuicao_score": 33.3333
         },
         "roe": {
           "bruto": 18.29,
-          "normalizado": 73.03,
-          "contribuicao_score": 21.9101,
+          "normalizado": 73.33,
+          "contribuicao_score": 22.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 15.88,
-          "normalizado": 46.07,
-          "contribuicao_score": 9.2135,
+          "normalizado": 46.67,
+          "contribuicao_score": 9.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -873,7 +873,7 @@
     },
     {
       "ticker": "ALPA4",
-      "score_final": 64.8315,
+      "score_final": 64.4444,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -900,19 +900,19 @@
           "ret_1m": 0.351474,
           "ret_3m": 0.476466,
           "bruto": 0.41397,
-          "normalizado": 82.02,
-          "contribuicao_score": 41.0112
+          "normalizado": 81.11,
+          "contribuicao_score": 40.5556
         },
         "roe": {
           "bruto": 17.9,
-          "normalizado": 71.91,
-          "contribuicao_score": 21.573,
+          "normalizado": 72.22,
+          "contribuicao_score": 21.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 6.29,
-          "normalizado": 11.24,
-          "contribuicao_score": 2.2472,
+          "normalizado": 11.11,
+          "contribuicao_score": 2.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -920,56 +920,8 @@
       "rank": 19
     },
     {
-      "ticker": "SEER3",
-      "score_final": 64.1573,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.33022322393119663,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 16.8,
-            "mma20": 15.212,
-            "mma50": 13.355,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 19.39
-        },
-        "momentum": {
-          "ret_1m": 0.196581,
-          "ret_3m": 0.463865,
-          "bruto": 0.330223,
-          "normalizado": 71.91,
-          "contribuicao_score": 35.9551
-        },
-        "roe": {
-          "bruto": 17.4,
-          "normalizado": 68.54,
-          "contribuicao_score": 20.5618,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 12.13,
-          "normalizado": 38.2,
-          "contribuicao_score": 7.6404,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 20
-    },
-    {
       "ticker": "JSLG3",
-      "score_final": 63.8202,
+      "score_final": 64.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -996,19 +948,67 @@
           "ret_1m": 0.696284,
           "ret_3m": 0.898734,
           "bruto": 0.797509,
-          "normalizado": 95.51,
-          "contribuicao_score": 47.7528
+          "normalizado": 95.56,
+          "contribuicao_score": 47.7778
         },
         "roe": {
           "bruto": -8.15,
-          "normalizado": 5.62,
-          "contribuicao_score": 1.6854,
+          "normalizado": 6.67,
+          "contribuicao_score": 2.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 27.81,
-          "normalizado": 71.91,
-          "contribuicao_score": 14.382,
+          "normalizado": 72.22,
+          "contribuicao_score": 14.4444,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 20
+    },
+    {
+      "ticker": "SEER3",
+      "score_final": 63.4444,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.32795056371981623,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 16.8,
+            "mma20": 15.212,
+            "mma50": 13.3978,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 19.39
+        },
+        "momentum": {
+          "ret_1m": 0.195729,
+          "ret_3m": 0.460172,
+          "bruto": 0.327951,
+          "normalizado": 70.0,
+          "contribuicao_score": 35.0
+        },
+        "roe": {
+          "bruto": 17.4,
+          "normalizado": 68.89,
+          "contribuicao_score": 20.6667,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 12.13,
+          "normalizado": 38.89,
+          "contribuicao_score": 7.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -1016,8 +1016,56 @@
       "rank": 21
     },
     {
+      "ticker": "CEAB3",
+      "score_final": 62.1111,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.3252305712968091,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 12.56,
+            "mma20": 10.934,
+            "mma50": 9.5126,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 16.9
+        },
+        "momentum": {
+          "ret_1m": 0.362256,
+          "ret_3m": 0.288205,
+          "bruto": 0.325231,
+          "normalizado": 68.89,
+          "contribuicao_score": 34.4444
+        },
+        "roe": {
+          "bruto": 15.79,
+          "normalizado": 63.33,
+          "contribuicao_score": 19.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 14.34,
+          "normalizado": 43.33,
+          "contribuicao_score": 8.6667,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 22
+    },
+    {
       "ticker": "TRIS3",
-      "score_final": 62.0225,
+      "score_final": 61.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1044,40 +1092,136 @@
           "ret_1m": 0.262948,
           "ret_3m": 0.553922,
           "bruto": 0.408435,
-          "normalizado": 80.9,
-          "contribuicao_score": 40.4494
+          "normalizado": 80.0,
+          "contribuicao_score": 40.0
         },
         "roe": {
           "bruto": 12.92,
-          "normalizado": 53.93,
-          "contribuicao_score": 16.1798,
+          "normalizado": 54.44,
+          "contribuicao_score": 16.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 9.42,
-          "normalizado": 26.97,
-          "contribuicao_score": 5.3933,
+          "normalizado": 26.67,
+          "contribuicao_score": 5.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 22
+      "rank": 23
     },
     {
-      "ticker": "EZTC3",
-      "score_final": 61.3483,
+      "ticker": "PGMN3",
+      "score_final": 61.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.44400269285252014,
+      "momentum_bruto": 0.41886791070077756,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 5.13,
+            "mma20": 4.258,
+            "mma50": 3.8228,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 14.93
+        },
+        "momentum": {
+          "ret_1m": 0.346457,
+          "ret_3m": 0.491279,
+          "bruto": 0.418868,
+          "normalizado": 82.22,
+          "contribuicao_score": 41.1111
+        },
+        "roe": {
+          "bruto": 9.19,
+          "normalizado": 34.44,
+          "contribuicao_score": 10.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 16.8,
+          "normalizado": 48.89,
+          "contribuicao_score": 9.7778,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 24
+    },
+    {
+      "ticker": "MDNE3",
+      "score_final": 61.1111,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.1672805419163964,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 28.96,
+            "mma20": 27.441,
+            "mma50": 25.6764,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 15.01
+        },
+        "momentum": {
+          "ret_1m": 0.163987,
+          "ret_3m": 0.170574,
+          "bruto": 0.167281,
+          "normalizado": 36.67,
+          "contribuicao_score": 18.3333
+        },
+        "roe": {
+          "bruto": 23.93,
+          "normalizado": 83.33,
+          "contribuicao_score": 25.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 35.64,
+          "normalizado": 88.89,
+          "contribuicao_score": 17.7778,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 25
+    },
+    {
+      "ticker": "EZTC3",
+      "score_final": 61.0,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.434244900224524,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 18.05,
             "mma20": 15.7845,
-            "mma50": 13.3568,
+            "mma50": 13.393,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -1089,79 +1233,31 @@
           "roic_bruto": 5.59
         },
         "momentum": {
-          "ret_1m": 0.377862,
-          "ret_3m": 0.510143,
-          "bruto": 0.444003,
-          "normalizado": 84.27,
-          "contribuicao_score": 42.1348
+          "ret_1m": 0.35206,
+          "ret_3m": 0.51643,
+          "bruto": 0.434245,
+          "normalizado": 83.33,
+          "contribuicao_score": 41.6667
         },
         "roe": {
           "bruto": 10.89,
-          "normalizado": 43.82,
-          "contribuicao_score": 13.1461,
+          "normalizado": 44.44,
+          "contribuicao_score": 13.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 9.86,
-          "normalizado": 30.34,
-          "contribuicao_score": 6.0674,
+          "normalizado": 30.0,
+          "contribuicao_score": 6.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 23
-    },
-    {
-      "ticker": "CEAB3",
-      "score_final": 61.1236,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3074443179548296,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 12.56,
-            "mma20": 10.934,
-            "mma50": 9.5216,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 16.9
-        },
-        "momentum": {
-          "ret_1m": 0.356372,
-          "ret_3m": 0.258517,
-          "bruto": 0.307444,
-          "normalizado": 67.42,
-          "contribuicao_score": 33.7079
-        },
-        "roe": {
-          "bruto": 15.79,
-          "normalizado": 62.92,
-          "contribuicao_score": 18.8764,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 14.34,
-          "normalizado": 42.7,
-          "contribuicao_score": 8.5393,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 24
+      "rank": 26
     },
     {
       "ticker": "FIQE3",
-      "score_final": 59.1011,
+      "score_final": 59.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1188,76 +1284,28 @@
           "ret_1m": 0.221135,
           "ret_3m": 0.131991,
           "bruto": 0.176563,
-          "normalizado": 38.2,
-          "contribuicao_score": 19.1011
+          "normalizado": 37.78,
+          "contribuicao_score": 18.8889
         },
         "roe": {
           "bruto": 19.07,
-          "normalizado": 76.4,
-          "contribuicao_score": 22.9213,
+          "normalizado": 76.67,
+          "contribuicao_score": 23.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 32.89,
-          "normalizado": 85.39,
-          "contribuicao_score": 17.0787,
+          "normalizado": 85.56,
+          "contribuicao_score": 17.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 25
-    },
-    {
-      "ticker": "PGMN3",
-      "score_final": 58.5393,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3926493407260634,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 5.13,
-            "mma20": 4.258,
-            "mma50": 3.8184,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 14.93
-        },
-        "momentum": {
-          "ret_1m": 0.315385,
-          "ret_3m": 0.469914,
-          "bruto": 0.392649,
-          "normalizado": 77.53,
-          "contribuicao_score": 38.764
-        },
-        "roe": {
-          "bruto": 9.19,
-          "normalizado": 33.71,
-          "contribuicao_score": 10.1124,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 16.8,
-          "normalizado": 48.31,
-          "contribuicao_score": 9.6629,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 26
+      "rank": 27
     },
     {
       "ticker": "GGPS3",
-      "score_final": 58.3146,
+      "score_final": 58.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1284,67 +1332,19 @@
           "ret_1m": 0.184816,
           "ret_3m": 0.232057,
           "bruto": 0.208437,
-          "normalizado": 48.31,
-          "contribuicao_score": 24.1573
+          "normalizado": 47.78,
+          "contribuicao_score": 23.8889
         },
         "roe": {
           "bruto": 16.03,
-          "normalizado": 65.17,
-          "contribuicao_score": 19.5506,
+          "normalizado": 65.56,
+          "contribuicao_score": 19.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 28.45,
-          "normalizado": 73.03,
-          "contribuicao_score": 14.6067,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 27
-    },
-    {
-      "ticker": "LEVE3",
-      "score_final": 58.2022,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.162150621994804,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 37.2,
-            "mma20": 35.05,
-            "mma50": 33.535,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 21.45
-        },
-        "momentum": {
-          "ret_1m": 0.147086,
-          "ret_3m": 0.177215,
-          "bruto": 0.162151,
-          "normalizado": 35.96,
-          "contribuicao_score": 17.9775
-        },
-        "roe": {
-          "bruto": 62.01,
-          "normalizado": 98.88,
-          "contribuicao_score": 29.6629,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 17.61,
-          "normalizado": 52.81,
-          "contribuicao_score": 10.5618,
+          "normalizado": 73.33,
+          "contribuicao_score": 14.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -1353,12 +1353,12 @@
     },
     {
       "ticker": "JHSF3",
-      "score_final": 57.3034,
+      "score_final": 57.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1593785096650191,
+      "momentum_bruto": 0.15937845594839006,
       "fatores": {
         "filtro_f1": {
           "passou": true,
@@ -1379,20 +1379,20 @@
         "momentum": {
           "ret_1m": 0.110465,
           "ret_3m": 0.208292,
-          "bruto": 0.159379,
-          "normalizado": 34.83,
-          "contribuicao_score": 17.4157
+          "bruto": 0.159378,
+          "normalizado": 34.44,
+          "contribuicao_score": 17.2222
         },
         "roe": {
           "bruto": 27.12,
-          "normalizado": 88.76,
-          "contribuicao_score": 26.6292,
+          "normalizado": 88.89,
+          "contribuicao_score": 26.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 24.34,
-          "normalizado": 66.29,
-          "contribuicao_score": 13.2584,
+          "normalizado": 66.67,
+          "contribuicao_score": 13.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -1400,20 +1400,20 @@
       "rank": 29
     },
     {
-      "ticker": "MDNE3",
-      "score_final": 57.3034,
+      "ticker": "RAPT4",
+      "score_final": 57.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.14557837978377886,
+      "momentum_bruto": 0.5225209845378187,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 28.96,
-            "mma20": 27.441,
-            "mma50": 25.7062,
+            "preco_atual": 7.49,
+            "mma20": 5.9775,
+            "mma50": 5.3084,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -1422,25 +1422,25 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 15.01
+          "roic_bruto": 5.81
         },
         "momentum": {
-          "ret_1m": 0.142406,
-          "ret_3m": 0.148751,
-          "bruto": 0.145578,
-          "normalizado": 29.21,
-          "contribuicao_score": 14.6067
+          "ret_1m": 0.471513,
+          "ret_3m": 0.573529,
+          "bruto": 0.522521,
+          "normalizado": 88.89,
+          "contribuicao_score": 44.4444
         },
         "roe": {
-          "bruto": 23.93,
-          "normalizado": 83.15,
-          "contribuicao_score": 24.9438,
+          "bruto": -9.35,
+          "normalizado": 5.56,
+          "contribuicao_score": 1.6667,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 35.64,
-          "normalizado": 88.76,
-          "contribuicao_score": 17.7528,
+          "bruto": 19.64,
+          "normalizado": 54.44,
+          "contribuicao_score": 10.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -1448,8 +1448,56 @@
       "rank": 30
     },
     {
+      "ticker": "LEVE3",
+      "score_final": 57.0,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.15873917664167714,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 37.2,
+            "mma20": 35.05,
+            "mma50": 33.546,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 21.45
+        },
+        "momentum": {
+          "ret_1m": 0.132765,
+          "ret_3m": 0.184713,
+          "bruto": 0.158739,
+          "normalizado": 33.33,
+          "contribuicao_score": 16.6667
+        },
+        "roe": {
+          "bruto": 62.01,
+          "normalizado": 98.89,
+          "contribuicao_score": 29.6667,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.61,
+          "normalizado": 53.33,
+          "contribuicao_score": 10.6667,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 31
+    },
+    {
       "ticker": "BRSR6",
-      "score_final": 56.8539,
+      "score_final": 56.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1476,67 +1524,19 @@
           "ret_1m": 0.153744,
           "ret_3m": 0.27909,
           "bruto": 0.216417,
-          "normalizado": 50.56,
-          "contribuicao_score": 25.2809
+          "normalizado": 50.0,
+          "contribuicao_score": 25.0
         },
         "roe": {
           "bruto": 15.11,
-          "normalizado": 61.8,
-          "contribuicao_score": 18.5393,
+          "normalizado": 62.22,
+          "contribuicao_score": 18.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 24.08,
-          "normalizado": 65.17,
-          "contribuicao_score": 13.0337,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 31
-    },
-    {
-      "ticker": "RAPT4",
-      "score_final": 56.5169,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.5192290855455242,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 7.49,
-            "mma20": 5.9775,
-            "mma50": 5.31,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 5.81
-        },
-        "momentum": {
-          "ret_1m": 0.471513,
-          "ret_3m": 0.566945,
-          "bruto": 0.519229,
-          "normalizado": 88.76,
-          "contribuicao_score": 44.382
-        },
-        "roe": {
-          "bruto": -9.35,
-          "normalizado": 4.49,
-          "contribuicao_score": 1.3483,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 19.64,
-          "normalizado": 53.93,
-          "contribuicao_score": 10.7865,
+          "normalizado": 65.56,
+          "contribuicao_score": 13.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -1544,56 +1544,8 @@
       "rank": 32
     },
     {
-      "ticker": "VIVA3",
-      "score_final": 56.2921,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.18206495469422834,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 26.69,
-            "mma20": 25.2975,
-            "mma50": 23.318,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 19.59
-        },
-        "momentum": {
-          "ret_1m": 0.174736,
-          "ret_3m": 0.189394,
-          "bruto": 0.182065,
-          "normalizado": 40.45,
-          "contribuicao_score": 20.2247
-        },
-        "roe": {
-          "bruto": 19.31,
-          "normalizado": 77.53,
-          "contribuicao_score": 23.2584,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 23.64,
-          "normalizado": 64.04,
-          "contribuicao_score": 12.809,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 33
-    },
-    {
       "ticker": "FRAS3",
-      "score_final": 55.5618,
+      "score_final": 56.0556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1620,40 +1572,40 @@
           "ret_1m": 0.184222,
           "ret_3m": 0.357946,
           "bruto": 0.271084,
-          "normalizado": 59.55,
-          "contribuicao_score": 29.7753
+          "normalizado": 60.0,
+          "contribuicao_score": 30.0
         },
         "roe": {
           "bruto": 10.53,
-          "normalizado": 38.76,
-          "contribuicao_score": 11.6292,
+          "normalizado": 39.44,
+          "contribuicao_score": 11.8333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 26.87,
-          "normalizado": 70.79,
-          "contribuicao_score": 14.1573,
+          "normalizado": 71.11,
+          "contribuicao_score": 14.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 34
+      "rank": 33
     },
     {
-      "ticker": "GMAT3",
-      "score_final": 55.3933,
+      "ticker": "VIVA3",
+      "score_final": 55.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.19378812150870872,
+      "momentum_bruto": 0.18206495469422834,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 5.17,
-            "mma20": 5.1275,
-            "mma50": 4.6878,
+            "preco_atual": 26.69,
+            "mma20": 25.2975,
+            "mma50": 23.318,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -1662,34 +1614,34 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 10.52
+          "roic_bruto": 19.59
         },
         "momentum": {
-          "ret_1m": 0.055102,
-          "ret_3m": 0.332474,
-          "bruto": 0.193788,
-          "normalizado": 44.94,
-          "contribuicao_score": 22.4719
+          "ret_1m": 0.174736,
+          "ret_3m": 0.189394,
+          "bruto": 0.182065,
+          "normalizado": 38.89,
+          "contribuicao_score": 19.4444
         },
         "roe": {
-          "bruto": 15.83,
-          "normalizado": 64.04,
-          "contribuicao_score": 19.2135,
+          "bruto": 19.31,
+          "normalizado": 77.78,
+          "contribuicao_score": 23.3333,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 25.39,
-          "normalizado": 68.54,
-          "contribuicao_score": 13.7079,
+          "bruto": 23.64,
+          "normalizado": 64.44,
+          "contribuicao_score": 12.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 35
+      "rank": 34
     },
     {
       "ticker": "MGLU3",
-      "score_final": 54.7191,
+      "score_final": 55.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1716,19 +1668,67 @@
           "ret_1m": 0.87037,
           "ret_3m": 1.25813,
           "bruto": 1.06425,
-          "normalizado": 98.88,
-          "contribuicao_score": 49.4382
+          "normalizado": 100.0,
+          "contribuicao_score": 50.0
         },
         "roe": {
           "bruto": 1.21,
-          "normalizado": 12.36,
-          "contribuicao_score": 3.7079,
+          "normalizado": 13.33,
+          "contribuicao_score": 4.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 5.81,
-          "normalizado": 7.87,
-          "contribuicao_score": 1.573,
+          "normalizado": 7.78,
+          "contribuicao_score": 1.5556,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 35
+    },
+    {
+      "ticker": "GMAT3",
+      "score_final": 55.3333,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.19378812150870872,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 5.17,
+            "mma20": 5.1275,
+            "mma50": 4.6878,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.52
+        },
+        "momentum": {
+          "ret_1m": 0.055102,
+          "ret_3m": 0.332474,
+          "bruto": 0.193788,
+          "normalizado": 44.44,
+          "contribuicao_score": 22.2222
+        },
+        "roe": {
+          "bruto": 15.83,
+          "normalizado": 64.44,
+          "contribuicao_score": 19.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 25.39,
+          "normalizado": 68.89,
+          "contribuicao_score": 13.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -1736,8 +1736,152 @@
       "rank": 36
     },
     {
+      "ticker": "RECV3",
+      "score_final": 54.5556,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.19342936805855815,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 12.5,
+            "mma20": 11.424,
+            "mma50": 11.0257,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.27
+        },
+        "momentum": {
+          "ret_1m": 0.132246,
+          "ret_3m": 0.254612,
+          "bruto": 0.193429,
+          "normalizado": 43.33,
+          "contribuicao_score": 21.6667
+        },
+        "roe": {
+          "bruto": 12.74,
+          "normalizado": 53.33,
+          "contribuicao_score": 16.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 32.0,
+          "normalizado": 84.44,
+          "contribuicao_score": 16.8889,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 37
+    },
+    {
+      "ticker": "IGTI11",
+      "score_final": 54.1111,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.23459791794061136,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 31.36,
+            "mma20": 28.9475,
+            "mma50": 26.3409,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.37
+        },
+        "momentum": {
+          "ret_1m": 0.219129,
+          "ret_3m": 0.250067,
+          "bruto": 0.234598,
+          "normalizado": 52.22,
+          "contribuicao_score": 26.1111
+        },
+        "roe": {
+          "bruto": 14.63,
+          "normalizado": 60.0,
+          "contribuicao_score": 18.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.05,
+          "normalizado": 50.0,
+          "contribuicao_score": 10.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 38
+    },
+    {
+      "ticker": "BMGB4",
+      "score_final": 53.6667,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.2672752297345171,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 6.95,
+            "mma20": 6.5115,
+            "mma50": 5.8423,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": 0.15257,
+          "ret_3m": 0.38198,
+          "bruto": 0.267275,
+          "normalizado": 58.89,
+          "contribuicao_score": 29.4444
+        },
+        "roe": {
+          "bruto": 11.89,
+          "normalizado": 48.89,
+          "contribuicao_score": 14.6667,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 16.75,
+          "normalizado": 47.78,
+          "contribuicao_score": 9.5556,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 39
+    },
+    {
       "ticker": "ABCB4",
-      "score_final": 53.9326,
+      "score_final": 53.3333,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1764,76 +1908,28 @@
           "ret_1m": 0.162206,
           "ret_3m": 0.219056,
           "bruto": 0.190631,
-          "normalizado": 43.82,
-          "contribuicao_score": 21.9101
+          "normalizado": 42.22,
+          "contribuicao_score": 21.1111
         },
         "roe": {
           "bruto": 14.08,
-          "normalizado": 57.3,
-          "contribuicao_score": 17.191,
+          "normalizado": 57.78,
+          "contribuicao_score": 17.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 28.96,
-          "normalizado": 74.16,
-          "contribuicao_score": 14.8315,
+          "normalizado": 74.44,
+          "contribuicao_score": 14.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 37
-    },
-    {
-      "ticker": "IGTI11",
-      "score_final": 53.5955,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.22807065387581005,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 31.36,
-            "mma20": 29.0675,
-            "mma50": 26.4674,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 13.37
-        },
-        "momentum": {
-          "ret_1m": 0.212684,
-          "ret_3m": 0.243458,
-          "bruto": 0.228071,
-          "normalizado": 51.69,
-          "contribuicao_score": 25.8427
-        },
-        "roe": {
-          "bruto": 14.63,
-          "normalizado": 59.55,
-          "contribuicao_score": 17.8652,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 17.05,
-          "normalizado": 49.44,
-          "contribuicao_score": 9.8876,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 38
+      "rank": 40
     },
     {
       "ticker": "CURY3",
-      "score_final": 52.4719,
+      "score_final": 52.4444,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1860,8 +1956,8 @@
           "ret_1m": 0.015097,
           "ret_3m": 0.028457,
           "bruto": 0.021777,
-          "normalizado": 8.99,
-          "contribuicao_score": 4.4944
+          "normalizado": 8.89,
+          "contribuicao_score": 4.4444
         },
         "roe": {
           "bruto": 68.95,
@@ -1871,65 +1967,17 @@
         },
         "cagr_receita": {
           "bruto": 36.37,
-          "normalizado": 89.89,
-          "contribuicao_score": 17.9775,
+          "normalizado": 90.0,
+          "contribuicao_score": 18.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 39
-    },
-    {
-      "ticker": "RECV3",
-      "score_final": 52.3596,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1769983556128194,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 12.5,
-            "mma20": 11.424,
-            "mma50": 10.9971,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 6.27
-        },
-        "momentum": {
-          "ret_1m": 0.099384,
-          "ret_3m": 0.254612,
-          "bruto": 0.176998,
-          "normalizado": 39.33,
-          "contribuicao_score": 19.6629
-        },
-        "roe": {
-          "bruto": 12.74,
-          "normalizado": 52.81,
-          "contribuicao_score": 15.8427,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 32.0,
-          "normalizado": 84.27,
-          "contribuicao_score": 16.8539,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 40
+      "rank": 41
     },
     {
       "ticker": "DASA3",
-      "score_final": 52.0225,
+      "score_final": 52.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -1956,40 +2004,40 @@
           "ret_1m": 0.646643,
           "ret_3m": 0.664286,
           "bruto": 0.655464,
-          "normalizado": 91.01,
-          "contribuicao_score": 45.5056
+          "normalizado": 91.11,
+          "contribuicao_score": 45.5556
         },
         "roe": {
           "bruto": -15.14,
-          "normalizado": 2.25,
-          "contribuicao_score": 0.6742,
+          "normalizado": 2.22,
+          "contribuicao_score": 0.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 9.67,
-          "normalizado": 29.21,
-          "contribuicao_score": 5.8427,
+          "normalizado": 28.89,
+          "contribuicao_score": 5.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 41
+      "rank": 42
     },
     {
-      "ticker": "VULC3",
-      "score_final": 52.0225,
+      "ticker": "YDUQ3",
+      "score_final": 51.8333,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.08359543833909377,
+      "momentum_bruto": 0.46734977450381987,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 15.07,
-            "mma20": 14.3635,
-            "mma50": 13.8482,
+            "preco_atual": 13.64,
+            "mma20": 12.0505,
+            "mma50": 10.0556,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -1998,46 +2046,94 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 12.76
+          "roic_bruto": 9.39
         },
         "momentum": {
-          "ret_1m": 0.122115,
-          "ret_3m": 0.045076,
-          "bruto": 0.083595,
-          "normalizado": 19.1,
-          "contribuicao_score": 9.5506
+          "ret_1m": 0.350495,
+          "ret_3m": 0.584205,
+          "bruto": 0.46735,
+          "normalizado": 85.56,
+          "contribuicao_score": 42.7778
         },
         "roe": {
-          "bruto": 45.47,
-          "normalizado": 96.63,
-          "contribuicao_score": 28.9888,
+          "bruto": 3.96,
+          "normalizado": 18.33,
+          "contribuicao_score": 5.5,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 24.73,
-          "normalizado": 67.42,
-          "contribuicao_score": 13.4831,
+          "bruto": 7.46,
+          "normalizado": 17.78,
+          "contribuicao_score": 3.5556,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 42
+      "rank": 43
     },
     {
-      "ticker": "CAML3",
-      "score_final": 51.236,
+      "ticker": "PNVL3",
+      "score_final": 51.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3826680811826175,
+      "momentum_bruto": 0.27519515682797835,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 15.22,
+            "mma20": 13.8119,
+            "mma50": 12.7363,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.54
+        },
+        "momentum": {
+          "ret_1m": 0.173222,
+          "ret_3m": 0.377169,
+          "bruto": 0.275195,
+          "normalizado": 63.33,
+          "contribuicao_score": 31.6667
+        },
+        "roe": {
+          "bruto": 10.18,
+          "normalizado": 36.67,
+          "contribuicao_score": 11.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 14.35,
+          "normalizado": 44.44,
+          "contribuicao_score": 8.8889,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 44
+    },
+    {
+      "ticker": "CAML3",
+      "score_final": 51.0,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.3739342963221256,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 6.44,
             "mma20": 5.8505,
-            "mma50": 5.2337,
+            "mma50": 5.2434,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -2050,117 +2146,21 @@
         },
         "momentum": {
           "ret_1m": 0.245648,
-          "ret_3m": 0.519688,
-          "bruto": 0.382668,
-          "normalizado": 76.4,
-          "contribuicao_score": 38.2022
+          "ret_3m": 0.502221,
+          "bruto": 0.373934,
+          "normalizado": 75.56,
+          "contribuicao_score": 37.7778
         },
         "roe": {
           "bruto": 7.72,
-          "normalizado": 29.21,
-          "contribuicao_score": 8.764,
+          "normalizado": 30.0,
+          "contribuicao_score": 9.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 8.28,
-          "normalizado": 21.35,
-          "contribuicao_score": 4.2697,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 43
-    },
-    {
-      "ticker": "PNVL3",
-      "score_final": 51.0112,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.2818090612619951,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 15.22,
-            "mma20": 13.8183,
-            "mma50": 12.7989,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.54
-        },
-        "momentum": {
-          "ret_1m": 0.176198,
-          "ret_3m": 0.38742,
-          "bruto": 0.281809,
-          "normalizado": 62.92,
-          "contribuicao_score": 31.4607
-        },
-        "roe": {
-          "bruto": 10.18,
-          "normalizado": 35.96,
-          "contribuicao_score": 10.7865,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 14.35,
-          "normalizado": 43.82,
-          "contribuicao_score": 8.764,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 44
-    },
-    {
-      "ticker": "BEEF3",
-      "score_final": 50.4494,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.08160893174267658,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 4.16,
-            "mma20": 4.138,
-            "mma50": 3.897,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 14.22
-        },
-        "momentum": {
-          "ret_1m": 0.029703,
-          "ret_3m": 0.133515,
-          "bruto": 0.081609,
-          "normalizado": 17.98,
-          "contribuicao_score": 8.9888
-        },
-        "roe": {
-          "bruto": 56.47,
-          "normalizado": 97.75,
-          "contribuicao_score": 29.3258,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 23.09,
-          "normalizado": 60.67,
-          "contribuicao_score": 12.1348,
+          "normalizado": 21.11,
+          "contribuicao_score": 4.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2168,152 +2168,8 @@
       "rank": 45
     },
     {
-      "ticker": "YDUQ3",
-      "score_final": 50.3933,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.4434144432030167,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 13.64,
-            "mma20": 12.0505,
-            "mma50": 10.0132,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 9.39
-        },
-        "momentum": {
-          "ret_1m": 0.343842,
-          "ret_3m": 0.542986,
-          "bruto": 0.443414,
-          "normalizado": 83.15,
-          "contribuicao_score": 41.573
-        },
-        "roe": {
-          "bruto": 3.96,
-          "normalizado": 17.42,
-          "contribuicao_score": 5.2247,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 7.46,
-          "normalizado": 17.98,
-          "contribuicao_score": 3.5955,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 46
-    },
-    {
-      "ticker": "BMGB4",
-      "score_final": 50.3371,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.23169004175460195,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 6.95,
-            "mma20": 6.5115,
-            "mma50": 5.8294,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": null
-        },
-        "momentum": {
-          "ret_1m": 0.128247,
-          "ret_3m": 0.335133,
-          "bruto": 0.23169,
-          "normalizado": 52.81,
-          "contribuicao_score": 26.4045
-        },
-        "roe": {
-          "bruto": 11.89,
-          "normalizado": 48.31,
-          "contribuicao_score": 14.4944,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 16.75,
-          "normalizado": 47.19,
-          "contribuicao_score": 9.4382,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 47
-    },
-    {
-      "ticker": "CSUD3",
-      "score_final": 50.2247,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.20044581768772696,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 16.89,
-            "mma20": 15.2196,
-            "mma50": 14.116,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 14.8
-        },
-        "momentum": {
-          "ret_1m": 0.226606,
-          "ret_3m": 0.174286,
-          "bruto": 0.200446,
-          "normalizado": 46.07,
-          "contribuicao_score": 23.0337
-        },
-        "roe": {
-          "bruto": 21.28,
-          "normalizado": 80.9,
-          "contribuicao_score": 24.2697,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 6.42,
-          "normalizado": 14.61,
-          "contribuicao_score": 2.9213,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 48
-    },
-    {
       "ticker": "PFRM3",
-      "score_final": 50.1124,
+      "score_final": 50.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -2340,19 +2196,163 @@
           "ret_1m": 0.238287,
           "ret_3m": 0.366322,
           "bruto": 0.302304,
-          "normalizado": 64.04,
-          "contribuicao_score": 32.0225
+          "normalizado": 64.44,
+          "contribuicao_score": 32.2222
         },
         "roe": {
           "bruto": 7.86,
-          "normalizado": 30.34,
-          "contribuicao_score": 9.1011,
+          "normalizado": 31.11,
+          "contribuicao_score": 9.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 15.87,
-          "normalizado": 44.94,
-          "contribuicao_score": 8.9888,
+          "normalizado": 45.56,
+          "contribuicao_score": 9.1111,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 46
+    },
+    {
+      "ticker": "BEEF3",
+      "score_final": 50.4444,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.09777775281741274,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 4.16,
+            "mma20": 4.138,
+            "mma50": 3.901,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 14.22
+        },
+        "momentum": {
+          "ret_1m": 0.04,
+          "ret_3m": 0.155556,
+          "bruto": 0.097778,
+          "normalizado": 17.78,
+          "contribuicao_score": 8.8889
+        },
+        "roe": {
+          "bruto": 56.47,
+          "normalizado": 97.78,
+          "contribuicao_score": 29.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 23.09,
+          "normalizado": 61.11,
+          "contribuicao_score": 12.2222,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 47
+    },
+    {
+      "ticker": "VULC3",
+      "score_final": 50.3333,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.0652304490447827,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 15.07,
+            "mma20": 14.3635,
+            "mma50": 13.837,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.76
+        },
+        "momentum": {
+          "ret_1m": 0.080287,
+          "ret_3m": 0.050174,
+          "bruto": 0.06523,
+          "normalizado": 15.56,
+          "contribuicao_score": 7.7778
+        },
+        "roe": {
+          "bruto": 45.47,
+          "normalizado": 96.67,
+          "contribuicao_score": 29.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 24.73,
+          "normalizado": 67.78,
+          "contribuicao_score": 13.5556,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 48
+    },
+    {
+      "ticker": "CSUD3",
+      "score_final": 50.0,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.20044581768772696,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 16.89,
+            "mma20": 15.2196,
+            "mma50": 14.116,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 14.8
+        },
+        "momentum": {
+          "ret_1m": 0.226606,
+          "ret_3m": 0.174286,
+          "bruto": 0.200446,
+          "normalizado": 45.56,
+          "contribuicao_score": 22.7778
+        },
+        "roe": {
+          "bruto": 21.28,
+          "normalizado": 81.11,
+          "contribuicao_score": 24.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 6.42,
+          "normalizado": 14.44,
+          "contribuicao_score": 2.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2361,19 +2361,19 @@
     },
     {
       "ticker": "GRND3",
-      "score_final": 49.6629,
+      "score_final": 49.4444,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.20165262503490133,
+      "momentum_bruto": 0.20329172884644142,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 4.5,
             "mma20": 4.091,
-            "mma50": 3.7694,
+            "mma50": 3.7719,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -2385,22 +2385,22 @@
           "roic_bruto": 8.21
         },
         "momentum": {
-          "ret_1m": 0.212938,
+          "ret_1m": 0.216216,
           "ret_3m": 0.190367,
-          "bruto": 0.201653,
-          "normalizado": 47.19,
-          "contribuicao_score": 23.5955
+          "bruto": 0.203292,
+          "normalizado": 46.67,
+          "contribuicao_score": 23.3333
         },
         "roe": {
           "bruto": 19.96,
-          "normalizado": 78.65,
-          "contribuicao_score": 23.5955,
+          "normalizado": 78.89,
+          "contribuicao_score": 23.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 6.38,
-          "normalizado": 12.36,
-          "contribuicao_score": 2.4719,
+          "normalizado": 12.22,
+          "contribuicao_score": 2.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2408,20 +2408,20 @@
       "rank": 50
     },
     {
-      "ticker": "AMER3",
-      "score_final": 49.4382,
+      "ticker": "KEPL3",
+      "score_final": 48.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3042409438771284,
+      "momentum_bruto": 0.15519796041224188,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 5.58,
-            "mma20": 5.53,
-            "mma50": 5.0052,
+            "preco_atual": 7.37,
+            "mma20": 6.8955,
+            "mma50": 6.5294,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -2430,25 +2430,25 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 4.51
+          "roic_bruto": 13.03
         },
         "momentum": {
-          "ret_1m": 0.120482,
-          "ret_3m": 0.488,
-          "bruto": 0.304241,
-          "normalizado": 65.17,
-          "contribuicao_score": 32.5843
+          "ret_1m": 0.149766,
+          "ret_3m": 0.16063,
+          "bruto": 0.155198,
+          "normalizado": 31.11,
+          "contribuicao_score": 15.5556
         },
         "roe": {
-          "bruto": 12.51,
-          "normalizado": 51.69,
-          "contribuicao_score": 15.5056,
+          "bruto": 18.67,
+          "normalizado": 75.56,
+          "contribuicao_score": 22.6667,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 3.98,
-          "normalizado": 6.74,
-          "contribuicao_score": 1.3483,
+          "bruto": 17.29,
+          "normalizado": 52.22,
+          "contribuicao_score": 10.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2457,7 +2457,7 @@
     },
     {
       "ticker": "MLAS3",
-      "score_final": 47.3034,
+      "score_final": 47.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -2484,19 +2484,19 @@
           "ret_1m": 0.307692,
           "ret_3m": 0.391813,
           "bruto": 0.349753,
-          "normalizado": 74.16,
-          "contribuicao_score": 37.0787
+          "normalizado": 73.33,
+          "contribuicao_score": 36.6667
         },
         "roe": {
           "bruto": 5.85,
-          "normalizado": 23.6,
-          "contribuicao_score": 7.0787,
+          "normalizado": 24.44,
+          "contribuicao_score": 7.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 6.65,
-          "normalizado": 15.73,
-          "contribuicao_score": 3.1461,
+          "normalizado": 15.56,
+          "contribuicao_score": 3.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2504,164 +2504,20 @@
       "rank": 52
     },
     {
-      "ticker": "KEPL3",
-      "score_final": 46.9663,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1417677032100566,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 7.37,
-            "mma20": 6.8955,
-            "mma50": 6.5272,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 13.03
-        },
-        "momentum": {
-          "ret_1m": 0.137346,
-          "ret_3m": 0.14619,
-          "bruto": 0.141768,
-          "normalizado": 28.09,
-          "contribuicao_score": 14.0449
-        },
-        "roe": {
-          "bruto": 18.67,
-          "normalizado": 75.28,
-          "contribuicao_score": 22.5843,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 17.29,
-          "normalizado": 51.69,
-          "contribuicao_score": 10.3371,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 53
-    },
-    {
-      "ticker": "DXCO3",
-      "score_final": 45.9551,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3996089357392385,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 7.44,
-            "mma20": 6.4465,
-            "mma50": 5.735,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 3.51
-        },
-        "momentum": {
-          "ret_1m": 0.360146,
-          "ret_3m": 0.439072,
-          "bruto": 0.399609,
-          "normalizado": 79.78,
-          "contribuicao_score": 39.8876
-        },
-        "roe": {
-          "bruto": 0.12,
-          "normalizado": 8.99,
-          "contribuicao_score": 2.6966,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 7.01,
-          "normalizado": 16.85,
-          "contribuicao_score": 3.3708,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 54
-    },
-    {
-      "ticker": "MILS3",
-      "score_final": 45.618,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.03086676032498148,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 16.1,
-            "mma20": 16.0135,
-            "mma50": 15.8262,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 16.42
-        },
-        "momentum": {
-          "ret_1m": 0.018987,
-          "ret_3m": 0.042746,
-          "bruto": 0.030867,
-          "normalizado": 10.11,
-          "contribuicao_score": 5.0562
-        },
-        "roe": {
-          "bruto": 24.19,
-          "normalizado": 84.27,
-          "contribuicao_score": 25.2809,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 29.41,
-          "normalizado": 76.4,
-          "contribuicao_score": 15.2809,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 55
-    },
-    {
       "ticker": "PLPL3",
-      "score_final": 45.2809,
+      "score_final": 47.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": -0.0012609957277243122,
+      "momentum_bruto": 0.008818871882097956,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 7.26,
             "mma20": 7.3995,
-            "mma50": 7.1536,
+            "mma50": 7.1362,
             "preco_acima_mma20": false,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -2673,22 +2529,166 @@
           "roic_bruto": 17.29
         },
         "momentum": {
-          "ret_1m": 0.081967,
-          "ret_3m": -0.084489,
-          "bruto": -0.001261,
-          "normalizado": 2.25,
-          "contribuicao_score": 1.1236
+          "ret_1m": 0.059854,
+          "ret_3m": -0.042216,
+          "bruto": 0.008819,
+          "normalizado": 5.56,
+          "contribuicao_score": 2.7778
         },
         "roe": {
           "bruto": 31.56,
-          "normalizado": 95.51,
-          "contribuicao_score": 28.6517,
+          "normalizado": 95.56,
+          "contribuicao_score": 28.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 29.5,
-          "normalizado": 77.53,
-          "contribuicao_score": 15.5056,
+          "normalizado": 77.78,
+          "contribuicao_score": 15.5556,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 53
+    },
+    {
+      "ticker": "MRVE3",
+      "score_final": 46.3333,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.40359167277605734,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 7.22,
+            "mma20": 6.057,
+            "mma50": 5.5412,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.45
+        },
+        "momentum": {
+          "ret_1m": 0.264448,
+          "ret_3m": 0.542735,
+          "bruto": 0.403592,
+          "normalizado": 77.78,
+          "contribuicao_score": 38.8889
+        },
+        "roe": {
+          "bruto": -14.6,
+          "normalizado": 3.33,
+          "contribuicao_score": 1.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.41,
+          "normalizado": 32.22,
+          "contribuicao_score": 6.4444,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 54
+    },
+    {
+      "ticker": "MILS3",
+      "score_final": 45.6667,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.029885196877794895,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 16.1,
+            "mma20": 16.0135,
+            "mma50": 15.8324,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 16.42
+        },
+        "momentum": {
+          "ret_1m": 0.017699,
+          "ret_3m": 0.042071,
+          "bruto": 0.029885,
+          "normalizado": 10.0,
+          "contribuicao_score": 5.0
+        },
+        "roe": {
+          "bruto": 24.19,
+          "normalizado": 84.44,
+          "contribuicao_score": 25.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 29.41,
+          "normalizado": 76.67,
+          "contribuicao_score": 15.3333,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 55
+    },
+    {
+      "ticker": "TFCO4",
+      "score_final": 45.6667,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.014399524394345553,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 13.8,
+            "mma20": 13.9022,
+            "mma50": 13.4437,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 21.23
+        },
+        "momentum": {
+          "ret_1m": 0.05397,
+          "ret_3m": -0.025171,
+          "bruto": 0.0144,
+          "normalizado": 6.67,
+          "contribuicao_score": 3.3333
+        },
+        "roe": {
+          "bruto": 24.39,
+          "normalizado": 85.56,
+          "contribuicao_score": 25.6667,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 31.38,
+          "normalizado": 83.33,
+          "contribuicao_score": 16.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2696,20 +2696,20 @@
       "rank": 56
     },
     {
-      "ticker": "BLAU3",
-      "score_final": 44.8315,
+      "ticker": "AMER3",
+      "score_final": 44.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.25788333027600685,
+      "momentum_bruto": 0.25438618495265664,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 12.21,
-            "mma20": 11.2515,
-            "mma50": 10.0841,
+            "preco_atual": 5.58,
+            "mma20": 5.53,
+            "mma50": 5.0096,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -2718,25 +2718,25 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 6.67
+          "roic_bruto": 4.51
         },
         "momentum": {
-          "ret_1m": 0.165749,
-          "ret_3m": 0.350017,
-          "bruto": 0.257883,
-          "normalizado": 57.3,
-          "contribuicao_score": 28.6517
+          "ret_1m": 0.113772,
+          "ret_3m": 0.395,
+          "bruto": 0.254386,
+          "normalizado": 55.56,
+          "contribuicao_score": 27.7778
         },
         "roe": {
-          "bruto": 10.63,
-          "normalizado": 40.45,
-          "contribuicao_score": 12.1348,
+          "bruto": 12.51,
+          "normalizado": 52.22,
+          "contribuicao_score": 15.6667,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 7.57,
-          "normalizado": 20.22,
-          "contribuicao_score": 4.0449,
+          "bruto": 3.98,
+          "normalizado": 6.67,
+          "contribuicao_score": 1.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2744,56 +2744,8 @@
       "rank": 57
     },
     {
-      "ticker": "SHUL4",
-      "score_final": 44.8315,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1498292993014798,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 5.03,
-            "mma20": 4.6893,
-            "mma50": 4.4704,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.48
-        },
-        "momentum": {
-          "ret_1m": 0.17561,
-          "ret_3m": 0.124048,
-          "bruto": 0.149829,
-          "normalizado": 31.46,
-          "contribuicao_score": 15.7303
-        },
-        "roe": {
-          "bruto": 17.86,
-          "normalizado": 70.79,
-          "contribuicao_score": 21.236,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 13.02,
-          "normalizado": 39.33,
-          "contribuicao_score": 7.8652,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 58
-    },
-    {
       "ticker": "SMTO3",
-      "score_final": 44.6629,
+      "score_final": 44.7222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -2820,88 +2772,40 @@
           "ret_1m": 0.081123,
           "ret_3m": 0.345631,
           "bruto": 0.213377,
-          "normalizado": 49.44,
-          "contribuicao_score": 24.7191
+          "normalizado": 48.89,
+          "contribuicao_score": 24.4444
         },
         "roe": {
           "bruto": 10.53,
-          "normalizado": 38.76,
-          "contribuicao_score": 11.6292,
+          "normalizado": 39.44,
+          "contribuicao_score": 11.8333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 14.16,
-          "normalizado": 41.57,
-          "contribuicao_score": 8.3146,
+          "normalizado": 42.22,
+          "contribuicao_score": 8.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 59
+      "rank": 58
     },
     {
-      "ticker": "TFCO4",
-      "score_final": 43.9326,
+      "ticker": "DXCO3",
+      "score_final": 44.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": -0.0006797168962095479,
+      "momentum_bruto": 0.39870831673607166,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 13.8,
-            "mma20": 13.9065,
-            "mma50": 13.5326,
-            "preco_acima_mma20": false,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 2
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 21.23
-        },
-        "momentum": {
-          "ret_1m": 0.053435,
-          "ret_3m": -0.054795,
-          "bruto": -0.00068,
-          "normalizado": 3.37,
-          "contribuicao_score": 1.6854
-        },
-        "roe": {
-          "bruto": 24.39,
-          "normalizado": 85.39,
-          "contribuicao_score": 25.618,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 31.38,
-          "normalizado": 83.15,
-          "contribuicao_score": 16.6292,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 60
-    },
-    {
-      "ticker": "SOJA3",
-      "score_final": 42.9213,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1858118783854067,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 8.0,
-            "mma20": 7.9525,
-            "mma50": 7.1988,
+            "preco_atual": 7.44,
+            "mma20": 6.4465,
+            "mma50": 5.7446,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -2910,25 +2814,121 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 1.65
+          "roic_bruto": 3.51
         },
         "momentum": {
-          "ret_1m": 0.04712,
-          "ret_3m": 0.324503,
-          "bruto": 0.185812,
-          "normalizado": 42.7,
-          "contribuicao_score": 21.3483
+          "ret_1m": 0.335727,
+          "ret_3m": 0.46169,
+          "bruto": 0.398708,
+          "normalizado": 76.67,
+          "contribuicao_score": 38.3333
         },
         "roe": {
-          "bruto": 1.84,
-          "normalizado": 13.48,
-          "contribuicao_score": 4.0449,
+          "bruto": 0.12,
+          "normalizado": 10.0,
+          "contribuicao_score": 3.0,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 34.83,
-          "normalizado": 87.64,
-          "contribuicao_score": 17.5281,
+          "bruto": 7.01,
+          "normalizado": 16.67,
+          "contribuicao_score": 3.3333,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 59
+    },
+    {
+      "ticker": "BLAU3",
+      "score_final": 44.6667,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.25788333027600685,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 12.21,
+            "mma20": 11.2515,
+            "mma50": 10.0841,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.67
+        },
+        "momentum": {
+          "ret_1m": 0.165749,
+          "ret_3m": 0.350017,
+          "bruto": 0.257883,
+          "normalizado": 56.67,
+          "contribuicao_score": 28.3333
+        },
+        "roe": {
+          "bruto": 10.63,
+          "normalizado": 41.11,
+          "contribuicao_score": 12.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.57,
+          "normalizado": 20.0,
+          "contribuicao_score": 4.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 60
+    },
+    {
+      "ticker": "SHUL4",
+      "score_final": 44.3333,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.1498292993014798,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 5.03,
+            "mma20": 4.6893,
+            "mma50": 4.4704,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.48
+        },
+        "momentum": {
+          "ret_1m": 0.17561,
+          "ret_3m": 0.124048,
+          "bruto": 0.149829,
+          "normalizado": 30.0,
+          "contribuicao_score": 15.0
+        },
+        "roe": {
+          "bruto": 17.86,
+          "normalizado": 71.11,
+          "contribuicao_score": 21.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 13.02,
+          "normalizado": 40.0,
+          "contribuicao_score": 8.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2937,7 +2937,7 @@
     },
     {
       "ticker": "TTEN3",
-      "score_final": 42.2472,
+      "score_final": 42.3333,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -2964,19 +2964,19 @@
           "ret_1m": 0.241643,
           "ret_3m": -0.165061,
           "bruto": 0.038291,
-          "normalizado": 11.24,
-          "contribuicao_score": 5.618
+          "normalizado": 11.11,
+          "contribuicao_score": 5.5556
         },
         "roe": {
           "bruto": 14.93,
-          "normalizado": 60.67,
-          "contribuicao_score": 18.2022,
+          "normalizado": 61.11,
+          "contribuicao_score": 18.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 39.47,
-          "normalizado": 92.13,
-          "contribuicao_score": 18.427,
+          "normalizado": 92.22,
+          "contribuicao_score": 18.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -2985,7 +2985,7 @@
     },
     {
       "ticker": "WIZC3",
-      "score_final": 41.573,
+      "score_final": 42.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3012,19 +3012,19 @@
           "ret_1m": 0.109434,
           "ret_3m": 0.048751,
           "bruto": 0.079093,
-          "normalizado": 15.73,
-          "contribuicao_score": 7.8652
+          "normalizado": 16.67,
+          "contribuicao_score": 8.3333
         },
         "roe": {
           "bruto": 28.26,
-          "normalizado": 89.89,
-          "contribuicao_score": 26.9663,
+          "normalizado": 90.0,
+          "contribuicao_score": 27.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 11.49,
-          "normalizado": 33.71,
-          "contribuicao_score": 6.7416,
+          "normalizado": 34.44,
+          "contribuicao_score": 6.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3032,8 +3032,56 @@
       "rank": 63
     },
     {
+      "ticker": "SOJA3",
+      "score_final": 41.8889,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.1858118783854067,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 8.0,
+            "mma20": 7.9525,
+            "mma50": 7.1988,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.65
+        },
+        "momentum": {
+          "ret_1m": 0.04712,
+          "ret_3m": 0.324503,
+          "bruto": 0.185812,
+          "normalizado": 40.0,
+          "contribuicao_score": 20.0
+        },
+        "roe": {
+          "bruto": 1.84,
+          "normalizado": 14.44,
+          "contribuicao_score": 4.3333,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 34.83,
+          "normalizado": 87.78,
+          "contribuicao_score": 17.5556,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 64
+    },
+    {
       "ticker": "ROMI3",
-      "score_final": 41.3483,
+      "score_final": 41.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3060,40 +3108,40 @@
           "ret_1m": 0.277047,
           "ret_3m": 0.27279,
           "bruto": 0.274918,
-          "normalizado": 61.8,
-          "contribuicao_score": 30.8989
+          "normalizado": 62.22,
+          "contribuicao_score": 31.1111
         },
         "roe": {
           "bruto": 6.24,
-          "normalizado": 25.84,
-          "contribuicao_score": 7.7528,
+          "normalizado": 26.67,
+          "contribuicao_score": 8.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 6.39,
-          "normalizado": 13.48,
-          "contribuicao_score": 2.6966,
+          "normalizado": 13.33,
+          "contribuicao_score": 2.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 64
+      "rank": 65
     },
     {
       "ticker": "EVEN3",
-      "score_final": 41.3483,
+      "score_final": 40.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.23296160701277013,
+      "momentum_bruto": 0.22878061425554896,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 5.59,
             "mma20": 5.0975,
-            "mma50": 4.6258,
+            "mma50": 4.614,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3105,31 +3153,31 @@
           "roic_bruto": 4.64
         },
         "momentum": {
-          "ret_1m": 0.356796,
-          "ret_3m": 0.109127,
-          "bruto": 0.232962,
-          "normalizado": 53.93,
-          "contribuicao_score": 26.9663
+          "ret_1m": 0.337321,
+          "ret_3m": 0.120241,
+          "bruto": 0.228781,
+          "normalizado": 51.11,
+          "contribuicao_score": 25.5556
         },
         "roe": {
           "bruto": 11.22,
-          "normalizado": 44.94,
-          "contribuicao_score": 13.4831,
+          "normalizado": 45.56,
+          "contribuicao_score": 13.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 2.82,
-          "normalizado": 4.49,
-          "contribuicao_score": 0.8989,
+          "normalizado": 4.44,
+          "contribuicao_score": 0.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 65
+      "rank": 66
     },
     {
       "ticker": "POMO4",
-      "score_final": 40.0,
+      "score_final": 40.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3156,40 +3204,40 @@
           "ret_1m": 0.01766,
           "ret_3m": -0.094117,
           "bruto": -0.038229,
-          "normalizado": 1.12,
-          "contribuicao_score": 0.5618
+          "normalizado": 1.11,
+          "contribuicao_score": 0.5556
         },
         "roe": {
           "bruto": 30.72,
-          "normalizado": 93.26,
-          "contribuicao_score": 27.9775,
+          "normalizado": 93.33,
+          "contribuicao_score": 28.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 20.33,
-          "normalizado": 57.3,
-          "contribuicao_score": 11.4607,
+          "normalizado": 57.78,
+          "contribuicao_score": 11.5556,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 66
+      "rank": 67
     },
     {
       "ticker": "PRNR3",
-      "score_final": 39.5506,
+      "score_final": 39.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.10997696000213542,
+      "momentum_bruto": 0.11955603157247874,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 20.35,
             "mma20": 19.8565,
-            "mma50": 18.4778,
+            "mma50": 18.4534,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3201,31 +3249,31 @@
           "roic_bruto": 8.02
         },
         "momentum": {
-          "ret_1m": 0.137507,
-          "ret_3m": 0.082447,
-          "bruto": 0.109977,
-          "normalizado": 22.47,
-          "contribuicao_score": 11.236
+          "ret_1m": 0.143258,
+          "ret_3m": 0.095854,
+          "bruto": 0.119556,
+          "normalizado": 22.22,
+          "contribuicao_score": 11.1111
         },
         "roe": {
           "bruto": 7.98,
-          "normalizado": 31.46,
-          "contribuicao_score": 9.4382,
+          "normalizado": 32.22,
+          "contribuicao_score": 9.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 45.21,
-          "normalizado": 94.38,
-          "contribuicao_score": 18.8764,
+          "normalizado": 94.44,
+          "contribuicao_score": 18.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 67
+      "rank": 68
     },
     {
       "ticker": "BRST3",
-      "score_final": 39.4382,
+      "score_final": 39.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3252,28 +3300,28 @@
           "ret_1m": 0.110727,
           "ret_3m": 0.138298,
           "bruto": 0.124512,
-          "normalizado": 24.72,
-          "contribuicao_score": 12.3596
+          "normalizado": 24.44,
+          "contribuicao_score": 12.2222
         },
         "roe": {
           "bruto": 7.44,
-          "normalizado": 28.09,
-          "contribuicao_score": 8.427,
+          "normalizado": 28.89,
+          "contribuicao_score": 8.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 41.71,
-          "normalizado": 93.26,
-          "contribuicao_score": 18.6517,
+          "normalizado": 93.33,
+          "contribuicao_score": 18.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 68
+      "rank": 69
     },
     {
       "ticker": "POSI3",
-      "score_final": 38.0899,
+      "score_final": 38.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3300,67 +3348,19 @@
           "ret_1m": 0.331412,
           "ret_3m": 0.215789,
           "bruto": 0.273601,
-          "normalizado": 60.67,
-          "contribuicao_score": 30.3371
+          "normalizado": 61.11,
+          "contribuicao_score": 30.5556
         },
         "roe": {
           "bruto": 0.63,
-          "normalizado": 10.11,
-          "contribuicao_score": 3.0337,
+          "normalizado": 11.11,
+          "contribuicao_score": 3.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 8.88,
-          "normalizado": 23.6,
-          "contribuicao_score": 4.7191,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 69
-    },
-    {
-      "ticker": "COGN3",
-      "score_final": 37.3034,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.26287574505396594,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 2.89,
-            "mma20": 2.5645,
-            "mma50": 2.3684,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 6.92
-        },
-        "momentum": {
-          "ret_1m": 0.229787,
-          "ret_3m": 0.295964,
-          "bruto": 0.262876,
-          "normalizado": 58.43,
-          "contribuicao_score": 29.2135
-        },
-        "roe": {
-          "bruto": 4.94,
-          "normalizado": 20.22,
-          "contribuicao_score": 6.0674,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 5.9,
-          "normalizado": 10.11,
-          "contribuicao_score": 2.0225,
+          "normalizado": 23.33,
+          "contribuicao_score": 4.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3369,7 +3369,7 @@
     },
     {
       "ticker": "BRAV3",
-      "score_final": 37.3034,
+      "score_final": 37.4444,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3396,13 +3396,13 @@
           "ret_1m": 0.184433,
           "ret_3m": 0.073071,
           "bruto": 0.128752,
-          "normalizado": 25.84,
-          "contribuicao_score": 12.9213
+          "normalizado": 25.56,
+          "contribuicao_score": 12.7778
         },
         "roe": {
           "bruto": 2.04,
-          "normalizado": 14.61,
-          "contribuicao_score": 4.382,
+          "normalizado": 15.56,
+          "contribuicao_score": 4.6667,
           "is_missing": false
         },
         "cagr_receita": {
@@ -3416,20 +3416,20 @@
       "rank": 71
     },
     {
-      "ticker": "LOGG3",
-      "score_final": 36.1798,
+      "ticker": "COGN3",
+      "score_final": 37.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.15187384326052766,
+      "momentum_bruto": 0.26287574505396594,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 28.56,
-            "mma20": 26.853,
-            "mma50": 25.1523,
+            "preco_atual": 2.89,
+            "mma20": 2.5645,
+            "mma50": 2.3684,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3438,25 +3438,25 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 9.6
+          "roic_bruto": 6.92
         },
         "momentum": {
-          "ret_1m": 0.220513,
-          "ret_3m": 0.083235,
-          "bruto": 0.151874,
-          "normalizado": 32.58,
-          "contribuicao_score": 16.2921
+          "ret_1m": 0.229787,
+          "ret_3m": 0.295964,
+          "bruto": 0.262876,
+          "normalizado": 57.78,
+          "contribuicao_score": 28.8889
         },
         "roe": {
-          "bruto": 10.75,
-          "normalizado": 41.57,
-          "contribuicao_score": 12.4719,
+          "bruto": 4.94,
+          "normalizado": 21.11,
+          "contribuicao_score": 6.3333,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 11.94,
-          "normalizado": 37.08,
-          "contribuicao_score": 7.4157,
+          "bruto": 5.9,
+          "normalizado": 10.0,
+          "contribuicao_score": 2.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3464,8 +3464,56 @@
       "rank": 72
     },
     {
+      "ticker": "SBFG3",
+      "score_final": 36.4444,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.09852108667306336,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 10.02,
+            "mma20": 9.1325,
+            "mma50": 8.8248,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.17
+        },
+        "momentum": {
+          "ret_1m": 0.165116,
+          "ret_3m": 0.031926,
+          "bruto": 0.098521,
+          "normalizado": 18.89,
+          "contribuicao_score": 9.4444
+        },
+        "roe": {
+          "bruto": 10.84,
+          "normalizado": 43.33,
+          "contribuicao_score": 13.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 26.3,
+          "normalizado": 70.0,
+          "contribuicao_score": 14.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 73
+    },
+    {
       "ticker": "EUCA4",
-      "score_final": 35.618,
+      "score_final": 35.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3492,40 +3540,40 @@
           "ret_1m": 0.155418,
           "ret_3m": 0.0843,
           "bruto": 0.119859,
-          "normalizado": 23.6,
-          "contribuicao_score": 11.7978
+          "normalizado": 23.33,
+          "contribuicao_score": 11.6667
         },
         "roe": {
           "bruto": 13.91,
-          "normalizado": 56.18,
-          "contribuicao_score": 16.8539,
+          "normalizado": 56.67,
+          "contribuicao_score": 17.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 11.55,
-          "normalizado": 34.83,
-          "contribuicao_score": 6.9663,
+          "normalizado": 35.56,
+          "contribuicao_score": 7.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 73
+      "rank": 74
     },
     {
-      "ticker": "SBFG3",
-      "score_final": 35.1685,
+      "ticker": "LOGG3",
+      "score_final": 34.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.08156214906525733,
+      "momentum_bruto": 0.14122459717859415,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 10.02,
-            "mma20": 9.1325,
-            "mma50": 8.8504,
+            "preco_atual": 28.56,
+            "mma20": 26.853,
+            "mma50": 25.1187,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3534,34 +3582,34 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 8.17
+          "roic_bruto": 9.6
         },
         "momentum": {
-          "ret_1m": 0.165116,
-          "ret_3m": -0.001992,
-          "bruto": 0.081562,
-          "normalizado": 16.85,
-          "contribuicao_score": 8.427
+          "ret_1m": 0.190992,
+          "ret_3m": 0.091457,
+          "bruto": 0.141225,
+          "normalizado": 27.78,
+          "contribuicao_score": 13.8889
         },
         "roe": {
-          "bruto": 10.84,
-          "normalizado": 42.7,
-          "contribuicao_score": 12.809,
+          "bruto": 10.75,
+          "normalizado": 42.22,
+          "contribuicao_score": 12.6667,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": 26.3,
-          "normalizado": 69.66,
-          "contribuicao_score": 13.9326,
+          "bruto": 11.94,
+          "normalizado": 37.78,
+          "contribuicao_score": 7.5556,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 74
+      "rank": 75
     },
     {
       "ticker": "ORVR3",
-      "score_final": 31.9101,
+      "score_final": 32.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3588,67 +3636,19 @@
           "ret_1m": 0.182732,
           "ret_3m": 0.086661,
           "bruto": 0.134697,
-          "normalizado": 26.97,
-          "contribuicao_score": 13.4831
+          "normalizado": 26.67,
+          "contribuicao_score": 13.3333
         },
         "roe": {
           "bruto": 5.84,
-          "normalizado": 22.47,
-          "contribuicao_score": 6.7416,
+          "normalizado": 23.33,
+          "contribuicao_score": 7.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 21.79,
-          "normalizado": 58.43,
-          "contribuicao_score": 11.6854,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 75
-    },
-    {
-      "ticker": "QUAL3",
-      "score_final": 31.3483,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.23868690728667796,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 2.0,
-            "mma20": 1.838,
-            "mma50": 1.6788,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 4.11
-        },
-        "momentum": {
-          "ret_1m": 0.257862,
-          "ret_3m": 0.219512,
-          "bruto": 0.238687,
-          "normalizado": 55.06,
-          "contribuicao_score": 27.5281
-        },
-        "roe": {
-          "bruto": 1.17,
-          "normalizado": 11.24,
-          "contribuicao_score": 3.3708,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": -6.77,
-          "normalizado": 2.25,
-          "contribuicao_score": 0.4494,
+          "normalizado": 58.89,
+          "contribuicao_score": 11.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3657,19 +3657,19 @@
     },
     {
       "ticker": "DESK3",
-      "score_final": 31.0112,
+      "score_final": 31.2222,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.042379792721357445,
+      "momentum_bruto": 0.042075881824671535,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 19.4,
             "mma20": 19.3395,
-            "mma50": 19.0568,
+            "mma50": 19.074,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3682,21 +3682,21 @@
         },
         "momentum": {
           "ret_1m": -0.002571,
-          "ret_3m": 0.08733,
-          "bruto": 0.04238,
-          "normalizado": 12.36,
-          "contribuicao_score": 6.1798
+          "ret_3m": 0.086723,
+          "bruto": 0.042076,
+          "normalizado": 12.22,
+          "contribuicao_score": 6.1111
         },
         "roe": {
           "bruto": 4.34,
-          "normalizado": 19.1,
-          "contribuicao_score": 5.7303,
+          "normalizado": 20.0,
+          "contribuicao_score": 6.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 48.79,
-          "normalizado": 95.51,
-          "contribuicao_score": 19.1011,
+          "normalizado": 95.56,
+          "contribuicao_score": 19.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3704,20 +3704,68 @@
       "rank": 77
     },
     {
-      "ticker": "MYPK3",
-      "score_final": 30.4494,
+      "ticker": "QUAL3",
+      "score_final": 30.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.16449261979519947,
+      "momentum_bruto": 0.23499141922497102,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 2.0,
+            "mma20": 1.838,
+            "mma50": 1.6806,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 4.11
+        },
+        "momentum": {
+          "ret_1m": 0.212121,
+          "ret_3m": 0.257862,
+          "bruto": 0.234991,
+          "normalizado": 53.33,
+          "contribuicao_score": 26.6667
+        },
+        "roe": {
+          "bruto": 1.17,
+          "normalizado": 12.22,
+          "contribuicao_score": 3.6667,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -6.77,
+          "normalizado": 2.22,
+          "contribuicao_score": 0.4444,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 78
+    },
+    {
+      "ticker": "MYPK3",
+      "score_final": 30.1111,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.16028931551877734,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 11.02,
             "mma20": 9.8545,
-            "mma50": 9.5526,
+            "mma50": 9.5554,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3729,31 +3777,31 @@
           "roic_bruto": 8.08
         },
         "momentum": {
-          "ret_1m": 0.149114,
-          "ret_3m": 0.179872,
-          "bruto": 0.164493,
-          "normalizado": 37.08,
-          "contribuicao_score": 18.5393
+          "ret_1m": 0.141969,
+          "ret_3m": 0.17861,
+          "bruto": 0.160289,
+          "normalizado": 35.56,
+          "contribuicao_score": 17.7778
         },
         "roe": {
           "bruto": 2.23,
-          "normalizado": 15.73,
-          "contribuicao_score": 4.7191,
+          "normalizado": 16.67,
+          "contribuicao_score": 5.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 11.89,
-          "normalizado": 35.96,
-          "contribuicao_score": 7.191,
+          "normalizado": 36.67,
+          "contribuicao_score": 7.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 78
+      "rank": 79
     },
     {
       "ticker": "SLCE3",
-      "score_final": 29.3258,
+      "score_final": 29.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3780,40 +3828,40 @@
           "ret_1m": -0.041127,
           "ret_3m": 0.257945,
           "bruto": 0.108409,
-          "normalizado": 21.35,
-          "contribuicao_score": 10.6742
+          "normalizado": 21.11,
+          "contribuicao_score": 10.5556
         },
         "roe": {
           "bruto": 6.1,
-          "normalizado": 24.72,
-          "contribuicao_score": 7.4157,
+          "normalizado": 25.56,
+          "contribuicao_score": 7.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 20.3,
-          "normalizado": 56.18,
-          "contribuicao_score": 11.236,
+          "normalizado": 56.67,
+          "contribuicao_score": 11.3333,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 79
+      "rank": 80
     },
     {
       "ticker": "IRBR3",
-      "score_final": 29.1011,
+      "score_final": 29.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.18327820667786676,
+      "momentum_bruto": 0.18988241748136858,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 70.0,
             "mma20": 64.981,
-            "mma50": 58.985,
+            "mma50": 59.1206,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3825,70 +3873,22 @@
           "roic_bruto": null
         },
         "momentum": {
-          "ret_1m": 0.148106,
-          "ret_3m": 0.218451,
-          "bruto": 0.183278,
-          "normalizado": 41.57,
-          "contribuicao_score": 20.7865
+          "ret_1m": 0.151695,
+          "ret_3m": 0.22807,
+          "bruto": 0.189882,
+          "normalizado": 41.11,
+          "contribuicao_score": 20.5556
         },
         "roe": {
           "bruto": 6.59,
-          "normalizado": 26.97,
-          "contribuicao_score": 8.0899,
+          "normalizado": 27.78,
+          "contribuicao_score": 8.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": -9.28,
-          "normalizado": 1.12,
-          "contribuicao_score": 0.2247,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 80
-    },
-    {
-      "ticker": "UNIP6",
-      "score_final": 29.1011,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.0031336043137017433,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 60.05,
-            "mma20": 58.3425,
-            "mma50": 57.8754,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.31
-        },
-        "momentum": {
-          "ret_1m": 0.032852,
-          "ret_3m": -0.026585,
-          "bruto": 0.003134,
-          "normalizado": 6.74,
-          "contribuicao_score": 3.3708
-        },
-        "roe": {
-          "bruto": 20.01,
-          "normalizado": 79.78,
-          "contribuicao_score": 23.9326,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 5.86,
-          "normalizado": 8.99,
-          "contribuicao_score": 1.7978,
+          "normalizado": 1.11,
+          "contribuicao_score": 0.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3896,56 +3896,8 @@
       "rank": 81
     },
     {
-      "ticker": "MDIA3",
-      "score_final": 28.764,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1473511454704447,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 19.9,
-            "mma20": 17.8951,
-            "mma50": 17.4501,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 6.31
-        },
-        "momentum": {
-          "ret_1m": 0.17402,
-          "ret_3m": 0.120683,
-          "bruto": 0.147351,
-          "normalizado": 30.34,
-          "contribuicao_score": 15.1685
-        },
-        "roe": {
-          "bruto": 8.33,
-          "normalizado": 32.58,
-          "contribuicao_score": 9.7753,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 7.55,
-          "normalizado": 19.1,
-          "contribuicao_score": 3.8202,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 82
-    },
-    {
       "ticker": "MELK3",
-      "score_final": 28.6517,
+      "score_final": 28.8889,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -3972,19 +3924,67 @@
           "ret_1m": 0.071186,
           "ret_3m": 0.056856,
           "bruto": 0.064021,
-          "normalizado": 13.48,
-          "contribuicao_score": 6.7416
+          "normalizado": 13.33,
+          "contribuicao_score": 6.6667
         },
         "roe": {
           "bruto": 11.47,
-          "normalizado": 46.07,
-          "contribuicao_score": 13.8202,
+          "normalizado": 46.67,
+          "contribuicao_score": 14.0,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 13.95,
-          "normalizado": 40.45,
-          "contribuicao_score": 8.0899,
+          "normalizado": 41.11,
+          "contribuicao_score": 8.2222,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 82
+    },
+    {
+      "ticker": "MDIA3",
+      "score_final": 28.2222,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.1473511454704447,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 19.9,
+            "mma20": 17.8951,
+            "mma50": 17.4501,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.31
+        },
+        "momentum": {
+          "ret_1m": 0.17402,
+          "ret_3m": 0.120683,
+          "bruto": 0.147351,
+          "normalizado": 28.89,
+          "contribuicao_score": 14.4444
+        },
+        "roe": {
+          "bruto": 8.33,
+          "normalizado": 33.33,
+          "contribuicao_score": 10.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.55,
+          "normalizado": 18.89,
+          "contribuicao_score": 3.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -3992,8 +3992,56 @@
       "rank": 83
     },
     {
+      "ticker": "UNIP6",
+      "score_final": 27.4444,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.0031336043137017433,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 60.05,
+            "mma20": 58.3425,
+            "mma50": 57.8754,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.31
+        },
+        "momentum": {
+          "ret_1m": 0.032852,
+          "ret_3m": -0.026585,
+          "bruto": 0.003134,
+          "normalizado": 3.33,
+          "contribuicao_score": 1.6667
+        },
+        "roe": {
+          "bruto": 20.01,
+          "normalizado": 80.0,
+          "contribuicao_score": 24.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 5.86,
+          "normalizado": 8.89,
+          "contribuicao_score": 1.7778,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 84
+    },
+    {
       "ticker": "VITT3",
-      "score_final": 25.7303,
+      "score_final": 25.7778,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -4020,40 +4068,40 @@
           "ret_1m": 0.13147,
           "ret_3m": 0.074052,
           "bruto": 0.102761,
-          "normalizado": 20.22,
-          "contribuicao_score": 10.1124
+          "normalizado": 20.0,
+          "contribuicao_score": 10.0
         },
         "roe": {
           "bruto": 9.79,
-          "normalizado": 34.83,
-          "contribuicao_score": 10.4494,
+          "normalizado": 35.56,
+          "contribuicao_score": 10.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 9.09,
-          "normalizado": 25.84,
-          "contribuicao_score": 5.1685,
+          "normalizado": 25.56,
+          "contribuicao_score": 5.1111,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 84
+      "rank": 85
     },
     {
       "ticker": "VLID3",
-      "score_final": 25.5056,
+      "score_final": 25.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.06952878195673995,
+      "momentum_bruto": 0.06421716036364733,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 18.93,
             "mma20": 18.189,
-            "mma50": 17.6811,
+            "mma50": 17.6719,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -4065,43 +4113,43 @@
           "roic_bruto": 9.42
         },
         "momentum": {
-          "ret_1m": 0.069491,
-          "ret_3m": 0.069566,
-          "bruto": 0.069529,
-          "normalizado": 14.61,
-          "contribuicao_score": 7.3034
+          "ret_1m": 0.052251,
+          "ret_3m": 0.076183,
+          "bruto": 0.064217,
+          "normalizado": 14.44,
+          "contribuicao_score": 7.2222
         },
         "roe": {
           "bruto": 14.22,
-          "normalizado": 58.43,
-          "contribuicao_score": 17.5281,
+          "normalizado": 58.89,
+          "contribuicao_score": 17.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 1.24,
-          "normalizado": 3.37,
-          "contribuicao_score": 0.6742,
+          "normalizado": 3.33,
+          "contribuicao_score": 0.6667,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 85
+      "rank": 86
     },
     {
       "ticker": "RANI3",
-      "score_final": 25.0562,
+      "score_final": 25.1111,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": -0.0003673625069977038,
+      "momentum_bruto": 0.004624843938295264,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 8.0,
             "mma20": 7.985,
-            "mma50": 7.8987,
+            "mma50": 7.8922,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -4113,43 +4161,43 @@
           "roic_bruto": 8.97
         },
         "momentum": {
-          "ret_1m": 0.005025,
-          "ret_3m": -0.00576,
-          "bruto": -0.000367,
-          "normalizado": 4.49,
-          "contribuicao_score": 2.2472
+          "ret_1m": -0.001248,
+          "ret_3m": 0.010498,
+          "bruto": 0.004625,
+          "normalizado": 4.44,
+          "contribuicao_score": 2.2222
         },
         "roe": {
           "bruto": 13.78,
-          "normalizado": 55.06,
-          "contribuicao_score": 16.5169,
+          "normalizado": 55.56,
+          "contribuicao_score": 16.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 10.37,
-          "normalizado": 31.46,
-          "contribuicao_score": 6.2921,
+          "normalizado": 31.11,
+          "contribuicao_score": 6.2222,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 86
+      "rank": 87
     },
     {
       "ticker": "HBSA3",
-      "score_final": 22.809,
+      "score_final": 22.3333,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.1533289124023034,
+      "momentum_bruto": 0.1567973283019668,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
             "preco_atual": 3.8,
             "mma20": 3.6455,
-            "mma50": 3.459,
+            "mma50": 3.4626,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -4161,31 +4209,31 @@
           "roic_bruto": 7.09
         },
         "momentum": {
-          "ret_1m": 0.16208,
-          "ret_3m": 0.144578,
-          "bruto": 0.153329,
-          "normalizado": 33.71,
-          "contribuicao_score": 16.8539
+          "ret_1m": 0.151515,
+          "ret_3m": 0.16208,
+          "bruto": 0.156797,
+          "normalizado": 32.22,
+          "contribuicao_score": 16.1111
         },
         "roe": {
           "bruto": -9.88,
-          "normalizado": 3.37,
-          "contribuicao_score": 1.0112,
+          "normalizado": 4.44,
+          "contribuicao_score": 1.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 8.92,
-          "normalizado": 24.72,
-          "contribuicao_score": 4.9438,
+          "normalizado": 24.44,
+          "contribuicao_score": 4.8889,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 87
+      "rank": 88
     },
     {
       "ticker": "HAPV3",
-      "score_final": 20.8989,
+      "score_final": 19.5556,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -4212,28 +4260,28 @@
           "ret_1m": 0.27735,
           "ret_3m": -0.271529,
           "bruto": 0.00291,
-          "normalizado": 5.62,
-          "contribuicao_score": 2.809
+          "normalizado": 2.22,
+          "contribuicao_score": 1.1111
         },
         "roe": {
           "bruto": -0.89,
-          "normalizado": 7.87,
-          "contribuicao_score": 2.3596,
+          "normalizado": 8.89,
+          "contribuicao_score": 2.6667,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 29.85,
-          "normalizado": 78.65,
-          "contribuicao_score": 15.7303,
+          "normalizado": 78.89,
+          "contribuicao_score": 15.7778,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 88
+      "rank": 89
     },
     {
       "ticker": "CSNA3",
-      "score_final": 8.764,
+      "score_final": 8.6667,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
@@ -4260,24 +4308,24 @@
           "ret_1m": -0.106811,
           "ret_3m": 0.142574,
           "bruto": 0.017882,
-          "normalizado": 7.87,
-          "contribuicao_score": 3.9326
+          "normalizado": 7.78,
+          "contribuicao_score": 3.8889
         },
         "roe": {
           "bruto": -15.55,
-          "normalizado": 1.12,
-          "contribuicao_score": 0.3371,
+          "normalizado": 1.11,
+          "contribuicao_score": 0.3333,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 8.3,
-          "normalizado": 22.47,
-          "contribuicao_score": 4.4944,
+          "normalizado": 22.22,
+          "contribuicao_score": 4.4444,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 89
+      "rank": 90
     },
     {
       "ticker": "DIRR3",
@@ -4325,7 +4373,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 90
+      "rank": 91
     },
     {
       "ticker": "TEND3",
@@ -4341,7 +4389,7 @@
           "detalhe": {
             "preco_atual": 26.97,
             "mma20": 28.5995,
-            "mma50": 31.0467,
+            "mma50": 30.9751,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4373,7 +4421,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 91
+      "rank": 92
     },
     {
       "ticker": "BRKM5",
@@ -4421,7 +4469,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 92
+      "rank": 93
     },
     {
       "ticker": "BRAP4",
@@ -4469,46 +4517,6 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 93
-    },
-    {
-      "ticker": "MRVE3",
-      "score_final": 0.0,
-      "passou_filtro_f1": false,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": false,
-      "passou_filtro_tendencia": false,
-      "momentum_bruto": null,
-      "fatores": {
-        "filtro_f1": {
-          "passou": false,
-          "detalhe": null
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 1.45
-        },
-        "momentum": {
-          "ret_1m": null,
-          "ret_3m": null,
-          "bruto": null,
-          "normalizado": null,
-          "contribuicao_score": 0.0
-        },
-        "roe": {
-          "bruto": -14.6,
-          "normalizado": null,
-          "contribuicao_score": 0.0,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 10.41,
-          "normalizado": null,
-          "contribuicao_score": 0.0,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
       "rank": 94
     },
     {
@@ -4525,7 +4533,7 @@
           "detalhe": {
             "preco_atual": 1.47,
             "mma20": 1.5,
-            "mma50": 1.5576,
+            "mma50": 1.555,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4573,7 +4581,7 @@
           "detalhe": {
             "preco_atual": 5.9,
             "mma20": 6.3775,
-            "mma50": 6.343,
+            "mma50": 6.3444,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": true,
@@ -4621,7 +4629,7 @@
           "detalhe": {
             "preco_atual": 5.19,
             "mma20": 4.5365,
-            "mma50": 4.2166,
+            "mma50": 4.2176,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -4717,7 +4725,7 @@
           "detalhe": {
             "preco_atual": 19.78,
             "mma20": 17.66,
-            "mma50": 16.2084,
+            "mma50": 16.2156,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,

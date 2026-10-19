@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 125,
+    "n_carteiras": 126,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5628,6 +5628,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": -0.11776
+    },
+    {
+      "semana": "2026-W43",
+      "data_formacao": "2026-10-19",
+      "data_corte_dados": "2026-10-16",
+      "data_vigencia_fim": "2026-10-19",
+      "tickers": [
+        {
+          "ticker": "PINE4",
+          "score": 82.0,
+          "preco_entrada": 15.800000190734863,
+          "preco_saida": 16.18000030517578,
+          "retorno_semana": 0.024051
+        },
+        {
+          "ticker": "LAVV3",
+          "score": 81.4444,
+          "preco_entrada": 14.539999961853027,
+          "preco_saida": 14.6899995803833,
+          "retorno_semana": 0.010316
+        },
+        {
+          "ticker": "ECOR3",
+          "score": 80.3333,
+          "preco_entrada": 13.0600004196167,
+          "preco_saida": 13.460000038146973,
+          "retorno_semana": 0.030628
+        },
+        {
+          "ticker": "MOVI3",
+          "score": 79.0,
+          "preco_entrada": 16.56999969482422,
+          "preco_saida": 17.56999969482422,
+          "retorno_semana": 0.06035
+        },
+        {
+          "ticker": "TGMA3",
+          "score": 78.4444,
+          "preco_entrada": 47.970001220703125,
+          "preco_saida": 48.040000915527344,
+          "retorno_semana": 0.001459
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": 0.025361
     }
   ]
 }

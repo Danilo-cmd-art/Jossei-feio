@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "data_formacao": "2026-10-19",
+    "data_corte_dados": "2026-10-16",
+    "data_vigencia_inicio": "2026-10-19",
+    "data_vigencia_fim": "2026-10-19",
+    "bootstrap_retroativo": false,
+    "n_posicoes": 5,
+    "peso_por_posicao": 0.2,
+    "versao_formula": "v2"
+  },
+  "tickers": [
+    {
+      "ticker": "PINE4",
+      "rank_na_formacao": 1,
+      "score_na_formacao": 82.0,
+      "preco_entrada": 15.800000190734863,
+      "preco_atual": 15.800000190734863,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "LAVV3",
+      "rank_na_formacao": 2,
+      "score_na_formacao": 81.4444,
+      "preco_entrada": 14.539999961853027,
+      "preco_atual": 14.539999961853027,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "ECOR3",
+      "rank_na_formacao": 3,
+      "score_na_formacao": 80.3333,
+      "preco_entrada": 13.0600004196167,
+      "preco_atual": 13.0600004196167,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "MOVI3",
+      "rank_na_formacao": 4,
+      "score_na_formacao": 79.0,
+      "preco_entrada": 16.56999969482422,
+      "preco_atual": 16.56999969482422,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    },
+    {
+      "ticker": "TGMA3",
+      "rank_na_formacao": 5,
+      "score_na_formacao": 78.4444,
+      "preco_entrada": 47.970001220703125,
+      "preco_atual": 47.970001220703125,
+      "retorno_acumulado": 0.0,
+      "is_stale": false,
+      "peso": 0.2
+    }
+  ],
+  "performance_diaria": [],
+  "retorno_acumulado_total": 0.0
+}
