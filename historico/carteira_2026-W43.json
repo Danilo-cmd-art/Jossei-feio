@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-10-22T19:36:42",
+    "ultima_atualizacao": "2026-10-22T20:26:23",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -19,8 +19,8 @@
       "rank_na_formacao": 1,
       "score_na_formacao": 82.0,
       "preco_entrada": 15.800000190734863,
-      "preco_atual": 16.389999389648438,
-      "retorno_acumulado": 0.037342,
+      "preco_atual": 16.3799991607666,
+      "retorno_acumulado": 0.036709,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -31,8 +31,8 @@
       "rank_na_formacao": 2,
       "score_na_formacao": 81.4444,
       "preco_entrada": 14.539999961853027,
-      "preco_atual": 15.25,
-      "retorno_acumulado": 0.048831,
+      "preco_atual": 15.300000190734863,
+      "retorno_acumulado": 0.05227,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -55,8 +55,8 @@
       "rank_na_formacao": 4,
       "score_na_formacao": 79.0,
       "preco_entrada": 16.56999969482422,
-      "preco_atual": 18.329999923706055,
-      "retorno_acumulado": 0.106216,
+      "preco_atual": 18.260000228881836,
+      "retorno_acumulado": 0.101992,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -67,8 +67,8 @@
       "rank_na_formacao": 5,
       "score_na_formacao": 78.4444,
       "preco_entrada": 47.970001220703125,
-      "preco_atual": 50.70000076293945,
-      "retorno_acumulado": 0.056911,
+      "preco_atual": 50.93000030517578,
+      "retorno_acumulado": 0.061705,
       "is_stale": false,
       "peso": 0.2,
       "v3c_ativo": true,
@@ -111,16 +111,16 @@
     },
     {
       "data": "2026-10-22",
-      "retorno_dia": -0.03227,
-      "retorno_acumulado": 0.044653,
+      "retorno_dia": -0.031644,
+      "retorno_acumulado": 0.045328,
       "modo": "intraday",
       "benchmarks": {
-        "ibov": -0.0019133979610814755,
-        "smll": 0.027440161183567735,
+        "ibov": -0.000997802509739576,
+        "smll": 0.029198135075795273,
         "cdi": 0.00203306817664739
       }
     }
   ],
-  "retorno_acumulado_total": 0.044653,
+  "retorno_acumulado_total": 0.045328,
   "stops_semana": []
 }
