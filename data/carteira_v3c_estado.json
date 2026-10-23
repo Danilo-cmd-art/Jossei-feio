@@ -18,8 +18,8 @@
       "preco_ref_dia": 15.800000190734863,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 15.75,
-      "ret_acumulado": -0.003165,
+      "preco_atual": 15.819999694824219,
+      "ret_acumulado": 0.001266,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -33,8 +33,8 @@
       "preco_ref_dia": 14.539999961853027,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 15.1899995803833,
-      "ret_acumulado": 0.044704,
+      "preco_atual": 15.359999656677246,
+      "ret_acumulado": 0.056396,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -48,8 +48,8 @@
       "preco_ref_dia": 13.0600004196167,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 12.930000305175781,
-      "ret_acumulado": -0.009954,
+      "preco_atual": 12.989999771118164,
+      "ret_acumulado": -0.00536,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -63,8 +63,8 @@
       "preco_ref_dia": 16.56999969482422,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 18.420000076293945,
-      "ret_acumulado": 0.111648,
+      "preco_atual": 18.440000534057617,
+      "ret_acumulado": 0.112855,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -78,8 +78,8 @@
       "preco_ref_dia": 47.970001220703125,
       "peso_atual": 0.2,
       "ativo": true,
-      "preco_atual": 50.25,
-      "ret_acumulado": 0.04753,
+      "preco_atual": 50.349998474121094,
+      "ret_acumulado": 0.049614,
       "preco_stop": null,
       "data_stop": null,
       "ret_no_stop": null
@@ -114,11 +114,11 @@
     },
     {
       "data": "2026-10-23",
-      "retorno_dia": -0.006864,
-      "retorno_acumulado": 0.038153,
+      "retorno_dia": -0.002271,
+      "retorno_acumulado": 0.042954,
       "modo": "intraday"
     }
   ],
-  "ultima_atualizacao": "2026-10-23T17:42:06",
+  "ultima_atualizacao": "2026-10-23T17:51:42",
   "modo_ultima_atualizacao": "intraday"
 }
