@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-10-19T17:17:18.352116",
+  "timestamp": "2026-10-25T23:48:42.330601",
   "status": "success",
-  "modo": "incremental",
-  "ultimo_pregao": "2026-10-19",
+  "modo": "full_refresh",
+  "ultimo_pregao": "2026-10-23",
   "tickers_baixados": 50,
   "tickers_falharam": 0,
   "tickers_falharam_lista": [],
