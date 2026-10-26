@@ -1,19 +1,27 @@
 {
-  "timestamp": "2026-10-25T23:48:42.330601",
+  "timestamp": "2026-10-26T17:05:09.127729",
   "status": "success",
-  "modo": "full_refresh",
-  "ultimo_pregao": "2026-10-23",
+  "modo": "incremental",
+  "ultimo_pregao": "2026-10-26",
   "tickers_baixados": 50,
   "tickers_falharam": 0,
   "tickers_falharam_lista": [],
   "tickers_stale": [],
-  "tickers_suspeitos": [],
-  "duracao_segundos": 3,
+  "tickers_suspeitos": [
+    "ARML3",
+    "VAMO3",
+    "MOVI3"
+  ],
+  "duracao_segundos": 12,
   "validacao_leve": {
     "LV1_passou": 50,
     "LV2_passou": 50,
-    "LV3_passou": 50,
+    "LV3_passou": 47,
     "LV4_passou": 50
   },
-  "warnings": []
+  "warnings": [
+    "MOVI3: retorno -59.7% no último pregão — split suspeito",
+    "VAMO3: retorno -56.9% no último pregão — split suspeito",
+    "ARML3: retorno -54.4% no último pregão — split suspeito"
+  ]
 }

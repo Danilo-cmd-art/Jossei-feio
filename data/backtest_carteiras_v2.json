@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 126,
+    "n_carteiras": 127,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5673,6 +5673,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.025361
+    },
+    {
+      "semana": "2026-W44",
+      "data_formacao": "2026-10-26",
+      "data_corte_dados": "2026-10-23",
+      "data_vigencia_fim": "2026-10-26",
+      "tickers": [
+        {
+          "ticker": "LAVV3",
+          "score": 86.0215,
+          "preco_entrada": 15.899999618530273,
+          "preco_saida": 9.789999961853027,
+          "retorno_semana": -0.384277
+        },
+        {
+          "ticker": "MOVI3",
+          "score": 79.8925,
+          "preco_entrada": 18.670000076293945,
+          "preco_saida": 7.53000020980835,
+          "retorno_semana": -0.596679
+        },
+        {
+          "ticker": "TGMA3",
+          "score": 78.4946,
+          "preco_entrada": 51.810001373291016,
+          "preco_saida": 38.029998779296875,
+          "retorno_semana": -0.265972
+        },
+        {
+          "ticker": "ECOR3",
+          "score": 78.3871,
+          "preco_entrada": 13.149999618530273,
+          "preco_saida": 5.289999961853027,
+          "retorno_semana": -0.597719
+        },
+        {
+          "ticker": "VAMO3",
+          "score": 77.6344,
+          "preco_entrada": 6.409999847412109,
+          "preco_saida": 2.759999990463257,
+          "retorno_semana": -0.569423
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.482814
     }
   ]
 }

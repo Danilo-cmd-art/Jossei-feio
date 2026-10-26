@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "data_formacao": "2026-10-25",
+    "data_formacao": "2026-10-26",
     "data_corte_dados": "2026-10-23",
-    "data_vigencia_inicio": "2026-10-25",
-    "data_vigencia_fim": "2026-10-23",
+    "data_vigencia_inicio": "2026-10-26",
+    "data_vigencia_fim": "2026-10-26",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
