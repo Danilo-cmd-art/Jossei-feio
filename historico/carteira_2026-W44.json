@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-10-28T23:51:48",
+    "ultima_atualizacao": "2026-10-29T00:35:33",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -84,7 +84,7 @@
       "benchmarks": {
         "ibov": -0.13478346070938652,
         "smll": -0.2664439510227976,
-        "cdi": 0.0010160179420943827
+        "cdi": 0.0
       }
     },
     {
@@ -95,7 +95,7 @@
       "benchmarks": {
         "ibov": -0.139182833627278,
         "smll": -0.264291011734768,
-        "cdi": 0.001524413957286752
+        "cdi": 0.0005078800000000161
       }
     },
     {
@@ -106,7 +106,18 @@
       "benchmarks": {
         "ibov": -0.16222764182833627,
         "smll": -0.2942835953060927,
-        "cdi": 0.001524413957286752
+        "cdi": 0.0005078800000000161
+      }
+    },
+    {
+      "data": "2026-10-29",
+      "retorno_dia": 1e-06,
+      "retorno_acumulado": -0.52628,
+      "modo": "intraday",
+      "benchmarks": {
+        "ibov": -0.16222764182833627,
+        "smll": -0.2942835953060927,
+        "cdi": 0.0005078800000000161
       }
     }
   ],
