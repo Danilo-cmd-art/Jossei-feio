@@ -1,0 +1,5147 @@
+{
+  "metadata": {
+    "data_referencia": "2026-11-02",
+    "data_corte_dados": "2026-10-30",
+    "total_tickers": 107,
+    "universo_versao": "v2-2026-05",
+    "versao_formula": "v2"
+  },
+  "scores": [
+    {
+      "ticker": "SMTO3",
+      "score_final": 83.3333,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.3199896484240352,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 21.09,
+            "mma20": 20.36,
+            "mma50": 19.6332,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 2.92
+        },
+        "momentum": {
+          "ret_1m": 0.1875,
+          "ret_3m": 0.452479,
+          "bruto": 0.31999,
+          "normalizado": 100.0,
+          "contribuicao_score": 50.0
+        },
+        "roe": {
+          "bruto": 10.53,
+          "normalizado": 66.67,
+          "contribuicao_score": 20.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 14.16,
+          "normalizado": 66.67,
+          "contribuicao_score": 13.3333,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 1
+    },
+    {
+      "ticker": "ALLD3",
+      "score_final": 70.0,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.18072087057142838,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 5.15,
+            "mma20": 5.8892,
+            "mma50": 5.0617,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 18.12
+        },
+        "momentum": {
+          "ret_1m": 0.092465,
+          "ret_3m": 0.268977,
+          "bruto": 0.180721,
+          "normalizado": 66.67,
+          "contribuicao_score": 33.3333
+        },
+        "roe": {
+          "bruto": 22.27,
+          "normalizado": 100.0,
+          "contribuicao_score": 30.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 3.11,
+          "normalizado": 33.33,
+          "contribuicao_score": 6.6667,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 2
+    },
+    {
+      "ticker": "DESK3",
+      "score_final": 46.6667,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.024493386123714878,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 19.46,
+            "mma20": 19.3245,
+            "mma50": 19.19,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 3
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.32
+        },
+        "momentum": {
+          "ret_1m": 0.000514,
+          "ret_3m": 0.048473,
+          "bruto": 0.024493,
+          "normalizado": 33.33,
+          "contribuicao_score": 16.6667
+        },
+        "roe": {
+          "bruto": 4.34,
+          "normalizado": 33.33,
+          "contribuicao_score": 10.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 48.79,
+          "normalizado": 100.0,
+          "contribuicao_score": 20.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 3
+    },
+    {
+      "ticker": "BRAV3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 18.42,
+            "mma20": 19.997,
+            "mma50": 18.7814,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 3.26
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 2.04,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 124.4,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 4
+    },
+    {
+      "ticker": "CYRE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 17.09,
+            "mma20": 29.523,
+            "mma50": 27.1404,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.64
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 18.6,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 19.77,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 5
+    },
+    {
+      "ticker": "CURY3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 25.9,
+            "mma20": 30.4205,
+            "mma50": 30.4954,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 38.33
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 68.95,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 36.37,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 6
+    },
+    {
+      "ticker": "HAPV3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.2,
+            "mma20": 7.6045,
+            "mma50": 7.0254,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.57
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -0.89,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 29.85,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 7
+    },
+    {
+      "ticker": "MGLU3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.35,
+            "mma20": 9.644,
+            "mma50": 7.2234,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.81
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 1.21,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 5.81,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 8
+    },
+    {
+      "ticker": "DIRR3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 8.06,
+            "mma20": 10.647,
+            "mma50": 10.5908,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 17.45
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 39.35,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 23.68,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 9
+    },
+    {
+      "ticker": "CEAB3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 6.55,
+            "mma20": 11.3825,
+            "mma50": 9.9168,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 16.9
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 15.79,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 14.34,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 10
+    },
+    {
+      "ticker": "COGN3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 1.58,
+            "mma20": 2.6465,
+            "mma50": 2.4296,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.92
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 4.94,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 5.9,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 11
+    },
+    {
+      "ticker": "VIVA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 17.3,
+            "mma20": 25.2215,
+            "mma50": 23.6312,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 19.59
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 19.31,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 23.64,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 12
+    },
+    {
+      "ticker": "TEND3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 20.01,
+            "mma20": 26.8875,
+            "mma50": 29.3846,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 19.9
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 44.45,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 12.83,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 13
+    },
+    {
+      "ticker": "JHSF3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 8.97,
+            "mma20": 12.4618,
+            "mma50": 11.7145,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 17.45
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 27.12,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 24.34,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 14
+    },
+    {
+      "ticker": "BEEF3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.55,
+            "mma20": 3.949,
+            "mma50": 3.9558,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 14.22
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 56.47,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 23.09,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 15
+    },
+    {
+      "ticker": "PLPL3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.47,
+            "mma20": 7.262,
+            "mma50": 7.0746,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 17.29
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 31.56,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 29.5,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 16
+    },
+    {
+      "ticker": "CSNA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.88,
+            "mma20": 5.7025,
+            "mma50": 5.8288,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 3.56
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -15.55,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 8.3,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 17
+    },
+    {
+      "ticker": "BRKM5",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.99,
+            "mma20": 3.977,
+            "mma50": 4.2992,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -56.79
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -58.03,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 3.85,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 18
+    },
+    {
+      "ticker": "ORVR3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 15.96,
+            "mma20": 19.3265,
+            "mma50": 17.8024,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.1
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 5.84,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 21.79,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 19
+    },
+    {
+      "ticker": "GGPS3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 10.5,
+            "mma20": 14.7875,
+            "mma50": 13.5104,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 11.42
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 16.03,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 28.45,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 20
+    },
+    {
+      "ticker": "IGTI11",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 21.79,
+            "mma20": 29.4588,
+            "mma50": 27.1022,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.37
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 14.63,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.05,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 21
+    },
+    {
+      "ticker": "MOVI3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.61,
+            "mma20": 14.189,
+            "mma50": 10.4992,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.75
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 11.92,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 29.14,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 22
+    },
+    {
+      "ticker": "BRAP4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 18.27,
+            "mma20": 19.792,
+            "mma50": 20.824,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 9.06
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.0,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": true,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 23
+    },
+    {
+      "ticker": "AZZA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 14.33,
+            "mma20": 22.14,
+            "mma50": 18.2912,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.51
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.39,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 49.34,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 24
+    },
+    {
+      "ticker": "VAMO3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.38,
+            "mma20": 5.205,
+            "mma50": 4.126,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.65
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 11.81,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 30.63,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 25
+    },
+    {
+      "ticker": "POMO4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.7,
+            "mma20": 4.5155,
+            "mma50": 4.4237,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.41
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 30.72,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 20.33,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 26
+    },
+    {
+      "ticker": "MRVE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.05,
+            "mma20": 6.5415,
+            "mma50": 5.8746,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.45
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -14.6,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.41,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 27
+    },
+    {
+      "ticker": "SLCE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 17.02,
+            "mma20": 17.2575,
+            "mma50": 17.0412,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 11.68
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 6.1,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 20.3,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 28
+    },
+    {
+      "ticker": "YDUQ3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 8.91,
+            "mma20": 12.3105,
+            "mma50": 10.8344,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 9.39
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 3.96,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.46,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 29
+    },
+    {
+      "ticker": "CVCB3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 0.8,
+            "mma20": 1.401,
+            "mma50": 1.5188,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 20.54
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -26.34,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 18.96,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 30
+    },
+    {
+      "ticker": "ECOR3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.89,
+            "mma20": 11.134,
+            "mma50": 9.2066,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.62
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 17.81,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 23.56,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 31
+    },
+    {
+      "ticker": "MDNE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 15.95,
+            "mma20": 26.7715,
+            "mma50": 25.6274,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 15.01
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 23.93,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 35.64,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 32
+    },
+    {
+      "ticker": "IRBR3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 55.68,
+            "mma20": 65.597,
+            "mma50": 61.587,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 6.59,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -9.28,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 33
+    },
+    {
+      "ticker": "FLRY3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 20.47,
+            "mma20": 25.4705,
+            "mma50": 22.5684,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.28
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 12.25,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 22.78,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 34
+    },
+    {
+      "ticker": "INTB3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 13.87,
+            "mma20": 17.3975,
+            "mma50": 15.7042,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 11.86
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 18.29,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 15.88,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 35
+    },
+    {
+      "ticker": "SIMH3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.84,
+            "mma20": 12.6195,
+            "mma50": 9.5896,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 11.98
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -2.1,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 34.72,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 36
+    },
+    {
+      "ticker": "EZTC3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 8.96,
+            "mma20": 16.1795,
+            "mma50": 14.181,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.59
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.89,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 9.86,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 37
+    },
+    {
+      "ticker": "ANIM3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.29,
+            "mma20": 4.2375,
+            "mma50": 3.401,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 11.57
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 5.62,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 23.12,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 38
+    },
+    {
+      "ticker": "GMAT3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.5,
+            "mma20": 4.907,
+            "mma50": 4.8304,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 10.52
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 15.83,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 25.39,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 39
+    },
+    {
+      "ticker": "RECV3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 11.03,
+            "mma20": 11.8995,
+            "mma50": 11.3458,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.27
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 12.74,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 32.0,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 40
+    },
+    {
+      "ticker": "ALPA4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 12.38,
+            "mma20": 15.936,
+            "mma50": 14.5066,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.55
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 17.9,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 6.29,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 41
+    },
+    {
+      "ticker": "SBFG3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.78,
+            "mma20": 9.2345,
+            "mma50": 8.7366,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.17
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.84,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 26.3,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 42
+    },
+    {
+      "ticker": "PGMN3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.48,
+            "mma20": 4.5135,
+            "mma50": 3.9774,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 14.93
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 9.19,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 16.8,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 43
+    },
+    {
+      "ticker": "BRSR6",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 12.36,
+            "mma20": 16.596,
+            "mma50": 15.4259,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 15.11,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 24.08,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 44
+    },
+    {
+      "ticker": "ABCB4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 22.17,
+            "mma20": 27.357,
+            "mma50": 25.5608,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 14.08,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 28.96,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 45
+    },
+    {
+      "ticker": "VULC3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 11.53,
+            "mma20": 14.6,
+            "mma50": 13.8874,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.76
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 45.47,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 24.73,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 46
+    },
+    {
+      "ticker": "TTEN3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 10.28,
+            "mma20": 12.3505,
+            "mma50": 11.48,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.59
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 14.93,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 39.47,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 47
+    },
+    {
+      "ticker": "PINE4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 9.99,
+            "mma20": 14.1253,
+            "mma50": 12.4354,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 30.83,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 31.37,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 48
+    },
+    {
+      "ticker": "BIOM3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.3,
+            "mma20": 6.1635,
+            "mma50": 6.2904,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.48
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 7.44,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 35.63,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 49
+    },
+    {
+      "ticker": "RIAA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.94,
+            "mma20": 9.074,
+            "mma50": 7.8189,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 26.65
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 28.33,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.94,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 50
+    },
+    {
+      "ticker": "GRND3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.56,
+            "mma20": 4.282,
+            "mma50": 3.9134,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.21
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 19.96,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 6.38,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 51
+    },
+    {
+      "ticker": "BMOB3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 23.51,
+            "mma20": 30.3085,
+            "mma50": 27.8052,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.15
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 16.39,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 58.14,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 52
+    },
+    {
+      "ticker": "DXCO3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.57,
+            "mma20": 6.804,
+            "mma50": 6.0106,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 3.51
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 0.12,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.01,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 53
+    },
+    {
+      "ticker": "LWSA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.09,
+            "mma20": 4.733,
+            "mma50": 4.3438,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -17.35
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -9.34,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 24.98,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 54
+    },
+    {
+      "ticker": "RAPT4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.42,
+            "mma20": 6.4055,
+            "mma50": 5.532,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.81
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -9.35,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 19.64,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 55
+    },
+    {
+      "ticker": "LEVE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 30.26,
+            "mma20": 35.654,
+            "mma50": 34.0064,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 21.45
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 62.01,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.61,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 56
+    },
+    {
+      "ticker": "TFCO4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 9.8,
+            "mma20": 13.548,
+            "mma50": 13.2054,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 21.23
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 24.39,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 31.38,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 57
+    },
+    {
+      "ticker": "UNIP6",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 51.0,
+            "mma20": 57.7915,
+            "mma50": 57.3504,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.31
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 20.01,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 5.86,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 58
+    },
+    {
+      "ticker": "VTRU3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 11.72,
+            "mma20": 17.3995,
+            "mma50": 15.6638,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -29.52
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -29.57,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": true,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 59
+    },
+    {
+      "ticker": "SEER3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 10.71,
+            "mma20": 15.582,
+            "mma50": 14.1101,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 19.39
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 17.4,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 12.13,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 60
+    },
+    {
+      "ticker": "MILS3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 15.58,
+            "mma20": 16.0285,
+            "mma50": 15.8986,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 16.42
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 24.19,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 29.41,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 61
+    },
+    {
+      "ticker": "MDIA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 15.35,
+            "mma20": 18.4281,
+            "mma50": 17.5573,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.31
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 8.33,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.55,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 62
+    },
+    {
+      "ticker": "AMER3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.0,
+            "mma20": 5.6365,
+            "mma50": 5.2764,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 4.51
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 12.51,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 3.98,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 63
+    },
+    {
+      "ticker": "PRNR3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 12.12,
+            "mma20": 18.8273,
+            "mma50": 18.3599,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.02
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 7.98,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 45.21,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 64
+    },
+    {
+      "ticker": "MYPK3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 8.12,
+            "mma20": 10.3285,
+            "mma50": 9.7818,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.08
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 2.23,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 11.89,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 65
+    },
+    {
+      "ticker": "PNVL3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 10.08,
+            "mma20": 14.019,
+            "mma50": 13.0694,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.54
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.18,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 14.35,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 66
+    },
+    {
+      "ticker": "TUPY3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 14.46,
+            "mma20": 18.408,
+            "mma50": 16.818,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -7.22
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -31.97,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.88,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 67
+    },
+    {
+      "ticker": "HBSA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.95,
+            "mma20": 3.738,
+            "mma50": 3.5332,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 7.09
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -9.88,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 8.92,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 68
+    },
+    {
+      "ticker": "LAVV3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 7.49,
+            "mma20": 13.073,
+            "mma50": 11.5132,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.59
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 29.03,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 37.41,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 69
+    },
+    {
+      "ticker": "TGMA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 36.02,
+            "mma20": 44.334,
+            "mma50": 38.9014,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.14
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 26.13,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.07,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 70
+    },
+    {
+      "ticker": "LOGG3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 20.23,
+            "mma20": 27.23,
+            "mma50": 25.4968,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 9.6
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.75,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 11.94,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 71
+    },
+    {
+      "ticker": "BMGB4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.11,
+            "mma20": 6.6165,
+            "mma50": 6.1178,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 11.89,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 16.75,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 72
+    },
+    {
+      "ticker": "VLID3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 13.76,
+            "mma20": 18.082,
+            "mma50": 17.7506,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 9.42
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 14.22,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 1.24,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 73
+    },
+    {
+      "ticker": "KEPL3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 6.27,
+            "mma20": 7.1705,
+            "mma50": 6.769,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.03
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 18.67,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 17.29,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 74
+    },
+    {
+      "ticker": "QUAL3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 1.32,
+            "mma20": 1.8935,
+            "mma50": 1.7088,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 4.11
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 1.17,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -6.77,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 75
+    },
+    {
+      "ticker": "RANI3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 7.59,
+            "mma20": 7.903,
+            "mma50": 7.8482,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.97
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 13.78,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.37,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 76
+    },
+    {
+      "ticker": "ARML3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.97,
+            "mma20": 5.335,
+            "mma50": 4.4774,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.42
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 3.96,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 76.15,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 77
+    },
+    {
+      "ticker": "CAML3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.98,
+            "mma20": 6.039,
+            "mma50": 5.4415,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.36
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 7.72,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 8.28,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 78
+    },
+    {
+      "ticker": "EVEN3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 3.15,
+            "mma20": 5.176,
+            "mma50": 4.6808,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 4.64
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 11.22,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 2.82,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 79
+    },
+    {
+      "ticker": "RAIZ4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 0.3,
+            "mma20": 0.358,
+            "mma50": 0.3034,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -19.66
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -1393.79,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 20.39,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 80
+    },
+    {
+      "ticker": "FRAS3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 20.17,
+            "mma20": 25.9295,
+            "mma50": 24.2366,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.35
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.53,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 26.87,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 81
+    },
+    {
+      "ticker": "DASA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.98,
+            "mma20": 4.436,
+            "mma50": 3.5552,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 0.03
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -15.14,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 9.67,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 82
+    },
+    {
+      "ticker": "AGRO3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 17.31,
+            "mma20": 18.109,
+            "mma50": 18.2397,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -3.64
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -0.72,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.7,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 83
+    },
+    {
+      "ticker": "SOJA3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.9,
+            "mma20": 7.714,
+            "mma50": 7.56,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.65
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 1.84,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 34.83,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 84
+    },
+    {
+      "ticker": "BRBI11",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 9.96,
+            "mma20": 16.384,
+            "mma50": 14.939,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -0.23
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 21.38,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -23.54,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 85
+    },
+    {
+      "ticker": "FESA4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.0,
+            "mma20": 6.034,
+            "mma50": 5.7002,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -0.51
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 4.93,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.55,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 86
+    },
+    {
+      "ticker": "JSLG3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.44,
+            "mma20": 9.7425,
+            "mma50": 7.5338,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.97
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -8.15,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 27.81,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 87
+    },
+    {
+      "ticker": "POSI3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.91,
+            "mma20": 4.2585,
+            "mma50": 3.7742,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.42
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 0.63,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 8.88,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 88
+    },
+    {
+      "ticker": "WIZC3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.87,
+            "mma20": 7.7325,
+            "mma50": 7.8248,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 23.53
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 28.26,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 11.49,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 89
+    },
+    {
+      "ticker": "FIQE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.28,
+            "mma20": 5.838,
+            "mma50": 5.3002,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.22
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 19.07,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 32.89,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 90
+    },
+    {
+      "ticker": "OPCT3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 8.98,
+            "mma20": 9.699,
+            "mma50": 9.8604,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 9.68
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 12.12,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 27.13,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 91
+    },
+    {
+      "ticker": "CSED3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.44,
+            "mma20": 6.156,
+            "mma50": 5.5348,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 18.3
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 16.46,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 9.51,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 92
+    },
+    {
+      "ticker": "CSUD3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 13.75,
+            "mma20": 16.1268,
+            "mma50": 14.6224,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 14.8
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 21.28,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 6.42,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 93
+    },
+    {
+      "ticker": "EUCA4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 18.65,
+            "mma20": 23.633,
+            "mma50": 22.2288,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 12.97
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 13.91,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 11.55,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 94
+    },
+    {
+      "ticker": "SHUL4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.11,
+            "mma20": 4.86,
+            "mma50": 4.5611,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.48
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 17.86,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 13.02,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 95
+    },
+    {
+      "ticker": "MLAS3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 1.8,
+            "mma20": 2.221,
+            "mma50": 2.0072,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.07
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 5.85,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 6.65,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 96
+    },
+    {
+      "ticker": "JALL3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.11,
+            "mma20": 2.7765,
+            "mma50": 2.5838,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -0.32
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 2.25,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 21.27,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 97
+    },
+    {
+      "ticker": "TRIS3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.16,
+            "mma20": 5.94,
+            "mma50": 5.3068,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.43
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 12.92,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 9.42,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 98
+    },
+    {
+      "ticker": "BLAU3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 9.02,
+            "mma20": 11.5275,
+            "mma50": 10.5107,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.67
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 10.63,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 7.57,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 99
+    },
+    {
+      "ticker": "PFRM3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 6.73,
+            "mma20": 8.5005,
+            "mma50": 7.908,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 13.17
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 7.86,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 15.87,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 100
+    },
+    {
+      "ticker": "MELK3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.27,
+            "mma20": 3.0945,
+            "mma50": 2.993,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 4.59
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 11.47,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 13.95,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 101
+    },
+    {
+      "ticker": "ROMI3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 5.32,
+            "mma20": 6.944,
+            "mma50": 6.1898,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.82
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 6.24,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 6.39,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 102
+    },
+    {
+      "ticker": "BMEB4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 56.39,
+            "mma20": 71.882,
+            "mma50": 64.6054,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": null
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 26.89,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 29.99,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 103
+    },
+    {
+      "ticker": "SYNE3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.69,
+            "mma20": 3.6195,
+            "mma50": 3.6462,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 0
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.66
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 9.47,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -7.59,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 104
+    },
+    {
+      "ticker": "BRST3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.4,
+            "mma20": 3.077,
+            "mma50": 2.925,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 5.71
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 7.44,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 41.71,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 105
+    },
+    {
+      "ticker": "VITT3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 2.6,
+            "mma20": 3.368,
+            "mma50": 3.1749,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 6.51
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 9.79,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 9.09,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 106
+    },
+    {
+      "ticker": "TASA4",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": false,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 4.79,
+            "mma20": 8.0405,
+            "mma50": 7.179,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": true,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": false,
+          "roic_bruto": -1.45
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": -3.16,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -3.77,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 107
+    }
+  ]
+}
