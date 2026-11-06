@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-11-06T20:38:27",
+    "ultima_atualizacao": "2026-11-06T21:08:12",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -102,8 +102,8 @@
       "retorno_acumulado": 0.010332,
       "modo": "intraday",
       "benchmarks": {
-        "ibov": -0.004999993766103494,
-        "smll": 0.05113517142630908,
+        "ibov": -0.004831725373209861,
+        "smll": 0.050054024361275484,
         "cdi": 0.001524413957286752
       }
     }
