@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 127,
+    "n_carteiras": 128,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5718,6 +5718,37 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": -0.482814
+    },
+    {
+      "semana": "2026-W45",
+      "data_formacao": "2026-11-03",
+      "data_corte_dados": "2026-10-30",
+      "data_vigencia_fim": "2026-11-06",
+      "tickers": [
+        {
+          "ticker": "SMTO3",
+          "score": 83.3333,
+          "preco_entrada": 21.09000015258789,
+          "preco_saida": 20.18000030517578,
+          "retorno_semana": -0.043148
+        },
+        {
+          "ticker": "ALLD3",
+          "score": 70.0,
+          "preco_entrada": 5.150000095367432,
+          "preco_saida": 5.599999904632568,
+          "retorno_semana": 0.087379
+        },
+        {
+          "ticker": "DESK3",
+          "score": 46.6667,
+          "preco_entrada": 19.459999084472656,
+          "preco_saida": 19.450000762939453,
+          "retorno_semana": -0.000514
+        }
+      ],
+      "n_posicoes": 3,
+      "retorno_carteira": 0.014572
     }
   ]
 }
