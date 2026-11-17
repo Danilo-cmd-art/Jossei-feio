@@ -10,7 +10,7 @@
     "versao_formula": "v3c",
     "stop_loss_pct": -0.05,
     "redistribuicao": "positivas_cap_2x",
-    "ultima_atualizacao": "2026-11-17T21:29:51",
+    "ultima_atualizacao": "2026-11-17T21:44:34",
     "modo_atualizacao": "intraday"
   },
   "tickers": [
@@ -84,7 +84,7 @@
       "benchmarks": {
         "ibov": -0.011843057598468487,
         "smll": -0.004846071096865745,
-        "cdi": 0.0005078800000000161
+        "cdi": 0.0010160179420943827
       }
     },
     {
@@ -94,8 +94,8 @@
       "modo": "intraday",
       "benchmarks": {
         "ibov": -0.00879829664845555,
-        "smll": 0.010095910844924116,
-        "cdi": 0.0005078800000000161
+        "smll": -0.0011105563549965725,
+        "cdi": 0.0010160179420943827
       }
     }
   ],
