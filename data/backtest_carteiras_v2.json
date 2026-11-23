@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "n_carteiras": 129,
+    "n_carteiras": 130,
     "versao_formula": "v2"
   },
   "carteiras": [
@@ -5794,6 +5794,51 @@
       ],
       "n_posicoes": 5,
       "retorno_carteira": 0.033592
+    },
+    {
+      "semana": "2026-W47",
+      "data_formacao": "2026-11-16",
+      "data_corte_dados": "2026-11-13",
+      "data_vigencia_fim": "2026-11-19",
+      "tickers": [
+        {
+          "ticker": "ALLD3",
+          "score": 74.5455,
+          "preco_entrada": 7.130000114440918,
+          "preco_saida": 6.730000019073486,
+          "retorno_semana": -0.056101
+        },
+        {
+          "ticker": "KEPL3",
+          "score": 73.6364,
+          "preco_entrada": 7.300000190734863,
+          "preco_saida": 6.630000114440918,
+          "retorno_semana": -0.091781
+        },
+        {
+          "ticker": "SLCE3",
+          "score": 71.8182,
+          "preco_entrada": 18.280000686645508,
+          "preco_saida": 17.530000686645508,
+          "retorno_semana": -0.041028
+        },
+        {
+          "ticker": "MILS3",
+          "score": 70.9091,
+          "preco_entrada": 16.399999618530273,
+          "preco_saida": 16.350000381469727,
+          "retorno_semana": -0.003049
+        },
+        {
+          "ticker": "MGLU3",
+          "score": 56.3636,
+          "preco_entrada": 7.809999942779541,
+          "preco_saida": 8.199999809265137,
+          "retorno_semana": 0.049936
+        }
+      ],
+      "n_posicoes": 5,
+      "retorno_carteira": -0.028405
     }
   ]
 }

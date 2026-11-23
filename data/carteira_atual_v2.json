@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "data_formacao": "2026-11-16",
-    "data_corte_dados": "2026-11-13",
-    "data_vigencia_inicio": "2026-11-16",
-    "data_vigencia_fim": "2026-11-16",
+    "data_formacao": "2026-11-23",
+    "data_corte_dados": "2026-11-19",
+    "data_vigencia_inicio": "2026-11-23",
+    "data_vigencia_fim": "2026-11-23",
     "bootstrap_retroativo": false,
     "n_posicoes": 5,
     "peso_por_posicao": 0.2,
@@ -11,21 +11,21 @@
   },
   "tickers": [
     {
-      "ticker": "ALLD3",
+      "ticker": "FIQE3",
       "rank_na_formacao": 1,
-      "score_na_formacao": 74.5455,
-      "preco_entrada": 7.130000114440918,
-      "preco_atual": 7.130000114440918,
+      "score_na_formacao": 77.2727,
+      "preco_entrada": 5.730000019073486,
+      "preco_atual": 5.730000019073486,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
     },
     {
-      "ticker": "KEPL3",
+      "ticker": "ALLD3",
       "rank_na_formacao": 2,
-      "score_na_formacao": 73.6364,
-      "preco_entrada": 7.300000190734863,
-      "preco_atual": 7.300000190734863,
+      "score_na_formacao": 76.3636,
+      "preco_entrada": 6.730000019073486,
+      "preco_atual": 6.730000019073486,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
@@ -33,9 +33,9 @@
     {
       "ticker": "SLCE3",
       "rank_na_formacao": 3,
-      "score_na_formacao": 71.8182,
-      "preco_entrada": 18.280000686645508,
-      "preco_atual": 18.280000686645508,
+      "score_na_formacao": 70.0,
+      "preco_entrada": 17.530000686645508,
+      "preco_atual": 17.530000686645508,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
@@ -43,9 +43,9 @@
     {
       "ticker": "MILS3",
       "rank_na_formacao": 4,
-      "score_na_formacao": 70.9091,
-      "preco_entrada": 16.399999618530273,
-      "preco_atual": 16.399999618530273,
+      "score_na_formacao": 67.2727,
+      "preco_entrada": 16.350000381469727,
+      "preco_atual": 16.350000381469727,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2
@@ -53,9 +53,9 @@
     {
       "ticker": "MGLU3",
       "rank_na_formacao": 5,
-      "score_na_formacao": 56.3636,
-      "preco_entrada": 7.809999942779541,
-      "preco_atual": 7.809999942779541,
+      "score_na_formacao": 60.9091,
+      "preco_entrada": 8.199999809265137,
+      "preco_atual": 8.199999809265137,
       "retorno_acumulado": 0.0,
       "is_stale": false,
       "peso": 0.2

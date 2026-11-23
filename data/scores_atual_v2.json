@@ -1,27 +1,75 @@
 {
   "metadata": {
-    "data_referencia": "2026-11-16",
-    "data_corte_dados": "2026-11-13",
+    "data_referencia": "2026-11-23",
+    "data_corte_dados": "2026-11-19",
     "total_tickers": 107,
     "universo_versao": "v2-2026-05",
     "versao_formula": "v2"
   },
   "scores": [
     {
-      "ticker": "ALLD3",
-      "score_final": 74.5455,
+      "ticker": "FIQE3",
+      "score_final": 77.2727,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.3306713867764066,
+      "momentum_bruto": 0.09790892950335173,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 7.13,
-            "mma20": 5.975,
-            "mma50": 5.2904,
+            "preco_atual": 5.73,
+            "mma20": 5.4685,
+            "mma50": 5.4886,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": false,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.22
+        },
+        "momentum": {
+          "ret_1m": -0.0832,
+          "ret_3m": 0.279018,
+          "bruto": 0.097909,
+          "normalizado": 72.73,
+          "contribuicao_score": 36.3636
+        },
+        "roe": {
+          "bruto": 19.07,
+          "normalizado": 81.82,
+          "contribuicao_score": 24.5455,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 32.89,
+          "normalizado": 81.82,
+          "contribuicao_score": 16.3636,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 1
+    },
+    {
+      "ticker": "ALLD3",
+      "score_final": 76.3636,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.22747139204605488,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 6.73,
+            "mma20": 5.9795,
+            "mma50": 5.4709,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -33,9 +81,9 @@
           "roic_bruto": 18.12
         },
         "momentum": {
-          "ret_1m": 0.122835,
-          "ret_3m": 0.538508,
-          "bruto": 0.330671,
+          "ret_1m": -0.037196,
+          "ret_3m": 0.492139,
+          "bruto": 0.227471,
           "normalizado": 90.91,
           "contribuicao_score": 45.4545
         },
@@ -47,56 +95,8 @@
         },
         "cagr_receita": {
           "bruto": 3.11,
-          "normalizado": 9.09,
-          "contribuicao_score": 1.8182,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 1
-    },
-    {
-      "ticker": "KEPL3",
-      "score_final": 73.6364,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.13409864770790308,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 7.3,
-            "mma20": 6.9375,
-            "mma50": 6.836,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 13.03
-        },
-        "momentum": {
-          "ret_1m": -0.001368,
-          "ret_3m": 0.269565,
-          "bruto": 0.134099,
-          "normalizado": 72.73,
-          "contribuicao_score": 36.3636
-        },
-        "roe": {
-          "bruto": 18.67,
-          "normalizado": 81.82,
-          "contribuicao_score": 24.5455,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 17.29,
-          "normalizado": 63.64,
-          "contribuicao_score": 12.7273,
+          "normalizado": 18.18,
+          "contribuicao_score": 3.6364,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -105,19 +105,19 @@
     },
     {
       "ticker": "SLCE3",
-      "score_final": 71.8182,
+      "score_final": 70.0,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.20205562546407563,
+      "momentum_bruto": 0.12482722470939545,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 18.28,
-            "mma20": 17.114,
-            "mma50": 17.2672,
+            "preco_atual": 17.53,
+            "mma20": 17.284,
+            "mma50": 17.371,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": false,
@@ -129,9 +129,9 @@
           "roic_bruto": 11.68
         },
         "momentum": {
-          "ret_1m": 0.032768,
-          "ret_3m": 0.371343,
-          "bruto": 0.202056,
+          "ret_1m": 0.026347,
+          "ret_3m": 0.223308,
+          "bruto": 0.124827,
           "normalizado": 81.82,
           "contribuicao_score": 40.9091
         },
@@ -143,8 +143,8 @@
         },
         "cagr_receita": {
           "bruto": 20.3,
-          "normalizado": 72.73,
-          "contribuicao_score": 14.5455,
+          "normalizado": 63.64,
+          "contribuicao_score": 12.7273,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -153,19 +153,19 @@
     },
     {
       "ticker": "MILS3",
-      "score_final": 70.9091,
+      "score_final": 67.2727,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.031722387049984424,
+      "momentum_bruto": 0.026109572746540688,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 16.4,
-            "mma20": 16.088,
-            "mma50": 15.9948,
+            "preco_atual": 16.35,
+            "mma20": 16.121,
+            "mma50": 16.0428,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -177,9 +177,9 @@
           "roic_bruto": 16.42
         },
         "momentum": {
-          "ret_1m": 0.014851,
-          "ret_3m": 0.048593,
-          "bruto": 0.031722,
+          "ret_1m": 0.006154,
+          "ret_3m": 0.046065,
+          "bruto": 0.02611,
           "normalizado": 45.45,
           "contribuicao_score": 22.7273
         },
@@ -191,8 +191,8 @@
         },
         "cagr_receita": {
           "bruto": 29.41,
-          "normalizado": 90.91,
-          "contribuicao_score": 18.1818,
+          "normalizado": 72.73,
+          "contribuicao_score": 14.5455,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -201,22 +201,22 @@
     },
     {
       "ticker": "MGLU3",
-      "score_final": 56.3636,
+      "score_final": 60.9091,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.34106358581462304,
+      "momentum_bruto": 0.3142601827270337,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 7.81,
-            "mma20": 7.9155,
-            "mma50": 7.5468,
-            "preco_acima_mma20": false,
+            "preco_atual": 8.2,
+            "mma20": 7.0355,
+            "mma50": 7.7344,
+            "preco_acima_mma20": true,
             "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
+            "mma20_acima_mma50": false,
             "pontos": 2
           }
         },
@@ -225,22 +225,22 @@
           "roic_bruto": 5.81
         },
         "momentum": {
-          "ret_1m": -0.280184,
-          "ret_3m": 0.962312,
-          "bruto": 0.341064,
+          "ret_1m": -0.396171,
+          "ret_3m": 1.024691,
+          "bruto": 0.31426,
           "normalizado": 100.0,
           "contribuicao_score": 50.0
         },
         "roe": {
           "bruto": 1.21,
-          "normalizado": 9.09,
-          "contribuicao_score": 2.7273,
+          "normalizado": 18.18,
+          "contribuicao_score": 5.4545,
           "is_missing": false
         },
         "cagr_receita": {
           "bruto": 5.81,
-          "normalizado": 18.18,
-          "contribuicao_score": 3.6364,
+          "normalizado": 27.27,
+          "contribuicao_score": 5.4545,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -248,116 +248,20 @@
       "rank": 5
     },
     {
-      "ticker": "ORVR3",
-      "score_final": 54.5455,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.04780820970950844,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 18.99,
-            "mma20": 18.1775,
-            "mma50": 18.1242,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.1
-        },
-        "momentum": {
-          "ret_1m": -0.090517,
-          "ret_3m": 0.186134,
-          "bruto": 0.047808,
-          "normalizado": 54.55,
-          "contribuicao_score": 27.2727
-        },
-        "roe": {
-          "bruto": 5.84,
-          "normalizado": 36.36,
-          "contribuicao_score": 10.9091,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 21.79,
-          "normalizado": 81.82,
-          "contribuicao_score": 16.3636,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 6
-    },
-    {
-      "ticker": "MYPK3",
-      "score_final": 46.3636,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.09026952278748124,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 10.8,
-            "mma20": 10.059,
-            "mma50": 9.889,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.08
-        },
-        "momentum": {
-          "ret_1m": 0.002785,
-          "ret_3m": 0.177754,
-          "bruto": 0.09027,
-          "normalizado": 63.64,
-          "contribuicao_score": 31.8182
-        },
-        "roe": {
-          "bruto": 2.23,
-          "normalizado": 18.18,
-          "contribuicao_score": 5.4545,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 11.89,
-          "normalizado": 45.45,
-          "contribuicao_score": 9.0909,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 7
-    },
-    {
       "ticker": "DESK3",
-      "score_final": 46.3636,
+      "score_final": 58.1818,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.027438645050381294,
+      "momentum_bruto": 0.042773585350715626,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 19.58,
-            "mma20": 19.39,
-            "mma50": 19.318,
+            "preco_atual": 19.95,
+            "mma20": 19.4845,
+            "mma50": 19.395,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -369,16 +273,16 @@
           "roic_bruto": 10.32
         },
         "momentum": {
-          "ret_1m": 0.015034,
-          "ret_3m": 0.039844,
-          "bruto": 0.027439,
-          "normalizado": 36.36,
-          "contribuicao_score": 18.1818
+          "ret_1m": 0.029412,
+          "ret_3m": 0.056135,
+          "bruto": 0.042774,
+          "normalizado": 54.55,
+          "contribuicao_score": 27.2727
         },
         "roe": {
           "bruto": 4.34,
-          "normalizado": 27.27,
-          "contribuicao_score": 8.1818,
+          "normalizado": 36.36,
+          "contribuicao_score": 10.9091,
           "is_missing": false
         },
         "cagr_receita": {
@@ -389,123 +293,27 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 8
-    },
-    {
-      "ticker": "INTB3",
-      "score_final": 46.3636,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.01729655265461416,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 16.29,
-            "mma20": 16.068,
-            "mma50": 15.8333,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 11.86
-        },
-        "momentum": {
-          "ret_1m": -0.093489,
-          "ret_3m": 0.128082,
-          "bruto": 0.017297,
-          "normalizado": 27.27,
-          "contribuicao_score": 13.6364
-        },
-        "roe": {
-          "bruto": 18.29,
-          "normalizado": 72.73,
-          "contribuicao_score": 21.8182,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 15.88,
-          "normalizado": 54.55,
-          "contribuicao_score": 10.9091,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 9
-    },
-    {
-      "ticker": "RANI3",
-      "score_final": 35.4545,
-      "passou_filtro_f1": true,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": true,
-      "passou_filtro_tendencia": true,
-      "momentum_bruto": 0.015577770831098625,
-      "fatores": {
-        "filtro_f1": {
-          "passou": true,
-          "detalhe": {
-            "preco_atual": 8.18,
-            "mma20": 8.0324,
-            "mma50": 7.9764,
-            "preco_acima_mma20": true,
-            "preco_acima_mma50": true,
-            "mma20_acima_mma50": true,
-            "pontos": 3
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.97
-        },
-        "momentum": {
-          "ret_1m": -0.010883,
-          "ret_3m": 0.042038,
-          "bruto": 0.015578,
-          "normalizado": 18.18,
-          "contribuicao_score": 9.0909
-        },
-        "roe": {
-          "bruto": 13.78,
-          "normalizado": 63.64,
-          "contribuicao_score": 19.0909,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 10.37,
-          "normalizado": 36.36,
-          "contribuicao_score": 7.2727,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 10
+      "rank": 6
     },
     {
       "ticker": "MLAS3",
-      "score_final": 23.6364,
+      "score_final": 52.7273,
       "passou_filtro_f1": true,
       "passou_filtro_f2": true,
       "passou_filtros_entrada": true,
       "passou_filtro_tendencia": true,
-      "momentum_bruto": -0.010937510518714999,
+      "momentum_bruto": 0.08484779814205862,
       "fatores": {
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 2.07,
-            "mma20": 2.13,
-            "mma50": 2.042,
-            "preco_acima_mma20": false,
+            "preco_atual": 2.22,
+            "mma20": 2.0715,
+            "mma50": 2.0682,
+            "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
-            "pontos": 2
+            "pontos": 3
           }
         },
         "filtro_f2": {
@@ -513,11 +321,11 @@
           "roic_bruto": 5.07
         },
         "momentum": {
-          "ret_1m": -0.1,
-          "ret_3m": 0.078125,
-          "bruto": -0.010938,
-          "normalizado": 9.09,
-          "contribuicao_score": 4.5455
+          "ret_1m": -0.136187,
+          "ret_3m": 0.305882,
+          "bruto": 0.084848,
+          "normalizado": 63.64,
+          "contribuicao_score": 31.8182
         },
         "roe": {
           "bruto": 5.85,
@@ -527,8 +335,200 @@
         },
         "cagr_receita": {
           "bruto": 6.65,
+          "normalizado": 36.36,
+          "contribuicao_score": 7.2727,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 7
+    },
+    {
+      "ticker": "RANI3",
+      "score_final": 46.3636,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": 0.0018069499719807758,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 8.01,
+            "mma20": 8.0369,
+            "mma50": 8.0084,
+            "preco_acima_mma20": false,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": true,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.97
+        },
+        "momentum": {
+          "ret_1m": -0.032609,
+          "ret_3m": 0.036223,
+          "bruto": 0.001807,
+          "normalizado": 36.36,
+          "contribuicao_score": 18.1818
+        },
+        "roe": {
+          "bruto": 13.78,
+          "normalizado": 63.64,
+          "contribuicao_score": 19.0909,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 10.37,
+          "normalizado": 45.45,
+          "contribuicao_score": 9.0909,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 8
+    },
+    {
+      "ticker": "TTEN3",
+      "score_final": 44.5455,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": -0.05924121943829491,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 11.35,
+            "mma20": 11.076,
+            "mma50": 11.3384,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": false,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 1.59
+        },
+        "momentum": {
+          "ret_1m": -0.185212,
+          "ret_3m": 0.066729,
+          "bruto": -0.059241,
+          "normalizado": 9.09,
+          "contribuicao_score": 4.5455
+        },
+        "roe": {
+          "bruto": 14.93,
+          "normalizado": 72.73,
+          "contribuicao_score": 21.8182,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 39.47,
+          "normalizado": 90.91,
+          "contribuicao_score": 18.1818,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 9
+    },
+    {
+      "ticker": "MYPK3",
+      "score_final": 32.7273,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": -0.010798129879997842,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 10.2,
+            "mma20": 9.817,
+            "mma50": 9.9346,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": false,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.08
+        },
+        "momentum": {
+          "ret_1m": -0.15493,
+          "ret_3m": 0.133333,
+          "bruto": -0.010798,
           "normalizado": 27.27,
-          "contribuicao_score": 5.4545,
+          "contribuicao_score": 13.6364
+        },
+        "roe": {
+          "bruto": 2.23,
+          "normalizado": 27.27,
+          "contribuicao_score": 8.1818,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 11.89,
+          "normalizado": 54.55,
+          "contribuicao_score": 10.9091,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 10
+    },
+    {
+      "ticker": "QUAL3",
+      "score_final": 13.6364,
+      "passou_filtro_f1": true,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": true,
+      "passou_filtro_tendencia": true,
+      "momentum_bruto": -0.013916940097627117,
+      "fatores": {
+        "filtro_f1": {
+          "passou": true,
+          "detalhe": {
+            "preco_atual": 1.84,
+            "mma20": 1.567,
+            "mma50": 1.7082,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": true,
+            "mma20_acima_mma50": false,
+            "pontos": 2
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 4.11
+        },
+        "momentum": {
+          "ret_1m": -0.163636,
+          "ret_3m": 0.135802,
+          "bruto": -0.013917,
+          "normalizado": 18.18,
+          "contribuicao_score": 9.0909
+        },
+        "roe": {
+          "bruto": 1.17,
+          "normalizado": 9.09,
+          "contribuicao_score": 2.7273,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": -6.77,
+          "normalizado": 9.09,
+          "contribuicao_score": 1.8182,
           "is_missing": false,
           "usando_fallback_5a": true
         }
@@ -547,9 +547,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 14.5,
-            "mma20": 17.8125,
-            "mma50": 18.2902,
+            "preco_atual": 12.83,
+            "mma20": 16.296,
+            "mma50": 17.8888,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -595,9 +595,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 19.74,
-            "mma20": 23.105,
-            "mma50": 26.195,
+            "preco_atual": 18.43,
+            "mma20": 20.254,
+            "mma50": 25.6884,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -643,13 +643,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 28.8,
-            "mma20": 28.6305,
-            "mma50": 29.7572,
-            "preco_acima_mma20": true,
+            "preco_atual": 25.01,
+            "mma20": 27.455,
+            "mma50": 29.1754,
+            "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 1
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -691,13 +691,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.68,
-            "mma20": 5.755,
-            "mma50": 6.6754,
-            "preco_acima_mma20": false,
+            "preco_atual": 6.16,
+            "mma20": 5.186,
+            "mma50": 6.584,
+            "preco_acima_mma20": true,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 0
+            "pontos": 1
           }
         },
         "filtro_f2": {
@@ -739,13 +739,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.53,
-            "mma20": 9.5125,
-            "mma50": 10.2374,
-            "preco_acima_mma20": true,
+            "preco_atual": 8.74,
+            "mma20": 9.113,
+            "mma50": 10.0448,
+            "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 1
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -787,9 +787,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 8.14,
-            "mma20": 9.25,
-            "mma50": 9.8582,
+            "preco_atual": 7.5,
+            "mma20": 8.102,
+            "mma50": 9.7368,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -836,8 +836,8 @@
           "passou": false,
           "detalhe": {
             "preco_atual": 1.57,
-            "mma20": 2.0235,
-            "mma50": 2.3004,
+            "mma20": 1.727,
+            "mma50": 2.2338,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -883,9 +883,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 16.86,
-            "mma20": 20.677,
-            "mma50": 22.8634,
+            "preco_atual": 16.05,
+            "mma20": 18.502,
+            "mma50": 22.3132,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -931,9 +931,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 17.23,
-            "mma20": 21.6695,
-            "mma50": 26.7396,
+            "preco_atual": 15.23,
+            "mma20": 19.1975,
+            "mma50": 25.235,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -979,9 +979,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.78,
-            "mma20": 10.8725,
-            "mma50": 11.5375,
+            "preco_atual": 9.53,
+            "mma20": 10.1072,
+            "mma50": 11.4109,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1027,9 +1027,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.41,
-            "mma20": 3.2855,
-            "mma50": 3.7572,
+            "preco_atual": 3.73,
+            "mma20": 3.447,
+            "mma50": 3.8164,
             "preco_acima_mma20": true,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1075,9 +1075,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.74,
-            "mma20": 5.6815,
-            "mma50": 6.634,
+            "preco_atual": 4.27,
+            "mma20": 5.0115,
+            "mma50": 6.3988,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1123,9 +1123,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.72,
-            "mma20": 4.7475,
-            "mma50": 5.6562,
+            "preco_atual": 3.43,
+            "mma20": 4.301,
+            "mma50": 5.44,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1171,9 +1171,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.02,
-            "mma20": 3.4075,
-            "mma50": 4.0494,
+            "preco_atual": 2.6,
+            "mma20": 3.126,
+            "mma50": 3.8744,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1208,6 +1208,54 @@
       "rank": 25
     },
     {
+      "ticker": "ORVR3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 17.98,
+            "mma20": 17.8515,
+            "mma50": 18.2574,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 8.1
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 5.84,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 21.79,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 26
+    },
+    {
       "ticker": "GGPS3",
       "score_final": 0.0,
       "passou_filtro_f1": false,
@@ -1219,9 +1267,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 10.7,
-            "mma20": 12.3725,
-            "mma50": 13.207,
+            "preco_atual": 10.27,
+            "mma20": 11.2795,
+            "mma50": 13.0042,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1253,7 +1301,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 26
+      "rank": 27
     },
     {
       "ticker": "IGTI11",
@@ -1267,9 +1315,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 22.52,
-            "mma20": 25.6345,
-            "mma50": 26.9165,
+            "preco_atual": 21.85,
+            "mma20": 23.6475,
+            "mma50": 26.5747,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1301,7 +1349,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 27
+      "rank": 28
     },
     {
       "ticker": "MOVI3",
@@ -1315,9 +1363,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 6.11,
-            "mma20": 9.9165,
-            "mma50": 10.3116,
+            "preco_atual": 5.64,
+            "mma20": 7.425,
+            "mma50": 10.14,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1349,7 +1397,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 28
+      "rank": 29
     },
     {
       "ticker": "BRAP4",
@@ -1363,9 +1411,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 18.19,
-            "mma20": 18.8499,
-            "mma50": 20.2574,
+            "preco_atual": 16.58,
+            "mma20": 17.8091,
+            "mma50": 19.0792,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1397,7 +1445,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 29
+      "rank": 30
     },
     {
       "ticker": "AZZA3",
@@ -1411,9 +1459,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 15.91,
-            "mma20": 18.213,
-            "mma50": 18.3076,
+            "preco_atual": 14.63,
+            "mma20": 16.179,
+            "mma50": 18.1796,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1445,7 +1493,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 30
+      "rank": 31
     },
     {
       "ticker": "VAMO3",
@@ -1459,9 +1507,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.65,
-            "mma20": 3.6965,
-            "mma50": 4.0704,
+            "preco_atual": 2.49,
+            "mma20": 2.974,
+            "mma50": 4.0008,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1493,7 +1541,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 31
+      "rank": 32
     },
     {
       "ticker": "POMO4",
@@ -1507,9 +1555,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.75,
-            "mma20": 4.0515,
-            "mma50": 4.2956,
+            "preco_atual": 3.62,
+            "mma20": 3.859,
+            "mma50": 4.2302,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1541,7 +1589,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 32
+      "rank": 33
     },
     {
       "ticker": "MRVE3",
@@ -1555,9 +1603,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.04,
-            "mma20": 5.511,
-            "mma50": 5.7254,
+            "preco_atual": 4.59,
+            "mma20": 4.891,
+            "mma50": 5.6606,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1589,7 +1637,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 33
+      "rank": 34
     },
     {
       "ticker": "YDUQ3",
@@ -1603,8 +1651,8 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.46,
-            "mma20": 10.65,
+            "preco_atual": 9.54,
+            "mma20": 9.7595,
             "mma50": 10.9908,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
@@ -1637,7 +1685,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 34
+      "rank": 35
     },
     {
       "ticker": "SMTO3",
@@ -1651,13 +1699,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 18.41,
-            "mma20": 20.0165,
-            "mma50": 19.7442,
+            "preco_atual": 17.65,
+            "mma20": 19.4195,
+            "mma50": 19.5306,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -1685,7 +1733,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 35
+      "rank": 36
     },
     {
       "ticker": "CVCB3",
@@ -1699,9 +1747,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 0.83,
-            "mma20": 1.0635,
-            "mma50": 1.3622,
+            "preco_atual": 0.72,
+            "mma20": 0.9035,
+            "mma50": 1.2772,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1733,7 +1781,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 36
+      "rank": 37
     },
     {
       "ticker": "ECOR3",
@@ -1747,9 +1795,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.95,
-            "mma20": 7.689,
-            "mma50": 8.927,
+            "preco_atual": 5.87,
+            "mma20": 6.195,
+            "mma50": 8.7708,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1781,7 +1829,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 37
+      "rank": 38
     },
     {
       "ticker": "MDNE3",
@@ -1795,9 +1843,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 18.19,
-            "mma20": 21.1255,
-            "mma50": 24.4288,
+            "preco_atual": 16.89,
+            "mma20": 18.612,
+            "mma50": 23.7276,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1829,7 +1877,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 38
+      "rank": 39
     },
     {
       "ticker": "IRBR3",
@@ -1843,9 +1891,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 60.33,
-            "mma20": 61.1385,
-            "mma50": 62.4028,
+            "preco_atual": 58.79,
+            "mma20": 59.3495,
+            "mma50": 62.378,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1877,7 +1925,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 39
+      "rank": 40
     },
     {
       "ticker": "FLRY3",
@@ -1891,13 +1939,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 21.2,
-            "mma20": 23.068,
-            "mma50": 22.9108,
+            "preco_atual": 21.51,
+            "mma20": 21.728,
+            "mma50": 22.9798,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -1925,7 +1973,55 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 40
+      "rank": 41
+    },
+    {
+      "ticker": "INTB3",
+      "score_final": 0.0,
+      "passou_filtro_f1": false,
+      "passou_filtro_f2": true,
+      "passou_filtros_entrada": false,
+      "passou_filtro_tendencia": false,
+      "momentum_bruto": null,
+      "fatores": {
+        "filtro_f1": {
+          "passou": false,
+          "detalhe": {
+            "preco_atual": 15.37,
+            "mma20": 15.366,
+            "mma50": 15.8749,
+            "preco_acima_mma20": true,
+            "preco_acima_mma50": false,
+            "mma20_acima_mma50": false,
+            "pontos": 1
+          }
+        },
+        "filtro_f2": {
+          "passou": true,
+          "roic_bruto": 11.86
+        },
+        "momentum": {
+          "ret_1m": null,
+          "ret_3m": null,
+          "bruto": null,
+          "normalizado": null,
+          "contribuicao_score": 0.0
+        },
+        "roe": {
+          "bruto": 18.29,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false
+        },
+        "cagr_receita": {
+          "bruto": 15.88,
+          "normalizado": null,
+          "contribuicao_score": 0.0,
+          "is_missing": false,
+          "usando_fallback_5a": true
+        }
+      },
+      "rank": 42
     },
     {
       "ticker": "SIMH3",
@@ -1939,9 +2035,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.75,
-            "mma20": 8.6305,
-            "mma50": 9.428,
+            "preco_atual": 5.33,
+            "mma20": 6.5775,
+            "mma50": 9.2492,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -1973,7 +2069,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 41
+      "rank": 43
     },
     {
       "ticker": "EZTC3",
@@ -1987,9 +2083,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.87,
-            "mma20": 12.4237,
-            "mma50": 13.7967,
+            "preco_atual": 9.24,
+            "mma20": 10.5917,
+            "mma50": 13.5029,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2021,7 +2117,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 42
+      "rank": 44
     },
     {
       "ticker": "ANIM3",
@@ -2035,9 +2131,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.54,
-            "mma20": 3.288,
-            "mma50": 3.3664,
+            "preco_atual": 2.37,
+            "mma20": 2.7315,
+            "mma50": 3.3276,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2069,7 +2165,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 43
+      "rank": 45
     },
     {
       "ticker": "GMAT3",
@@ -2083,9 +2179,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.25,
-            "mma20": 4.2285,
-            "mma50": 4.7036,
+            "preco_atual": 4.18,
+            "mma20": 3.9725,
+            "mma50": 4.6498,
             "preco_acima_mma20": true,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2117,7 +2213,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 44
+      "rank": 46
     },
     {
       "ticker": "RECV3",
@@ -2131,9 +2227,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 10.74,
-            "mma20": 11.202,
-            "mma50": 11.298,
+            "preco_atual": 10.03,
+            "mma20": 10.7435,
+            "mma50": 11.2122,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2165,7 +2261,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 45
+      "rank": 47
     },
     {
       "ticker": "ALPA4",
@@ -2179,13 +2275,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 13.42,
-            "mma20": 14.4475,
-            "mma50": 14.4144,
+            "preco_atual": 13.3,
+            "mma20": 13.54,
+            "mma50": 14.3898,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -2213,7 +2309,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 46
+      "rank": 48
     },
     {
       "ticker": "SBFG3",
@@ -2227,9 +2323,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.85,
-            "mma20": 6.9,
-            "mma50": 8.147,
+            "preco_atual": 4.0,
+            "mma20": 5.5345,
+            "mma50": 7.766,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2261,7 +2357,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 47
+      "rank": 49
     },
     {
       "ticker": "PGMN3",
@@ -2275,9 +2371,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.39,
-            "mma20": 3.414,
-            "mma50": 3.8038,
+            "preco_atual": 2.29,
+            "mma20": 2.798,
+            "mma50": 3.6874,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2309,7 +2405,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 48
+      "rank": 50
     },
     {
       "ticker": "BRSR6",
@@ -2323,9 +2419,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 12.76,
-            "mma20": 14.463,
-            "mma50": 15.3041,
+            "preco_atual": 12.46,
+            "mma20": 13.413,
+            "mma50": 15.133,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2357,7 +2453,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 49
+      "rank": 51
     },
     {
       "ticker": "ABCB4",
@@ -2371,9 +2467,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 23.61,
-            "mma20": 25.0335,
-            "mma50": 25.6204,
+            "preco_atual": 22.92,
+            "mma20": 23.8665,
+            "mma50": 25.52,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2405,7 +2501,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 50
+      "rank": 52
     },
     {
       "ticker": "VULC3",
@@ -2419,9 +2515,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 11.64,
-            "mma20": 13.0985,
-            "mma50": 13.601,
+            "preco_atual": 10.91,
+            "mma20": 12.1945,
+            "mma50": 13.4534,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2453,55 +2549,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 51
-    },
-    {
-      "ticker": "TTEN3",
-      "score_final": 0.0,
-      "passou_filtro_f1": false,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": false,
-      "passou_filtro_tendencia": false,
-      "momentum_bruto": null,
-      "fatores": {
-        "filtro_f1": {
-          "passou": false,
-          "detalhe": {
-            "preco_atual": 11.17,
-            "mma20": 11.4615,
-            "mma50": 11.3408,
-            "preco_acima_mma20": false,
-            "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 1.59
-        },
-        "momentum": {
-          "ret_1m": null,
-          "ret_3m": null,
-          "bruto": null,
-          "normalizado": null,
-          "contribuicao_score": 0.0
-        },
-        "roe": {
-          "bruto": 14.93,
-          "normalizado": null,
-          "contribuicao_score": 0.0,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 39.47,
-          "normalizado": null,
-          "contribuicao_score": 0.0,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
-      "rank": 52
+      "rank": 53
     },
     {
       "ticker": "PINE4",
@@ -2515,13 +2563,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 11.27,
-            "mma20": 12.6115,
-            "mma50": 12.5068,
+            "preco_atual": 10.35,
+            "mma20": 11.4905,
+            "mma50": 12.4795,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -2549,7 +2597,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 53
+      "rank": 54
     },
     {
       "ticker": "BIOM3",
@@ -2563,13 +2611,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 6.0,
-            "mma20": 5.718,
-            "mma50": 6.1608,
-            "preco_acima_mma20": true,
+            "preco_atual": 5.33,
+            "mma20": 5.6275,
+            "mma50": 6.0822,
+            "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 1
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -2597,7 +2645,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 54
+      "rank": 55
     },
     {
       "ticker": "RIAA3",
@@ -2611,9 +2659,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 6.12,
-            "mma20": 7.6765,
-            "mma50": 7.7102,
+            "preco_atual": 5.8,
+            "mma20": 6.7375,
+            "mma50": 7.6085,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2645,7 +2693,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 55
+      "rank": 56
     },
     {
       "ticker": "GRND3",
@@ -2659,13 +2707,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.74,
-            "mma20": 3.9779,
-            "mma50": 3.9551,
+            "preco_atual": 3.68,
+            "mma20": 3.7939,
+            "mma50": 3.9563,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -2693,7 +2741,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 56
+      "rank": 57
     },
     {
       "ticker": "BMOB3",
@@ -2707,9 +2755,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 25.78,
-            "mma20": 27.311,
-            "mma50": 27.9868,
+            "preco_atual": 24.66,
+            "mma20": 25.6975,
+            "mma50": 27.9202,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2741,7 +2789,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 57
+      "rank": 58
     },
     {
       "ticker": "DXCO3",
@@ -2755,9 +2803,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.84,
-            "mma20": 5.722,
-            "mma50": 5.943,
+            "preco_atual": 4.67,
+            "mma20": 5.0875,
+            "mma50": 5.875,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2789,7 +2837,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 58
+      "rank": 59
     },
     {
       "ticker": "LWSA3",
@@ -2803,9 +2851,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.22,
-            "mma20": 3.917,
-            "mma50": 4.1718,
+            "preco_atual": 3.15,
+            "mma20": 3.4885,
+            "mma50": 4.0966,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2837,7 +2885,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 59
+      "rank": 60
     },
     {
       "ticker": "RAPT4",
@@ -2851,9 +2899,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.0,
-            "mma20": 4.995,
-            "mma50": 5.346,
+            "preco_atual": 3.79,
+            "mma20": 4.2125,
+            "mma50": 5.26,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2885,7 +2933,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 60
+      "rank": 61
     },
     {
       "ticker": "LEVE3",
@@ -2899,9 +2947,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 31.61,
-            "mma20": 33.3375,
-            "mma50": 33.8238,
+            "preco_atual": 30.8,
+            "mma20": 31.892,
+            "mma50": 33.662,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2933,7 +2981,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 61
+      "rank": 62
     },
     {
       "ticker": "TFCO4",
@@ -2947,9 +2995,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.8,
-            "mma20": 11.414,
-            "mma50": 12.7054,
+            "preco_atual": 9.43,
+            "mma20": 10.4775,
+            "mma50": 12.4347,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -2981,7 +3029,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 62
+      "rank": 63
     },
     {
       "ticker": "UNIP6",
@@ -2995,9 +3043,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 50.72,
-            "mma20": 54.3185,
-            "mma50": 56.444,
+            "preco_atual": 48.4,
+            "mma20": 51.987,
+            "mma50": 55.7838,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3029,7 +3077,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 63
+      "rank": 64
     },
     {
       "ticker": "VTRU3",
@@ -3043,9 +3091,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 14.65,
-            "mma20": 15.085,
-            "mma50": 15.5764,
+            "preco_atual": 13.45,
+            "mma20": 13.8074,
+            "mma50": 15.5044,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3077,7 +3125,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 64
+      "rank": 65
     },
     {
       "ticker": "SEER3",
@@ -3091,9 +3139,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 11.26,
-            "mma20": 13.14,
-            "mma50": 14.045,
+            "preco_atual": 10.8,
+            "mma20": 11.8435,
+            "mma50": 13.84,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3125,7 +3173,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 65
+      "rank": 66
     },
     {
       "ticker": "MDIA3",
@@ -3139,9 +3187,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 17.02,
-            "mma20": 17.4182,
-            "mma50": 17.4968,
+            "preco_atual": 16.68,
+            "mma20": 16.81,
+            "mma50": 17.4435,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3173,7 +3221,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 66
+      "rank": 67
     },
     {
       "ticker": "AMER3",
@@ -3187,9 +3235,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.1,
-            "mma20": 4.894,
-            "mma50": 5.196,
+            "preco_atual": 4.0,
+            "mma20": 4.458,
+            "mma50": 5.088,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3221,7 +3269,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 67
+      "rank": 68
     },
     {
       "ticker": "PRNR3",
@@ -3235,9 +3283,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 13.55,
-            "mma20": 15.3712,
-            "mma50": 17.6463,
+            "preco_atual": 12.5,
+            "mma20": 13.822,
+            "mma50": 17.2111,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3269,7 +3317,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 68
+      "rank": 69
     },
     {
       "ticker": "PNVL3",
@@ -3283,9 +3331,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 11.01,
-            "mma20": 12.189,
-            "mma50": 12.9183,
+            "preco_atual": 10.77,
+            "mma20": 11.249,
+            "mma50": 12.7694,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3317,7 +3365,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 69
+      "rank": 70
     },
     {
       "ticker": "TUPY3",
@@ -3331,9 +3379,9 @@
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 20.04,
-            "mma20": 17.716,
-            "mma50": 17.2268,
+            "preco_atual": 20.87,
+            "mma20": 17.7125,
+            "mma50": 17.5806,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3365,7 +3413,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 70
+      "rank": 71
     },
     {
       "ticker": "HBSA3",
@@ -3379,9 +3427,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.24,
-            "mma20": 3.3555,
-            "mma50": 3.4654,
+            "preco_atual": 3.19,
+            "mma20": 3.194,
+            "mma50": 3.444,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3413,7 +3461,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 71
+      "rank": 72
     },
     {
       "ticker": "LAVV3",
@@ -3427,9 +3475,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 8.28,
-            "mma20": 10.254,
-            "mma50": 11.137,
+            "preco_atual": 7.75,
+            "mma20": 8.8115,
+            "mma50": 10.9068,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3461,7 +3509,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 72
+      "rank": 73
     },
     {
       "ticker": "TGMA3",
@@ -3475,13 +3523,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 35.15,
-            "mma20": 40.453,
-            "mma50": 39.1316,
+            "preco_atual": 32.57,
+            "mma20": 37.297,
+            "mma50": 39.0956,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -3509,7 +3557,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 73
+      "rank": 74
     },
     {
       "ticker": "LOGG3",
@@ -3523,9 +3571,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 22.7,
-            "mma20": 23.93,
-            "mma50": 25.0714,
+            "preco_atual": 19.62,
+            "mma20": 21.999,
+            "mma50": 24.687,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3557,7 +3605,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 74
+      "rank": 75
     },
     {
       "ticker": "BMGB4",
@@ -3571,9 +3619,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.23,
-            "mma20": 5.9045,
-            "mma50": 6.1444,
+            "preco_atual": 5.02,
+            "mma20": 5.501,
+            "mma50": 6.0792,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3605,7 +3653,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 75
+      "rank": 76
     },
     {
       "ticker": "VLID3",
@@ -3619,9 +3667,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 15.64,
-            "mma20": 16.15,
-            "mma50": 17.2822,
+            "preco_atual": 14.78,
+            "mma20": 15.2325,
+            "mma50": 17.055,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3653,10 +3701,10 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 76
+      "rank": 77
     },
     {
-      "ticker": "QUAL3",
+      "ticker": "KEPL3",
       "score_final": 0.0,
       "passou_filtro_f1": false,
       "passou_filtro_f2": true,
@@ -3667,9 +3715,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 1.62,
-            "mma20": 1.6375,
-            "mma50": 1.6904,
+            "preco_atual": 6.63,
+            "mma20": 6.74,
+            "mma50": 6.8364,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3678,7 +3726,7 @@
         },
         "filtro_f2": {
           "passou": true,
-          "roic_bruto": 4.11
+          "roic_bruto": 13.03
         },
         "momentum": {
           "ret_1m": null,
@@ -3688,20 +3736,20 @@
           "contribuicao_score": 0.0
         },
         "roe": {
-          "bruto": 1.17,
+          "bruto": 18.67,
           "normalizado": null,
           "contribuicao_score": 0.0,
           "is_missing": false
         },
         "cagr_receita": {
-          "bruto": -6.77,
+          "bruto": 17.29,
           "normalizado": null,
           "contribuicao_score": 0.0,
           "is_missing": false,
           "usando_fallback_5a": true
         }
       },
-      "rank": 77
+      "rank": 78
     },
     {
       "ticker": "ARML3",
@@ -3715,13 +3763,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.02,
-            "mma20": 4.3175,
-            "mma50": 4.4532,
-            "preco_acima_mma20": false,
+            "preco_atual": 3.99,
+            "mma20": 3.8185,
+            "mma50": 4.4658,
+            "preco_acima_mma20": true,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 0
+            "pontos": 1
           }
         },
         "filtro_f2": {
@@ -3749,7 +3797,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 78
+      "rank": 79
     },
     {
       "ticker": "CAML3",
@@ -3763,9 +3811,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.69,
-            "mma20": 5.042,
-            "mma50": 5.358,
+            "preco_atual": 4.53,
+            "mma20": 4.6445,
+            "mma50": 5.3242,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3797,7 +3845,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 79
+      "rank": 80
     },
     {
       "ticker": "EVEN3",
@@ -3811,9 +3859,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.63,
-            "mma20": 4.172,
-            "mma50": 4.519,
+            "preco_atual": 3.65,
+            "mma20": 3.754,
+            "mma50": 4.466,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3845,7 +3893,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 80
+      "rank": 81
     },
     {
       "ticker": "RAIZ4",
@@ -3859,9 +3907,9 @@
         "filtro_f1": {
           "passou": true,
           "detalhe": {
-            "preco_atual": 20.0,
-            "mma20": 11.059,
-            "mma50": 4.605,
+            "preco_atual": 15.0,
+            "mma20": 11.149,
+            "mma50": 4.651,
             "preco_acima_mma20": true,
             "preco_acima_mma50": true,
             "mma20_acima_mma50": true,
@@ -3893,7 +3941,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 81
+      "rank": 82
     },
     {
       "ticker": "FRAS3",
@@ -3907,9 +3955,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 21.19,
-            "mma20": 23.504,
-            "mma50": 23.8916,
+            "preco_atual": 20.58,
+            "mma20": 21.9595,
+            "mma50": 23.7256,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -3941,7 +3989,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 82
+      "rank": 83
     },
     {
       "ticker": "DASA3",
@@ -3955,13 +4003,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.43,
-            "mma20": 3.82,
-            "mma50": 3.685,
+            "preco_atual": 3.26,
+            "mma20": 3.451,
+            "mma50": 3.7366,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -3989,7 +4037,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 83
+      "rank": 84
     },
     {
       "ticker": "AGRO3",
@@ -4003,9 +4051,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 17.91,
-            "mma20": 17.9157,
-            "mma50": 18.0922,
+            "preco_atual": 16.48,
+            "mma20": 17.6955,
+            "mma50": 17.9545,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4037,7 +4085,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 84
+      "rank": 85
     },
     {
       "ticker": "SOJA3",
@@ -4051,9 +4099,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.61,
-            "mma20": 6.714,
-            "mma50": 7.4152,
+            "preco_atual": 5.04,
+            "mma20": 6.12,
+            "mma50": 7.1966,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4085,7 +4133,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 85
+      "rank": 86
     },
     {
       "ticker": "BRBI11",
@@ -4099,9 +4147,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 10.4,
-            "mma20": 12.9295,
-            "mma50": 14.463,
+            "preco_atual": 10.06,
+            "mma20": 11.19,
+            "mma50": 13.9896,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4133,7 +4181,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 86
+      "rank": 87
     },
     {
       "ticker": "FESA4",
@@ -4147,9 +4195,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.49,
-            "mma20": 5.622,
-            "mma50": 5.7254,
+            "preco_atual": 5.2,
+            "mma20": 5.415,
+            "mma50": 5.6972,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4181,7 +4229,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 87
+      "rank": 88
     },
     {
       "ticker": "JSLG3",
@@ -4195,9 +4243,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 6.04,
-            "mma20": 7.5155,
-            "mma50": 7.611,
+            "preco_atual": 5.68,
+            "mma20": 6.41,
+            "mma50": 7.6032,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4229,7 +4277,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 88
+      "rank": 89
     },
     {
       "ticker": "POSI3",
@@ -4243,9 +4291,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.15,
-            "mma20": 3.7105,
-            "mma50": 3.7354,
+            "preco_atual": 3.37,
+            "mma20": 3.374,
+            "mma50": 3.7158,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4277,7 +4325,7 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 89
+      "rank": 90
     },
     {
       "ticker": "WIZC3",
@@ -4291,9 +4339,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 6.35,
-            "mma20": 6.5575,
-            "mma50": 7.5178,
+            "preco_atual": 6.17,
+            "mma20": 6.203,
+            "mma50": 7.3736,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4325,54 +4373,6 @@
           "usando_fallback_5a": true
         }
       },
-      "rank": 90
-    },
-    {
-      "ticker": "FIQE3",
-      "score_final": 0.0,
-      "passou_filtro_f1": false,
-      "passou_filtro_f2": true,
-      "passou_filtros_entrada": false,
-      "passou_filtro_tendencia": false,
-      "momentum_bruto": null,
-      "fatores": {
-        "filtro_f1": {
-          "passou": false,
-          "detalhe": {
-            "preco_atual": 5.44,
-            "mma20": 5.5975,
-            "mma50": 5.4406,
-            "preco_acima_mma20": false,
-            "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
-          }
-        },
-        "filtro_f2": {
-          "passou": true,
-          "roic_bruto": 8.22
-        },
-        "momentum": {
-          "ret_1m": null,
-          "ret_3m": null,
-          "bruto": null,
-          "normalizado": null,
-          "contribuicao_score": 0.0
-        },
-        "roe": {
-          "bruto": 19.07,
-          "normalizado": null,
-          "contribuicao_score": 0.0,
-          "is_missing": false
-        },
-        "cagr_receita": {
-          "bruto": 32.89,
-          "normalizado": null,
-          "contribuicao_score": 0.0,
-          "is_missing": false,
-          "usando_fallback_5a": true
-        }
-      },
       "rank": 91
     },
     {
@@ -4387,9 +4387,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.35,
-            "mma20": 9.3725,
-            "mma50": 9.7018,
+            "preco_atual": 8.89,
+            "mma20": 9.2465,
+            "mma50": 9.5442,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4435,9 +4435,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 3.66,
-            "mma20": 5.126,
-            "mma50": 5.471,
+            "preco_atual": 3.35,
+            "mma20": 4.461,
+            "mma50": 5.326,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4483,13 +4483,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 14.29,
-            "mma20": 15.1195,
-            "mma50": 14.818,
+            "preco_atual": 14.3,
+            "mma20": 14.493,
+            "mma50": 14.834,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -4531,9 +4531,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 19.13,
-            "mma20": 20.9885,
-            "mma50": 21.8758,
+            "preco_atual": 18.77,
+            "mma20": 19.642,
+            "mma50": 21.6486,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4579,9 +4579,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.24,
-            "mma20": 4.494,
-            "mma50": 4.5281,
+            "preco_atual": 4.11,
+            "mma20": 4.299,
+            "mma50": 4.5094,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4627,13 +4627,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.49,
-            "mma20": 2.4335,
-            "mma50": 2.513,
-            "preco_acima_mma20": true,
+            "preco_atual": 2.27,
+            "mma20": 2.3005,
+            "mma50": 2.4916,
+            "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 1
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -4675,9 +4675,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.47,
-            "mma20": 5.0645,
-            "mma50": 5.241,
+            "preco_atual": 4.49,
+            "mma20": 4.6285,
+            "mma50": 5.1982,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4723,9 +4723,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 9.78,
-            "mma20": 10.247,
-            "mma50": 10.5507,
+            "preco_atual": 9.31,
+            "mma20": 9.6435,
+            "mma50": 10.5446,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4771,13 +4771,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 7.28,
-            "mma20": 7.7175,
-            "mma50": 7.866,
-            "preco_acima_mma20": false,
+            "preco_atual": 7.43,
+            "mma20": 7.3195,
+            "mma50": 7.8328,
+            "preco_acima_mma20": true,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
-            "pontos": 0
+            "pontos": 1
           }
         },
         "filtro_f2": {
@@ -4819,9 +4819,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.09,
-            "mma20": 2.615,
-            "mma50": 2.8922,
+            "preco_atual": 2.05,
+            "mma20": 2.373,
+            "mma50": 2.8208,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4867,9 +4867,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 5.83,
-            "mma20": 6.211,
-            "mma50": 6.2157,
+            "preco_atual": 5.48,
+            "mma20": 5.839,
+            "mma50": 6.213,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -4915,13 +4915,13 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 57.07,
-            "mma20": 64.444,
-            "mma50": 63.9356,
+            "preco_atual": 55.18,
+            "mma20": 59.8065,
+            "mma50": 63.5944,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
-            "mma20_acima_mma50": true,
-            "pontos": 1
+            "mma20_acima_mma50": false,
+            "pontos": 0
           }
         },
         "filtro_f2": {
@@ -4964,8 +4964,8 @@
           "passou": false,
           "detalhe": {
             "preco_atual": 2.71,
-            "mma20": 3.1275,
-            "mma50": 3.4938,
+            "mma20": 2.912,
+            "mma50": 3.4046,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -5011,9 +5011,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.72,
-            "mma20": 2.7305,
-            "mma50": 2.8792,
+            "preco_atual": 2.43,
+            "mma20": 2.571,
+            "mma50": 2.8506,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -5059,9 +5059,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 2.71,
-            "mma20": 2.955,
-            "mma50": 3.1051,
+            "preco_atual": 2.45,
+            "mma20": 2.742,
+            "mma50": 3.0598,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
@@ -5107,9 +5107,9 @@
         "filtro_f1": {
           "passou": false,
           "detalhe": {
-            "preco_atual": 4.85,
-            "mma20": 6.297,
-            "mma50": 7.0526,
+            "preco_atual": 4.65,
+            "mma20": 5.333,
+            "mma50": 6.9774,
             "preco_acima_mma20": false,
             "preco_acima_mma50": false,
             "mma20_acima_mma50": false,
